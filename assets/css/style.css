@@ -5197,6 +5197,11 @@ input[type="button"].btn-block {
   text-decoration: none;
   background-color: #d6dae2;
 }
+.badge-grey {
+  color: black;
+  background-color: #e7e6e1;
+}
+  
 
 .badge-success {
   color: #ffffff;
@@ -11236,14 +11241,14 @@ fieldset[disabled] .btn-warning.active {
 }
 
 .btn-danger {
-  background: #fd5d93;
-  background-image: -webkit-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
-  background-image: -o-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
-  background-image: -moz-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
-  background-image: linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
+  background: #831212;
+  background-image: -webkit-linear-gradient(to bottom left, #831212, #ec250d, #831212);
+  background-image: -o-linear-gradient(to bottom left, #831212, #ec250d, #831212);
+  background-image: -moz-linear-gradient(to bottom left, #831212, #ec250d, #831212);
+  background-image: linear-gradient(to bottom left, #831212, #ec250d, #831212);
   background-size: 210% 210%;
   background-position: top right;
-  background-color: #fd5d93;
+  background-color: #831212;
   transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
@@ -11312,8 +11317,8 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .btn-danger.btn-simple {
-  color: #fd5d93;
-  border-color: #fd5d93;
+  color: #831212;
+  border-color: #831212;
   background: transparent;
 }
 
@@ -11321,8 +11326,8 @@ fieldset[disabled] .btn-danger.active {
 .btn-danger.btn-simple:focus,
 .btn-danger.btn-simple:active,
 .btn-danger.btn-simple:not(:disabled):not(.disabled):active {
-  color: #fd5d93;
-  border-color: #fd5d93;
+  color: #cf3030;
+  border-color: #cf3030;
   background-color: transparent !important;
   background-image: none !important;
   box-shadow: none;
