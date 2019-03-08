@@ -314,3 +314,18 @@ $('.owl-carousel').owlCarousel({
     }
   }
 })
+
+
+// hidden form
+var hiddenForm = document.getElementById("hiddenForm")
+var hiddenCheck = document.getElementById("hideCheck")
+
+function hideForm() {
+  if (hiddenCheck.checked) {
+    hiddenForm.style.display="block"
+  }
+  else{
+    hiddenForm.style.display="none"
+  }
+
+}

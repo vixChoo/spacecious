@@ -16117,7 +16117,7 @@ code {
   background-color: transparent;
   border: 1px solid #2b3553;
   border-radius: 0.4285rem;
-  color: #ffffff;
+  color: black;
   -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -16168,7 +16168,7 @@ code {
   background-color: transparent;
   border: 1px solid #2b3553;
   border-radius: 0.4285rem;
-  color: #ffffff;
+  color: black;
   margin: 0;
 }
 
@@ -20987,21 +20987,26 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 @media (max-width: 768px) {
  #search {
-   visibility: hidden;
+   display: none;
  }
  
 }
 
 @media (max-width: 991.98px) {
   #search {
-    visibility: hidden;
+    display: none;
   }
   
 }
 
 @media (max-width: 992px) {
   #search {
-    visibility: hidden;
+    display: none;
   }
 
+}
+
+/* hidden form */
+#hiddenForm {
+  display: none;
 }
