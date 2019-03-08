@@ -22,13 +22,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-   
 
     <!-- Core Css Files -->
     <link href="./assets/css/style.css" rel="stylesheet"/>
@@ -208,7 +207,7 @@
 
    
    <!-- Product listing -->
-   <div class="container-fluid bg-primary p-5 pt-lg" id="section-review">
+   <div class="container-fluid bg-primary p-5 pt-lg">
        <div class="row">
            <!-- Category -->
             <a href="#" class="ml-2"> Home  \ </a>
@@ -330,7 +329,7 @@
        
        
        <!-- Product DESCRIPTION -->
-       <div class="container mb-lg">
+       <div class="container mb-lg" id="section-review">
         <div class="card">
             <div class="card-header font">
                 <ul class="nav nav-tabs nav-tabs-primary" role="tablist" style="margin-top:-50px; font-size:20px;">
@@ -340,7 +339,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#reviews" role="tablist">
+                        <a class="nav-link" data-toggle="tab" href="#reviews" role="tablist" id="review">
                             Reviews
                         </a>
                     </li>
@@ -805,18 +804,6 @@
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
         <footer class="footer mt-lg font">
             <div class="container">
                 <div class="row">
@@ -898,13 +885,20 @@
     <!--   Core JS Files   -->
     <script src="./assets/js/script.js" type="text/javascript"></script>
     <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    
+    <script>
+        // review scroll
 
+        function scrollToReview() {
 
-        <script>
-          
-            function scrollToReview() {
-                window.location.hash = '#section-reviews';
+            if ($('#section-review').length != 0) {
+                $("#review").click()
+                $("html, body").animate({
+                    scrollTop: $('#section-review').offset().top - 110
+                }, 1000);
             }
-        </script>
+        }
+    </script>
+
 </body>
 </html>
