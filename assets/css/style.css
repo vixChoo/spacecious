@@ -3407,7 +3407,7 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 15rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.875rem;
@@ -3419,7 +3419,11 @@ input[type="button"].btn-block {
   border: 0 solid rgba(34, 42, 66, 0.15);
   border-radius: 0.1428rem;
   box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
 }
+
 
 .dropdown-menu p{
   font-size: 20px !important;
@@ -12132,7 +12136,7 @@ fieldset[disabled] .btn-link.active {
 }
 
 .dropdown-menu .dropdown-header:not([href]):not([tabindex]) {
-  color: rgba(182, 182, 182, 0.6);
+  /* color: rgba(182, 182, 182, 0.6); */
   font-size: 0.62475rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -20788,14 +20792,28 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 /*  search bar */
 
 @media (max-width: 768px) {
- #search {
-   display: none;
- }
+  #search {
+    display: none;
+  }
+  #sidebarCollapse {
+  display: block!important;
+  }
+
+  #sideBar {
+    display: none;
+  }
  
 }
 
 @media (max-width: 991.98px) {
   #search {
+    display: none;
+  }
+
+  #sidebarCollapse{
+    display: block!important;
+  }
+  #sideBar {
     display: none;
   }
   
@@ -20806,7 +20824,21 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     display: none;
   }
 
+  #sidebarCollapse{
+    display: block!important;
+  }
+  #sideBar {
+    display: none;
+  }
+
 }
+
+@media (min-width: 1200px) {
+   #sideBar {
+    display: block;
+  }
+}
+
 
 /* hidden form */
 #hiddenForm {
@@ -20856,25 +20888,17 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .checkbox input[type="checkbox"]:checked + label {
   background-color: var(--green);
 }
-
-/*  */
-
-@media (max-width: 576px) {
-  #sidebarCollapse {
-    display: block!important;
-  }
-
-  #sideBar {
-    display: none;
-  }
-  
-@media (max-width: 768px) {
-  #sidebarCollapse{
-    display: block!important;
-  }
-  #sideBar {
-    display: none;
-  }
-}
     
-  
+.mega-dropdown{
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/* .wrap-column {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
