@@ -9779,12 +9779,12 @@ a.text-warning:focus {
 }
 
 .text-danger {
-  color: #fd5d93 !important;
+  color: #e84118 !important;
 }
 
 a.text-danger:hover,
 a.text-danger:focus {
-  color: #fc2b71 !important;
+  color: #ff5252 !important;
 }
 
 .text-light {
