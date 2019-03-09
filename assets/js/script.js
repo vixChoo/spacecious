@@ -316,16 +316,19 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-// hidden form
-var hiddenForm = document.getElementById("hiddenForm")
-var hiddenCheck = document.getElementById("hideCheck")
 
-function hideForm() {
+// hidden 
+
+function hideForm(hideForm, hideCheck) {
+  let hiddenForm = document.getElementById(hideForm);
+  let hiddenCheck = document.getElementById(hideCheck);
+
   if (hiddenCheck.checked) {
-    hiddenForm.style.display="block"
+    hiddenForm.style.display = "block"
   }
-  else{
-    hiddenForm.style.display="none"
+  else {
+    hiddenForm.style.display = "none"
   }
 
 }
+

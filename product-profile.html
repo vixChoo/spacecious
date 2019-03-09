@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="navbar-nav text-capitalize mega-drop-down">
+                <ul class="navbar-nav text-capitalize">
                     <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                             wine
@@ -290,11 +290,11 @@
     
                 <!-- Location Search / Map -->
                 <ul class="navbar-nav ml-auto">
-                    <li class="dropleft nav-item">
+                    <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                             <i class="icons fas fa-map-marker-alt"></i>
                         </a>
-                        <div class="dropdown-menu col-sm-6 col-lg-3 text-center">
+                        <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
                             <p class="pl-0">Enter Your Address</p>
                             <div class="form-group m-2">
                                 <input type="text" value="" placeholder="Address" class="form-control mb-3" />
@@ -308,8 +308,9 @@
                             <i class="icons far fa-user"></i>
                         </a>
                     </li>
+    
                     <li class="nav-item">
-                        <a class="nav-link" href="#pablo">
+                        <a href="./shopping-card.html" class="nav-link">
                             <i class="icons fas fa-shopping-cart" style="margin-left: -2px;"></i>
                         </a>
                     </li>
@@ -319,6 +320,7 @@
     </nav>
     </header>
     <!-- End Navbar -->
+
 <body>
     <!-- Advertisements / Ads-->
     
@@ -785,7 +787,7 @@
                                     <!-- Card header -->
                                     <div class="card-header bg-white pb-3">
                                         <div class="nav-wrapper">
-                                            <ul class="nav nav-pills-primary nav-pills-primary nav-fill flex-column flex-md-row" id="tabs-icons-text"
+                                            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text"
                                                 role="tablist">
                                                 <li class="nav-item m-2">
                                                     <a class="nav-link mb-sm-3 mb-md-0 active show" id="tabs-icons-text-1-tab"
@@ -895,7 +897,7 @@
 
                                                     <div class="form-check mb-2">
                                                         <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm()  ">
+                                                            <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
                                                             <span class="form-check-sign"></span>
                                                              Ordering for a business? Be the office hero.
                                                         </label>

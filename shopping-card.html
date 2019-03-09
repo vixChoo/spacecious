@@ -311,7 +311,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./shopping-card.html" class="nav-link">
                                 <i class="icons fas fa-shopping-cart" style="margin-left: -2px;"></i>
                             </a>
                         </li>
@@ -327,6 +327,7 @@
 
     <!-- Content -->
         <div class="container mt-lg">
+            <p class="badge badge-warning float-right text-darker">DELIVERD WITHIN 60 MINS</p>
             <h1 class="p-4 mb-0 font bg-secondary">Shopping Cart</h1>
             <div class="row">
                 <!-- Cart -->
@@ -350,9 +351,11 @@
                                         </div>
                                     </td>
                                     
-                                    <td>Espolòn Reposado 
-                                        <br>
-                                        750ml Bottle
+                                    <td>
+                                       <h5> Espolòn Reposado </h5>
+                                        <p> 750ml Bottle </p>
+                                        <small>Shipping from:
+                                        Case Liquors</small>
                                         <br>
                                         <a href="#">Remove</a>
                                     </td>
@@ -370,13 +373,16 @@
                               <tr class="border-lg-bottom">
                                     <td>
                                         <div class="col-3 mw-100">
-                                            <img src="./assets/images/wine.jpg" alt="">
+                                            <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20"
+                                                alt="">
                                         </div>
                                     </td>
                                     
-                                    <td>Espolòn Reposado 
-                                        <br>
-                                        750ml Bottle
+                                    <td>
+                                        <h5> Espolòn Reposado </h5>
+                                        <p> 750ml Bottle </p>
+                                        <small>Shipping from:
+                                        Case Liquors</small>
                                         <br>
                                         <a href="#">Remove</a>
                                     </td>
@@ -394,13 +400,16 @@
                               <tr class="border-lg-bottom">
                                     <td>
                                         <div class="col-3 mw-100">
-                                            <img src="./assets/images/wine.jpg" alt="">
+                                            <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20"
+                                                alt="">
                                         </div>
                                     </td>
                                     
-                                    <td>Espolòn Reposado 
-                                        <br>
-                                        750ml Bottle
+                                    <td> 
+                                        <h5> Espolòn Reposado </h5>
+                                        <p> 750ml Bottle </p>
+                                        <small>Shipping from:
+                                        Case Liquors</small>
                                         <br>
                                         <a href="#">Remove</a>
                                     </td>
@@ -416,11 +425,15 @@
                                     <td> RM 48.90 </td>
                                 </tr>
                             </form>
-                            
                         </tbody>
                     </table>
+                    <div class="border-lg-tb text-right">
+                         <h5 class="p-2 m-2">Subtotal (3 items) RM 48.90</h5>
+                    </div>
+                    
 
                 </div>
+                            
 
                 <!-- Order Summary -->
                 <div class="col-md-4 bg-secondary card ml-3">
@@ -451,7 +464,15 @@
                             </table>
                             <div class="text-center row justify-content-center">
                                 <button class="btn btn-primary m-3">Proceed To Checkout</button>
-                                <div class="form-group mb-3 mw-200">
+                                <div class="form-check mb-3">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" id="hide-check" onclick="hideForm('hidePromo','hide-check')">
+                                        <span class="form-check-sign"></span>
+                                             Have Promo Code ?
+                                    </label>
+                                </div>
+
+                                <div class="form-group mb-3 mw-200" id="hidePromo">
                                     <div class="input-group">
                                         <input class="form-control" placeholder="Promo Code" type="text">
                                     </div>
@@ -724,7 +745,7 @@
 
                                         <div class="form-check mb-2">
                                             <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm()  ">
+                                                <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
                                                 <span class="form-check-sign"></span>
                                                 Ordering for a business? Be the office hero.
                                             </label>

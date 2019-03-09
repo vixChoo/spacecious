@@ -20409,6 +20409,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   display: none;
 }
 
+#hidePromo {
+  display: none;
+}
 .checkbox {
   position: relative;
   width: 10px;
