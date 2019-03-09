@@ -8,9 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
     <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
+
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
@@ -19,306 +21,303 @@
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-
 
     <!-- Core Css Files -->
     <link href="./assets/css/style.css" rel="stylesheet" />
     <!-- Nucleo Icons -->
     <!-- <link href="./assets/css/nucleo-icons.css" rel="stylesheet"/> -->
 
-</head>
 
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
-            <div class="container">
-                <div class="navbar-translate">
-                    <a class="navbar-brand" href="#"><img src="assets/images/spaceBig.png"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-bar bar1"></span>
-                        <span class="navbar-toggler-bar bar2"></span>
-                        <span class="navbar-toggler-bar bar3"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse justify-content-end" id="top-navbar">
-                    <div class="navbar-collapse-header">
-                        <div class="row">
-                            <div class="col-6 collapse-brand">
-                                <a>
-                                    <img src="assets/images/spaceBig.png">
-                                </a>
-                            </div>
-                            <div class="col-6 collapse-close text-right">
-                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
-                                    aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
+    <header><!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="#"><img src="assets/images/spaceBig.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="top-navbar">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a>
+                                <img src="assets/images/spaceBig.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close text-right">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
+                                aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
+                                <i class="fas fa-times"></i>
+                            </button>
                         </div>
                     </div>
-                    <ul class="navbar-nav text-capitalize">
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                wine
-                            </a>
-                            <div class="dropdown-menu ">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <p class="dropdown-header">Wine Types</p>
-                                        <div class="dropdown-divider"></div>
-                                    </div>
-
-                                    <div class="col-3">
-                                        <p class="dropdown-header">Top Brand</p>
-                                        <div class="dropdown-divider"></div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-3 wrap-column">
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-                                    </div>
-
-                                    <div class="col-3">
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </li>
-
-
-
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                beer
-                            </a>
-                            <div class="dropdown-menu">
-                                <p class="dropdown-header">Wine Types</p>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    White Wine
-                                </a>
-                                <a href="examples/register-page.html" class="dropdown-item">
-                                    Rosé Wine
-                                </a>
-                                <a href="examples/landing-page.html" class="dropdown-item">
-                                    Champagne
-                                </a>
-                                <a href="examples/profile-page.html" class="dropdown-item">
-                                    Dessert and Fortified Wine
-                                </a>
-                            </div>
-                        </li>
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                spirits
-                            </a>
-                            <div class="dropdown-menu">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <p class="dropdown-header">Wine Types</p>
-                                        <div class="dropdown-divider"></div>
-                                    </div>
-
-                                    <div class="col-3">
-                                        <p class="dropdown-header">Top Brand</p>
-                                        <div class="dropdown-divider"></div>
-
-                                    </div>
-                                    <div class="col-3">
-                                        <p class="dropdown-header">Varietals</p>
-                                        <div class="dropdown-divider"></div>
-
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-3 wrap-column">
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-                                    </div>
-
-                                    <div class="col-3">
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-
-                                    </div>
-                                    <div class="col-3">
-                                        <a href="#" class="dropdown-item">
-                                            White Wine
-                                        </a>
-                                        <a href="examples/register-page.html" class="dropdown-item">
-                                            Rosé Wine
-                                        </a>
-                                        <a href="examples/landing-page.html" class="dropdown-item">
-                                            Champagne
-                                        </a>
-                                        <a href="examples/profile-page.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
-                                        </a>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                Liquor
-                            </a>
-                            <div class="dropdown-menu">
-                                <p class="dropdown-header">Wine Types</p>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    White Wine
-                                </a>
-                                <a href="examples/register-page.html" class="dropdown-item">
-                                    Rosé Wine
-                                </a>
-                                <a href="examples/landing-page.html" class="dropdown-item">
-                                    Champagne
-                                </a>
-                                <a href="examples/profile-page.html" class="dropdown-item">
-                                    Dessert and Fortified Wine
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
-                        <div class="input-group mb-0">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text text-darker" id="search-bar"><i class="icons fas fa-search"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Seach Me" id="search-bar-form">
-                        </div>
-                    </ul>
-
-
-                    <!-- Location Search / Map -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <i class="icons fas fa-map-marker-alt"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
-                                <p class="pl-0">Enter Your Address</p>
-                                <div class="form-group m-2">
-                                    <input type="text" value="" placeholder="Address" class="form-control mb-3" />
-                                    <input class="btn btn-primary p-3" type=submit value="Search Store">
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#sign-in" data-toggle="modal" data-target="#sign-in">
-                                <i class="icons far fa-user"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="./shopping-card.html" class="nav-link">
-                                <i class="icons fas fa-shopping-cart" style="margin-left: -2px;"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
+                <ul class="navbar-nav text-capitalize">
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
+                            wine
+                        </a>
+                        <div class="dropdown-menu ">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="dropdown-header">Wine Types</p>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+    
+                                <div class="col-3">
+                                    <p class="dropdown-header">Top Brand</p>
+                                    <div class="dropdown-divider"></div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-3 wrap-column">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+    
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+                                </div>
+    
+                                <div class="col-3">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+    
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                    </li>
+    
+                    <!-- Catogory -->
+    
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
+                            beer
+                        </a>
+                        <div class="dropdown-menu">
+                            <p class="dropdown-header">Wine Types</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                White Wine
+                            </a>
+                            <a href="examples/register-page.html" class="dropdown-item">
+                                Rosé Wine
+                            </a>
+                            <a href="examples/landing-page.html" class="dropdown-item">
+                                Champagne
+                            </a>
+                            <a href="examples/profile-page.html" class="dropdown-item">
+                                Dessert and Fortified Wine
+                            </a>
+                        </div>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
+                            spirits
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="dropdown-header">Wine Types</p>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+    
+                                <div class="col-3">
+                                    <p class="dropdown-header">Top Brand</p>
+                                    <div class="dropdown-divider"></div>
+    
+                                </div>
+                                <div class="col-3">
+                                    <p class="dropdown-header">Varietals</p>
+                                    <div class="dropdown-divider"></div>
+    
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-3 wrap-column">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+                                </div>
+    
+                                <div class="col-3">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+    
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="examples/register-page.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="examples/landing-page.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="examples/profile-page.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                    </li>
+    
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
+                            Liquor
+                        </a>
+                        <div class="dropdown-menu">
+                            <p class="dropdown-header">Wine Types</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                White Wine
+                            </a>
+                            <a href="examples/register-page.html" class="dropdown-item">
+                                Rosé Wine
+                            </a>
+                            <a href="examples/landing-page.html" class="dropdown-item">
+                                Champagne
+                            </a>
+                            <a href="examples/profile-page.html" class="dropdown-item">
+                                Dessert and Fortified Wine
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
+                    <div class="input-group mb-0">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text text-darker" id="search-bar"><i class="icons fas fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Seach Me" id="search-bar-form">
+                    </div>
+                </ul>
+    
+    
+                <!-- Location Search / Map -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="icons fas fa-map-marker-alt"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
+                            <p class="pl-0 font-2">Enter Your Address</p>
+                            <div class="form-group m-2">
+                                <input type="text" value="" placeholder="Address" class="form-control mb-3" />
+                                <input class="btn btn-primary p-3 font-2" type=submit value="Search Store">
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                            <i class="icons far fa-user"></i>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="./shopping-card.html" class="nav-link">
+                            <i class="icons fas fa-shopping-cart" style="margin-left: -2px;"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
     <!-- End Navbar -->
                             
@@ -332,101 +331,9 @@
             <div class="row">
                 <!-- Cart -->
                 <div class="col-md-7 shadow p-0 ml-3 mr-3">
-                    <table class="table">
-                        <thead class="thead-light">
-                            <tr>
-                                    <th scope="col">Items</th>
-                                    <th scope="col">Details</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Options</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            
-                        <tbody>
-                            <form role="form">
-                                <tr class="border-lg-bottom">
-                                    <td>
-                                        <div class="col-3 mw-100">
-                                            <img src="./assets/images/wine.jpg" alt="">
-                                        </div>
-                                    </td>
-                                    
-                                    <td>
-                                       <h5> Espolòn Reposado </h5>
-                                        <p> 750ml Bottle </p>
-                                        <br>
-                                        <a href="#">Remove</a>
-                                    </td>
-                                    <td>
-                                        <div class="form-group col-4 mw-100">
-                                            <label for="quantity">
-                                                Quantity
-                                            </label>
-                                            <!-- Default Quantity value -->
-                                            <input type="number" class="form-control" value="1" />
-                                        </div>
-                                    </td>
-                                    <td> Pick Up </td>
-                                    <td> RM 48.90 </td>
-                                </tr>
-                              <tr class="border-lg-bottom">
-                                    <td>
-                                        <div class="col-3 mw-100">
-                                            <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20"
-                                                alt="">
-                                        </div>
-                                    </td>
-                                    
-                                    <td>
-                                        <h5> Espolòn Reposado </h5>
-                                        <p> 750ml Bottle </p>
-                                        <br>
-                                        <a href="#">Remove</a>
-                                    </td>
-                                    <td>
-                                        <div class="form-group col-4 mw-100">
-                                            <label for="quantity">
-                                                Quantity
-                                            </label>
-                                            <!-- Default Quantity value -->
-                                            <input type="number" class="form-control" value="1" />
-                                        </div>
-                                    </td>
-                                    <td> Delivery </td>
-                                    <td> RM 48.90 </td>
-                                </tr>
-                              <tr class="border-lg-bottom">
-                                    <td>
-                                        <div class="col-3 mw-100">
-                                            <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20"
-                                                alt="">
-                                        </div>
-                                    </td>
-                                    
-                                    <td> 
-                                        <h5> Espolòn Reposado </h5>
-                                        <p> 750ml Bottle </p>
-                                        <br>
-                                        <a href="#">Remove</a>
-                                    </td>
-                                    <td>
-                                        <div class="form-group col-4 mw-100">
-                                            <label for="quantity">
-                                                Quantity
-                                            </label>
-                                            <!-- Default Quantity value -->
-                                            <input type="number" class="form-control" value="1" />
-                                        </div>
-                                    </td>
-                                    <td> Delivery </td>
-                                    <td> RM 48.90 </td>
-                                </tr>
-                            </form>
-                        </tbody>
-                    </table>
+                  
                     <div class="border-lg-tb text-right">
-                         <h5 class="p-2 m-2">Subtotal (3 items) RM 48.90</h5>
+                         <h4 class="p-2 m-2">Subtotal (3 items) RM 48.90</h4>
                     </div>
                     
 
@@ -461,8 +368,8 @@
                                 </tbody>
                             </table>
                             <div class="text-center row justify-content-center">
-                                <button class="btn btn-primary m-3">Proceed To Checkout</button>
-                                <div class="form-check mb-3">
+                                <a href="./checkout.html" class="btn btn-primary m-3">Proceed To Checkout</a >
+                                <div class="form-check mb-3 m-2">
                                     <label class="form-check-label">
                                         <input class="form-check-input" type="checkbox" id="hide-check" onclick="hideForm('hidePromo','hide-check')">
                                         <span class="form-check-sign"></span>
@@ -471,15 +378,15 @@
                                 </div>
 
                                 <div class="form-group mb-3 mw-200" id="hidePromo">
-                                    <div class="input-group">
-                                        <input class="form-control" placeholder="Promo Code" type="text">
-                                    </div>
+                                    <input class="form-control" placeholder="Promo Code" type="text">
                                 </div>
+              
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+                                   
         <!-- End Content -->
 
 
@@ -841,6 +748,11 @@
                         <li class="nav-item">
                             <a href="./product-profile.html" class="nav-link">
                                 <h4> Product Profile </h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./purchased.html" class="nav-link">
+                                <h4> Purchased items </h4>
                             </a>
                         </li>
                     </ul>

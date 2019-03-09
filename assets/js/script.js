@@ -325,9 +325,13 @@ function hideForm(hideForm, hideCheck) {
 
   if (hiddenCheck.checked) {
     hiddenForm.style.display = "block"
+    hiddenForm.classList.remove("d-none")
+    hiddenForm.classList.add("d-block")
   }
   else {
     hiddenForm.style.display = "none"
+    hiddenForm.classList.add("d-none")
+    hiddenForm.classList.remove("d-block")
   }
 
 }

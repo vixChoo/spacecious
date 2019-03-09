@@ -12,6 +12,7 @@
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
@@ -68,7 +69,7 @@
                     </div>
                     <ul class="navbar-nav text-capitalize">
                         <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
                                 wine
                             </a>
                             <div class="dropdown-menu ">
@@ -147,10 +148,10 @@
                             </div>
                         </li>
 
-
+                        <!-- Catogory -->
 
                         <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
                                 beer
                             </a>
                             <div class="dropdown-menu">
@@ -171,7 +172,7 @@
                             </div>
                         </li>
                         <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
                                 spirits
                             </a>
                             <div class="dropdown-menu">
@@ -257,7 +258,7 @@
                         </li>
 
                         <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <a href="#" class="dropdown-toggle nav-link font-2" data-toggle="dropdown">
                                 Liquor
                             </a>
                             <div class="dropdown-menu">
@@ -296,10 +297,10 @@
                                 <i class="icons fas fa-map-marker-alt"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
-                                <p class="pl-0">Enter Your Address</p>
+                                <p class="pl-0 font-2">Enter Your Address</p>
                                 <div class="form-group m-2">
                                     <input type="text" value="" placeholder="Address" class="form-control mb-3" />
-                                    <input class="btn btn-primary p-3" type=submit value="Search Store">
+                                    <input class="btn btn-primary p-3 font-2" type=submit value="Search Store">
                                 </div>
                             </div>
                         </li>
@@ -323,51 +324,54 @@
     <!-- End Navbar -->
 
     <!-- Content -->
-    <div class="container mt-lg ">
+    <div class="container mt-lg bg-default p-2 font-2">
         <div class="row m-0 justify-content-center">
             <!-- Pick up -->
-            <div class="col-lg-5 border rounded m-2 font mb-3">
-            
-                    <h2 class="p-3 font text-center mb-2">Pick up at store</h2>
-                    <div class="dropdown-divider mb-3"></div>
-                        <h4 class="text-default">Address</h4>
+            <div class="col-lg-5 border rounded m-2 mb-3 h-fit bg-white">
+                <h2 class="p-3 font text-center mb-2">Pick up at store</h2>
+                <div class="dropdown-divider mb-3"></div>
+                    <h4 class="text-default">Location</h4>
                         <p>C Chateau Cafe & Wine Bar</p>
                         <p>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</p>
-                        <h4 class="text-default">Hours:</h4>
+
+                    <h4 class="text-default">Hours:</h4>
                         <p>Open ⋅ Closes :12AM</p>
-                        <h4 class="text-default"> Phone:</h4>
+
+                    <h4 class="text-default"> Phone:</h4>
                         <p>012-929 0108</p>
-                        <div class="border-top text-center mt-3">
-                            <h4 class="p-2 m-2">Subtotal (3 items) RM 48.90</h4>
-                        </div>
-              
-            </div>
-                    
-            <!-- Delivery -->
-            <div class="col-lg-5 border rounded m-2 font">
-              
-                    <h2 class="p-3 text-center mb-2">Delivery</h2>
-                    <div class="dropdown-divider mb-3"></div>
-                    <div class="form-group">
-                        <label for="unit">
-                            Saved Address
-                        </label>
-                            <select class="form-control">
-                            <option selected>None</option>
-                            <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</option>
-                            </select>
+
+                    <div class="border-lg-tb text-center mt-3 mb-3">
+                        <h4 class="p-2 m-2">Subtotal (3 items) RM 48.90</h4>
                     </div>
-                    <h4> Address </h4>
+            </div>
+            
+                    
+            
+            <!-- Delivery -->
+            <div class="col-lg-5 border rounded m-2 bg-white">
+                <h2 class="p-3 text-center mb-2 font">Delivery</h2>
+                 <div class="dropdown-divider mb-3"></div>
+                  <div class="form-group">
+                    <label for="unit">
+                        Saved Address
+                    </label>
+                        <select class="form-control">
+                        <option selected>None</option>
+                        <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</option>
+                        </select>
+                    </div>
+
+                    <h4>Saved Address </h4>
                     <table class="table">
                         <tbody>
-                            <tr>
+                            <tr class="border-lg-tb">
                                 <td scope="row" class="text-justify">
                                    <p> 12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur </p>
                                 </td>
                                 <td>
                                     <div class="form-check mr-3">
                                         <label>
-                                            <input class="form-check-input" type="checkbox">
+                                            <input class="form-check-input" type="checkbox" checked>
                                             <span class="form-check-sign"></span>
                                         </label>
                                     </div>
@@ -375,18 +379,17 @@
                             </tr>
                         </tbody>
                     </table>
-                 
                     
                     <div class="form-check mb-2">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
+                            <input class="form-check-input" type="checkbox" id="hideAddres" onclick="hideForm('hideAdre','hideAddres')">
                             <span class="form-check-sign"></span>
                            Add New Address
                         </label>
                     </div>
-                      <!-- Add New Address Form -->
-                    <div class="">
-                        
+                    
+                    <!-- Add New Address Form -->
+                      <div class="text-center d-none" id="hideAdre">
                         <form class="form">
                             <div class="form-group">
                                 <input type="text" name="firstName" placeholder="First Name" value="" autocomplete="given-name" required="" maxlength=""
@@ -409,36 +412,37 @@
                             <div class="form-group">
                                 <input type="text" name="address2" autocomplete="address-line2" placeholder="Zip Code / Post Code" value="" maxlength="" class="form-control">
                             </div>
-                            
-                                        
-                                            
                             <div class="form-group">
                                 <input type="tel" name="phone" autocomplete="tel-national" placeholder="Phone Number" value="" required="" maxlength="" class="form-control">
                             </div>
-                            
-                            
-                                
-                                
-                                
-                                                
-                                                
-                            
                         </form>
-                        <button type="button" class="btn btn-dark">Add New Address</button>
+                        <button type="button" class="btn btn-info btn-simple m-3">Add New Address</button>
                     </div>
-                           
-                    <div class="border-top text-center">
+                            
+                                        
+                                            
+                    <div class="border-lg-tb text-center">
                         <h4 class="p-2 m-2">Subtotal (3 items) RM 48.90</h4>
                     </div>
-            
+                </div>
+                <div class="text-center m-3 mt-4">
+                    <button class="btn btn-primary font-2">Proceed to payment</button>
+                </div>
             </div>
-
-            
-            
         </div>
-    </div>
+                    
+            <!-- End Content -->
+                            
+                                
+                                
+                                
+                                                
+                                                
+                            
+                           
 
-    <!-- End Content -->
+            
+
 
 
 
@@ -498,7 +502,7 @@
 
 
 
-                    <div class="card-body px-lg-5 py-lg-5">
+                    <div class="card-body px-lg-5">
                         <div class="tab-content" id="sign-in">
                             <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel"
                                 aria-labelledby="tabs-icons-text-1-tab">
@@ -509,6 +513,11 @@
                                 <form role="form">
                                     <div class="form-group mb-3">
                                         <div class="input-group input-group-alternative">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fas fa-envelope"></i>
+                                                </span>
+                                            </div>
                                             <input class="form-control" placeholder="Email" type="email">
                                         </div>
                                     </div>
@@ -661,80 +670,84 @@
 
 <!--  End Modal -->
 
-
-        <footer class="footer mt-lg font">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="assets/images/spaceBig.png">
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="./index.html" class="nav-link">
-                                    <h4> Home </h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./shopping-card.html" class="nav-link">
-                                    <h4>Shopping Cart</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./product-listing.html" class="nav-link">
-                                    <h4> Product Listing </h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./product-profile.html" class="nav-link">
-                                    <h4> Product Profile </h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link ">
-                                    <h4>Blog</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <h4>Contact Us</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <h4>About Us</h4>
-                                </a>
-                            </li>
-        
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="title text-dark">Follow us:</h3>
-                        <div class="btn-wrapper profile">
-                            <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round"
-                                data-toggle="tooltip" data-original-title="Follow us">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                                data-toggle="tooltip" data-original-title="Like us">
-                                <i class="fab fa-facebook-square"></i>
-                            </a>
-                            <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                                data-toggle="tooltip" data-original-title="Follow us">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-        
-                        </div>
-                    </div>
-                </div>
-                <p>Privacy Policy Terms of Service
-                    © Spacecious All Rights Reserved</p>
+<footer class="footer mt-lg font">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/spaceBig.png">
             </div>
-        </footer>
+            <div class="col-md-3">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">
+                            <h4> Home </h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./shopping-card.html" class="nav-link">
+                            <h4>Shopping Cart</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product-listing.html" class="nav-link">
+                            <h4> Product Listing </h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./product-profile.html" class="nav-link">
+                            <h4> Product Profile </h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./purchased.html" class="nav-link">
+                            <h4> Purchased items </h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">
+                            <h4>Blog</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h4>Contact Us</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h4>About Us</h4>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="title text-dark">Follow us:</h3>
+                <div class="btn-wrapper profile">
+                    <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round"
+                        data-toggle="tooltip" data-original-title="Follow us">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round"
+                        data-toggle="tooltip" data-original-title="Like us">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round"
+                        data-toggle="tooltip" data-original-title="Follow us">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <p>Privacy Policy Terms of Service
+            © Spacecious All Rights Reserved</p>
+    </div>
+</footer>
 
 
                 <!-- Owl Carousel -->

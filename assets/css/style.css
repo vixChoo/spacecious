@@ -87,7 +87,8 @@ section {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #525f7f;
@@ -3020,7 +3021,7 @@ input[type="button"].btn-block {
   min-width: 15rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #525f7f;
   text-align: left;
   list-style: none;
@@ -6341,7 +6342,7 @@ button.bg-dark:focus {
 }
 
 .bg-default {
-  background-color: #344675 !important;
+  background-color: #f1f2f6 !important;
 }
 
 a.bg-default:hover,
@@ -9875,6 +9876,11 @@ a.text-darker:focus {
 .font {
    font-family: 'Fjalla One', sans-serif !important;
 }
+.font-2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
 @media print {
   *,
   *::before,
@@ -11397,7 +11403,7 @@ fieldset[disabled] .btn-link.active {
 
 .dropdown-menu .dropdown-item,
 .bootstrap-select .dropdown-menu.inner li a {
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding-top: .6rem;
   padding-bottom: .6rem;
   margin-top: 5px;
@@ -20217,4 +20223,14 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 .mw-200 {
   max-width: 200px!important;
+}
+.w-fit{
+  width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+}
+.h-fit{
+  height: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  height: -moz-max-content;    /* Firefox/Gecko */
+  height: -webkit-max-content; /* Chrome */
 }
