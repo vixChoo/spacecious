@@ -113,7 +113,6 @@ hr {
 }
 .font-2 {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -544,6 +543,11 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.img-full {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .img-thumbnail {
@@ -4099,7 +4103,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 0.99925rem;
   line-height: 1;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: transparent;
   border: 0.0625rem solid transparent;
   border-radius: 0.25rem;
  
@@ -7789,8 +7793,13 @@ button.bg-darker:focus {
   margin-top: -1rem !important;
 }
 
-.mt--{
+.mt--4{
   margin-top: -1.5rem !important;
+}
+
+
+.mt--100{
+  margin-top: -100px !important;
 }
 
 
@@ -10461,6 +10470,29 @@ fieldset[disabled] .btn-info.active {
   text-decoration: none;
   box-shadow: none;
 }
+
+.btn-light {
+  background: #fff6be;
+  color: #000000 !important;
+  
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.active,
+.btn-light:active:focus,
+.btn-light:active:hover,
+.btn-light.active:focus,
+.btn-light.active:hover {
+  transition: 0.3s ease-in-out;
+  transition: all .15s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0) !important;
+  background-position: right center; /* change the direction of the change here */
+  background: #fff6be !important;
+
+}
+
 
 .btn-warning {
   background: #fcd307;
@@ -13366,7 +13398,7 @@ img {
     width: 22px;
     height: 1px;
     border-radius: 1px;
-    background: #ffffff;
+    background: #000000;
   }
   .navbar .navbar-toggler-bar.navbar-kebab {
     height: 4px;
@@ -17937,23 +17969,6 @@ hr.line-default {
     overflow: auto !important;
   }
 }
-/* Advertisemtnt */
-.ads-box{
-  margin: 10px;
-  min-height: 100px;
-  max-height:300px;
-  max-width:460px;
-  text-align:center;
-  
-}
-
-.ads-box .ads-img{
-  margin: 10px; 
-  border: 0px;
-  max-width: 600px;
-  max-height: 338px;
-}
-
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -20053,8 +20068,28 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   transition: 1.5s ease-in-out;
   -moz-transition: 1.5s ease-in-out;
   -webkit-transition: 1.5s ease-in-out;
+  
+}
+.hover:hover{
+  transition: 0.3s ease-in-out;
+  transition: all .15s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0) !important;
+  background-position: right center; /* change the direction of the change here */
 }
 
+
+/* Advertisemtnt */
+.ads-box{
+  margin: 10px;
+  text-align:center;
+  height: 350px;
+
+}
+
+.landing{
+
+}
+  
 /* Article show images */
 .article-show{
   width:850px;
@@ -20093,12 +20128,44 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: justify !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
  
 }
 .article-show:hover .overlay {
   opacity: 1;
 }
 
+
+@media (min-width: 1000px) {
+   #sideBar {
+    display: block;
+  }
+  .ads-box{
+    height: 400px;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  #search {
+    display: none;
+  }
+
+  #sidebarCollapse{
+    display: block!important;
+  }
+  #sideBar {
+    display: none;
+  
+  }
+  .ads-box{
+    height: 400px;
+  }
+}
 @media (max-width: 768px) {
   .article-show{
     width: 680px;
@@ -20131,6 +20198,25 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 
 /* End Article */
+
+@media (max-width: 768px) {
+  #search {
+    display: none;
+  }
+  #sidebarCollapse {
+  display: block!important;
+  }
+
+  #sideBar {
+    display: none;
+  }
+  .ads-box{
+    height: 250px;
+  }
+ 
+}
+ 
+
 
 @media (max-width: 576px) {
   .article-show{
@@ -20165,11 +20251,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     z-index:1000;
      cursor: pointer;
   }
-
- 
-  
+  .ads-box{
+    height: 205px;
+  }
 }
-
 
 @media (max-width: 375px) {
   .article-show {
@@ -20178,7 +20263,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     overflow: hidden;
     position: relative;
     height: 240px;
-}
+  }
   .overlay {  
     left: 30%;
     margin-left: -135px;
@@ -20202,7 +20287,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
- 
+     .ads-box{
+    height: 150px;
+  }
+}
     
 /*  search bar */
 @media (max-width: 330px) {
@@ -20253,61 +20341,11 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     transform: translate(-50%, -50%);
 
   }
-  .overlay-text .text-truncate {
+  .overlay-text .text-wrap {
     max-height: 150px;
   }
+
 }
-
-@media (max-width: 768px) {
-  #search {
-    display: none;
-  }
-  #sidebarCollapse {
-  display: block!important;
-  }
-
-  #sideBar {
-    display: none;
-  }
- 
-}
- 
-
-
-@media (max-width: 991.98px) {
-  #search {
-    display: none;
-  }
-
-  #sidebarCollapse{
-    display: block!important;
-  }
-  #sideBar {
-    display: none;
-  }
-  
-}
-
-@media (max-width: 992px) {
-  #search {
-    display: none;
-  }
-
-  #sidebarCollapse{
-    display: block!important;
-  }
-  #sideBar {
-    display: none;
-  
-  }
-}
-
-@media (min-width: 1200px) {
-   #sideBar {
-    display: block;
-  }
-}
-
 
 /* hidden form */
 #hiddenForm {
@@ -20407,3 +20445,77 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   min-height: 250px;
 }
 
+ .background1{
+  width: 100vw;
+  height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+.background1 p{
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase !important;
+  
+  
+}
+
+#slogan {
+  /*background-color: rgba(255,255,255,0.2); */
+  padding: 10px;
+  text-shadow: 0 0 10px black;
+  border-radius: 10px;
+  z-index:2;
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
+
+     
+
+  
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .background1 p, .background2 p{
+    font-size: 6vw;
+    
+  }
+    
+  #slogan {
+    font-size: 6vw;
+    
+  }
+}
