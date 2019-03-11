@@ -2387,7 +2387,7 @@ textarea.form-control {
 .navbar .navbar-nav>a.btn:active:hover,
 .navbar .navbar-nav>a.btn.active:focus,
 .navbar .navbar-nav>a.btn.active:hover {
-  background-color: #263148 !important;
+  background-color: #263148;
   background-image: linear-gradient(to bottom left, #344675, #263148, #344675) !important;
   background-image: -webkit-linear-gradient(to bottom left, #344675, #263148, #344675) !important;
   background-image: -o-linear-gradient(to bottom left, #344675, #263148, #344675) !important;
@@ -2714,17 +2714,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
-  background: #4f9da6;
-  background-image: -webkit-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-image: -o-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-image: -moz-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-image: linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-color: #233142;
+  background-image: -webkit-linear-gradient(to bottom left, #233142, #35477d, #233142);
+  background-image: -o-linear-gradient(to bottom left, #233142, #35477d, #233142);
+  background-image: -moz-linear-gradient(to bottom left, #233142, #35477d, #233142);
+  background-image: linear-gradient(to bottom left, #233142, #35477d, #233142);
   background-size: 210% 210%;
   background-position: top right;
-  background-color: #4f9da6 ;
-  transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
+ 
 }
 
 .btn-dark:hover,
@@ -2735,13 +2734,15 @@ fieldset:disabled a.btn {
 .btn-dark:active:hover,
 .btn-dark.active:focus,
 .btn-dark.active:hover {
-  background-color: #421b9b;
-  background-image: -webkit-linear-gradient(to bottom left, #ba54f5, #35477d, #ba54f5);
-  background-image: -o-linear-gradient(to bottom left, #ba54f5, #35477d, #ba54f5);
-  background-image: -moz-linear-gradient(to bottom left, #ba54f5, #35477d, #ba54f5);
-  background-image: linear-gradient(to bottom left, #ba54f5, #35477d, #ba54f5);
+  background: #4f9da6;
+  background-image: -webkit-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-image: -o-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-image: -moz-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-image: linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
   background-size: 210% 210%;
   background-position: top right;
+  background-color: #4f9da6 ;
+  transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
 }
@@ -4802,6 +4803,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
+
 }
 
 .badge:empty {
@@ -4820,15 +4822,15 @@ input[type="button"].btn-block {
 }
 
 .badge-primary {
-  color: #ffffff;
-  background-color: #e14eca;
+  color: #000000;
+  background-color: #eccc68;
 }
 
 .badge-primary[href]:hover,
 .badge-primary[href]:focus {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
-  background-color: #d725bb;
+  background-color: #fff6be;
 }
 
 .badge-secondary {
@@ -4846,7 +4848,7 @@ input[type="button"].btn-block {
   color: black;
   background-color: #e7e6e1;
 }
-  
+
 
 .badge-success {
   color: #ffffff;
@@ -4897,8 +4899,15 @@ input[type="button"].btn-block {
 }
 
 .badge-light {
-  color: #ffffff;
-  background-color: #adb5bd;
+  color: #525f7f;
+  background-color: #e9ecef;
+  border-color: #e3e3e3;
+}
+
+.badge-light a{
+  color: #525f7f;
+  background-color: #e9ecef;
+  border-color: #e3e3e3;
 }
 
 .badge-light[href]:hover,
@@ -6360,7 +6369,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #474787 !important;
 }
 
 a.bg-dark:hover,
@@ -6443,6 +6452,9 @@ button.bg-darker:focus {
 .border {
   border: 0.0625rem solid black !important;
 }
+.border-md {
+  border: 0.1rem solid black !important;
+}
 
 .border-top {
   border-top: 0.0625rem solid #666b71 !important;
@@ -6497,7 +6509,7 @@ button.bg-darker:focus {
 }
 
 .border-warning {
-  border-color: #ff8d72 !important;
+  border-color: #fcd307 !important;
 }
 
 .border-danger {
@@ -7546,6 +7558,8 @@ button.bg-darker:focus {
   max-height: 100% !important;
 }
 
+
+
 .m-0 {
   margin: 0 !important;
 }
@@ -8073,6 +8087,9 @@ button.bg-darker:focus {
   margin-left: auto !important;
 }
 
+.m-center {
+  margin: 0 auto;
+}
 @media (min-width: 576px) {
   .m-sm-0 {
     margin: 0 !important;
@@ -9759,6 +9776,9 @@ button.bg-darker:focus {
   }
 }
 
+.text-space {
+  letter-spacing: 0.05rem;
+}
 .text-lowercase {
   text-transform: lowercase !important;
 }
@@ -9810,7 +9830,7 @@ a.text-secondary:focus {
 }
 
 .text-success {
-  color: #00f2c3 !important;
+  color: #10ac84 !important;
 }
 
 a.text-success:hover,
@@ -9819,9 +9839,8 @@ a.text-success:focus {
 }
 
 .text-info {
-  color: #1d8cf8 !important;
+  color: #17a2b8!important;
 }
-
 a.text-info:hover,
 a.text-info:focus {
   color: #0772db !important;
@@ -10229,10 +10248,10 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-success {
   background: #00f2c3;
-  background-image: -webkit-linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
-  background-image: -o-linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
-  background-image: -moz-linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
-  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
+  background-image: -webkit-linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
+  background-image: -o-linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
+  background-image: -moz-linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
+  background-image: linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
   background-size: 210% 210%;
   background-position: top right;
   background-color: #00f2c3;
@@ -10254,11 +10273,11 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active:hover,
 .btn-success.active:focus,
 .btn-success.active:hover {
-  background-color: #0098f0 !important;
-  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3) !important;
-  background-image: -webkit-linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3) !important;
-  background-image: -o-linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3) !important;
-  background-image: -moz-linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3) !important;
+  background-color: #01a3a4 !important;
+  background-image: linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -webkit-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -o-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -moz-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
   color: #ffffff;
   box-shadow: none;
 }
@@ -16589,7 +16608,7 @@ textarea.form-control:active {
 }
 
 .info .info-title {
-  color: #ffffff;
+  color: #525f7f;
   margin: 1.75rem 0 0.875rem;
 }
 
@@ -20145,12 +20164,21 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 
 
+@media (min-width: 1024px) {
+  .flex-lap-row {
+    flex-direction: row !important;
+  }
+}
+
 @media (min-width: 1000px) {
   #row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+  }
+  .product-card img{
+    height: 217px;
   }
 }
 
@@ -20241,7 +20269,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
  
  
 }
- 
+
 @media (min-width: 765px) {
 
   #row{
@@ -20292,6 +20320,17 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
    #row{
     flex-direction: row !important;
   }
+  .product-list{
+    padding: 0;
+  }
+  .product-card{
+    padding: 0;
+    margin-bottom:3rem;
+  }
+  .product-card img{
+    height:245px;
+  }
+  
 }
 
 @media (max-width: 375px) {
@@ -20327,6 +20366,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   }
      .ads-box{
     height: 150px;
+  }
+    .product-card img{
+    height:217px;
   }
 }
     
@@ -20381,6 +20423,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   }
   .overlay-text .text-wrap {
     max-height: 150px;
+  }
+  .product-card img{
+    height:195px;
   }
 
 }
@@ -20560,4 +20605,5 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   }
 }
     
+
 
