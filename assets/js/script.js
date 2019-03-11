@@ -405,7 +405,3 @@ function hideDiv(hideDiv) {
     });
   };
 }(jQuery));
-
-$(window).scroll(function(){
-  $('.background1').bgscroll({ direction: 'top' });
-  })

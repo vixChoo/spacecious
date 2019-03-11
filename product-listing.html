@@ -331,8 +331,8 @@
                 <p class="text-white mb-0 animated fadeInUp">Shop Beer, Wine & Liquor </p>
                 <p class="text-white mb-0 animated fadeInUp">1-Hour Delivery. Free Pickup. Shipping</p>
                 <div class="form-inline m-2" >
-                    <input type="text" value="" placeholder="Enter Your Address" class="form-control strong" style="background-color:white; margin-right: -10px;" />
-                    <input class="btn btn-light text-uppercase font-2 strong" type=submit value="Search Store">
+                    <input type="text" value="" placeholder="Enter Your Address" class="form-control strong bg-white rounded-sm border-0" style=" margin-right: -10px;" />
+                    <input class="btn btn-light text-uppercase font-2 strong rounded-sm" style="padding-top: 9px;" type=submit value="Search Store">
                 </div>
         </div>
 
@@ -343,7 +343,7 @@
             
         <!-- Product Listing -->
         <!-- Top Header -->
-        <div class="container-fluid mb-5 p-3 bg-primary">
+        <div class="container-fluid mb-5 p-3 bg-default">
             <div class="container row">
                   <div class="col-8 col-lg-6 m-2 ml-5 p-2 ">
                       <h1 class="ml-2 font-2">All Categories</h1>
@@ -356,9 +356,9 @@
                           <span class="badge badge-light mr-2"><a href="#" class="text-white">Extras</a></span>
                         </div>
                     </div>
-                    <div align="right" class="col-lg-3 form-group ml-lg">
+                    <div align="right" class="col-lg-3 form-group ml-md float-right">
                         <label for="unit">Sort By</label>
-                        <select class="form-control">
+                        <select class="form-control bg-white text-uppercase">
                             <option selected>Relevance</option>
                             <option>Price: High to Low</option>
                             <option>Price: Low to High</option>
@@ -1059,6 +1059,11 @@
             }, 1000);
         }
     }
+
+    $(window).scroll(function () {
+        $('.background1').bgscroll({ direction: 'top' });
+    })
+
     
 
         </script>

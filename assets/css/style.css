@@ -6316,7 +6316,7 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #1d8cf8 !important;
+  background-color: #537791 !important;
 }
 
 a.bg-info:hover,
@@ -6370,8 +6370,10 @@ button.bg-dark:focus {
   background-color: #0a0c0d !important;
 }
 
-.bg-default {
-  background-color: #f1f2f6 !important;
+.bg-default {  
+ background-color: #c6cfff; 
+ /* background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+ background-blend-mode: soft-light,screen; */
 }
 
 a.bg-default:hover,
@@ -6560,6 +6562,10 @@ button.bg-darker:focus {
 
 .rounded-0 {
   border-radius: 0 !important;
+}
+.rounded-sm {
+  border-radius: 1px !important;
+  
 }
 
 .clearfix::after {
@@ -20140,12 +20146,22 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 
 @media (min-width: 1000px) {
+  #row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 1000px) {
    #sideBar {
     display: block;
   }
   .ads-box{
-    height: 400px;
+    height: 350px;
   }
+  
 }
 
 
@@ -20163,8 +20179,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   
   }
   .ads-box{
-    height: 400px;
+    height: 350px;
   }
+ 
 }
 @media (max-width: 768px) {
   .article-show{
@@ -20193,11 +20210,15 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     z-index:1000;
      cursor: pointer;
   }
-
  
 }
 
 /* End Article */
+
+ #quantity{
+    max-width: 150px;
+  }
+
 
 @media (max-width: 768px) {
   #search {
@@ -20213,9 +20234,23 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .ads-box{
     height: 250px;
   }
+
+  #quantity{
+    max-width: 100px;
+  }
+ 
  
 }
  
+@media (min-width: 765px) {
+
+  #row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
 
 
 @media (max-width: 576px) {
@@ -20253,6 +20288,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   }
   .ads-box{
     height: 205px;
+  }
+   #row{
+    flex-direction: row !important;
   }
 }
 
@@ -20413,10 +20451,13 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   flex-wrap: wrap;
 } */
 
-.mw-100 {
+.mw-1 {
   max-width: 100px!important;
 }
-.mw-200 {
+.mw-2 {
+  max-width: 150px!important;
+}
+.mw-3 {
   max-width: 200px!important;
 }
 
@@ -20509,9 +20550,8 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   
 /* Responsive */
 @media only screen and (max-width: 768px) {
-  .background1 p, .background2 p{
+  .background1 p{
     font-size: 6vw;
-    
   }
     
   #slogan {
@@ -20519,3 +20559,5 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     
   }
 }
+    
+

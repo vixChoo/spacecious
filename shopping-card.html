@@ -327,23 +327,101 @@
 
 
     <!-- Content -->
-        <div class="container mt-lg">
-            <p class="badge badge-warning float-right text-darker">DELIVERD WITHIN 60 MINS</p>
-            <h1 class="p-4 mb-0 font bg-secondary">Cart</h1>
+    <div class="container mt-lg">
+      <p class="badge badge-warning float-right text-darker">DELIVERD WITHIN 60 MINS</p>
+        <h1 class="p-4 mb-0 font bg-secondary">Cart</h1>
             <div class="row">
                 <!-- Cart -->
                 <div class="col-md-7 shadow p-0 ml-3 mr-3">
-                  
-                    <div class="border-lg-tb text-right">
+                    <div class="form-check mb-3 p-2 text-right">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">
+                            <span class="form-check-sign"></span>
+                                <i class="fas fa-gift"></i>
+                                Is this a gift?
+                        </label>
+                    </div>
+                <div class="form-group w-100 mb-0" >
+                            <select class="form-control strong border-0 bg-info text-white rounded-sm">
+                                <option>DELIVERY</option>
+                                <option selected>PICK UP</option>
+                            </select>
+                        </div>
+                 
+                        <p class="pr-3 pl-3 p-2 bg-secondary w-100">Open: 3PM | Closes: 12AM </p>
+                    <div class="row">
+                        <div class="col-4 col-md-3 p-3 d-flex align-items-center">
+                                <img src="./assets/images/wine.jpg" alt="">
+                        </div>
+                        
+                        <div id="row">
+                            <div class="col-md-6 p-2">
+                                <p> Espolòn Reposado </p>
+                                <h5> 750ml Bottle </h5>
+                                <a href="#">Remove</a>
+                            </div>
+                            
+                                
+                            <div class="col-md-6 p-2">
+                                <div class="form-group col-4" id="quantity">
+                                    <label for="quantity">
+                                        Quantity
+                                    </label>
+                                    <!-- Default Quantity value -->
+                                    <input type="number" class="form-control" value="1" />
+                                </div>
+                            </div>
+                        </div>
+                                <div class="col-3 p-2">
+                                     <p class="text-right pr-1">RM 48.80</p>
+                                </div>
+                    </div>
+                    <div class="border-lg-top"></div>
+                    
+                        <div class="form-group w-100 mb-0">
+                            <select class="form-control strong border-0 bg-info text-white rounded-sm ">
+                                <option selected>DELIVERY</option>
+                                <option disabled>PICK UP (NOT AVAILABLE)</option>
+                            </select>
+                        </div>
+                        <p class="pr-3 pl-3 p-2 bg-secondary w-100 mt-0"> Today, 8am - 9am </p>
+                        
+                    <div class="row">
+                        <div class="col-4 col-md-3 p-3 d-flex align-items-center">
+                                <img src="./assets/images/wine.jpg" alt="">
+                        </div>
+                        
+                        <div id="row">
+                            <div class="col-md-6 p-2">
+                                <p> Espolòn Reposado </p>
+                                <h5> 750ml Bottle </h5>
+                                <a href="#">Remove</a>
+                            </div>
+                                
+                            <div class="col-md-6 p-2">
+                                <div class="form-group col-4" id="quantity">
+                                    <label for="quantity">
+                                        Quantity
+                                    </label>
+                                    <!-- Default Quantity value -->
+                                    <input type="number" class="form-control" value="1" />
+                                </div>
+                            </div>
+                        </div>
+                                <div class="col-3 p-2">
+                                     <p class="text-right pr-1">RM 48.80</p>
+                                </div>
+                    </div>
+                    <div class="border-lg-top"></div>
+                    
+                    <div class="border-lg-tb mt-sm text-right">
                          <h4 class="p-2 m-2">Subtotal (3 items) RM 48.90</h4>
                     </div>
-                    
-
                 </div>
                             
 
                 <!-- Order Summary -->
-                <div class="col-md-4 bg-secondary card ml-3">
+                <div class="col-md-4 bg-secondary card ml-3 h-fit">
                     <div class="card-header text-center strong">
                         Order Summary
                     </div>
@@ -379,7 +457,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="form-group mb-3 mw-200 d-none" id="hidePromo">
+                                    <div class="form-group mb-3 mw-3 d-none" id="hidePromo">
                                         <input class="form-control" placeholder="Promo Code" type="text">
                                     </div>
                             </div>
