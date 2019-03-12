@@ -9737,7 +9737,7 @@ button.bg-darker:focus {
   text-align: center !important;
 }
 .text-cross {
-   text-decoration: line-through;
+  text-decoration: line-through;
 }
 @media (min-width: 576px) {
   .text-sm-left {
@@ -14829,11 +14829,11 @@ hr {
 .pagination .page-item.active>.page-link,
 .pagination .page-item.active>.page-link:focus,
 .pagination .page-item.active>.page-link:hover {
-  background: #c6cbef;
-  background-image: -webkit-linear-gradient(to bottom left, #c6cbef, #022c43, #c6cbef);
-  background-image: -o-linear-gradient(to bottom left, #c6cbef, #022c43, #c6cbef);
-  background-image: -moz-linear-gradient(to bottom left, #c6cbef, #022c43, #c6cbef);
-  background-image: linear-gradient(to bottom left, #c6cbef, #022c43, #c6cbef);
+  background: #69779b;
+  background-image: -webkit-linear-gradient(to bottom left, #69779b, #022c43, #69779b);
+  background-image: -o-linear-gradient(to bottom left, #69779b, #022c43, #69779b);
+  background-image: -moz-linear-gradient(to bottom left, #69779b, #022c43, #69779b);
+  background-image: linear-gradient(to bottom left, #69779b, #022c43, #69779b);
   background-size: 210% 210%;
   background-position: top right;
 
