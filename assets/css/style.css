@@ -14189,11 +14189,11 @@ hr {
   margin-top: 5px;
 }
 
-.table .form-check label .form-check-sign::before,
+/* .table .form-check label .form-check-sign::before,
 .table .form-check label .form-check-sign::after {
   top: -17px;
   left: 4px;
-}
+} */
 
 .table .btn {
   margin: 0;
@@ -16638,7 +16638,7 @@ textarea.form-control:active {
 }
 
 .info p {
-  color: rgba(222, 222, 222, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   line-height: 24px;
 }
 
@@ -19589,7 +19589,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 
 .card label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-bottom: 5px;
 }
 

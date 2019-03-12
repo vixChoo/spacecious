@@ -326,6 +326,14 @@
 
     <!-- Start Content -->
     <div class="container-fluid mt-lg mb-0 p-2 font-2">
+        <div class="form-check mb-3 p-2 text-center">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="gift-check" onclick="scrollToGift()">
+                <span class="form-check-sign"></span>
+                <i class="fas fa-gift"></i>
+                Is this a gift?
+            </label>
+        </div>
         <div class="row m-0 justify-content-center">
             <!-- Pick up -->
             <div class="col-lg-5 rounded m-2 mb-3 h-fit bg-white border card rounded-sm">
@@ -352,6 +360,66 @@
             <div class="col-lg-5 rounded m-2 bg-white border card rounded-sm">
                 <h2 class="p-3 text-center mb-2 font">Delivery</h2>
                  <div class="dropdown-divider mb-3"></div>
+
+                    <!-- Gift form -->
+                    <div class=" info pt-2 d-none" id="gift-form">
+                        <h1 class="text-center m-3 animated fadeInUp"><i class="fas fa-gift text-danger"></i></h1>
+                        <form class="form">
+                            <div class="form-group mb-3">
+                                <label class="text-danger strong" for="firstName">Recipient Details</label>
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                    <input class="form-control" placeholder="First Name" value='' type="text">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                    <input class="form-control" placeholder="Last Name" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group mb-1">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                    <input class="form-control" placeholder="Email" type="email">
+                                </div>
+                            </div>
+                            <small class="text-muted strong">For either recipient scheduling or confirmation of surprise gifts</small>
+                    
+                            <div class="form-group mt-2 mb-1">
+                                <input type="tel" name="phone" autocomplete="tel-national" placeholder="Phone Number" value="" required=""
+                                    maxlength="" class="form-control">
+                            </div>
+                            <small class="text-muted strong mb-3">Used to contact recipient in case of delivery issues</small>
+                    
+                    
+                            <div class="form-group mt-2 mb-1">
+                                <input type="text" name="phone" autocomplete="text" placeholder="# Unit" value="" required="" maxlength=""
+                                    class="form-control">
+                            </div>
+                    
+                            <div class="form-group mt-2 mb-1">
+                                <label for="message">Gift Message</label>
+                                <textarea type="text" name="phone" autocomplete="text" placeholder="Enter heartwarming gift message" value=""
+                                    required="" maxlength="250" class="form-control"></textarea>
+                            </div>
+                            <small class="text-muted strong mb-3">Max 250 words</small>
+                        </form>
+                    </div>
+
+                    <!-- Address -->
                   <div class="form-group">
                     <label for="unit">
                         Saved Address
@@ -388,6 +456,7 @@
                            Add New Address
                         </label>
                     </div>
+
                     
                     <!-- Add New Address Form -->
                       <div class="text-center d-none" id="hideAdre">
@@ -420,43 +489,26 @@
                         <button type="button" class="btn btn-info btn-simple m-3">Add New Address</button>
                     </div>
                             
-                                        
-                                            
+                 
                     <div class="border-lg-tb mb-sm text-center">
                         <h4 class="p-2 m-2">Subtotal (3 items) : RM 48.90</h4>
                     </div>
                 </div>
+
+
+               
+
+            </div>
+
                 <div class="text-center m-3 mt-4">
                     <a href="./card-payment.html" class="btn btn-primary font-2 strong text-uppercase">Proceed to payment</a>
                 </div>
-            </div>
-        </div>
-                    
-            <!-- End Content -->
-                            
-                                
-                                
-                                
-                                                
-                                                
-                            
-                           
-
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+                <!-- End Content -->
+                            
+                                
+                           
 <!-- Form Modal -->
 <div class="modal fade modal-black" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -752,15 +804,39 @@
 
 
                 <!-- Owl Carousel -->
-                <sript src="./assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js">
-                    </script>
+                <sript src="./assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
                     <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
 
                     <!--   Core JS Files   -->
                     <script src="./assets/js/script.js" type="text/javascript"></script>
                     <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 
-                 
+                 <script>
+
+
+                        const giftCheck = document.getElementById("gift-check")
+                        const hiddenDiv = document.getElementById("gift-form");
+
+                       function scrollToGift() {
+
+                         
+                           if (giftCheck.checked) { 
+                               hiddenDiv.style.display = "block"
+                               hiddenDiv.classList.remove("d-none")
+                               hiddenDiv.classList.add("d-block")
+                                $("html, body").animate({
+                                scrollTop: $('#gift-form').offset().top - 55
+                            }, 1000);
+                            }
+                            else {
+                                hiddenDiv.style.display = "none"
+                                hiddenDiv.classList.add("d-none")
+                                hiddenDiv.classList.remove("d-block")
+                            }
+
+                        }
+
+                 </script>
 
     </body>
 
