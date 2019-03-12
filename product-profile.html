@@ -294,12 +294,24 @@
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                             <i class="icons fas fa-map-marker-alt"></i>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
-                            <p class="pl-0 font-2">Enter Your Address</p>
-                            <div class="form-group m-2">
-                                <input type="text" value="" placeholder="Address" class="form-control mb-3" />
-                                <input class="btn btn-primary p-3 font-2" type=submit value="Search Store">
-                            </div>
+                        <div class="dropdown-menu dropdown-menu-right col-6 col-lg-4 text-center">
+                            <form class="form">
+                                <label class="text-left bg-white" for="quantity">
+                                    Enter Your Address
+                                </label>
+                                    <div class="form-group m-2 text-center">
+                                        <input type="text" value="" placeholder="Address" class="form-control" />
+                                    </div>
+                                       
+                                    <div class="form-group m-2 text-center">
+                                        <select class="form-control">
+                                            <option selected>Saved Address</option>
+                                            <option>None</option>
+                                            <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</option>
+                                        </select>
+                                        <input class="btn btn-primary m-2 font-2 text-uppercase strong" type=submit value="Search Store" >
+                                    </div>
+                            </form>
                         </div>
                     </li>
     
@@ -357,7 +369,7 @@
                         <div class="col-lg-6 p-0">
                             <h1 class="ml-2 pl-2">Cloud Break Chardonnay</h1>
                             <div class="row ml-2 ">
-                                <h2 class="text-danger strong mb-1 pl-2">RM 188.09</h2>
+                                <h2 class="text-danger strong mb-1 pl-2">RM 188.09++</h2>
                                 <div class="row mt--3 ml-1" >
                                     <a href="javascript:void(0)" onclick="scrollToReview()" class="strong ml-1 mr-2 pt-1 btn btn-link btn-warning text-star" >
                                         <i class="fas fa-star ml-1 pt-2"></i>
@@ -378,69 +390,73 @@
                             </div>
                             
                             
-                            
+                            <!-- Pick up & Delivery -->
                                 <div class="row border border-default rounded p-2 m-2">
-                                    <div class="container p-2">
-                                        <h3 class="text-capitalize m-0"> Pick up in store</h3>
-                                            <hr>
-                                            <span class="badge badge-success mb-2 text-space">In Stock</span>
-                                            <h4>C Chateau Cafe & Wine Bar</h4>
-                                            <a class="text-info" href="https://www.google.com/maps/place/C+Chateau+Cafe+%26+Wine+Bar/@3.1145208,101.6770601,13z/data=!4m5!3m4!1s0x31cc4a6a4c825bc7:0x27b2aaa3653a42f8!8m2!3d3.0891648!4d101.6867376" class="text-justify mb-2" title="Google Map">12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur
-                                                <i class="icons fas fa-map-marker-alt"></i>
-                                            </a>
-                                            <div class="row">
-                                                <p class="m-2 ml-3">Open: 3PM |  Closes: 12AM</p>
-                                                <p class="m-2 float-right">012-929 0108</p>
-                                            </div>
-                                            <div class="row m-2">
-                                                <div class="col-lg-3">
-                                                    <div class="form-group">
-                                                        <label for="quantity">
-                                                            Quantity
-                                                        </label>
-                                                        <input type="number" class="form-control" value="1" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-5">
-                                                    <div class="form-group">
-                                                        <label for="unit">
-                                                            Per unit
-                                                        </label>
+                                    <div class="container">
+                                            <p class="badge badge-warning float-right text-space">DELIVERD WITHIN 60 MINS</p>
+                                            
+                                        <div class="row p-2 mt-sm w-100">
+                                            <h3 class="text-capitalize m-0 ml-2 mr-2"> Pick up in store</h3>
+                                            <a href="javascript:void(0)" class="btn btn-light btn-round p-2 mt--1 mr-0" style="padding-top:9px !important;">OR</a>
+                                            <h3 class="text-capitalize m-0 ml-2 mr-2"> Delivery</h3>
+                                        </div>
+                                        <hr class="w-75">
+                                    </div>
+                                    
+                                    <!-- <div class="container-fluid bg-danger p-4 rounded"> -->
+                                    <div class="container p-2 rounded">
+                                        <form class="form">
+                                            <label class="text-left bg-white" for="quantity">
+                                                Enter Your Address
+                                            </label>
+                                            <div class="form-group m-2 text-center">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-map-marker-alt"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input type="text" value="" placeholder="Address" class="form-control"/>
                                                         <select class="form-control">
-                                                            <option selected>750ml (Single)</option>
-                                                            <option>1.5L (Single)</option>
-                                                            <option>1.0L (Single)</option>
+                                                            <option selected>Saved Address</option>
+                                                            <option>None</option>
+                                                            <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</option>
                                                         </select>
                                                     </div>
+                                                    <input class="btn btn-primary p-3 font-2 text-uppercase strong" id="searchStore" type=submit value="Search Store" onclick="scrollToStore('hide-stores')">
                                                 </div>
-                                            </div>
-                                            
-                                            <div class="row justify-content-center">
-                                                <a href="#" class="btn btn-primary m-4">Add To Cart</a>
-                                                <a href="#" class="btn btn-simple btn-primary m-4">Save To List</a>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
+                                    <!-- </div> -->
 
-                                    <div class="row border border-default rounded p-2 m-2">
-                                        <div class="container p-2">
-                                                <p class="badge badge-warning float-right text-space">DELIVERD WITHIN 60 MINS</p>
-                                            <h3 class="text-capitalize m-0"> Delivery</h3>
-                            
-                                            <hr>
-                                            <span class="badge badge-danger ">Out of Stock</span>
-                                            <p class="p-3 font-2">Enter Your Address</p>
-                                            
-                                            <div class="form-group m-2 text-center">
-                                                <input type="text" value="" placeholder="Address" class="form-control mb-3" />
-                                                <input class="btn btn-primary p-3 font-2 text-uppercase strong" type=submit value="Search Store" onclick="hideDiv('hide-stores')">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                    </div>
+                                              
+
+                                        
+                                                  
+                                            
                                     
                                      
+                        <!-- Hidden  Stores -->
+                        <div id="hide-stores" class="d-none">
+                            
+                            <div class="row m-2 bg-secondary">
+                                <h1 class="pl-sm p-4 mt-3 font text-left bg-secondary">Choose a Store</h1>
+                                <div class="alert alert-dark m-2 p-2 pl-3 h-fit mt-3">
+                                    <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert" aria-label="Close">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <b class="pr-4 text-uppercase "> Delivery </b>
+                                </div>
+                                <div class="alert alert-dark m-2 p-2 pl-3 h-fit mt-3">
+                                    <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert" aria-label="Close">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <b class="pr-4 text-uppercase "> Pick Up </b>
+                                </div>
+                            </div>
                                   
                                                 
                                             
@@ -448,15 +464,13 @@
 
                     
                     
-                <!-- Hidden  Stores -->
-                <div id="hide-stores" class="d-none">
-                    <h1 class="pl-sm p-4 mb-0 mt-3 font bg-secondary">Choose a Store</h1>
+                       
                         <div class="owl-carousel owl-carousel-1 owl-theme bg-primary p-3">
                             <!--  Carousel Item 1 -->
-                            <div class="item card mh-1 p-3 item-card">
+                            <div class="item card mh-1 p-2 item-card">
                                 <div class="row mb-2">
                                     <div class="col-lg-12 mh-1 item-col">
-                                        <span class="badge badge-warning text-right float-right">FREE DELIVERY</span>
+                                        <span class="badge badge-warning text-right float-right">DELIVERY & PICKUP</span>
                                         
                                         <h2 class="text-danger strong font-2  text-left mb-1">RM 188.09</h2>
                                         <p class="mb-3 font-2">Sold by Fort Green Food Market</p>
@@ -502,13 +516,13 @@
                                 </div>
                             </div>
                             <!-- Carousel Item 2 -->
-                            <div class="item card mh-1 p-3 item-card">
+                            <div class="item card mh-1 p-2 item-card">
                                 <div class="row mb-2">
                                     <div class="col-lg-12 mh-1 item-col">
                                         <span class="badge badge-warning text-right float-right">FREE DELIVERY</span>
                                         
                                         <h2 class="text-danger strong font-2 text-left mb-1">RM 188.09</h2>
-                                        <p class="mb-3 font-2">Sold by Fort Green Food Market</p>
+                                        <p class="mb-3 font-2">Sold by C Chateau Cafe & Wine Bar</p>
                                         <div class="row mt--3 ml-1">
                                             <i class="fas fa-star pt-2 ml-1 text-star" ></i>
                                             <i class="fas fa-star pt-2 ml-1 text-star" ></i>
@@ -562,7 +576,7 @@
                                         
                         
             <!-- Product DESCRIPTION -->
-            <div class="container-fluid pb-md bg-primary" id="section-review">
+            <div class="container-fluid pb-md pt-md bg-primary" id="section-review">
                 <div class="card">
                     <div class="card-header font">
                         <ul class="nav nav-tabs nav-tabs-primary" role="tablist" style="margin-top:-50px; font-size:20px;">
@@ -1174,6 +1188,9 @@
     <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
     
     <script>
+        const storeSearch = document.getElementById("searchStore")
+        const hiddenDiv = document.getElementById("hide-stores");
+
         // review scroll
 
         function scrollToReview() {
@@ -1185,6 +1202,35 @@
                 }, 1000);
             }
         }
+
+        function scrollToStore() {
+
+            if ($('#section-review').length != 0) {
+                $("#review").click()
+                $("html, body").animate({
+                    scrollTop: $('#section-review').offset().top - 110
+                }, 1000);
+            }
+        }
+
+    storeSearch.onclick = function (event) {
+        event.preventDefault();
+        
+        if (hiddenDiv.className.includes("d-none")) {
+            hiddenDiv.style.display = "block"
+            hiddenDiv.classList.remove("d-none")
+            hiddenDiv.classList.add("d-block")
+        }
+        
+        if ($('#hide-stores').length != 0) {
+            
+            $("html, body").animate({
+                scrollTop: $('#hide-stores').offset().top -50
+            }, 1000);
+        }
+        
+    }
+       
     </script>
 
 </body>

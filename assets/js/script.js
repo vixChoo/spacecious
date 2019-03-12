@@ -351,9 +351,6 @@ function hideForm(hideForm, hideCheck) {
   if (hiddenCheck.checked) {
     hiddenForm.style.display = "block"
     hiddenForm.classList.remove("d-none")
-    hiddenForm.classList.remove("fadeOut")
-    hiddenForm.classList.add("animated")
-    hiddenForm.classList.add("fadeInDown")
     hiddenForm.classList.add("d-block")
   }
   else {
@@ -372,9 +369,6 @@ function hideDiv(hideDiv) {
   if (hiddenDiv.className.includes("d-none")) {
     hiddenDiv.style.display = "block"
     hiddenDiv.classList.remove("d-none")
-    hiddenDiv.classList.remove("fadeOut")
-    hiddenDiv.classList.add("animated")
-    hiddenDiv.classList.add("fadeInDown")
     hiddenDiv.classList.add("d-block")
   }
  

@@ -1890,6 +1890,7 @@ pre code {
 .form-control::placeholder {
   color: #adb5bd;
   opacity: 1;
+  font-weight: bolder;
 }
 
 .form-control:disabled,
@@ -11961,12 +11962,14 @@ fieldset[disabled] .btn-link.active {
   color: #6c757c;
   opacity: 1;
   filter: alpha(opacity=100);
+   font-weight: bolder;
 }
 
 .form-control:-ms-input-placeholder {
   color: #6c757c;
   opacity: 1;
   filter: alpha(opacity=100);
+   font-weight: bolder;
 }
 
 .form-control {
@@ -13966,8 +13969,8 @@ pre {
 }
 
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 0.25rem;
   margin-bottom: 1rem;
 }
 
