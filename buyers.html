@@ -551,9 +551,86 @@
                                 </form>
                             </div>
                             <div class="flex-row m-0 p-3 bg-white mb-3 rounded">
-                                <a href="javascript:void(0)" id="edit-address" onclick="hideForm('hiddenForm','hideCheck')" class="ml-1 strong text-info">
+                                <a href="javascript:void(0)" id="add-address" onclick="hideForm('add-address','new-address')" class="ml-1 strong text-info">
                                       +  Add New Address</a>
-                            </div>  
+  
+                            <form class="form d-none" id="new-address">
+                                <div class="form-group m-3 col-lg-8 pl-0 text-center">
+                                    <div class="form-group mb-3">
+                                        <select class="form-control rounded-sm">
+                                            <option selected>Country</option>
+                                            <option>Malaysia</option>
+                                            <option>1.0L (Single)</option>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <div class="input-group input-group-alternative">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text rounded-sm">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input class="form-control rounded-sm" placeholder="First Name" value='' type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group input-group-alternative">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text rounded-sm">
+                                                    <i class="fas fa-user"></i>
+                                                </span>
+                                            </div>
+                                            <input class="form-control rounded-sm" placeholder="Last Name" value="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="company" placeholder="Company (Optional)" value="" maxlength="" autocomplete="nope"
+                                            class="form-control rounded-sm">
+                                    </div>
+                            
+                            
+                            
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Address" value="" name="addyField" placeholder="" required="" maxlength=""
+                                            autocomplete="off" class="form-control rounded-sm">
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Etc : Floor , Suite ,Apartment" value="" name="addyField" placeholder=""
+                                            required="" maxlength="" autocomplete="off" class="form-control rounded-sm">
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <input type="text" placeholder="City" value="" name="addyField" placeholder="" required="" maxlength=""
+                                            autocomplete="off" class="form-control rounded-sm ">
+                                    </div>
+                                    <div class="form-inline mb-2">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="State" value="" name="addyField" placeholder="" required="" maxlength=""
+                                                autocomplete="off" class="form-control rounded-sm mw-3">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="zip" autocomplete="zip" placeholder="Zip Code / Postcode" value="" maxlength=""
+                                                class="form-control rounded-sm mw-3">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" autocomplete="tel-national" placeholder="Phone Number" value="" required=""
+                                            maxlength="" class="form-control rounded-sm">
+                                    </div>
+                                    <div class="form-check mt-3">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox">
+                                            <span class="form-check-sign"></span>
+                                            Set as default address
+                                        </label>
+                                    </div>
+                                    <button type="button" class="btn btn-info btn-simple m-3">Add New Address</button>
+                                </div>
+                            </form>
+                        </div>
                         </div>
                    
                  
