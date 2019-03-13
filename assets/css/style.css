@@ -20129,8 +20129,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .hover:hover{
   transition: 0.3s ease-in-out;
   transition: all .15s ease;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0) !important;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.5), 0 3px 6px rgba(0, 0, 0, 0.5)!important;
   background-position: right center; /* change the direction of the change here */
+  /* box-shadow: 2px 2px 6px rgba(0, 0, 0) ! */
 }
 
 
@@ -20246,7 +20247,13 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 
 
+.text-trim {
+  text-align: justify !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
+}
    
 
 @media only screen and (min-width: 481px){}
@@ -20441,6 +20448,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     height:245px;
   }
   
+  .text-trim {
+    max-height: 200px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -20619,10 +20629,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   max-width: 600px!important;
 }
 
-.mh-100 {
+.mh-1 {
   max-height: 100px!important;
 }
-.mh-200 {
+.mh-2 {
   max-height: 200px!important;
 }
 .w-fit{
@@ -20636,13 +20646,15 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   height: -webkit-max-content; /* Chrome */
 }
 
-.mh-1{
+.minh-1{
   min-height: 150px;
 }
 
-.mh-2{
+.minh-2{
   min-height: 250px;
 }
+
+
 
  .background1{
   width: 100vw;
@@ -20667,14 +20679,29 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   
   
 }
- .background2{
+
+.background2{
   width: 100vw;
   height: 70vh;
   background-image: url('https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+.background3{
+  width: 100vw;
+  height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20687,9 +20714,40 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   font-weight: 600;
   line-height: 1.5;
   text-transform: uppercase !important;
-  
-  
 }
+ 
+.img-block{
+  width: 60vw;
+  height: 38vh;
+  overflow: hidden;
+  position: relative;
+  min-width: 155px;
+  min-height: 255px;
+ 
+}
+
+.img-block img{
+  position: absolute;
+  margin: auto; 
+  min-height: 100%;
+  min-width: 130%;
+  /* For the following settings we set 100%, but it can be higher if needed 
+  See the answer's update */
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  border-radius: 0.15rem !important;
+  }
+   
+
+.article-card {
+   margin: 3rem;
+}
+
+   
+    
+
 
 #slogan {
   /*background-color: rgba(255,255,255,0.2); */
@@ -20738,8 +20796,11 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     
   #slogan {
     font-size: 6vw;
-    
   }
+  .article-card {
+   margin: 0px;
+}
+    
 }
     
 
@@ -20758,7 +20819,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     flex-flow: row wrap;
     align-items: center;
     max-width: 140px !important;
-   
+
 
   }
   .form-inline .form-control {
