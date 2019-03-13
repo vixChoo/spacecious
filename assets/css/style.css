@@ -6420,14 +6420,18 @@ button.bg-neutral:focus {
 }
 
 .bg-darker {
-  background-color: black !important;
+ background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
 }
 
 a.bg-darker:hover,
 a.bg-darker:focus,
 button.bg-darker:hover,
 button.bg-darker:focus {
-  background-color: black !important;
+ background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5));
 }
 
 .bg-white {
@@ -20252,8 +20256,11 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-height: 150px;
 
 }
+
+
    
 
 @media only screen and (min-width: 481px){}
@@ -20448,9 +20455,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     height:245px;
   }
   
-  .text-trim {
-    max-height: 200px;
-  }
+
 }
 
 @media (max-width: 375px) {
@@ -20742,7 +20747,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
    
 
 .article-card {
-   margin: 3rem;
+   margin: 2.5rem;
 }
 
    
