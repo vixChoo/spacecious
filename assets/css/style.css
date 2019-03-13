@@ -115,6 +115,11 @@ hr {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
 }
+.font-3 {
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
 
 h1,
 h2,
@@ -2780,8 +2785,8 @@ fieldset:disabled a.btn {
 
 .btn-default {
   color: #ffffff;
-  background-color: #344675;
-  border-color: #344675;
+  background-color: #44386e;;
+  border-color: #44386e;;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -5030,9 +5035,9 @@ input[type="button"].btn-block {
 }
 
 .alert-primary {
-  color: #e14eca;
-  background-color: #e66ad2;
-  border-color: #e66ad2;
+  color: #44386e;
+  background-color: #44386e;
+  border-color: #44386e;
 }
 
 .alert-primary hr {
@@ -6420,18 +6425,14 @@ button.bg-neutral:focus {
 }
 
 .bg-darker {
- background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5));
+  background-color: black;
 }
 
 a.bg-darker:hover,
 a.bg-darker:focus,
 button.bg-darker:hover,
 button.bg-darker:focus {
- background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5));
+  background-color: black;
 }
 
 .bg-white {
@@ -9902,7 +9903,7 @@ a.text-dark:focus {
 }
 
 .text-default {
-  color: #344675 !important;
+  color: #44386e !important; ;
 }
 
 a.text-default:hover,
@@ -10211,11 +10212,26 @@ fieldset[disabled] .btn-primary.active {
   border-color: #e14eca;
 }
 
+.btn-default.btn-simple {
+  color: #44386e;
+  border-color: #44386e;
+  background: transparent;
+}
+
+.btn-default.btn-simple:hover,
+.btn-default.btn-simple:focus,
+.btn-default.btn-simple:active,
+.btn-default.btn-simple:not(:disabled):not(.disabled):active {
+  color: #ffffff;
+  border-color: #35477d;
+  background-color: #44386e !important;
+  background-image: none !important;
+  box-shadow: none;
+}
 .btn-primary.btn-simple {
   color: #35477d;
   border-color: #35477d;
   background: transparent;
-  padding
 }
 
 .btn-primary.btn-simple:hover,
@@ -11871,9 +11887,9 @@ fieldset[disabled] .btn-link.active {
 
 .footer {
   padding: 50px 0;
-  background-color: #c6cfff; 
- background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
- background-blend-mode: soft-light,screen;
+  background-color: #e7e6e1; 
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+  background-blend-mode: soft-light,screen;
 }
 
 .footer [class*="container-"] {
@@ -14839,11 +14855,11 @@ hr {
 .pagination .page-item.active>.page-link,
 .pagination .page-item.active>.page-link:focus,
 .pagination .page-item.active>.page-link:hover {
-  background: #69779b;
-  background-image: -webkit-linear-gradient(to bottom left, #69779b, #022c43, #69779b);
-  background-image: -o-linear-gradient(to bottom left, #69779b, #022c43, #69779b);
-  background-image: -moz-linear-gradient(to bottom left, #69779b, #022c43, #69779b);
-  background-image: linear-gradient(to bottom left, #69779b, #022c43, #69779b);
+  background: #44386e;
+  background-image: -webkit-linear-gradient(to bottom left, #44386e, #022c43, #44386e);
+  background-image: -o-linear-gradient(to bottom left, #44386e, #022c43, #44386e);
+  background-image: -moz-linear-gradient(to bottom left, #44386e, #022c43, #44386e);
+  background-image: linear-gradient(to bottom left, #44386e, #022c43, #44386e);
   background-size: 210% 210%;
   background-position: top right;
 
@@ -20367,8 +20383,8 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 /* End Article */
 
- #quantity{
-    max-width: 150px;
+#quantity{
+    max-width: 100px;
   }
 
 
@@ -20388,7 +20404,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   }
 
   #quantity{
-    max-width: 100px;
+   padding: 0;
   }
  
  
