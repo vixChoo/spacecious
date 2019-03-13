@@ -10258,17 +10258,16 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success {
-  background: #00f2c3;
-  background-image: -webkit-linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
-  background-image: -o-linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
-  background-image: -moz-linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
-  background-image: linear-gradient(to bottom left, #00f2c3, #2ed573, #00f2c3);
-  background-size: 210% 210%;
+   background-color: #01a3a4 !important;
+  background-image: linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -webkit-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -o-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -moz-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
   background-position: top right;
   background-color: #00f2c3;
   transition: all 0.15s ease;
-  box-shadow: none;
   color: #ffffff;
+  box-shadow: none;
 }
 
 .btn-success.animation-on-hover:hover {
@@ -10284,13 +10283,20 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active:hover,
 .btn-success.active:focus,
 .btn-success.active:hover {
-  background-color: #01a3a4 !important;
-  background-image: linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
-  background-image: -webkit-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
-  background-image: -o-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
-  background-image: -moz-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
-  color: #ffffff;
-  box-shadow: none;
+ background: #00f2c3;
+ background-image: -webkit-linear-gradient(to bottom left, #00f2c3, #12CBC4, #00f2c3)!important;
+ background-image: -o-linear-gradient(to bottom left, #00f2c3, #12CBC4, #00f2c3)!important;
+ background-image: -moz-linear-gradient(to bottom left, #00f2c3, #12CBC4, #00f2c3)!important;
+ background-image: linear-gradient(to bottom left, #00f2c3, #12CBC4, #00f2c3)!important;
+ background-size: 210% 210%;
+ background-position: top right;
+ background-color: #00f2c3;
+ transition: all 0.15s ease;
+ box-shadow: none;
+ color: #ffffff;
+
+
+
 }
 
 .btn-success:active {
@@ -20136,9 +20142,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
 }
 
-.landing{
 
-}
   
 /* Article show images */
 .article-show{
@@ -20195,6 +20199,62 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     font-weight: 600;
 }
 
+.img-overlay {
+    min-height: 130px;
+    border-radius: 3px;
+    padding: 0 18px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+/* 
+.overlay-img .img-overlay {
+    flex: none;
+    width: 16.6666%;
+}
+.overlay-img {
+  display: flex;
+  flex: 1;
+  padding: 0 0 25px 25px;
+} */
+
+.overlay-img {
+  position: relative;
+  
+}
+
+
+.overlay-black {
+  top: 0;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 10;
+  left: -56%;
+  margin-left: 114px;
+  position: absolute;
+  height: 187px;
+  width: 126px;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+
+
+
+   
+
+@media only screen and (min-width: 481px){}
+.img-overlay {
+    min-height: 140px;
+}
+
+
 @media (min-width: 1024px) {
   .flex-lap-row {
     flex-direction: row !important;
@@ -20212,7 +20272,11 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .product-card img{
     height: 217px;
   }
+  .img-overlay {
+    width:160px;
+  }
 }
+
 
 @media (max-width: 1000px) {
    #sideBar {
@@ -20221,7 +20285,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .ads-box{
     height: 350px;
   }
-  
+   
 }
 
 
@@ -20270,13 +20334,21 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     z-index:1000;
      cursor: pointer;
   }
-  .wine-title{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 200px
+    .wine-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px
+   }
+ 
+ .overlay-img {
+    width: 50%;
   }
  
+ .overlay-img .overlay-black {
+    width: 50%;
+  }
+
 }
 
 /* End Article */
@@ -20543,6 +20615,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .mw-3 {
   max-width: 200px!important;
 }
+.mw-6 {
+  max-width: 600px!important;
+}
 
 .mh-100 {
   max-height: 100px!important;
@@ -20592,6 +20667,29 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   
   
 }
+ .background2{
+  width: 100vw;
+  height: 70vh;
+  background-image: url('https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+.background2 p{
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase !important;
+  
+  
+}
 
 #slogan {
   /*background-color: rgba(255,255,255,0.2); */
@@ -20601,6 +20699,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   z-index:2;
   /* font-family: 'Raleway', sans-serif; */
 }
+
 
 @-webkit-keyframes fadeInUp {
     from {
