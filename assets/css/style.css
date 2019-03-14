@@ -4931,14 +4931,14 @@ input[type="button"].btn-block {
 
 .badge-dark {
   color: #ffffff;
-  background-color: #212529;
+  background-color: #44386e;
 }
 
 .badge-dark[href]:hover,
 .badge-dark[href]:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #0a0c0d;
+  background-color: #44386e;
 }
 
 .badge-default {
@@ -20484,7 +20484,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   }
   .product-card{
     padding: 0;
-    margin-bottom:3rem;
+   
   }
   .product-card img{
     height:245px;
