@@ -39,6 +39,7 @@
 
 <body>
     <header>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
             <div class="container">
@@ -279,13 +280,13 @@
                             </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                              Explore
+                            <a class="nav-link" href="./article.html">
+                                Explore
                             </a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                              corporate
+                            <a class="nav-link" href="./corporate.html">
+                                corporate
                             </a>
                         </li>
                     </ul>
@@ -307,18 +308,46 @@
                                 <i class="icons fas fa-map-marker-alt"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
-                                <p class="pl-0 font-2">Enter Your Address</p>
-                                <div class="form-group m-2">
-                                    <input type="text" value="" placeholder="Address" class="form-control mb-3" />
-                                    <input class="btn btn-primary p-3 font-2" type=submit value="Search Store">
-                                </div>
+                                <form class="form">
+                                    <label class="text-left bg-white" for="quantity">
+                                        Enter Your Address
+                                    </label>
+                                    <div class="form-group m-2 text-center">
+                                        <input type="text" value="" placeholder="Address" class="form-control" />
+                                    </div>
+
+                                    <div class="form-group m-2 text-center">
+                                        <select class="form-control">
+                                            <option selected>Saved Address</option>
+                                            <option>None</option>
+                                            <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama,
+                                                58200 Kuala Lumpur</option>
+                                        </select>
+                                        <input class="btn btn-primary m-2 font-2 text-uppercase strong" type=submit
+                                            value="Search Store">
+                                    </div>
+                                </form>
                             </div>
                         </li>
 
-                        <li class="nav-item active">
+                        <li class="dropdown nav-item">
                             <a class="nav-link" href="#sign-in" data-toggle="modal" data-target="#sign-in">
                                 <i class="icons far fa-user"></i>
                             </a>
+                            <div class="dropdown-menu dropdown-menu-right text-center">
+                                <p class="dropdown-header">Hi, Sean </p>
+                                <div class="dropdown-divider"></div>
+                                <a href="./purchased.html" class="dropdown-item">
+                                    My Past Orders
+                                </a>
+                                <a href="./buyers.html" class="dropdown-item">
+                                    My Account
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Sign Out
+                                </a>
+
+                            </div>
                         </li>
 
                         <li class="nav-item">
@@ -335,7 +364,8 @@
 
 
     <!-- Form Modal -->
-    <div class="modal fade modal-black" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade modal-black" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header justify-content-center">
@@ -346,9 +376,9 @@
                         <h3 class="mb-0">Sign in with</h3>
                     </div>
                 </div>
-    
-    
-    
+
+
+
                 <div class="modal-body">
                     <div class="btn-wrapper text-center mb-3">
                         <a href="#" class="btn btn-neutral btn-icon m-2">
@@ -377,9 +407,9 @@
                                 <div id="error"></div>
                             </div>
                         </div>
-    
-    
-    
+
+
+
                         <div class="card-body">
                             <div class="tab-content" id="sign-in">
                                 <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel"
@@ -416,15 +446,15 @@
                                                 Remember me!
                                             </label>
                                         </div>
-    
+
                                         <div class="text-center">
                                             <button type="button" class="btn btn-primary my-4">Sign in</button>
                                         </div>
                                     </form>
                                 </div>
-    
-    
-    
+
+
+
                                 <!-- sign up -->
                                 <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
                                     <div class="text-center text-muted mb-4 mt-3">
@@ -451,8 +481,8 @@
                                                 <input class="form-control" placeholder="Last Name" type="text">
                                             </div>
                                         </div>
-    
-    
+
+
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
@@ -463,7 +493,7 @@
                                                 <input class="form-control" placeholder="Email" type="email">
                                             </div>
                                         </div>
-    
+
                                         <div class="form-group mb-3">
                                             <div class="input-group input-group-alternative">
                                                 <div class="input-group-prepend">
@@ -474,15 +504,15 @@
                                                 <input class="form-control" placeholder="Password" type="password">
                                             </div>
                                         </div>
-    
+
                                         <div class="form-check mb-2">
                                             <label class="form-check-label">
                                                 <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
                                                 <span class="form-check-sign"></span>
-                                              Ordering for a business? Be the office hero.
+                                                Ordering for a business? Be the office hero.
                                             </label>
                                         </div>
-    
+
                                         <!-- hidden form  -->
                                         <div id="hiddenForm">
                                             <div class="form-group mb-3">
@@ -495,7 +525,7 @@
                                                     <input class="form-control" placeholder="Company Name" type="text">
                                                 </div>
                                             </div>
-    
+
                                             <div class="custom-group">
                                                 <label for="unit">
                                                     Job Title
@@ -527,17 +557,18 @@
                                                 </select>
                                             </div>
                                         </div>
-    
-    
+
+
                                         <div class="row justify-content-center">
                                             <button type="button" class="btn btn-primary my-4">Sign up</button>
-                                            <small class="text-darker m-4">By creating an account, I agree to Spacecious's
+                                            <small class="text-darker m-4">By creating an account, I agree to
+                                                Spacecious's
                                                 Terms and Conditions.</small>
                                         </div>
                                     </form>
-    
+
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
@@ -545,101 +576,139 @@
             </div>
         </div>
     </div>
-    
+
     <!--  End Modal -->
-<footer class="footer mt-lg font">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="assets/images/spaceBig.png">
-            </div>
-            <div class="col-md-3">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">
-                            <h4> Home </h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./shopping-card.html" class="nav-link">
-                            <h4>Shopping Cart</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./product-listing.html" class="nav-link">
-                            <h4> Product Listing </h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./product-profile.html" class="nav-link">
-                            <h4> Product Profile </h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="./checkout.html" class="nav-link ">
-                            <h4>Checkout Page</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./card-payment.html" class="nav-link">
-                            <h4>Card Payment</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./order.html" class="nav-link">
-                            <h4>Order Summary</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <h4>About Us</h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <div class="btn-wrapper profile">
-                    <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round"
-                        data-toggle="tooltip" data-original-title="Follow us">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                        data-toggle="tooltip" data-original-title="Like us">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                        data-toggle="tooltip" data-original-title="Follow us">
-                        <i class="fab fa-instagram"></i>
-                    </a>
+    <footer class="footer mt-lg font">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="assets/images/spaceBig.png">
+                </div>
+                <div class="col-sm-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="./landing.html" class="nav-link">
+                                <h4> Home </h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./shopping-card.html" class="nav-link">
+                                <h4>Shopping Cart</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./product-listing.html" class="nav-link">
+                                <h4> Product Listing </h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./product-profile.html" class="nav-link">
+                                <h4> Product Profile </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="./checkout.html" class="nav-link ">
+                                <h4>Checkout Page</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./card-payment.html" class="nav-link">
+                                <h4>Card Payment</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./order.html" class="nav-link">
+                                <h4>Order Summary</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./corporate.html" class="nav-link">
+                                <h4>Corporate</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <h4>About us</h4>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="./buyers.html" class="nav-link">
+                                <h4>Buyers profile</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./article-inner.html" class="nav-link ">
+                                <h4>Article nested page</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./article.html" class="nav-link ">
+                                <h4>Article Main page</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./article-category.html" class="nav-link ">
+                                <h4>Article Catogory page</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./gift.html" class="nav-link ">
+                                <h4>Gift page</h4>
+                            </a>
+                        </li>
+
+                    </ul>
 
                 </div>
+                <div class="col-md-3 mb-3">
+                    <h3 class="title text-dark">Follow us:</h3>
+                    <div class="btn-wrapper profile">
+                        <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round"
+                            data-toggle="tooltip" data-original-title="Follow us">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round"
+                            data-toggle="tooltip" data-original-title="Like us">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round"
+                            data-toggle="tooltip" data-original-title="Follow us">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+                </div>
             </div>
+            <p>Privacy Policy Terms of Service
+                © Spacecious All Rights Reserved</p>
         </div>
-        <p>Privacy Policy Terms of Service
-            © Spacecious All Rights Reserved</p>
-    </div>
-</footer>
+    </footer>
 
 
 
-<!-- Owl Carousel -->
-<sript src="./assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js">
-    </script>
-    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- Owl Carousel -->
+    <sript src="./assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js">
+        </script>
+        <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
 
-    <!--   Core JS Files   -->
-    <script src="./assets/js/script.js" type="text/javascript"></script>
+        <!--   Core JS Files   -->
+        <script src="./assets/js/script.js" type="text/javascript"></script>
 
-    <script>
+        <script>
 
 
 
 
-    </script>
-    </body>
+        </script>
+</body>
 
-    </html>
+</html>

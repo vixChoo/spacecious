@@ -104,6 +104,7 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+  margin-top: 0.25rem;
 }
 
 
@@ -20259,7 +20260,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 /*  article - category here */
 .img-top {
   width: 245px;
-  height: 245px;
+   height: 245px;
    position: absolute;
     margin: auto;
     min-height: 100%;
@@ -20278,15 +20279,6 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   position: relative;
 }
   
-
-.img-card {
-  width: 242px;
-  height: 310px;
-  overflow: hidden;
-  position: relative;
-}
-  
-   
 
 @media only screen and (min-width: 481px){}
 .img-overlay {
@@ -20512,6 +20504,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
    .img-card {
    width: 197.5px;
    height: 260px;
+ }
+
+ .land-card {
+   display: none;
  }
   
 
@@ -20819,16 +20815,6 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   line-height: 1.5;
   text-transform: uppercase !important;
 }
- 
-
-#slogan {
-  /*background-color: rgba(255,255,255,0.2); */
-  padding: 10px;
-  text-shadow: 0 0 10px black;
-  border-radius: 10px;
-  z-index:2;
-  /* font-family: 'Raleway', sans-serif; */
-}
 
 .img-block{
   width: 60vw;
@@ -20960,4 +20946,14 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .form-inline .custom-control-label {
     margin-bottom: 0;
   }
+}
+
+
+#slogan {
+  padding: 10px;
+  text-shadow: 0 0 10px black;
+  border-radius: 10px;
+  z-index:2;
+  /*background-color: rgba(255,255,255,0.2); */
+  /* font-family: 'Raleway', sans-serif; */
 }
