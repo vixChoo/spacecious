@@ -7538,6 +7538,10 @@ button.bg-darker:focus {
   width: 75% !important;
 }
 
+.w-90 {
+  width: 90% !important;
+}
+
 .w-100 {
   width: 100% !important;
 }
@@ -20501,7 +20505,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     height:217px;
   }
    .overlay-img {
-    width: 160px;
+    width: 150px;
     height: 150px;
     overflow: hidden;
     position: relative;
