@@ -225,16 +225,18 @@ blackKit = {
     }
   },
 
+  
+
   initDatePicker: function() {
     if ($datepicker.length != 0) {
       $datepicker.datetimepicker({
         icons: {
-          time: "tim-icons icon-watch-time",
-          date: "tim-icons icon-calendar-60",
+          time: "fas fa-clock",
+          date: "fas fa-calendar",
           up: "fa fa-chevron-up",
           down: "fa fa-chevron-down",
-          previous: 'tim-icons icon-minimal-left',
-          next: 'tim-icons icon-minimal-right',
+          previous: 'fas fa-chevron-left',
+          next: 'fas fa-chevron-right',
           today: 'fa fa-screenshot',
           clear: 'fa fa-trash',
           close: 'fa fa-remove'
@@ -242,7 +244,6 @@ blackKit = {
       });
     }
   },
-
   initSliders: function() {
     // Sliders for demo purpose in refine cards section
     var slider = document.getElementById('sliderRegular');
