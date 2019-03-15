@@ -20884,9 +20884,14 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .background1 p{
     font-size: 6vw;
   }
-    
-  #slogan {
+  
+  .background2 p{
     font-size: 6vw;
+  }
+
+
+  #slogan {
+    font-size: 6vw!important;
   }
   .article-card {
    margin: 0px;
