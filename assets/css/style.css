@@ -1527,9 +1527,9 @@ pre code {
   border-top: 0.125rem solid #e3e3e3;
 }
 
-.table .table {
+/* .table .table {
   background-color: #171941;
-}
+} */
 
 .table-sm th,
 .table-sm td {
@@ -14252,7 +14252,7 @@ hr {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-  /* border-color: rgba(255, 255, 255, 0.1); */
+  border-color: rgba(255, 255, 255, 0.1);
   padding: 12px 7px;
   vertical-align: middle;
 }
@@ -15142,7 +15142,7 @@ code {
 
 .form-group .form-control,
 .input-group .form-control {
-  padding: 10px 18px 10px 18px;
+  padding: 7px 18px 7px 18px;
 }
 
 .form-group .form-control+.input-group-prepend .input-group-text,
@@ -20801,4 +20801,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   z-index:2;
   /*background-color: rgba(255,255,255,0.2); */
   /* font-family: 'Raleway', sans-serif; */
+}
+table.w-85 th {
+      width: 82%;
 }
