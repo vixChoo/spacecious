@@ -1144,6 +1144,7 @@ MEDIAQUERIES
         display: none;
         
     }
+   
 }
 /* ---------------------------------------------------
     Nav Tabs Here
@@ -1165,15 +1166,21 @@ MEDIAQUERIES
   border-bottom:0;
 }
 
-.nav-tabs>.nav-item>.nav-link:hover {
-  background-color: #f3f8ff;
-  border: 1px solid #5b7ad6;
-  color: rgba(0, 0, 0, 0.8);
-  border-bottom:0;
-}
 
+
+@media (min-width: 330px) {
 .nav-tabs>.nav-item>.nav-link.active {
   border: 1px solid #40407a;
   background-color:#40407a;
-   color: #fff;
+   color: #fff!important;
+}
+
+
+@media (max-width: 768px) {
+  .nav-tabs>.nav-item>.nav-link {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 15px;
+  line-height: 1.5;
+ 
 }
