@@ -2543,7 +2543,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
   transition: 0.3s ease-in-out;
 }
 
-
+.btn
 
 .btn:hover,
 .btn:focus,
@@ -14252,7 +14252,7 @@ hr {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-  border-color: rgba(255, 255, 255, 0.1);
+  /* border-color: rgba(255, 255, 255, 0.1); */
   padding: 12px 7px;
   vertical-align: middle;
 }

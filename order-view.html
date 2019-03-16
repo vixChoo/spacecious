@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spacecious</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
+    <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/seller.css">
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header d-flex justify-content-center">
+                <img src="./assets/images/spaceSmall.png" alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="./seller.html">Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="./seller-order.html">Order</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inventory</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Navbar -->
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
+                <div class="container-fluid">
+                    <div class="sticky-top">
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                            <i class="fas fa-align-left"></i>
+                        </button>
+                    </div>
+                    <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-12 collapse-close d-inline-block d-lg-none ml-auto text-right">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navbarSupportedContent">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content -->
+        
+                    <div class="container-fluid pb-lg">
+                        <div class="pull-right">
+                            <button type="button" data-toggle="tooltip" onclick="window.location('file:///home/vin/Desktop/spacecious/invoice.html')" title="Print Invoice" class="btn btn-default" data-original-title="Print Invoice">
+                                <i class="fa fa-print"></i>
+                            </button>
+                            <button type="button" data-toggle="tooltip" title="PDF Invoice" class="btn btn-info" data-original-title="PDF Invoice">
+                                <i class="far fa-file-pdf"></i>
+                            </button>
+                            <button type="button" data-toggle="tooltip" title="Print Shipping List" class="btn btn-warning" data-original-title="Print Shipping List"><i
+                                    class="fa fa-truck"></i>
+                            </button>
+                            <button type="button" data-toggle="tooltip" title="Edit" class="btn btn-success" data-original-title="Edit">
+                                 <i class="fas fa-pencil-alt"></i>
+                            </button>
+                        </div>
+                    </div>  
+     
+                <!-- Order Details -->
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="pb-3 border-bottom">Order Details</h2>
+                            </div>
+                            <div class="card-body">
+                             <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th>Order ID:</th>
+                                            <td>#1656</td>
+                                        </tr>
+                                        <tr>
+                                        <th>Invoice No:</th>
+                                           <td>
+                                                <button class="btn btn-primary btn-xs"><i class="fa fa-cog"></i>
+                                                    Generate</button>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Store Name:</th>
+                                            <td> C Chateau Cafe & Wine Bar </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Customer:</th>
+                                            <td>Michael</td>
+                                        </tr>
+                                        <tr>
+                                            <th>E-Mail:</th>
+                                            <td><a href="mailto:sdfsdf@sdfsdf.comq">michael@example.com</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Telephone:</td>
+                                            <td>12313123123123</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total:</th>
+                                            <td>$25.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Quantity:</th>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Deliver Options:</th>
+                                            <td>Delivery</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Order Status:</th>
+                                            <td><span class="badge badge-success">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address:</th>
+                                            <td>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama,
+                                                 58200 Kuala Lumpur</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Order Date:</th>
+                                            <td>27/08/2018 01:22:12</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Proceed Date:</th>
+                                            <td>24/02/2019 01:22:12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="p-3 border-bottom"> Product Details</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left">Product</th>
+                                            <th class="text-left">Product ID</th>
+                                            <th class="text-right">Quantity</th>
+                                            <th class="text-right">Unit Price</th>
+                                            <th class="text-center">Taxes</th>
+                                            <th class="text-center">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="./assets/images/wine.jpg" width="50" alt="">
+                                                <div class="row m-0 p-1">
+                                                    <a href="#">Red Wine</a>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-left">id00015</td>
+                                            <td class="text-right">1</td>
+                                            <td class="text-right">RM 20.00</td>
+                                            <td class="text-right">RM 18.00 (11%) </td>
+                                            <td class="text-right">RM 60.60</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th colspan="4" class="text-right">Goverment Tax</th>
+                                            <td class="text-right">RM 10.60(6%)</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="4" class="text-right">Service Charge</th>
+                                            <td class="text-right">RM 10.60(5%)</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3" class="text-right">Promo Code</th>
+                                            <td class="text-right">BHD 620</td>
+                                            <td class="text-right">- RM 20</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- History -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="p-3 border-bottom">Comment History</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left">Date Added</th>
+                                        <th class="text-center">Comment</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-center">Customer Notified</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>25/08/2018 01:22:12</td>
+                                        <td class="text-left">Package #id00154 delivered </td>
+                                        <td class="text-center"> <span class="badge badge-success">Shipped</span></td>
+                                        <td class="text-center"> <span class="badge badge-success">Yes</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>27/08/2018 01:22:12</td>
+                                        <td class="text-left">Invoice #099 attachment sent</td>
+                                        <td class="text-center"> <span class="badge badge-success">Processed</span></td>
+                                        <td class="text-center"> <span class="badge badge-success">Yes</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>27/08/2018 01:22:12</td>
+                                        <td class="text-left">Customer Reviews (5.0)</td>
+                                        <td class="text-center"> <span class="badge badge-warning">5 Stars</span></td>
+                                        <td class="text-center"> <span class="badge badge-success">Yes</span></td>
+                                    </tr>
+                
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add History -->
+                <div class="card">
+                    <div class="card-header mb-2">
+                        <h2 class="p-3 border-bottom"> Add Comment</h2>
+                    </div>
+                    <div class="card-body pl-5">
+                        <div class="form-group">
+                            <label class="label-control mr-lg-3 strong">Order Status</label>
+                                <div class="btn-group bootstrap-select">
+                                    <select class="form-control w-fit">
+                                        <option >Canceled</option>
+                                        <option>Canceled Reversal</option>
+                                        <option>Chargeback</option>
+                                        <option>Complete</option>
+                                        <option>Denied</option>
+                                        <option>Expired</option>
+                                        <option>Failed</option>
+                                        <option>Pending</option>
+                                        <option selected="selected">Processed</option>
+                                        <option>Processing</option>
+                                        <option>Refunded</option>
+                                        <option>Reversed</option>
+                                        <option>Shipped</option>
+                                        <option>Voided</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-check mt-3 mb-3">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">
+                                    <span class="form-check-sign"></span>
+                                     Notify Customer
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label-control strong" for="comment">Comment</label>
+                                <div class="col-sm-12">
+                                    <textarea name="comment" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group pull-right">
+                                <button class="btn btn-default ml-lg-3 strong text-uppercase">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Payment -->
+                <div class="col-sm-5">
+                 <div class="card">
+                     <div class="card-header"> 
+                         <h2 class="border-bottom p-3">Payment Details</h2>
+                     </div>
+                         <div class="card-body">
+                             <div class="table-responsive">
+                                 <table class="table table-bordered">
+                                     <tbody>
+                                         <tr>
+                                             <th>First Name:</th>
+                                             <td>dsfsfsdf</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Last Name:</th>
+                                             <td>sdfsdfsdf</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Address 1:</th>
+                                             <td>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                                                 elit. Vitae id inventore rerum.
+                                                  Architecto, fugit deserunt est 
+                                                  possimus quae voluptates corrupti KL
+                                                  </td>
+                                         </tr>
+                                         <tr>
+                                             <th>City:</th>
+                                             <td>asdasdasda</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Area:</th>
+                                             <td>
+                                                 <select class="form-control w-fit mr-3">
+                                                    <option selected>Petaling Jaya</option>
+                                                    <option disabled>Kuala Lumpur</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                                
+                                         <tr>
+                                             <th>Region | State:</th>
+                                             <td>Afyonkarahisar</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Region | State Code:</th>
+                                             <td>AFY</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Country:</th>
+                                             <td>Malaysia</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Payment Method:</th>
+                                             <td>Credit Card</td>
+                                         </tr>
+                                         <tr>
+                                             <th>Promo Code:</th>
+                                             <td>
+                                                <select class="form-control w-fit mr-3">
+                                                    <option disabled>No</option>
+                                                    <option selected>Yes</option>
+                                                </select>
+                                             </td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- Shipping Details -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="border-bottom p-3">Shipping Details</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th>First Name:</th>
+                                            <td>dsfsfsdf</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Last Name:</th>
+                                            <td>sdfsdfsdf</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Address 1:</th>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit. Vitae id inventore rerum.
+                                                Architecto, fugit deserunt est
+                                                possimus quae voluptates corrupti KL
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>City:</th>
+                                            <td>asdasdasda</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping Method:</th>
+                                            <td>
+                                                <select class="form-control w-fit mr-3">
+                                                    <option selected>Delivery via HonestBee</option>
+                                                    <option disabled>Delivery via Self Delivery</option>
+                                                    <option disabled>Delivery via GrabFood</option>
+                                                    <option disabled>Delivery via Food Panda</option>
+                                                    <option disabled>Pick Up</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Area:</th>
+                                            <td>PJ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Region | State:</th>
+                                            <td>Afyonkarahisar</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Region | State Code:</th>
+                                            <td>AFY</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Country:</th>
+                                            <td>Malaysia</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Dispatch Time</th>
+                                            <td>27/08/2018 01:22:12</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Arrived Time</th>
+                                            <td>27/08/2018 02:22:12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                        
+                                    
+                                
+                          
+                         
+                       
+                    
+
+
+
+
+            
+            
+        </div>
+        <!-- End Content -->
+
+    </div>
+    </div>
+
+    <!-- jQuery CDN - -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--   Core JS Files   -->
+
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+            blackKit.initDatePicker();
+        });
+
+        $('.datetimepicker').datetimepicker({
+            icons: {
+                time: "fas fa-clock",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
+
+      
+
+    </script>
+</body>
+
+</html>

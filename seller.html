@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/seller.css">
 
     <!--     Fonts and icons     -->
@@ -22,21 +23,21 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-
+</head>
 
 <body>
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header d-flex justify-content-center">
-                 <img src="./assets/images/spaceSmall.png" alt="">
+                <img src="./assets/images/spaceSmall.png" alt="">
             </div>
 
             <ul class="list-unstyled components">
                 <li class="active">
                     <a href="./seller.html">Dashboard</a>
                 </li>
-                <li>
+                <li >
                     <a href="./seller-order.html">Order</a>
                 </li>
                 <li>
@@ -70,43 +71,55 @@
                         </li>
                     </ul>
                 </li>
-              
+
             </ul>
         </nav>
 
         <!-- Navbar -->
-        
+
+      
+
+
         <!-- Page Content  -->
         <div id="content">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
-                    <div class="container-fluid">
-                        <button type="button" id="sidebarCollapse" class="btn btn-default">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
+                <div class="container-fluid">
+                    <div class="sticky-top">
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
                             <i class="fas fa-align-left"></i>
                         </button>
-                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
-                        </button>
-        
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </nav>
+                    <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+        
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-12 collapse-close d-inline-block d-lg-none ml-auto text-right">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navbarSupportedContent">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
                 <!-- Content -->
                     <div class="card-deck mb-3">
@@ -235,7 +248,7 @@
                                                             <td>27-08-2018 01:22:12</td>
                                                             <td>Patricia J. King </td>
                                                             <td>
-                                                                <p class="badge badge-warning p-3"> Dispatching </p>
+                                                                <span class="badge badge-warning"> Dispatching </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -250,7 +263,7 @@
                                                             <td>25-08-2018 21:12:56</td>
                                                             <td>Rachel J. Wicker </td>
                                                             <td>
-                                                                <p class="badge badge-success p-3">Delivered </p>
+                                                                <span class="badge badge-success">Delivered </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -265,7 +278,7 @@
                                                             <td>24-08-2018 14:12:77</td>
                                                             <td>Michael K. Ledford </td>
                                                             <td>
-                                                                <p class="badge badge-success p-3">Delivered </p>
+                                                                <span class="badge badge-success">Delivered </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -280,7 +293,7 @@
                                                             <td>23-08-2018 09:12:35</td>
                                                             <td>Michael K. Ledford </td>
                                                             <td>
-                                                                <p class="badge badge-success p-3">Delivered </p>
+                                                                <span class="badge badge-success">Delivered </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -295,7 +308,7 @@
                                                             <td>23-08-2018 09:12:35</td>
                                                             <td>Michael K. Ledford </td>
                                                             <td>
-                                                                <p class="badge badge-info p-3"> Pick Up </p>
+                                                                <span class="badge badge-info"> Pick Up </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -310,7 +323,7 @@
                                                             <td>23-08-2018 09:12:35</td>
                                                             <td>Michael K. Ledford </td>
                                                             <td>
-                                                                <p class="badge badge-info p-3"> Pick Up </p>
+                                                                <span class="badge badge-info"> Pick Up </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
