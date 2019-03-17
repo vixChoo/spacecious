@@ -15,6 +15,8 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/seller.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -84,11 +86,9 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
                 <div class="container-fluid">
-                    <div class="fixed-top">
                         <button type="button" id="sidebarCollapse" class="btn btn-primary">
                             <i class="fas fa-align-left"></i>
                         </button>
-                    </div>
                     <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -132,7 +132,7 @@
                                     <h4 class="text-success strong">+ 1.86%</h4>
                                 </div>
                             
-                                <div class="col-5 p-5">
+                                <div class="col-lg-5 col-6 p-lg-5">
                                     <img src="./assets/images/coin.png" class="img-fluid text-success border-success" alt="">
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@
                                         <h3 class="font-2">363</h3>
                                     </div>
                                     
-                                    <div class="col-5 p-5">
+                                    <div class="col-lg-5 col-6 p-lg-5">
                                         <img src="./assets/images/shopping-cart.png" class="img-fluid" alt="">
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                                     <h3 class="font-2">123</h3>
                                 </div>
                             
-                                <div class="col-5 p-5">
+                                <div class="col-lg-5 col-6 p-lg-5">
                                     <img src="./assets/images/team.png" class="img-fluid" alt="">
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                                         <h3 class="text-star strong font-2">4.2</h3>
                                     </div>
                                     
-                                    <div class="col-5 p-5">
+                                    <div class="col-lg-5 col-6 p-lg-5">
                                         <img src="./assets/images/star.png" class="img-fluid" alt="">
                                     </div>
                                 </div>
@@ -248,7 +248,7 @@
                                                             <td>27-08-2018 01:22:12</td>
                                                             <td>Patricia J. King </td>
                                                             <td>
-                                                                <span class="badge badge-warning"> Dispatching </span>
+                                                                <span class="badge badge-warning"> Shipping </span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -327,7 +327,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="9"><a href="#" class="btn btn-default float-right">View Details</a></td>
+                                                            <td colspan="9"><a href="./seller-order.html" class="btn btn-default float-right">View Details</a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -643,13 +643,21 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
             });
-        });
     </script>
 </body>
 

@@ -4894,7 +4894,6 @@ input[type="button"].btn-block {
   text-decoration: none;
   background-color: #919ca6;
 }
-
 .badge-dark {
   color: #ffffff;
   background-color: #44386e;
@@ -6345,6 +6344,7 @@ button.bg-light:hover,
 button.bg-light:focus {
   background-color: #919ca6 !important;
 }
+
 
 .bg-dark {
   background-color: #474787 !important;
@@ -10250,17 +10250,20 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-success {
-   background-color: #01a3a4 !important;
+  background: #00f2c3;
+  background-color: #01a3a4;
   background-image: linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
   background-image: -webkit-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
   background-image: -o-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
   background-image: -moz-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-size: 210% 210%; 
   background-position: top right;
-  background-color: #00f2c3;
   transition: all 0.15s ease;
   color: #ffffff;
   box-shadow: none;
 }
+
+
 
 .btn-success.animation-on-hover:hover {
   background-position: bottom left;
@@ -10658,14 +10661,14 @@ fieldset[disabled] .btn-warning.active {
 }
 
 .btn-danger {
-  background: #831212;
-  background-image: -webkit-linear-gradient(to bottom left, #831212, #ec250d, #831212);
-  background-image: -o-linear-gradient(to bottom left, #831212, #ec250d, #831212);
-  background-image: -moz-linear-gradient(to bottom left, #831212, #ec250d, #831212);
-  background-image: linear-gradient(to bottom left, #831212, #ec250d, #831212);
+  background: #fd79a8;
+  background-image: -webkit-linear-gradient(to bottom left, #fd79a8, #ec250d, #fd79a8);
+  background-image: -o-linear-gradient(to bottom left, #fd79a8, #ec250d, #fd79a8);
+  background-image: -moz-linear-gradient(to bottom left, #fd79a8, #ec250d, #fd79a8);
+  background-image: linear-gradient(to bottom left, #fd79a8, #ec250d, #fd79a8);
   background-size: 210% 210%;
   background-position: top right;
-  background-color: #831212;
+  background-color: #fd79a8;
   transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
@@ -20115,6 +20118,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   position: relative;
 }
   
+.price{
+  width: 55px!important;
+}
+
 
 @media only screen and (min-width: 481px){}
 .img-overlay {
@@ -20146,6 +20153,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     padding-left: 0.25rem;
     padding-right: 1.2rem；
   }
+  .table-check{
+     min-width:25px!important;
+}
+  
 }
 
 
@@ -20211,9 +20222,12 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     white-space: nowrap;
     max-width: 200px
    }
- 
-
+  .price {
+    width: 100px!important;
+  }
 }
+
+
 
 /* End Article */
 
@@ -20259,6 +20273,11 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
    width: 370px;
    height: 398px;
  }
+
+  .table-check{
+    min-width:25px!important;
+  }
+
 
  
  
@@ -20755,9 +20774,8 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     flex-flow: row wrap;
     align-items: center;
     max-width: 140px !important;
-
-
   }
+  
   .form-inline .form-control {
     display: inline-block;
     width: auto;
@@ -20804,4 +20822,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 table.w-85 th {
       width: 82%;
+}
+
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
 }

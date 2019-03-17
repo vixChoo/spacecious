@@ -361,6 +361,21 @@ function hideForm(hideForm, hideCheck) {
   }
   
 }
+// Diasbled
+
+function disableForm(disBtn, disDiv) {
+  let hiddenForm = document.getElementById(disDiv);
+  let hiddenCheck = document.getElementById(disBtn);
+
+  if (hiddenCheck.checked) {
+    hiddenForm.classList.remove("disabled")
+  }
+  else {
+    hiddenForm.classList.add("disabled")
+  }
+}
+   
+  
 
 // hidden
 
