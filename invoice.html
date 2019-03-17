@@ -17,40 +17,25 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
         
 </head>
 <body>
     <header>
         <div class="row justify-content-center">
             <span><img alt="" src="./assets/images/spaceBig.png"><input type="file" accept="image/*"></span>
-            <hr>
         </div>
         <div class="row">
             <div class="col-3">
 
                 <h1 class="text-left">Invoice</h1>
             </div>
-            <div class="col-8 ">
-                <table class="meta w-75">
-                    <tr>
-                        <th><span contenteditable>Invoice</span></th>
-                        <td><span contenteditable>#Number</span></td>
-                    </tr>
-                    <tr>
-                        <th><span contenteditable>Date</span></th>
-                        <td><span contenteditable>January 1, 2019</span></td>
-                    </tr>
-                    <tr class="d-none">
-                        <th><span contenteditable>Amount Due</span></th>
-                        <td><span id="prefix" contenteditable>RM</span><span>600.00</span></td>
-                    </tr>
-                </table>
-            </div>
         </div>
 
 
         <div class="row">
-            <div class="col-5 pull-left float-left">
+            <div class="col-3 pull-left float-left">
                 <p class="title">Seller :</p>
                 <address contenteditable>
                     <h2>Seller Name</h2>
@@ -59,13 +44,30 @@
                 </address>
             </div>
             
-            <div class="col-5 pull-right float-right">
+            <div class="col-3 pull-right float-right">
                 <h1 class="d-none">Recipient</h1>
                 <p class="title">Sold to:</p>
                 <address contenteditable>
                     <h2>Name</h2>
                     <p>Address</p>
                 </address>
+            </div>
+            <div class="col-4 pull-right float-right">
+                    <table class="meta">
+                        <tr>
+                            <th><span contenteditable>Invoice</span></th>
+                            <td><span contenteditable>#Number</span></td>
+                        </tr>
+                        <tr>
+                            <th><span contenteditable>Date</span></th>
+                            <td><span contenteditable>January 1, 2019</span></td>
+                        </tr>
+                        <tr class="d-none">
+                            <th><span contenteditable>Amount Due</span></th>
+                            <td><span id="prefix" contenteditable>RM</span><span>600.00</span></td>
+                        </tr>
+                    </table>
+                    
             </div>
                 
         </div>
@@ -114,7 +116,18 @@
 		<aside>
 			<h1 ><span contenteditable>Thank You Please Come Again</span></h1>
 			<div contenteditable>
-				<p>content</p>
+                <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round" data-toggle="tooltip"
+                    data-original-title="Follow us">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round" data-toggle="tooltip"
+                    data-original-title="Like us">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round" data-toggle="tooltip"
+                    data-original-title="Follow us">
+                    <i class="fab fa-instagram"></i>
+                </a>
 			</div>
         </aside>
     <!-- End Invoice -->
@@ -155,6 +168,7 @@ h1 {
     font: bold 100% sans-serif; 
     letter-spacing: 0.5em; 
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
     }
     
   
@@ -212,18 +226,27 @@ article address { float: left; font-size: 125%; font-weight: bold; }
 
 /* table meta & balance */
 
-table.meta, table.balance { float: right; width: 36%; }
+table.balance { float: right; width: 36%; }
 table.meta:after, table.balance:after { clear: both; content: ""; display: table; }
 
 /* table meta */
 
-table.meta th { width: 40%; }
-table.meta td { width: 40%;}
+table.meta th { width: fit-content;}
+table.meta td {width: fit-content;}
 
 /* table items */
 
-table.inventory { clear: both; width: 100%; border-top: 3px solid #d3d3e4; }
-table.inventory th { font-weight: bold; text-align: center; }
+table.inventory { clear: both; width: 100%; }
+table.inventory th {
+    color: #000000;
+    font-weight: bold; 
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+}
 table.inventory td { border-width: 1px;  border-bottom: 1px solid #e6e6f2; }
 
 table.inventory td:nth-child(1) { width: 26%; }
@@ -234,7 +257,7 @@ table.inventory td:nth-child(5) { text-align: center; width: 12%; }
 
 /* table balance */
 
-table.balance th, table.balance td { width: 50%; }
+table.balance th, table.balance td { width: 50%;letter-spacing: 1.5px;font-family: 'Montserrat', sans-serif;font-weight:bold; text-transform: uppercase;  }
 table.balance td { text-align: right; }
 
 /* aside */
