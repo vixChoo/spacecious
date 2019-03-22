@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spacecious</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
+    <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Text Editor -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/seller.css">
+    <link href="./editor/editor.css" type="text/css" rel="stylesheet" />
+    <!-- Scrollbar Custom CSS -->
+    
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header d-flex justify-content-center">
+                <img src="./assets/images/spaceSmall.png" alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="./seller.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="./seller-order.html">Order</a>
+                </li>
+                <li class="active">
+                    <a href="./seller-article.html">Article</a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inventory</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Navbar -->
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-12 collapse-close d-inline-block d-lg-none ml-auto text-right">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navbarSupportedContent">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Content -->
+
+            <!-- Actions -->
+            <div class="container-fluid mt--3 pb-md">
+                <div class="pull-right">
+                    <a href="./product-view.html" rel="tooltip" data-toggle="tooltip" title="Save" class="btn btn-success m-2 p-2">
+                        <i class="far fa-save"></i>
+                    </a>
+                    <a href="./seller-product.html" rel="tooltip" data-toggle="tooltip" title="Cancel" class="btn btn-danger m-2 p-2">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">
+                            Description
+                        </div>
+                        <div class="card-body">
+                            <div id="txtEditor"></div>
+                        </div>
+                    </div>
+
+
+            </div>
+            <div class="col-md-4 h-fit">
+                <div class="card">
+                    <div class="card-header p-3">
+                        Article Details
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>Title</th>
+                                        <td>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" value="Sippin' In The Rain">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Visibility</th>
+                                        <td>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option selected>Published</option>
+                                                    <option>Unpublish</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Category</th>
+                                        <td>
+                    
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option selected>Wine</option>
+                                                    <option>Liquor</option>
+                                                    <option>Spirits</option>
+                                                    <option>Beer</option>
+                                                    <option>Extras</option>
+                                                </select>
+                                            </div>
+                                            <p class="text-muted">Note : only admin can add category and tags</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tags</th>
+                                        <td>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <optgroup label="Wine">
+                                                        <option value="White-Wine">White Wine</option>
+                                                        <option value="Red-Wine">Red Wine</option>
+                                                        <option value="Rose-Wine">Rosé Wine</option>
+                                                        <option value="Champagne">Champagne</option>
+                                                        <option value="Dessert-and-Fortified-Wine">Dessert and
+                                                            Fortified Wine</option>
+                                                        <option value="Specialty-Wine">Specialty Wine</option>
+                                                        <option value="Sake">Sake</option>
+                                                    </optgroup>
+                                                    <optgroup label="Liquor">
+                                                        <option value="White-Wine">White Wine</option>
+                                                        <option value="Red-Wine">Red Wine</option>
+                                                        <option value="Rose-Wine">Rosé Wine</option>
+                                                        <option value="Champagne">Champagne</option>
+                                                        <option value="Dessert-and-Fortified-Wine">Dessert and
+                                                            Fortified Wine</option>
+                                                        <option value="Specialty-Wine">Specialty Wine</option>
+                                                        <option value="Sake">Sake</option>
+                                                    </optgroup>
+                                                    <optgroup label="Spirits">
+                                                        <option value="White-Wine">White Wine</option>
+                                                        <option value="Red-Wine">Red Wine</option>
+                                                        <option value="Rose-Wine">Rosé Wine</option>
+                                                        <option value="Champagne">Champagne</option>
+                                                        <option value="Dessert-and-Fortified-Wine">Dessert and
+                                                            Fortified Wine</option>
+                                                        <option value="Specialty-Wine">Specialty Wine</option>
+                                                        <option value="Sake">Sake</option>
+                                                    </optgroup>
+                                                    <optgroup label="Beer">
+                                                        <option value="White-Wine">White Wine</option>
+                                                        <option value="Red-Wine">Red Wine</option>
+                                                        <option value="Rose-Wine">Rosé Wine</option>
+                                                        <option value="Champagne">Champagne</option>
+                                                        <option value="Dessert-and-Fortified-Wine">Dessert and
+                                                            Fortified Wine</option>
+                                                        <option value="Specialty-Wine">Specialty Wine</option>
+                                                        <option value="Sake">Sake</option>
+                                                    </optgroup>
+                                                    <optgroup label="Extras">
+                                                        <option value="White-Wine">White Wine</option>
+                                                        <option value="Red-Wine">Red Wine</option>
+                                                        <option value="Rose-Wine">Rosé Wine</option>
+                                                        <option value="Champagne">Champagne</option>
+                                                        <option value="Dessert-and-Fortified-Wine">Dessert and
+                                                            Fortified Wine</option>
+                                                        <option value="Specialty-Wine">Specialty Wine</option>
+                                                        <option value="Sake">Sake</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="row ml-lg-sm ml-2">
+                                                <p class="p-2 strong font-1 w-100">Selected Tags</p>
+                                                <div class="alert alert-dark mr-2 p-2 pl-3">
+                                                    <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                    <b class="pr-4 text-uppercase "> Wine </b>
+                                                </div>
+                                                <div class="alert alert-primary mr-2 p-2 pl-3">
+                                                    <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert"
+                                                        aria-label="Close">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                    <b class="pr-4 text-uppercase "> Rosé Wine </b>
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <a href="#" class="btn btn-default strong">Add</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <!-- End Content -->
+
+    </div>
+    </div>
+
+    <!-- jQuery CDN - -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+ 
+
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+    <script src="./editor/editor.js"></script>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $("#txtEditor").Editor();
+            blackKit.initDatePicker();
+        });
+
+        $('.datetimepicker').datetimepicker({
+            icons: {
+                time: "fas fa-clock",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>

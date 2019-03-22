@@ -130,7 +130,7 @@ You should have received a copy of the GNU General Public License along with thi
 			var navTabs = $('<ul/>',
 									{ class: "nav nav-tabs"
 							}).append($('<li/>',
-										{ class:"active"
+										{ class:"active pr-3"
 									}).append($('<a/>',{
 											"href":"#uploadImageBar_" + _idSuffix,
 											"data-toggle":"tab"
@@ -703,7 +703,7 @@ You should have received a copy of the GNU General Public License along with thi
 												}
 											},
 											"onSave":function(){
-												var urlPattern = /(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
+												var urlPattern = /[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/;
 												var _idSuffix = "_" + editorObj.attr("id");
 												var targetText = $('#inputText' + _idSuffix).val();
 												var targetURL  = $('#inputUrl' + _idSuffix).val();

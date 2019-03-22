@@ -659,7 +659,7 @@ a[data-toggle="collapse"] {
 .dropdown-toggle::after {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 20px;
     transform: translateY(-50%);
 }

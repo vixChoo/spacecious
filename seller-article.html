@@ -142,7 +142,9 @@
                         <div class="form-inline p-3">
                             <select class="form-control mb-lg-0 mb-3 mr-lg-3">
                                 <option selected>Title</option>
-                                <option></option>
+                                <option>Published</option>
+                                <option>Pending</option>
+                                <option>Unpublish</option>
                                 
                             </select>
                             <input class="form-control mb-lg-0 mb-3" type="text" id="sortInput" onkeyup="sort()" placeholder="Search "
@@ -156,37 +158,27 @@
                             <table class="table" id="orderTable">
                                 <thead class="thead-light text-uppercase">
                                     <tr class="border-0">
-                                        <th class="border-0">Product Name</th>
-                                        <th class="border-0">Product Id</th>
-                                        <th class="border-0">Quantity</th>
-                                        <th class="border-0">Cost (RM)</th>
-                                        <th class="border-0">Customer</th>
+                                        <th class="border-0">Title</th>
+                                        <th class="border-0">Viewers</th>
+                                        <th class="border-0">Publish</th>
                                         <th class="border-0">Date Added</th>
-                                        <th class="border-0">Status</th>
+                                        <th class="border-0">Date Proceed</th>
                                         <th class="border-0">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-            
                                     <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-success m-2">Delivered </span>
-                                            <p>30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
+                                        <td>American Mule</td>
+                                        <td>1502</td>
+                                        <td><span class="badge badge-success">Published</span></td>
+                                        <td>27-08-2018 01:22:12</td>
+                                        <td>27-08-2018 01:55:12</td>
+                                        <td>
+                                            <div class="row justify-content-center">
+                                                <a href="./article-edit.html" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
                                                     <i class="fas fa-pencil-alt"></i>
                                                 </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
+                                                <a href="./article-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
@@ -196,24 +188,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-success m-2">Delivered </span>
-                                            <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
+                                        <td>American Mule</td>
+                                        <td>1502</td>
+                                        <td><span class="badge badge-success">Published</span></td>
+                                        <td>27-08-2018 01:22:12</td>
+                                        <td>27-08-2018 01:55:12</td>
+                                        <td>
+                                            <div class="row justify-content-center">
+                                                <a href="./article-edit.html" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
                                                     <i class="fas fa-pencil-alt"></i>
                                                 </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
+                                                <a href="./article-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
@@ -223,25 +208,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2">
-                                            <p class="badge badge-danger m-2">Refunded </span>
-                                                <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
+                                        <td>American Mule</td>
+                                        <td>1502</td>
+                                        <td><span class="badge badge-success">Published</span></td>
+                                        <td>27-08-2018 01:22:12</td>
+                                        <td>27-08-2018 01:55:12</td>
+                                        <td>
+                                            <div class="row justify-content-center">
+                                                <a href="./article-edit.html" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
                                                     <i class="fas fa-pencil-alt"></i>
                                                 </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
+                                                <a href="./article-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
@@ -251,25 +228,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2">
-                                            <p class="badge badge-primary m-2">Shipping</span>
-                                                <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
+                                        <td>American Mule</td>
+                                        <td>1502</td>
+                                        <td><span class="badge badge-danger">Unpublish</span></td>
+                                        <td>27-08-2018 01:22:12</td>
+                                        <td>27-08-2018 01:55:12</td>
+                                        <td>
+                                            <div class="row justify-content-center">
+                                                <a href="./article-edit.html" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
                                                     <i class="fas fa-pencil-alt"></i>
                                                 </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
+                                                <a href="./article-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
@@ -279,25 +248,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2">
-                                            <p class="badge badge-primary m-2">Shipping</span>
-                                                <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
+                                        <td>American Mule</td>
+                                        <td>1502</td>
+                                        <td><span class="badge badge-warning">Pending</span></td>
+                                        <td>27-08-2018 01:22:12</td>
+                                        <td>27-08-2018 01:55:12</td>
+                                        <td>
+                                            <div class="row justify-content-center">
+                                                <a href="./article-edit.html" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
                                                     <i class="fas fa-pencil-alt"></i>
                                                 </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
+                                                <a href="./article-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
@@ -306,145 +267,12 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-dark m-2">Processing</span>
-                                            <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                                <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-dark m-2">Processing</span>
-                                            <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                                <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-info m-2"> Pick Up</span>
-                                            <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                                <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-success m-2">Delivered </span>
-                                            <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                                <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-            
-                                        <td>Wine</td>
-                                        <td>id000001 </td>
-                                        <td>9000</td>
-                                        <td>$80.00</td>
-                                        <td>Michael K. Ledford </td>
-                                        <td class="w-25">
-                                            <p>27-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="w-25 p-2"><span class="badge badge-warning m-2"> Pending </span>
-                                            <p> 30-08-2018 01:22:12</p>
-                                        </td>
-                                        <td class="text-left w-100">
-                                            <div class="row">
-                                                <a href="#" data-toggle="tooltip" rel="tooltip" title="Edit" class="btn btn-success m-2 p-2">
-                                                    <i class="fas fa-pencil-alt"></i>
-                                                </a>
-                                                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="View" class="btn btn-primary m-2 p-2">
-                                                    <i class="fa fa-eye"></i>
-                                                </a>
-                                                <a href="#" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2">
-                                                    <i class="fas fa-trash"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-            
                                 </tbody>
+                                
+                                
                             </table>
                         </div>
+            
                         <div class="row justify-content-end">
                             <p class="p-3">Showing 1 to 20 of 363 (19 Pages)</p>
                         </div>
@@ -476,15 +304,6 @@
             
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
 
 
 

@@ -320,3 +320,11 @@ h1{
 .dropdown-menu>li>a{
   cursor:pointer;
   }
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  transform: translateY(-50%);
+}

@@ -2906,6 +2906,22 @@ fieldset:disabled a.btn {
   box-shadow: none, 0 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+.btn-darker.btn-simple {
+  color: black!important;
+  border-color: black!important;
+  background: transparent;
+}
+
+.btn-darker.btn-simple:hover,
+.btn-darker.btn-simple:focus,
+.btn-darker.btn-simple:active,
+.btn-darker.btn-simple:not(:disabled):not(.disabled):active {
+  color: #ffffff!important;
+  border-color: black;
+  background-color: black !important;
+  background-image: none !important;
+  box-shadow: none;
+}
 .btn-link {
   font-weight: 400;
   color: #e14eca;
@@ -10227,8 +10243,8 @@ fieldset[disabled] .btn-primary.active {
 
 
 .btn-default.btn-simple {
-  color: #44386e;
-  border-color: #44386e;
+  color: #44386e!important;
+  border-color: #44386e!important;
   background: transparent;
 }
 
@@ -10242,6 +10258,8 @@ fieldset[disabled] .btn-primary.active {
   background-image: none !important;
   box-shadow: none;
 }
+
+
 .btn-primary.btn-simple {
   color: #35477d;
   border-color: #35477d;
@@ -14023,7 +14041,7 @@ ol li {
 }
 
 pre {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 hr {
