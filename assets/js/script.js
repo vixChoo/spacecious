@@ -297,52 +297,6 @@ function debounce(func, wait, immediate) {
 };
 
 
-$('.owl-carousel-1').owlCarousel({
-  loop: false,
-  rewind:true,
-  margin: 20,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-   
-    1000: {
-      items: 3
-    }
-  }
-})
-
-
-
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 2
-    },
-    1000: {
-      items: 4
-    }
-  }
-})
-
-
-
 // hidden 
 
 function hideForm(hideForm, hideCheck) {
@@ -415,4 +369,74 @@ function hideDiv(hideDiv) {
     });
   };
 }(jQuery));
+
+
+(function ($) {
+  // window scroll function
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+
+  // scroll top click function
+  $('.scrollup').on('click', function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+
+
+})(jQuery);
+
+
+
+
+$('.owl-carousel-1').owlCarousel({
+  loop: false,
+  rewind: true,
+  margin: 20,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+
+    1000: {
+      items: 3
+    }
+  }
+})
+
+
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 20,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 4
+    }
+  }
+})
 

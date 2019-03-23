@@ -130,7 +130,7 @@ You should have received a copy of the GNU General Public License along with thi
 			var navTabs = $('<ul/>',
 									{ class: "nav nav-tabs"
 							}).append($('<li/>',
-										{ class:"active pr-3"
+										{ class:"active pr-4"
 									}).append($('<a/>',{
 											"href":"#uploadImageBar_" + _idSuffix,
 											"data-toggle":"tab"
@@ -1335,7 +1335,7 @@ You should have received a copy of the GNU General Public License along with thi
 			//Create a Modal for the button.		
 			var modalTrigger = $('<a/>',{	href:"#"+modalId,
 											role:"button",
-											class:"btn btn-default",
+											class:"btn btn-neutral",
 											"data-toggle":"modal"
 			});
 			var modalElement = $('<div/>',{ id: modalId,
@@ -1366,7 +1366,7 @@ You should have received a copy of the GNU General Public License along with thi
 									            		class:"modal-footer"
 									         			}).append($('<button/>',{
 									                		type:"button",
-									                		class:"btn btn-default",
+									                		class:"btn btn-neutral",
 									                		"data-dismiss":"modal",
 									                		"aria-hidden":"true"
 									               			}).html('Cancel')
@@ -1394,7 +1394,7 @@ You should have received a copy of the GNU General Public License along with thi
 				var menuWrapElement = $("<div/>", {class:"btn-group"});
 				var menuElement 	= $("<ul/>", {class:"dropdown-menu"});
 				menuWrapElement.append($('<a/>',{
-										class:"btn btn-default dropdown-toggle",
+										class:"btn btn-neutral mr-3 pr-3 dropdown-toggle",
 										"data-toggle":"dropdown",
 										"href":"javascript:void(0)",
 										"title":itemSettings["tooltip"]
@@ -1437,7 +1437,7 @@ You should have received a copy of the GNU General Public License along with thi
 				return menuWrapElement;
 		    }
 			else{
-				var menuWrapElement = $("<a/>",{href:'javascript:void(0)', class:'btn btn-default'});
+				var menuWrapElement = $("<a/>",{href:'javascript:void(0)', class:'btn btn-neutral'});
 				var menuElement = $("<i/>");
 				if(itemSettings["icon"])
 					menuElement.addClass(itemSettings["icon"]);

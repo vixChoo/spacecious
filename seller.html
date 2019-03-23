@@ -12,6 +12,19 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+    <!-- Calender -->
+    <link href='./fullcalendar-4.0.1/packages/core/main.css' rel='stylesheet' />
+    <link href='./fullcalendar-4.0.1/packages/daygrid/main.css' rel='stylesheet' />
+    <script src='./fullcalendar-4.0.1/packages/core/main.js'></script>
+    <script src='./fullcalendar-4.0.1/packages/interaction/main.js'></script>
+    <script src='./fullcalendar-4.0.1/packages/daygrid/main.js'></script>
+    <link href='./fullcalendar-4.0.1/packages/timegrid/main.css' rel='stylesheet' />
+    <link href='./fullcalendar-4.0.1/packages/list/main.css' rel='stylesheet' />
+    <script src='./fullcalendar-4.0.1/packages/timegrid/main.js'></script>
+    <script src='./fullcalendar-4.0.1/packages/list/main.js'></script>
+
+
+
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/seller.css">
@@ -25,6 +38,92 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+                },
+                defaultDate: '2019-03-12',
+                navLinks: true, // can click day/week names to navigate views
+
+                weekNumbers: true,
+                weekNumbersWithinDays: true,
+                weekNumberCalculation: 'ISO',
+
+                editable: true,
+                eventLimit: true, // allow "more" link when too many events
+                events: [
+                    {
+                        title: 'All Day Event',
+                        start: '2019-03-01'
+                    },
+                    {
+                        title: 'Long Event',
+                        start: '2019-03-06',
+                        end: '2019-03-09'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2019-03-09T16:00:00'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2019-03-16T16:00:00'
+                    },
+                    {
+                        title: 'Order 1',
+                        start: '2019-03-11',
+                        end: '2019-03-13'
+                    },
+                    {
+                        title: 'Order 2',
+                        start: '2019-03-12T10:30:00',
+                        end: '2019-03-12T12:30:00'
+                    },
+                    {
+                        title: 'Order 3',
+                        start: '2019-03-12T12:00:00'
+                    },
+                    {
+                        title: 'Meeting',
+                        start: '2019-03-12T14:30:00'
+                    },
+                    {
+                        title: 'Delivering',
+                        start: '2019-03-12T17:30:00'
+                    },
+                    {
+                        title: 'Processing',
+                        start: '2019-03-12T20:00:00'
+                    },
+                    {
+                        title: 'Processing',
+                        start: '2019-03-13T07:00:00'
+                    },
+                    {
+                        title: 'Click for Order',
+                        url: './seller-order.html',
+                        start: '2019-03-28'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+
+
+    </script>
 </head>
 
 <body>
@@ -39,7 +138,7 @@
                 <li class="active">
                     <a href="./seller.html">Dashboard</a>
                 </li>
-                <li >
+                <li>
                     <a href="./seller-order.html">Order</a>
                 </li>
                 <li>
@@ -79,23 +178,23 @@
 
         <!-- Navbar -->
 
-      
+
 
 
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
                 <div class="container-fluid">
-                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                            <i class="fas fa-align-left"></i>
-                        </button>
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fas fa-align-left"></i>
+                    </button>
                     <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-        
-        
+
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="col-12 collapse-close d-inline-block d-lg-none ml-auto text-right">
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -121,517 +220,622 @@
                 </div>
             </nav>
 
-                <!-- Content -->
-                    <div class="card-deck mb-3">
-                        <div class="card border-3 border-top border-top-primary">
-                         <div class="card-body p-3">
+            <!-- Content -->
+            <div class="row">
+                <div class="col-lg-3 col-12 mh-2">
+                    <div class="card border-3 border-top border-top-primary h-100">
+                        <div class="card-body p-4">
                             <div class="row justify-content-around">
-                                <div class="col-6">
-                                    <h3 class="card-title font-2">Total Revenue</h3>
+                                <div class="col-7">
+                                    <h4 class="card-title font-2">Total Revenue</h4>
                                     <h3 class="font-2">RM 10800</h3>
                                     <h4 class="text-success strong">+ 1.86%</h4>
                                 </div>
-                            
-                                <div class="col-lg-5 col-6 p-lg-5">
+
+                                <div class="col-5">
                                     <img src="./assets/images/coin.png" class="img-fluid text-success border-success" alt="">
-                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="card border-3 border-top border-top-primary">
-                            <div class="card-body p-3">
-                                <div class="row justify-content-around">
-                                    <div class="col-6">
-                                        <h3 class="card-title font-2">Total Orders</h3>
-                                        <h3 class="font-2">363</h3>
-                                    </div>
-                                    
-                                    <div class="col-lg-5 col-6 p-lg-5">
-                                        <img src="./assets/images/shopping-cart.png" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                            <small></small>
                         </div>
                     </div>
-
-
-                    <div class="card-deck">
-                        <div class="card border-3 border-top border-top-primary">
-                         <div class="card-body p-3">
-                            <div class="row justify-content-around">
-                                <div class="col-6">
-                                    <h3 class="card-title font-2">Total Customers</h3>
-                                    <h3 class="font-2">123</h3>
-                                </div>
-                            
-                                <div class="col-lg-5 col-6 p-lg-5">
-                                    <img src="./assets/images/team.png" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                          <div class="card border-3 border-top border-top-primary">
-                            <div class="card-body p-3">
-                                <div class="row justify-content-around">
-                                    <div class="col-6">
-                                        <h3 class="card-title font-2">Total Reviews</h3>
-                                        <h3 class="text-star strong font-2">4.2</h3>
-                                    </div>
-                                    
-                                    <div class="col-lg-5 col-6 p-lg-5">
-                                        <img src="./assets/images/star.png" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        
-                    <!-- Tabs -->
-                        <div class="col-12 mt-md ml-auto mr-auto">
-                            <!-- Tabs -->
-                            <div class="card">
-                                <div class="font-2">
-                                    <ul class="nav nav-tabs" role="tablist" style="margin-top:-50px; font-size:20px;">
-                                        <li class="nav-item">
-                                            <a class="nav-link active font-2 text-uppercase " data-toggle="tab" href="#recent-orders" role="tablist">
-                                               Recent Orders 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item font-2 text-uppercase">
-                                            <a class="nav-link" data-toggle="tab" href="#best" role="tablist" id="review">
-                                              Best sellers 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item font-2 text-uppercase">
-                                            <a class="nav-link" data-toggle="tab" href="#less" role="tablist" id="review">
-                                              Less sellers 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item font-2 text-uppercase">
-                                            <a class="nav-link" data-toggle="tab" href="#reviews" role="tablist" id="review">
-                                              Most reviews 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <!-- Tab panes -->
-                                    <div class="tab-content tab-space">
-                                        <div class="tab-pane active" id="recent-orders">
-                                            <div class="table-responsive table-hover">
-                                                <table class="table">
-                                                    <thead class="thead-light text-uppercase">
-                                                        <tr class="border-0">
-                                                            <th class="border-0">#</th>
-                                                            <th class="border-0">Image</th>
-                                                            <th class="border-0">Product Name</th>
-                                                            <th class="border-0">Product Id</th>
-                                                            <th class="border-0">Quantity</th>
-                                                            <th class="border-0">Price (RM)</th>
-                                                            <th class="border-0">Order Time</th>
-                                                            <th class="border-0">Customer</th>
-                                                            <th class="border-0">Status</th>
-                                                        </tr>
-                                                    </thead>
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #1 </td>
-                                                            <td>id000001 </td>
-                                                            <td>20</td>
-                                                            <td>$80.00</td>
-                                                            <td>27-08-2018 01:22:12</td>
-                                                            <td>Patricia J. King </td>
-                                                            <td>
-                                                                <span class="badge badge-warning"> Shipping </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #2 </td>
-                                                            <td>id000002 </td>
-                                                            <td>12</td>
-                                                            <td>$180.00</td>
-                                                            <td>25-08-2018 21:12:56</td>
-                                                            <td>Rachel J. Wicker </td>
-                                                            <td>
-                                                                <span class="badge badge-success">Delivered </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #3 </td>
-                                                            <td>id000003 </td>
-                                                            <td>23</td>
-                                                            <td>$820.00</td>
-                                                            <td>24-08-2018 14:12:77</td>
-                                                            <td>Michael K. Ledford </td>
-                                                            <td>
-                                                                <span class="badge badge-success">Delivered </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>34</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                            <td>Michael K. Ledford </td>
-                                                            <td>
-                                                                <span class="badge badge-success">Delivered </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>34</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                            <td>Michael K. Ledford </td>
-                                                            <td>
-                                                                <span class="badge badge-info"> Pick Up </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>34</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                            <td>Michael K. Ledford </td>
-                                                            <td>
-                                                                <span class="badge badge-info"> Pick Up </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="9"><a href="./seller-order.html" class="btn btn-default float-right">View Details</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                        
-                        
-                                        <div class="tab-pane" id="best">
-                                            <div class="table-responsive table-hover">
-                                                <table class="table">
-                                                    <thead class="thead-light text-uppercase">
-                                                        <tr class="border-0">
-                                                            <th class="border-0">No</th>
-                                                            <th class="border-0">Image</th>
-                                                            <th class="border-0">Product Name</th>
-                                                            <th class="border-0">Product Id</th>
-                                                            <th class="border-0">Total</th>
-                                                            <th class="border-0">Price (RM)</th>
-                                                            <th class="border-0">Upload Time</th>
-                                                         
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #1 </td>
-                                                            <td>id000001 </td>
-                                                            <td>20</td>
-                                                            <td>$80.00</td>
-                                                            <td>27-08-2018 01:22:12</td>
-                                                           
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #2 </td>
-                                                            <td>id000002 </td>
-                                                            <td>12</td>
-                                                            <td>$180.00</td>
-                                                            <td>25-08-2018 21:12:56</td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #3 </td>
-                                                            <td>id000003 </td>
-                                                            <td>23</td>
-                                                            <td>$820.00</td>
-                                                            <td>24-08-2018 14:12:77</td>
-                                                       
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>34</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                        
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>34</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                          
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>34</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                          
-                                                        </tr>
-                                                         <tr>
-                                                            <td colspan="9"><a href="#" class="btn btn-default float-right">View Details</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                        
-                                        <div class="tab-pane" id="less">
-                                                 <div class="table-responsive table-hover">
-                                                <table class="table">
-                                                    <thead class="thead-light text-uppercase">
-                                                        <tr class="border-0">
-                                                            <th class="border-0">No</th>
-                                                            <th class="border-0">Image</th>
-                                                            <th class="border-0">Product Name</th>
-                                                            <th class="border-0">Product Id</th>
-                                                            <th class="border-0">Total</th>
-                                                            <th class="border-0">Price (RM)</th>
-                                                            <th class="border-0">Upload Time</th>
-                                                         
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #1 </td>
-                                                            <td>id000001 </td>
-                                                            <td>1</td>
-                                                            <td>$80.00</td>
-                                                            <td>27-08-2018 01:22:12</td>
-                                                           
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #2 </td>
-                                                            <td>id000002 </td>
-                                                            <td>3</td>
-                                                            <td>$180.00</td>
-                                                            <td>25-08-2018 21:12:56</td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #3 </td>
-                                                            <td>id000003 </td>
-                                                            <td>8</td>
-                                                            <td>$820.00</td>
-                                                            <td>24-08-2018 14:12:77</td>
-                                                       
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>11</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                        
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>20</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                          
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>50</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                          
-                                                        </tr>
-                                                         <tr>
-                                                            <td colspan="9"><a href="#" class="btn btn-default float-right">View Details</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="reviews">
-                                             <div class="table-responsive table-hover">
-                                                <table class="table">
-                                                    <thead class="thead-light text-uppercase">
-                                                        <tr class="border-0">
-                                                            <th class="border-0">No</th>
-                                                            <th class="border-0">Image</th>
-                                                            <th class="border-0">Product Name</th>
-                                                            <th class="border-0">Product Id</th>
-                                                            <th class="border-0">Total</th>
-                                                            <th class="border-0">Price (RM)</th>
-                                                            <th class="border-0">Upload Time</th>
-                                                         
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #1 </td>
-                                                            <td>id000001 </td>
-                                                            <td>9000</td>
-                                                            <td>$80.00</td>
-                                                            <td>27-08-2018 01:22:12</td>
-                                                           
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #2 </td>
-                                                            <td>id000002 </td>
-                                                            <td>7832</td>
-                                                            <td>$180.00</td>
-                                                            <td>25-08-2018 21:12:56</td>
-                                                            
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #3 </td>
-                                                            <td>id000003 </td>
-                                                            <td>4556</td>
-                                                            <td>$820.00</td>
-                                                            <td>24-08-2018 14:12:77</td>
-                                                       
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>2025</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                        
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>1988</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                          
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>
-                                                                <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
-                                                            </td>
-                                                            <td>Wine #4 </td>
-                                                            <td>id000004 </td>
-                                                            <td>1506</td>
-                                                            <td>$340.00</td>
-                                                            <td>23-08-2018 09:12:35</td>
-                                                          
-                                                        </tr>
-                                                         <tr>
-                                                            <td colspan="9"><a href="#" class="btn btn-default float-right">View Details</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
 
                 
+          
+                <div class="col-lg-3 col-12 mh-2">
+                    <div class="card border-3 border-top border-top-primary h-100">
+                        <div class="card-body p-4">
+                            <div class="row justify-content-around">
+                                <div class="col-lg-7 col-6">
+                                    <h4 class="card-title font-2">Total Orders</h3>
+                                    <h3 class="font-2">363</h3>
+                                    <h4 class="text-success strong">+ 1.95%</h4>
+                                </div>
+
+                                <div class="col-5">
+                                    <img src="./assets/images/shopping-cart.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                <!-- End Content -->
-              
+                </div>  
+
+                <div class="col-lg-3 col-12 mh-2">
+                    <div class="card border-3 border-top border-top-primary h-100">
+                        <div class="card-body p-4">
+                            <div class="row justify-content-around">
+                                <div class="col-lg-7 col-6">
+                                    <h4 class="card-title font-2">Total Customers</h3>
+                                    <h3 class="font-2">123</h3>
+                                    <h4 class="text-danger strong">- 0.95%</h4>
+                                </div>
+
+                                <div class="col-5">
+                                    <img src="./assets/images/team.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12 mh-2">
+                    <div class="card border-3 border-top border-top-primary h-100">
+                        <div class="card-body p-4">
+                            <div class="row justify-content-around">
+                                <div class="col-lg-7 col-6">
+                                    <h4 class="card-title font-2">Total Reviews</h3>
+                                    <h3 class="text-star strong font-2">4.2 </h3>
+                                    <h4 class="strong text-dark">143 Reviews</h4>
+                                   
+                                    
+                                </div>
+
+                                <div class="col-5">
+                                    <img src="./assets/images/star.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs -->
+            <div class="col-12 mt-lg ml-auto mr-auto">
+                <!-- Tabs -->
+                <div class="card">
+                    <div class="font-2">
+                        <ul class="nav nav-tabs" role="tablist" style="margin-top:-50px; font-size:20px;">
+                            <li class="nav-item">
+                                <a class="nav-link active font-2 text-uppercase " data-toggle="tab" href="#recent-orders"
+                                    role="tablist">
+                                    Recent Orders
+                                </a>
+                            </li>
+                            <li class="nav-item font-2 text-uppercase">
+                                <a class="nav-link" data-toggle="tab" href="#best" role="tablist" id="review">
+                                    Best sellers
+                                </a>
+                            </li>
+                            <li class="nav-item font-2 text-uppercase">
+                                <a class="nav-link" data-toggle="tab" href="#less" role="tablist" id="review">
+                                    Less sellers
+                                </a>
+                            </li>
+                            <li class="nav-item font-2 text-uppercase">
+                                <a class="nav-link" data-toggle="tab" href="#reviews" role="tablist" id="review">
+                                    Most reviews
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <!-- Tab panes -->
+                        <div class="tab-content tab-space">
+                            <div class="tab-pane active" id="recent-orders">
+                                <div class="table-responsive table-hover">
+                                    <table class="table">
+                                        <thead class="thead-light text-uppercase">
+                                            <tr class="border-0">
+                                                <th class="border-0">#</th>
+                                                <th class="border-0">Image</th>
+                                                <th class="border-0">Product Name</th>
+                                                <th class="border-0">Product Id</th>
+                                                <th class="border-0">Quantity</th>
+                                                <th class="border-0">Price (RM)</th>
+                                                <th class="border-0">Order Time</th>
+                                                <th class="border-0">Customer</th>
+                                                <th class="border-0">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #1 </td>
+                                                <td>id000001 </td>
+                                                <td>20</td>
+                                                <td>$80.00</td>
+                                                <td>27-08-2018 01:22:12</td>
+                                                <td>Patricia J. King </td>
+                                                <td>
+                                                    <span class="badge badge-warning"> Shipping </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #2 </td>
+                                                <td>id000002 </td>
+                                                <td>12</td>
+                                                <td>$180.00</td>
+                                                <td>25-08-2018 21:12:56</td>
+                                                <td>Rachel J. Wicker </td>
+                                                <td>
+                                                    <span class="badge badge-success">Delivered </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #3 </td>
+                                                <td>id000003 </td>
+                                                <td>23</td>
+                                                <td>$820.00</td>
+                                                <td>24-08-2018 14:12:77</td>
+                                                <td>Michael K. Ledford </td>
+                                                <td>
+                                                    <span class="badge badge-success">Delivered </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+                                                <td>Michael K. Ledford </td>
+                                                <td>
+                                                    <span class="badge badge-success">Delivered </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+                                                <td>Michael K. Ledford </td>
+                                                <td>
+                                                    <span class="badge badge-info"> Pick Up </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+                                                <td>Michael K. Ledford </td>
+                                                <td>
+                                                    <span class="badge badge-info"> Pick Up </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="9"><a href="./seller-order.html" class="btn btn-default float-right">View
+                                                        Details</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="best">
+                                <div class="table-responsive table-hover">
+                                    <table class="table">
+                                        <thead class="thead-light text-uppercase">
+                                            <tr class="border-0">
+                                                <th class="border-0">No</th>
+                                                <th class="border-0">Image</th>
+                                                <th class="border-0">Product Name</th>
+                                                <th class="border-0">Product Id</th>
+                                                <th class="border-0">Total</th>
+                                                <th class="border-0">Price (RM)</th>
+                                                <th class="border-0">Upload Time</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #1 </td>
+                                                <td>id000001 </td>
+                                                <td>20</td>
+                                                <td>$80.00</td>
+                                                <td>27-08-2018 01:22:12</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #2 </td>
+                                                <td>id000002 </td>
+                                                <td>12</td>
+                                                <td>$180.00</td>
+                                                <td>25-08-2018 21:12:56</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #3 </td>
+                                                <td>id000003 </td>
+                                                <td>23</td>
+                                                <td>$820.00</td>
+                                                <td>24-08-2018 14:12:77</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>34</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="9"><a href="#" class="btn btn-default float-right">View
+                                                        Details</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="less">
+                                <div class="table-responsive table-hover">
+                                    <table class="table">
+                                        <thead class="thead-light text-uppercase">
+                                            <tr class="border-0">
+                                                <th class="border-0">No</th>
+                                                <th class="border-0">Image</th>
+                                                <th class="border-0">Product Name</th>
+                                                <th class="border-0">Product Id</th>
+                                                <th class="border-0">Total</th>
+                                                <th class="border-0">Price (RM)</th>
+                                                <th class="border-0">Upload Time</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #1 </td>
+                                                <td>id000001 </td>
+                                                <td>1</td>
+                                                <td>$80.00</td>
+                                                <td>27-08-2018 01:22:12</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #2 </td>
+                                                <td>id000002 </td>
+                                                <td>3</td>
+                                                <td>$180.00</td>
+                                                <td>25-08-2018 21:12:56</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #3 </td>
+                                                <td>id000003 </td>
+                                                <td>8</td>
+                                                <td>$820.00</td>
+                                                <td>24-08-2018 14:12:77</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>11</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>20</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>50</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="9"><a href="#" class="btn btn-default float-right">View
+                                                        Details</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="reviews">
+                                <div class="table-responsive table-hover">
+                                    <table class="table">
+                                        <thead class="thead-light text-uppercase">
+                                            <tr class="border-0">
+                                                <th class="border-0">No</th>
+                                                <th class="border-0">Image</th>
+                                                <th class="border-0">Product Name</th>
+                                                <th class="border-0">Product Id</th>
+                                                <th class="border-0">Total</th>
+                                                <th class="border-0">Price (RM)</th>
+                                                <th class="border-0">Upload Time</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #1 </td>
+                                                <td>id000001 </td>
+                                                <td>9000</td>
+                                                <td>$80.00</td>
+                                                <td>27-08-2018 01:22:12</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #2 </td>
+                                                <td>id000002 </td>
+                                                <td>7832</td>
+                                                <td>$180.00</td>
+                                                <td>25-08-2018 21:12:56</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #3 </td>
+                                                <td>id000003 </td>
+                                                <td>4556</td>
+                                                <td>$820.00</td>
+                                                <td>24-08-2018 14:12:77</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>2025</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>1988</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>
+                                                    <div><img src="assets/images/wine.jpg" alt="user" width="50"></div>
+                                                </td>
+                                                <td>Wine #4 </td>
+                                                <td>id000004 </td>
+                                                <td>1506</td>
+                                                <td>$340.00</td>
+                                                <td>23-08-2018 09:12:35</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td colspan="9"><a href="#" class="btn btn-default float-right">View
+                                                        Details</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id='calendar'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="card">
+                        <div class="p-3 hover">
+                            <a href="./order-view.html">
+                                <div class="row justify-content-around pl-lg-2 pr-lg-2 pb-lg-2">
+                                    <small class="card-text strong w-50 text-uppercase text-dark">Order 1</small>
+                                    <small class="card-text">23 / 2 / 19</small>
+                                </div>
+    
+                                <div class="progress-container progress-info">
+                                    <span class="progress-badge">Delivering</span>
+                                    <div class="progress ">
+                                        <div class="progress-bar w-50" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                                            <span class="progress-value">50%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                            <hr class="w-100 mt--2 mb-0">
+
+                        <div class="p-3 hover">
+                            <a href="./order-view.html">
+                                <div class="row justify-content-around pl-lg-2 pr-lg-2 pb-lg-2">
+                                    <small class="card-text strong w-50 text-uppercase text-dark">Order 2</small>
+                                    <small class="card-text">21 / 2 / 19</small>
+                                </div>
+
+                                <div class="progress-container progress-warning">
+                                    <span class="progress-badge">Processing</span>
+                                    <div class="progress ">
+                                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                                            <span class="progress-value">75%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                            <hr class="w-100 mt--2 mb-0">
+
+                        <div class="p-3 hover">
+                            <a href="./order-view.html">
+                                <div class="row justify-content-around pl-lg-2 pr-lg-2 pb-lg-2">
+                                    <small class="card-text strong w-50 text-uppercase text-dark">Order 3</small>
+                                    <small class="card-text">20 / 2 / 19</small>
+                                </div>
+
+                                <div class="progress-container progress-success">
+                                    <span class="progress-badge">Delivered</span>
+                                    <div class="progress ">
+                                        <div class="progress-bar w-100" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                                            <span class="progress-value">100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                            <hr class="w-100 mt--2 mb-0">
+
+                        <div class="p-3 hover">
+                            <a href="./order-view.html">
+                                <div class="row justify-content-around pl-lg-2 pr-lg-2 pb-lg-2">
+                                    <small class="card-text strong w-50 text-uppercase text-dark">Order 4</small>
+                                    <small class="card-text">19 / 2 / 19</small>
+                                </div>
+
+                                <div class="progress-container progress-success">
+                                    <span class="progress-badge">Delivered</span>
+                                    <div class="progress ">
+                                        <div class="progress-bar w-100" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" >
+                                            <span class="progress-value">100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
         </div>
+        <!-- End Content -->
+
+      </div>
     </div>
 
     <!-- jQuery CDN - -->
@@ -643,21 +847,27 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/script.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar, #content').toggleClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
             });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+
+
+   
+   
     </script>
 </body>
 

@@ -5199,9 +5199,9 @@ input[type="button"].btn-block {
   height: 0.5rem;
   overflow: hidden;
   font-size: 0.65625rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
   border-radius: 0.875rem;
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 0px 3px rgba(245,245,245,0.3);
 }
 
 .progress-bar {
@@ -16182,8 +16182,9 @@ textarea.form-control:active {
   position: absolute;
   top: -3px;
   left: -27px;
-  color: #ffffff;
-  font-size: 0.62475rem;
+  color: #6c757d;
+  font-weight: bolder;
+  font-size: 0.7rem;
 }
 
 .progress-container+.progress-container,
@@ -16192,7 +16193,6 @@ textarea.form-control:active {
 }
 
 .progress-container .progress-badge {
-  color: #ffffff;
   font-size: 0.75rem;
   text-transform: uppercase;
 }
@@ -16203,7 +16203,7 @@ textarea.form-control:active {
 
 .progress-container .progress {
   margin: 10px 0;
-  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px 3px rgba(245,245,245);
 }
 
 .progress-container .progress .progress-bar {
@@ -16216,8 +16216,9 @@ textarea.form-control:active {
   position: absolute;
   top: 2px;
   right: 0;
-  color: #ffffff;
-  font-size: 0.62475rem;
+  color: #6c757d;
+  font-weight: bolder;
+  font-size: 0.7rem;
 }
 
 .progress-container .progress.progress-bar-sm {
@@ -16228,7 +16229,7 @@ textarea.form-control:active {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.progress-container.progress-neutral .progress-bar {
+.progress-container.progress-neutral .progress-bar {  
   background: #ffffff;
 }
 
@@ -16263,11 +16264,11 @@ textarea.form-control:active {
 }
 
 .progress-container.progress-warning .progress-bar {
-  background: #ff6491;
-  background-image: -webkit-linear-gradient(to bottom left, #ff6491, #ff8d72, #ff6491);
-  background-image: -o-linear-gradient(to bottom left, #ff6491, #ff8d72, #ff6491);
-  background-image: -moz-linear-gradient(to bottom left, #ff6491, #ff8d72, #ff6491);
-  background-image: linear-gradient(to bottom left, #ff6491, #ff8d72, #ff6491);
+  background: #fff200;
+  background-image: -webkit-linear-gradient(to bottom left, #fff200, #ffc048, #fff200);
+  background-image: -o-linear-gradient(to bottom left, #fff200, #ffc048, #fff200);
+  background-image: -moz-linear-gradient(to bottom left, #fff200, #ffc048, #fff200);
+  background-image: linear-gradient(to bottom left, #fff200, #ffc048, #fff200);
   background-size: 210% 210%;
   background-position: top right;
 }
