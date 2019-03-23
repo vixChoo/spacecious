@@ -692,6 +692,11 @@ a[data-toggle="collapse"] {
    transform: translateY(0%); 
 }
 
+.top-nav ul li.active>a,
+a[aria-expanded="true"]{
+  background: none!important;
+}
+
 #sidebar .dropdown-toggle::after {
     display: block;
     position: absolute;
