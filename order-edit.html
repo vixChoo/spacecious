@@ -154,7 +154,7 @@
         <!-- Actions -->
         <div class="container-fluid pb-lg">
             <div class="pull-right">
-                <a href="./product-view.html" rel="tooltip" data-toggle="tooltip" title="Save" class="btn btn-success m-2 p-2">
+                <a href="./order-view.html" rel="tooltip" data-toggle="tooltip" title="Save" class="btn btn-success m-2 p-2">
                     <i class="far fa-save"></i>
                 </a>
                 <a href="javascript:void(0)" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2" onclick="return confirm('Are you sure you want to delete this item?');">
@@ -299,7 +299,14 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="./assets/images/wine.jpg" width="50" alt="">
+                                            
+                                            <label class="cabinet center-block">
+                                                <figure>
+                                                    <img src="./assets/images/wine.jpg" class="gambar img-responsive" id="item-img-output"  width="200"/>
+                                                    <figcaption><i class="fa fa-camera"></i></figcaption>
+                                                </figure>
+                                                <input type="file" class="item-img file center-block" onchange="readURL(this);" name="file_photo" />
+                                            </label>
                                             <div class="row m-0 p-1">
                                                 <div class="form-group">
                                                         <input type="text" class="form-control minw-1" value="Red Wine">
@@ -776,6 +783,23 @@
                     close: 'fa fa-remove'
                 }
             });
+
+             // Start upload preview image
+                function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('#item-img-output')
+                                .attr('src', e.target.result);
+                        };
+
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+				// End upload preview image
+
+             
 
         </script>
 </body>

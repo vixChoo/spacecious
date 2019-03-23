@@ -866,6 +866,34 @@ border
 
 /*------------------------------------------------
 
-height 
+Crop Image  
 
 -------------------------------------------------*/
+
+label.cabinet{
+	display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+label.cabinet input.file{
+
+	height: 100%;
+	width: auto;
+	opacity: 0;
+	-moz-opacity: 0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  margin-top:-30px;
+}
+
+figure figcaption {
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    width: 10%;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;  
+}
