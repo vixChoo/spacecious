@@ -33,6 +33,7 @@
 /*global require:false */
 /*global jQuery:false */
 /*global moment:false */
+
 (function(factory) {
   'use strict';
   if (typeof define === 'function' && define.amd) {
@@ -2518,7 +2519,7 @@
 
   $.fn.datetimepicker.defaults = {
     timeZone: '',
-    format: false,
+    format: 'DD/MM/YYYY hh:mm A',
     dayViewHeaderFormat: 'MMMM YYYY',
     extraFormats: false,
     stepping: 1,

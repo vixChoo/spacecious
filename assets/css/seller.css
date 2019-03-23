@@ -250,9 +250,19 @@ button.bg-darker:focus {
   }
 
 }
-/* ---------------------------------------------------
-    BuTToN STYLE
------------------------------------------------------ */
+
+
+textarea.form-control {
+  max-width: 100%!important;
+  height: 100%!important;
+  min-height: 120px;
+  padding: 10px 10px 0 0;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #2b3553;
+  border-radius: 0;
+  line-height: 2;
+}
 
 /* ---------------------------------------------------
     BuTToN STYLE
@@ -660,15 +670,29 @@ a:focus {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff!important;
-    background: #71748d!important;
+    color: #fff;
+    background: #71748d;
 }
+
+#sidebar ul li.open>a {
+  color: #7386D5!important;
+  background: #fff!important;
+}
+
+
+
 
 a[data-toggle="collapse"] {
     position: relative;
 }
 
-.dropdown-toggle::after {
+.top-nav.dropdown-toggle::after{
+   display: block;
+   position: static;
+   transform: translateY(0%); 
+}
+
+#sidebar .dropdown-toggle::after {
     display: block;
     position: absolute;
     top: 40%;
@@ -826,4 +850,22 @@ scrollup
 }
 
  
+
 /*------------------------------------------------
+
+border 
+
+-------------------------------------------------*/
+
+.border-tb{
+  border-bottom: 1px solid  #cad1d7 !important;
+  border-top: 1px solid  #cad1d7 !important;
+  
+}
+
+
+/*------------------------------------------------
+
+height 
+
+-------------------------------------------------*/

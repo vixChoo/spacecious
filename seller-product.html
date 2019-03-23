@@ -37,68 +37,79 @@
             <div class="sidebar-header d-flex justify-content-center">
                 <img src="./assets/images/spaceSmall.png" alt="">
             </div>
-
+    
             <ul class="list-unstyled components">
                 <li>
                     <a href="./seller.html">Dashboard</a>
                 </li>
-                <li class="active" >
-                    <a href="./seller-product.html">Product</a>
-                </li>
                 <li>
-                    <a href="./seller-order.html">Order</a>
-                </li>
-                <li >
-                    <a href="./seller-article.html">Article</a>
-                </li>
-                <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <a href="#orderMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Order</a>
+                    <ul class="collapse list-unstyled" id="orderMenu">
                         <li>
-                            <a href="#">Home 1</a>
+                            <a href="./seller-order.html">Order Listing</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="./order-edit.html">Order Edit</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
+                            <a href="./order-view.html">Order View</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#productMenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Product</a>
+                    <ul class="collapse list-unstyled show" id="productMenu">
+                        <li class="open">
+                            <a href="./seller-product.html">Product Listing</a>
+                        </li>
+                        <li>
+                            <a href="./product-cate.html">Product Create</a>
+                        </li>
+                        <li>
+                            <a href="./product-edit.html">Product Edit</a>
+                        </li>
+                        <li>
+                            <a href="./product-view.html">Product View</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Inventory</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <a href="#articleMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Article</a>
+                    <ul class="collapse list-unstyled" id="articleMenu">
                         <li>
-                            <a href="#">Page 1</a>
+                            <a href="./seller-article.html">Article Listing</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="./article-create.html">Article Create</a>
                         </li>
                         <li>
-                            <a href="#">Page 3</a>
+                            <a href="./article-edit.html">Article Edit</a>
+                        </li>
+                        <li>
+                            <a href="./article-view.html">Article View</a>
                         </li>
                     </ul>
                 </li>
-
+    
             </ul>
         </nav>
-
+    
         <!-- Navbar -->
 
         <!-- Page Content  -->
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light mt--3 mr--2 ml--2">
                 <div class="container-fluid">
-                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                            <i class="fas fa-align-left"></i>
-                        </button>
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fas fa-align-left"></i>
+                    </button>
                     <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-
-
+            
+            
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="col-12 collapse-close d-inline-block d-lg-none ml-auto text-right">
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -107,17 +118,31 @@
                             </button>
                         </div>
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link top-nav" data-toggle="dropdown">
+                                    Add New
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a href="./product-cate.html" class="dropdown-item">
+                                    Product
+                                </a>
+                                <a href="./article-create.html" class="dropdown-item">
+                                    Article
+                                </a>
+                            </div>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link" href="./seller-order.html">Order</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="./seller-product.html">Product</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="./seller-article.html">Article</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="./seller-profile.html">Profile</a>
                             </li>
                         </ul>
                     </div>
@@ -301,7 +326,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000008 </td>
@@ -373,7 +398,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000002 </td>
@@ -409,7 +434,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000001 </td>
@@ -483,7 +508,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000001 </td>
@@ -520,7 +545,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000001 </td>
@@ -557,7 +582,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000001 </td>
@@ -666,7 +691,7 @@
                                 </td>
                                 <td>
                                     <div>
-                                        <img src="assets/images/wine.jpg" alt="user" width="50">
+                                        <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="user" width="50">
                                     </div>
                                 </td>
                                 <td>id000001 </td>
@@ -804,17 +829,354 @@
                     </table>
                 </div>
             </div>
-
-
-
-
-
-
-
-
+        </div>
 
 
                 <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+            </div>
+            <!-- Product Grid -->
+            <div class="row mt-md">
+                <div class="col-12 mb-3 text-center">
+                    <h2 class="text-default pl-5 p-3 font-2 text-uppercase">Product Grid</h2>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="./assets/images/wine.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="./assets/images/wine.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Liquor</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="./assets/images/wine.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Extras</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="./assets/images/wine.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Beer</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="./assets/images/wine.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Liquor</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="./assets/images/wine.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">750 ml</small></td>
+                                                <td><small class="text-dark strong">RM 452</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card h-100">
+                        <a href="./order-view.html">
+                            <img class="card-img-top mh-lg-35" src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20" alt="Card image cap">
+                            <div class="card-body">
+                                <small class="card-title text-muted">Wine</small>
+                                <p class="card-text">Cloud Break Chardonnay</p>
+                            
+                            
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td><small class="text-dark strong">1L</small></td>
+                                                <td><small class="text-dark strong">RM 652</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td><small class="text-dark strong">6 Cans</small></td>
+                                                <td><small class="text-dark strong">RM 20 per can</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
             <!-- End Content -->
 
