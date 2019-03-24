@@ -126,7 +126,7 @@ You should have received a copy of the GNU General Public License along with thi
 			}).append($('<div/>',{
 				id :"imgErrMsg_" + _idSuffix
 			}));
-			var container = $('<div/>',{'class':"tabbable tabs-left"});
+			var container = $('<div/>',{'class':"tabbable tabs"});
 			var navTabs = $('<ul/>',
 									{ class: "nav nav-tabs"
 							}).append($('<li/>',
@@ -187,7 +187,7 @@ You should have received a copy of the GNU General Public License along with thi
 				id: "imageFromLinkBar_" + _idSuffix,
 				class: "tab-pane"
 			});		
-			var getImageURL = $("<div/>", {class:"input-group"});
+			var getImageURL = $("<div/>", {class:"input-group pt-4"});
 			var imageURL = $('<input/>',{
 				type: "url",
 				class:'form-control',
