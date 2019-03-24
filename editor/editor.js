@@ -637,7 +637,7 @@ You should have received a copy of the GNU General Public License along with thi
 											"custom":null },
 
 						     'redo'		: { "text": "redo", 
-											"icon": "fa fa-repeat", 
+											"icon": "fas fa-redo", 
 											"tooltip": "Redo", 
 											"commandname":"redo", 
 											"custom":null },
@@ -736,7 +736,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 						   'insert_img'	: { "modal": true,
 						   					"modalId": "InsertImage_" + $(this).attr("id"), 
-											"icon":"fa fa-picture-o", 
+											"icon":"fas fa-image", 
 											"tooltip": "Insert Image", 
 											"modalHeader": "Insert Image",
 											"modalBody": methods.imageWidget.apply(this),
@@ -891,7 +891,7 @@ You should have received a copy of the GNU General Public License along with thi
 											"custom":null },
 
 							'select_all': { "text": "Select all", 
-											"icon":"fa fa-file-text", 
+											"icon": "far fa-file-alt", 
 											"tooltip": "Select All", 
 											"commandname":null, 
 											"custom":function(){ 

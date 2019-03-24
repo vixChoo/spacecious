@@ -10202,9 +10202,9 @@ fieldset[disabled] .btn-primary.active {
 
 
 .btn-default {
-  color: #ffffff!important;
-  background-color: #44386e!important;
-  border-color: #44386e!important;
+  color: #ffffff;
+  background-color: #44386e;
+  border-color: #44386e;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -10245,14 +10245,14 @@ fieldset[disabled] .btn-primary.active {
 .btn-default.btn-simple {
   color: #44386e!important;
   border-color: #44386e!important;
-  background: transparent;
+  background: transparent!important;
 }
 
 .btn-default.btn-simple:hover,
 .btn-default.btn-simple:focus,
 .btn-default.btn-simple:active,
 .btn-default.btn-simple:not(:disabled):not(.disabled):active {
-  color: #ffffff;
+  color: #ffffff!important;
   border-color: #35477d;
   background-color: #44386e !important;
   background-image: none !important;
@@ -20351,6 +20351,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+  }
+  .item-card{
+    max-width: 290px;
   }
   
 }
