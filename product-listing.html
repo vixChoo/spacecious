@@ -367,7 +367,7 @@
 
     
     <!-- Location Search -->
-    <div class="background1 mt-lg" style=" background-image: url(https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
+    <div class="background1 d-lg-flex d-lg-block d-none mt-lg " style=" background-image: url(https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
             <div class="animated fadeInUp" id="slogan">
                 <p class="text-white shadow mb-0 animated fadeInUp">Shop Beer, Wine & Liquor </p>
                 <p class="text-white shadow mb-0 animated fadeInUp">1-Hour Delivery | Free Pickup | Shipping</p>
@@ -385,11 +385,10 @@
         <!-- Product Listing -->
 
         <!-- Top Header -->
-        <div class="container-fluid mb-3 p-3 bg-secondary">
-            <div class="container row">
-                  <div class="col-8 col-lg-6 p-0 m-2 ml-5 p-2 ">
-                      <h1 class="ml-2 font-2">All Categories</h1>
-                      <p class="text-muted m-2">(55446 results)</p>
+        <div class="container-fluid mb-3 p-lg-3 bg-secondary mt-lg-0 mt-lg">
+            <div class="container row m-0 p-0">
+                  <div class="col-12 col-lg-6 m-2 ml-lg-5 p-lg-2 p-0">
+                      <h1 class="ml-2 font-2">All Categories <span class="text-muted m-2 h4">(55446 results)</span> </h1>
                       
                       <div class="row ml-2 font">
                           <span class="badge badge-default mr-2"><a href="javascript:void(0)" class="text-white">Beer </a></span>
@@ -398,7 +397,7 @@
                           <span class="badge badge-primary mr-2"><a href="javascript:void(0)" class="text-dark">Extras</a></span>
                         </div>
                     </div>
-                    <div align="right" class="col-lg-3 form-group ml-md float-right">
+                    <div class="col-lg-3 form-group ml-lg-md d-lg-block d-none float-right">
                         <label for="unit">Sort By</label>
                         <select class="form-control bg-white text-uppercase">
                             <option selected>Relevance</option>
@@ -413,10 +412,11 @@
         </div>
         
         <div class="sticky-top">
-            <button type="button" id="sidebarCollapse" class="btn btn-icon d-none btn-dark" title="Category">
+            <button type="button" id="sidebarCollapse" class="btn btn-icon d-none btn-default" title="Category">
                 <i class="fas fa-align-left"></i>
             </button>
         </div>
+        <p class="d-lg-none d-block ml-5 mt--5 text-default"> More filters</p>
         
         <!-- Hide Tag -->
         <div id="hideAlert" class="d-none">
@@ -625,17 +625,14 @@
                                 </tbody>
                             </table>
                             
-                                <div class="form-inline text-center">
+                                <div class="form-inline text-center ml-lg-0 ml-4">
                                     <label for="min">RM</label>
                                     <input type="number" class="form-control ml-1 mr-1 price" placeholder="min" value="10">
                                     <label for="min">To</label>
                                     <input type="number" class="form-control  ml-1 mr-1 price" placeholder="max" value="79">
                                 </div>
-                            <button class="btn btn-primary mt-3" type="submit">Apply</button>
+                            <button class="btn btn-primary mt-3 mb-3" type="submit">Apply</button>
                             
-                            <div class="text-center">
-                                <a href="javascript:void(0)" class="text-info">More</a>
-                            </div>
                         </div>
                         <!-- Store Name -->
                         <div class="text-center">
@@ -899,6 +896,29 @@
                                                 <h4 class="strong text-default m-1 text-cross">RM 208.00 - RM 350.80</h4>
                                                 <p class="text-success strong m-1">Save 33%</p>
                                             </div>  
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 product-card border-right hover pb-3 pt-3 d-lg-none d-block">
+                                    <div class="h-100">
+                                        <a href="./product-profile.html">
+                                            <span class="badge badge-default">New</span>
+                                            <div class="row justify-content-center mb-2">
+                                                <div class="col-8 col-lg-6 p-0">
+                                                    <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center text-center font">
+                                                <div class="col-12 font-2">
+                                                    <h4 class="wine-title mb-1">Cloud Break Chardonnay</h4>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="flex-row p-3 m-0">
+                                                <h4 class="strong text-default m-1">RM 208.00 - RM 350.80</h4>
+                                                <p class="text-success strong m-1">Save 33%</p>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>

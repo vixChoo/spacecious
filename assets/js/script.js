@@ -426,7 +426,7 @@ Typewritter.prototype.type = function () {
   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`
 
   // Initial Type Speed 
-  let typeSpeed = 100;
+  let typeSpeed = 300;
 
   if (this.isDeleting) {
     typeSpeed /= 2;
@@ -466,55 +466,6 @@ function initType() {
 }
   
 
-// onscroll show 
-
-$(function () {
-  var $blocks = $('.animBlock.notViewed');
-  var $window = $(window);
-
-  $window.on('scroll', function (e) {
-    $blocks.each(function (i, elem) {
-      if ($(this).hasClass('viewed'))
-        return;
-
-      isScrolledIntoView($(this));
-    });
-  });
-});
-
-function isScrolledIntoView(elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height() ;
-  var elemOffset = 0;
-
-  if (elem.data('offset') != undefined) {
-    elemOffset = elem.data('offset');
-  }
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + $(elem).height();
-
-  if (elemOffset != 0) { // custom offset is updated based on scrolling direction
-    if (docViewTop - elemTop >= 0) {
-      // scrolling up from bottom
-      elemTop = $(elem).offset().top + elemOffset;
-    } else {
-      // scrolling down from top
-      elemBottom = elemTop + $(elem).height() - elemOffset
-    }
-  }
-
-  if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-    // once an element is visible exchange the classes
-    $(elem).removeClass('notViewed').addClass('viewed');
-
-    var animElemsLeft = $('.animBlock.notViewed').length;
-    if (animElemsLeft == 0) {
-      // with no animated elements left debind the scroll event
-      $(window).off('scroll');
-    }
-  }
-}
-
 $('.owl-carousel-1').owlCarousel({
   loop: true,
   margin: 20,
@@ -541,6 +492,30 @@ $('.owl-carousel-2').owlCarousel({
   rewind: true,
   margin: 20,
   nav: true,
+  autoplay: false,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 2
+    },
+    600: {
+      items: 3
+    },
+
+    1000: {
+      items: 4
+    }
+  }
+})
+
+
+
+$('.owl-carousel-4').owlCarousel({
+  loop: false,
+  rewind: true,
+  margin: 20,
+  nav: false,
   autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
