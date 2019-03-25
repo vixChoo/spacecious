@@ -533,6 +533,28 @@ $('.owl-carousel-4').owlCarousel({
   }
 })
 
+$('.owl-carousel-5').owlCarousel({
+  loop: false,
+  rewind: true,
+  margin: 20,
+  nav: false,
+  autoplay: false,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 3
+    },
+    600: {
+      items: 4
+    },
+
+    1000: {
+      items: 4
+    }
+  }
+})
+
 
 
 
