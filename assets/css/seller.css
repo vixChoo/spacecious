@@ -679,9 +679,6 @@ a[aria-expanded="true"] {
   background: #fff!important;
 }
 
-
-
-
 a[data-toggle="collapse"] {
     position: relative;
 }

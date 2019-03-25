@@ -6439,7 +6439,7 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #38f9d7 !important;
+  background-color: #10ac84 !important;
 }
 
 a.bg-success:hover,
@@ -7951,6 +7951,10 @@ button.bg-darker:focus {
 
 .mt--5{
   margin-top: -2rem !important;
+}
+
+.mt--6{
+  margin-top: -2.5rem !important;
 }
 
 
@@ -11135,9 +11139,9 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .btn-neutral.btn-simple {
-  color: #ffffff;
+  color: #000000;
   border-color: #ffffff;
-  background: transparent;
+  background: #ffffff;
 }
 
 .btn-neutral.btn-simple:hover,
@@ -21164,4 +21168,203 @@ table.w-85 th {
     top: 0;
     bottom: 0;
     width: 100%;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    background: #0e0c28;
+    color: #71748d;
+    transition: all 0.3s;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    
+  }
+    
+
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #f4f5f7;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #71748d;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    
+}
+
+#sidebar.small ul li a {
+    font-size:  12px;
+}
+
+
+#sidebar ul li a:hover {
+    color: #7386D5!important;
+    background: #fff!important;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #71748d;
+}
+
+#sidebar ul li.open>a {
+  color: #7386D5!important;
+  background: #fff!important;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.top-nav.dropdown-toggle::after{
+   display: block;
+   position: static;
+   transform: translateY(0%); 
+}
+
+.top-nav ul li.active>a,
+a[aria-expanded="true"]{
+  background: none!important;
+}
+
+#sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #71748d;
+    color: #fff;
+  }
+  
+  #sidebar.small ul ul a {
+    color: #6927ff;
+    background-color: transparent;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------
+MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+      }
+    #content.active {
+        width: calc(100% - 200px);
+    }
+    #content {
+        width: 100%;
+       
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/*------------------------------------------------
+
+scrollup 
+
+-------------------------------------------------*/
+
+.scrollup {
+    z-index: 10001;
+    position: fixed;
+    bottom: 46px;
+    right: 20px;
+    background: #000;
+    background: rgba(0, 0, 0, .2);
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 3px !important;
+    display: none;
+     -webkit-transition: all .3s linear;
+     -moz-transition: all .3s ease;
+     -ms-transition: all .3s ease;
+     -o-transition: all .3s ease;
+     transition: all .3s ease
+    }
+
+.scrollup i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    opacity:.4 -webkit-transition:all .3s ease;
+     -moz-transition: all .3s ease;
+     -ms-transition: all .3s ease;
+     -o-transition: all .3s ease;
+     transition: all .3s ease
+}
+
+.scrollup:hover i {
+    color: #fff;
+    top: 5px;
+    opacity: .9
 }
