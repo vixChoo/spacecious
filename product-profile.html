@@ -392,7 +392,7 @@
 
                 <div class="container pt-lg pb-sm bg-white font">
                     <div class="row">
-                        <div class="col-8 col-md-4 mb-lg m-lg-5">
+                        <div class="col-8 col-md-4 mb-lg m-5 m-lg-5 m-md-0">
                             <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20"
                                 alt="" class="img-fluid">
                         </div>
@@ -449,6 +449,11 @@
                                                         </select>
                                                     </div>
                                                     <a  href="javascript:void(0)" class="btn btn-primary p-3 font-2 text-uppercase strong d-lg-inline-block d-none" id="searchStore" onclick="scrollToStore('searchStore','hide-stores')">
+                                                        Search Store
+                                                    </a>
+
+                                                    <!-- Small Screen  -->
+                                                    <a  href="javascript:void(0)" class="btn btn-primary p-3 font-2 text-uppercase strong d-lg-none d-inline-block " id="smallStore" onclick="scrollToStore('smallStore','small-store')">
                                                         Search Store
                                                     </a>
                                                 </div>
@@ -517,7 +522,7 @@
                                               
                                      
                         <!-- Hidden  Stores -->
-                        <div id="hide-stores" class="d-none">
+                        <div>
                             
                             <div class="row m-2">
                                 <h1 class="pl-sm p-4 m-3 font text-left border-bottom">Choose a Store</h1>
@@ -534,14 +539,7 @@
                                     <b class="pr-4 text-uppercase strong font-2 "> Pick Up </b>
                                 </div>
                             </div>
-                                  
-                                                
-                                            
                   
-
-                    
-                    
-                       
                         <div class="owl-carousel owl-carousel-2 owl-theme bg-warning p-3">
                             
                             <!--  Carousel Item 1 -->
@@ -641,11 +639,12 @@
     </div>
     <!-- End Product -->
 
+<!-- Hidden Small Store -->
     <!-- Tabs for smaller screen -->
-            <div class="container-fluid pb-md bg-secondary">
+            <div class="container-fluid pb-md mt--5 bg-secondary d-none" id="small-store">
                 <div class="card">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs nav-tabs-primary d-flex justify-content-around" role="tablist" style="margin-top:-50px; font-size:20px;">
+                    <div class="card-header pl-2 pr-2 pt-2 pb-0">
+                        <ul class="nav nav-tabs nav-tabs-bottom d-flex justify-content-around" role="tablist" style="font-size:20px;">
                             <li class="nav-item">
                                 <a class="nav-link active " data-toggle="tab" href="#ship" role="tablist">
                                     Shipping
@@ -663,7 +662,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body pt-0">
                         <!-- Tab panes -->
                         <div class="tab-content tab-space">
                             <div class="tab-pane active" id="ship">
@@ -1471,10 +1470,10 @@
                 hiddenDiv.classList.add("d-block")
             }
 
-            if ($('#hide-stores').length != 0) {
+            if ($(hiddenDiv).length != 0) {
 
                 $("html, body").animate({
-                    scrollTop: $('#hide-stores').offset().top - 50
+                    scrollTop: $(hiddenDiv).offset().top - 50
                 }, 1000);
             }
         }
