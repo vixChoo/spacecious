@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./assets/css/seller.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Map Box -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
 
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -28,6 +31,11 @@
 </head>
 
 <body>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.css'
+        type='text/css' />
+
+
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -524,7 +532,54 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Redeem Code -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="border-bottom p-3">Redeem Code</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-12 text-center">
+                                <img src="./assets/images/qr.png" alt="">
+                                <h3>8465132</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                   
+                    <!-- Map-->
+                    <div class="col-8" style="margin: 0;
+            padding: 0;">
+                        <div class="card map">
+                            <div id='map'></div>
+                        </div>
+                    </div>
+                            
+                    <div class="col-4">
+                       <div class="card">
+                            <div class="card-header pb-0">
+                                <h2 class="p-3 border-bottom mb-0">Tracking</h2>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th>Status</th>
+                                            <td><span class="badge badge-success">Delivered</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Delivery Time</th>
+                                            <td><p>0 mins</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                       </div>
+                    </div>
+                            
+
+                                   
+                              
 
 
                         
@@ -593,7 +648,18 @@
         });
 
       
+            mapboxgl.accessToken = 'pk.eyJ1Ijoidml4dHJ1bSIsImEiOiJjanRudXl4MmwyYWRwNGFsZmhjaHRwMnQ4In0.23pnSKEXEg-q-m3exXNIWw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-79.4512, 43.6568],
+            zoom: 13
+        });
 
+            map.addControl(new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+        }), 'top-left');
+        
     </script>
 </body>
 

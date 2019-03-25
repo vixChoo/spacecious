@@ -16,6 +16,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
+    <!-- Map Box -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.0/mapbox-gl-directions.css'
+        type='text/css' />
+
+
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
@@ -378,9 +386,9 @@
     </div>
     <!-- Google Map Need API here Should be able to full screen -->
     <div class="col-lg-10 col-md-8 d-flex justify-content-center align-items-center m-center">
-        <a href="https://www.google.com/maps/place/C+Chateau+Cafe+%26+Wine+Bar/@3.0887673,101.6850497,18z/data=!4m5!3m4!1s0x31cc4a6a4c825bc7:0x27b2aaa3653a42f8!8m2!3d3.0891648!4d101.6867376" rel="tooltip" title="Google Map" target="_blank">
-            <img class="img-full" src="./assets/images/map.png" alt="">
-        </a>
+        <div class="card map">
+            <div id='map'></div>
+        </div>
         <!-- Tracking System -->
     </div>
             
@@ -866,6 +874,18 @@
                 document.getElementById("demo").innerHTML = "DELIVERED";
             }
         }, 1000);
+
+          mapboxgl.accessToken = 'pk.eyJ1Ijoidml4dHJ1bSIsImEiOiJjanRudXl4MmwyYWRwNGFsZmhjaHRwMnQ4In0.23pnSKEXEg-q-m3exXNIWw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-79.4512, 43.6568],
+                zoom: 13
+            });
+
+            map.addControl(new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+            }), 'top-left');
 
 
         </script>

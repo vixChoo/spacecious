@@ -19596,7 +19596,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   position: relative;
   width: 100%;
   margin-bottom: 30px;
-  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(6, 15, 26, 0.1) 0px 0px 30px 6px;
 
 }
 
@@ -21156,4 +21156,11 @@ table.w-85 th {
   right: 0%;
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
