@@ -16,6 +16,12 @@
     <!-- Text Editor -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
+    <!-- CKEDITOR -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+
+    <!-- Tiny MCE -->
+    <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=g9l3u3gy9mcpydzyvz1q8tndw3a8qzg2uzw7o3bsezor6dsf"></script>
+
 
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -30,6 +36,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -174,6 +181,24 @@
                         </div>
                         <div class="card-body">
                             <div id="txtEditor"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Description CKEDITOR
+                        </div>
+                        <div class="card-body">
+                          <textarea name="content" id="editor">This is some sample content.</textarea>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            Description TINY
+                        </div>
+                        <div class="card-body">
+                          <textarea class="mce">This is some sample content.</textarea>
                         </div>
                     </div>
 
@@ -359,25 +384,29 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
             $("#txtEditor").Editor();
-            $("#txtEditor").Editor("setText", "Hello")
-            blackKit.initDatePicker();
         });
-
-        $('.datetimepicker').datetimepicker({
-            icons: {
-                time: "fas fa-clock",
-                date: "fa fa-calendar",
-                up: "fa fa-chevron-up",
-                down: "fa fa-chevron-down",
-                previous: 'fa fa-chevron-left',
-                next: 'fa fa-chevron-right',
-                today: 'fa fa-screenshot',
-                clear: 'fa fa-trash',
-                close: 'fa fa-remove'
-            }
-        });
-
+        
+          ClassicEditor
+            .create(document.querySelector('#editor'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+   
       
+            tinymce.init({
+            selector: '.mce',
+            height: 500,
+            menubar: true,
+            plugins: 'print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount tinymcespellchecker a11ychecker imagetools mediaembed  linkchecker contextmenu colorpicker textpattern help',
+            toolbar: 'formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat',
+            image_advtab: true,
+
+           
+        });
+
     </script>
 </body>
 
