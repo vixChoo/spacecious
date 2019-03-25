@@ -5614,7 +5614,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1070;
   display: none;
   overflow: hidden;
   outline: 0;
@@ -15210,8 +15210,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 }
 
 .modal.show .modal-dialog {
-  -webkit-transform: translate(0, 30%);
-  transform: translate(0, 30%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
 }
 
 code {
@@ -16495,7 +16495,7 @@ textarea.form-control:active {
   padding: 11px 23px;
   min-width: 100px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
   background-color: #1f2251;
 }
 
@@ -20402,7 +20402,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     display: none;
   }
 
-  #sidebarCollapse{
+  #cate-sidebar{
     display: block!important;
   }
   #sideBar {
@@ -20465,7 +20465,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   #search {
     display: none;
   }
-  #sidebarCollapse {
+  #cate-sidebar {
   display: block!important;
   }
 
@@ -21193,7 +21193,7 @@ table.w-85 th {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 1060;
     
   }
     
@@ -21317,7 +21317,7 @@ MEDIAQUERIES
         width: 100%;
        
     }
-    #sidebarCollapse span {
+    #cate-sidebar span {
         display: none;
     }
 }

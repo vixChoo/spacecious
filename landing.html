@@ -40,7 +40,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-transparent d-lg-block d-none" color-on-scroll="100">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="#"><img src="assets/images/spaceBig.png"></a>
+                <a class="navbar-brand" href="./landing.html"><img src="assets/images/spaceBig.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
@@ -52,7 +52,7 @@
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a>
+                            <a href="./landing.html">
                                 <img src="assets/images/spaceBig.png">
                             </a>
                         </div>
@@ -1030,16 +1030,16 @@
                     </div>
                     <div class="card shadow border-0">
                         <!-- Card header -->
-                        <div class="card-header bg-white pb-3">
+                        <div class="card-header bg-white">
                             <div class="nav-wrapper">
                                 <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
                                     <li class="nav-item m-2">
-                                        <a class="nav-link mb-sm-3 mb-md-0 active show" id="tabs-icons-text-1-tab"
+                                        <a class="nav-link mb-0 active show" id="tabs-icons-text-1-tab"
                                             data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1"
                                             aria-selected="true">Sign In</a>
                                     </li>
                                     <li class="nav-item m-2">
-                                        <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab"
+                                        <a class="nav-link mb-0" id="tabs-icons-text-2-tab" data-toggle="tab"
                                             href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2"
                                             aria-selected="false">Sign Up</a>
                                     </li>
@@ -1050,11 +1050,11 @@
 
 
 
-                        <div class="card-body">
+                        <div class="card-body pt-0">
                             <div class="tab-content" id="sign-in">
                                 <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel"
                                     aria-labelledby="tabs-icons-text-1-tab">
-                                    <div class="text-center text-muted mb-4 mt-3">
+                                    <div class="text-center text-muted mb-3">
                                         <small>Or sign in with credentials</small>
                                     </div>
                                     <!-- sign in -->
@@ -1097,7 +1097,7 @@
 
                                 <!-- sign up -->
                                 <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-                                    <div class="text-center text-muted mb-4 mt-3">
+                                    <div class="text-center text-muted mb-3">
                                         <small>Please fill up the credentials</small>
                                     </div>
                                     <form role="form">
@@ -1222,18 +1222,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <img src="assets/images/spaceBig.png">
+                    <h3 class="title text-dark font-3">Follow us</h3>
+                    <div class="btn-wrapper profile">
+                        <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-neutral btn-round" data-toggle="tooltip"
+                            data-original-title="Follow us">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
+                            data-toggle="tooltip" data-original-title="Like us">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
+                            data-toggle="tooltip" data-original-title="Follow us">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                  
                 </div>
                 <div class="col-sm-3">
                     <ul class="nav">
                         <li class="nav-item">
                             <a href="./landing.html" class="nav-link">
                                 <h4> Home </h4>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./shopping-card.html" class="nav-link">
-                                <h4>Shopping Cart</h4>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -1246,10 +1256,36 @@
                                 <h4> Product Profile </h4>
                             </a>
                         </li>
+                        
+                        <li class="nav-item">
+                            <a href="./buyers.html" class="nav-link">
+                                <h4>Buyers profile</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./about-us.html" class="nav-link">
+                                <h4>About us</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./corporate.html" class="nav-link">
+                                <h4>Corporate</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./gift.html" class="nav-link ">
+                                <h4>Gift page</h4>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <ul class="nav">
+                        <li class="nav-item">
+                            <a href="./shopping-card.html" class="nav-link">
+                                <h4>Shopping Cart</h4>
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a href="./checkout.html" class="nav-link ">
                                 <h4>Checkout Page</h4>
@@ -1266,30 +1302,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./corporate.html" class="nav-link">
-                                <h4>Corporate</h4>
+                            <a href="./purchased.html" class="nav-link">
+                                <h4>Past Orders</h4>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <h4>About us</h4>
-                            </a>
-                        </li>
+                       
+                       
 
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <ul class="nav">
-                        <li class="nav-item">
-                            <a href="./buyers.html" class="nav-link">
-                                <h4>Buyers profile</h4>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./product-listing.html" class="nav-link ">
-                                <h4>Article nested page</h4>
-                            </a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a href="./article.html" class="nav-link ">
                                 <h4>Article Main page</h4>
@@ -1301,40 +1325,28 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./gift.html" class="nav-link ">
-                                <h4>Gift page</h4>
+                            <a href="./product-listing.html" class="nav-link ">
+                                <h4>Article nested page</h4>
                             </a>
                         </li>
+                       
 
                     </ul>
 
                 </div>
-                <div class="col-md-3 mb-3">
-                    <h3 class="title text-dark">Follow us:</h3>
-                    <div class="btn-wrapper profile">
-                        <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round"
-                            data-toggle="tooltip" data-original-title="Follow us">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                            data-toggle="tooltip" data-original-title="Like us">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                            data-toggle="tooltip" data-original-title="Follow us">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-
+                    <div class="col-md-3 mb-3">
+                        <img src="assets/images/spaceBig.png">
                     </div>
-                </div>
             </div>
-            <p>Privacy Policy Terms of Service
+
+            <p class="font-2">Privacy Policy Terms of Service
                 © Spacecious All Rights Reserved</p>
         </div>
     </footer>
-    <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
-
-
+    
+        <!-- Scroll up -->
+        <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+    
         <!-- jQuery CDN - -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>

@@ -9,40 +9,37 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
     <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
 
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
 
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
     <!-- Core Css Files -->
     <link href="./assets/css/style.css" rel="stylesheet" />
-    <!-- Nucleo Icons -->
-    <!-- <link href="./assets/css/nucleo-icons.css" rel="stylesheet"/> -->
 
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 </head>
 <body>
 <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent d-lg-block d-none" color-on-scroll="100">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand" href="#"><img src="assets/images/spaceBig.png"></a>
+                <a class="navbar-brand" href="./landing.html"><img src="assets/images/spaceBig.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
@@ -54,7 +51,7 @@
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a>
+                            <a href="./landing.html">
                                 <img src="assets/images/spaceBig.png">
                             </a>
                         </div>
@@ -325,7 +322,7 @@
                                         <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama,
                                             58200 Kuala Lumpur</option>
                                     </select>
-                                    <input class="btn btn-default m-2 font-2 text-uppercase strong"
+                                    <input onclick="window" class="btn btn-default m-2 font-2 text-uppercase strong"
                                         type=submit value="Search Store">
                                 </div>
                             </form>
@@ -362,8 +359,158 @@
         </div>
     </nav>
 </header>
-<!-- End Navbar -->
 
+<!-- Sidebar  -->
+<div class="wrapper">
+    <nav id="sidebar" class="d-lg-none d-block small">
+        <div class="sidebar-header d-flex justify-content-center">
+            <img src="./assets/images/spaceSmall.png" alt="">
+        </div>
+
+        <ul class="list-unstyled components pt-0">
+            <li class="bg-info pb-3">
+                <small class="font-2 pl-2 pr-2 text-white strong">We are delivering your drinks to :</small>
+                <div class="form-inline justify-content-center ">
+                    <input type="text" value="" placeholder="Enter Your Address" class="form-control strong bg-white rounded-left mw-2 border-0"
+                        style=" margin-right: -10px;" />
+                    <a href="#" class="btn btn-icon btn-light border-0 rounded-right" style="padding-top: 9px; " value="Search Store">
+                        <i class="icons fas fa-search"></i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                    <i class="fas fa-user"></i>
+                    Sign In
+                </a>
+            </li>
+            <li class="border-bottom">
+                <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                    <i class="fas fa-user-plus"></i>
+                    Sign Up
+                </a>
+            </li>
+
+            <li class="border-bottom">
+                <a href="">
+                    <i class="fas fa-user"></i>
+                    Hi , Sean
+                </a>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="./purchased.html">My Orders,Reorder</a>
+                    </li>
+                    <li>
+                        <a href="./buyers.html">My Account</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Out</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="./product-listing.html">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    Wine
+                </a>
+            </li>
+
+            <li>
+                <a href="./product-listing.html">
+                    <i class="fas fa-glass-whiskey"></i>
+                    Beer
+                </a>
+            </li>
+
+            <li>
+                <a href="./product-listing.html">
+                    <i class="fas fa-cocktail"></i>
+                    Liquor
+                </a>
+            </li>
+
+            <li>
+                <a href="./product-listing.html">
+                    <i class="fas fa-lemon"></i>
+                    Extras
+                </a>
+            </li>
+
+            <li>
+                <a href="./product-listing.html">
+                    <i class="fas fa-tags"></i>
+                    Deals
+                </a>
+            </li>
+            <li>
+                <a href="./article.html">
+                    <i class="fas fa-glass-cheers"></i>
+                    Explore
+                </a>
+            </li>
+
+            <li>
+                <a href="./corporate.html">
+                    <i class="fas fa-user-plus"></i>
+                    Corporate
+                </a>
+            </li>
+            <li class="border-bottom">
+                <a href="./gift.html">
+                    <i class="fas fa-gift"></i>
+                    Gift
+                </a>
+            </li>
+
+            <li>
+                <a href="./join-us.html">
+                    <i class="fas fa-user-plus"></i>
+                    Become a retailer
+                </a>
+            </li>
+            <li>
+                <a href="./sign-in.html">
+                    <i class="fas fa-user"></i>
+                    Retailer Login
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+<!-- Navbar -->
+
+<!-- Sidebar Toggle  -->
+<div id="content" class="d-lg-none d-block">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--3 ml--2">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#"><img src="assets/images/spaceBig.png"></a>
+            <button type="button" id="sidebarCollapse" class="ml-auto btn btn-neutral btn-simple p-2 m-0">
+                <i class="fas fa-align-justify"></i>
+            </button>
+            <a href="#" class="dropdown-toggle p-2 btn-neutral btn-simple" data-toggle="dropdown">
+                <i class="icons fas fa-search"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right mega-dropdown text-center mt--1 pb-0">
+                <div class="input-group input-group-alternative mb-0">
+                    <div class="input-group-prepend bg-light">
+                        <span class="input-group-text border-0">
+                            <i class="icons fas fa-search"></i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Seach Beer , Wine & Liquor">
+                </div>
+            </div>
+            <a href="./shopping-card.html" class="btn-neutral btn-simple p-2">
+                <i class="icons fas fa-shopping-cart" style="margin-left: -2px;"></i>
+            </a>
+
+
+        </div>
+    </nav>
+</div>
+<!-- End Navbar -->
     
     <!-- Content Category -->
             <div class="background1 mt-lg" style="background-image: url('./assets/images/main.jpg');">
@@ -882,374 +1029,370 @@
                 
 
 
-
-
-    <!-- Form Modal -->
-    <div class="modal fade modal-black" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-hidden="true">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <div class="text-muted text-center ml-auto mr-auto">
-                        <h3 class="mb-0">Sign in with</h3>
-                    </div>
-                </div>
-
-
-
-                <div class="modal-body">
-                    <div class="btn-wrapper text-center mb-3">
-                        <a href="#" class="btn btn-neutral btn-icon m-2">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="btn btn-neutral btn-icon m-2">
-                            <i class="fab fa-google"></i>
-                        </a>
-                    </div>
-                    <div class="card shadow border-0">
-                        <!-- Card header -->
-                        <div class="card-header bg-white pb-3">
-                            <div class="nav-wrapper">
-                                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link mb-sm-3 mb-md-0 active show" id="tabs-icons-text-1-tab"
-                                            data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1"
-                                            aria-selected="true">Sign In</a>
-                                    </li>
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab"
-                                            href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2"
-                                            aria-selected="false">Sign Up</a>
-                                    </li>
-                                </ul>
-                                <div id="error"></div>
+            <!-- Form Modal -->
+            <div class="modal fade modal-black" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <button type="button" class="close text-white" data-dismiss="modal" aria-hidden="true">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="text-muted text-center ml-auto mr-auto">
+                                <h3 class="mb-0">Sign in with</h3>
                             </div>
                         </div>
 
 
 
-                        <div class="card-body">
-                            <div class="tab-content" id="sign-in">
-                                <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel"
-                                    aria-labelledby="tabs-icons-text-1-tab">
-                                    <div class="text-center text-muted mb-4 mt-3">
-                                        <small>Or sign in with credentials</small>
+                        <div class="modal-body">
+                            <div class="btn-wrapper text-center mb-3">
+                                <a href="#" class="btn btn-neutral btn-icon m-2">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-neutral btn-icon m-2">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                            <div class="card shadow border-0">
+                                <!-- Card header -->
+                                <div class="card-header bg-white">
+                                    <div class="nav-wrapper">
+                                        <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                                            <li class="nav-item m-2">
+                                                <a class="nav-link mb-0 active show" id="tabs-icons-text-1-tab" data-toggle="tab"
+                                                    href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1"
+                                                    aria-selected="true">Sign In</a>
+                                            </li>
+                                            <li class="nav-item m-2">
+                                                <a class="nav-link mb-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2"
+                                                    role="tab" aria-controls="tabs-icons-text-2" aria-selected="false">Sign Up</a>
+                                            </li>
+                                        </ul>
+                                        <div id="error"></div>
                                     </div>
-                                    <!-- sign in -->
-                                    <form role="form">
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Email" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-key"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Password" type="password">
-                                            </div>
-                                        </div>
-                                        <div class="form-check mt-3">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" checked>
-                                                <span class="form-check-sign"></span>
-                                                Remember me!
-                                            </label>
-                                        </div>
-
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary my-4">Sign in</button>
-                                        </div>
-                                    </form>
                                 </div>
 
 
 
-                                <!-- sign up -->
-                                <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-                                    <div class="text-center text-muted mb-4 mt-3">
-                                        <small>Please fill up the credentials</small>
-                                    </div>
-                                    <form role="form">
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-user"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="First Name" type="text">
+                                <div class="card-body pt-0">
+                                    <div class="tab-content" id="sign-in">
+                                        <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel"
+                                            aria-labelledby="tabs-icons-text-1-tab">
+                                            <div class="text-center text-muted mb-3">
+                                                <small>Or sign in with credentials</small>
                                             </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-user"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Last Name" type="text">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Email" type="email">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-key"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Password" type="password">
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label>Birthday Date</label>
-                                            <div class="form-inline ">
-                                                <!--  Day -->
-                                                <input placeholder="Day" type="text" name="Day" autocomplete="day"
-                                                    maxlength="2" value="" required="" class="form-control mw-1">
-
-                                                <!--  Month -->
-                                                <input placeholder="Month" type="text" name="Month" autocomplete="month"
-                                                    maxlength="2" value="" required="" class="form-control mw-2">
-
-                                                <!--  Year -->
-                                                <input placeholder="Year" type="text" name="Year" autocomplete="year"
-                                                    maxlength="4" value="" required="" class="form-control mw-2">
-
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <select class="form-control">
-                                                <option selected>Country</option>
-                                                <option>Malaysia</option>
-                                                <option>1.0L (Single)</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-check mb-2">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
-                                                <span class="form-check-sign"></span>
-                                                Want to be a seller?
-                                            </label>
-                                        </div>
-
-                                        <!-- hidden form  -->
-                                        <div id="hiddenForm">
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">
-                                                            <i class="fas fa-user"></i>
-                                                        </span>
+                                            <!-- sign in -->
+                                            <form role="form">
+                                                <div class="form-group mb-3">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-envelope"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Email" type="email">
                                                     </div>
-                                                    <input class="form-control" placeholder="Company Name" type="text">
                                                 </div>
-                                            </div>
+                                                <div class="form-group">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-key"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Password" type="password">
+                                                    </div>
+                                                </div>
+                                                <div class="form-check mt-3">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" checked>
+                                                        <span class="form-check-sign"></span>
+                                                        Remember me!
+                                                    </label>
+                                                </div>
 
-                                            <div class="form-group">
-                                                <label for="unit">
-                                                    Job Title
-                                                </label>
-                                                <select class="form-control">
-                                                    <option class="form-select" selected>750ml (Single)</option>
-                                                    <option class="form-select">1.5L (Single)</option>
-                                                    <option class="form-select">1.0L (Single)</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="unit">
-                                                    Industry Type
-                                                </label>
-                                                <select class="form-control">
-                                                    <option selected>750ml (Single)</option>
-                                                    <option>1.5L (Single)</option>
-                                                    <option>1.0L (Single)</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="unit">
-                                                    Order Frequency
-                                                </label>
-                                                <select class="form-control">
-                                                    <option selected>750ml (Single)</option>
-                                                    <option>1.5L (Single)</option>
-                                                    <option>1.0L (Single)</option>
-                                                </select>
-                                            </div>
+                                                <div class="text-center">
+                                                    <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                                </div>
+                                            </form>
                                         </div>
 
 
-                                        <div class="row justify-content-center">
-                                            <button type="button" class="btn btn-primary my-4">Sign up</button>
-                                            <small class="text-darker m-4">By creating an account, I agree to
-                                                Spacecious's
-                                                Terms and Conditions.</small>
-                                        </div>
-                                    </form>
 
+                                        <!-- sign up -->
+                                        <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                                            <div class="text-center text-muted mb-3">
+                                                <small>Please fill up the credentials</small>
+                                            </div>
+                                            <form role="form">
+                                                <div class="form-group mb-3">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-user"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="First Name" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-user"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Last Name" type="text">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group mb-3">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-envelope"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Email" type="email">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <div class="input-group input-group-alternative">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">
+                                                                <i class="fas fa-key"></i>
+                                                            </span>
+                                                        </div>
+                                                        <input class="form-control" placeholder="Password" type="password">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-check mb-2">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
+                                                        <span class="form-check-sign"></span>
+                                                        Ordering for a business? Be the office hero.
+                                                    </label>
+                                                </div>
+
+                                                <!-- hidden form  -->
+                                                <div id="hiddenForm">
+                                                    <div class="form-group mb-3">
+                                                        <div class="input-group input-group-alternative">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text">
+                                                                    <i class="fas fa-user"></i>
+                                                                </span>
+                                                            </div>
+                                                            <input class="form-control" placeholder="Company Name" type="text">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="custom-group">
+                                                        <label for="unit">
+                                                            Job Title
+                                                        </label>
+                                                        <select class="custom-control">
+                                                            <option class="custom-select" selected>750ml (Single)</option>
+                                                            <option class="custom-select">1.5L (Single)</option>
+                                                            <option class="custom-select">1.0L (Single)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="unit">
+                                                            Industry Type
+                                                        </label>
+                                                        <select class="form-control">
+                                                            <option selected>750ml (Single)</option>
+                                                            <option>1.5L (Single)</option>
+                                                            <option>1.0L (Single)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="unit">
+                                                            Order Frequency
+                                                        </label>
+                                                        <select class="form-control">
+                                                            <option selected>750ml (Single)</option>
+                                                            <option>1.5L (Single)</option>
+                                                            <option>1.0L (Single)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row justify-content-center">
+                                                    <button type="button" class="btn btn-primary my-4">Sign up</button>
+                                                    <small class="text-darker m-4">By creating an account, I agree to
+                                                        Spacecious's
+                                                        Terms and Conditions.</small>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--  End Modal -->
+            <!--  End Modal -->
 
-    
-<footer class="footer mt-lg font">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <img src="assets/images/spaceBig.png">
-            </div>
-            <div class="col-sm-3">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="./landing.html" class="nav-link">
-                            <h4> Home </h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./shopping-card.html" class="nav-link">
-                            <h4>Shopping Cart</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./product-listing.html" class="nav-link">
-                            <h4> Product Listing </h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./product-profile.html" class="nav-link">
-                            <h4> Product Profile </h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="./checkout.html" class="nav-link ">
-                            <h4>Checkout Page</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./card-payment.html" class="nav-link">
-                            <h4>Card Payment</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./order.html" class="nav-link">
-                            <h4>Order Summary</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./corporate.html" class="nav-link">
-                            <h4>Corporate</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <h4>About us</h4>
-                        </a>
-                    </li>
+            <footer class="footer mt-lg font">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h3 class="title text-dark font-3">Follow us</h3>
+                            <div class="btn-wrapper profile">
+                                <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-neutral btn-round"
+                                    data-toggle="tooltip" data-original-title="Follow us">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
+                                    data-toggle="tooltip" data-original-title="Like us">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
+                                    data-toggle="tooltip" data-original-title="Follow us">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
 
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="./buyers.html" class="nav-link">
-                            <h4>Buyers profile</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./article-inner.html" class="nav-link ">
-                            <h4>Article nested page</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./article.html" class="nav-link ">
-                            <h4>Article Main page</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./article-category.html" class="nav-link ">
-                            <h4>Article Catogory page</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./gift.html" class="nav-link ">
-                            <h4>Gift page</h4>
-                        </a>
-                    </li>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="./landing.html" class="nav-link">
+                                        <h4> Home </h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./product-listing.html" class="nav-link">
+                                        <h4> Product Listing </h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./product-profile.html" class="nav-link">
+                                        <h4> Product Profile </h4>
+                                    </a>
+                                </li>
 
-                </ul>
+                                <li class="nav-item">
+                                    <a href="./buyers.html" class="nav-link">
+                                        <h4>Buyers profile</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./about-us.html" class="nav-link">
+                                        <h4>About us</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./corporate.html" class="nav-link">
+                                        <h4>Corporate</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./gift.html" class="nav-link ">
+                                        <h4>Gift page</h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="./shopping-card.html" class="nav-link">
+                                        <h4>Shopping Cart</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./checkout.html" class="nav-link ">
+                                        <h4>Checkout Page</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./card-payment.html" class="nav-link">
+                                        <h4>Card Payment</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./order.html" class="nav-link">
+                                        <h4>Order Summary</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./purchased.html" class="nav-link">
+                                        <h4>Past Orders</h4>
+                                    </a>
+                                </li>
 
-            </div>
-            <div class="col-md-3 mb-3">
-                <h3 class="title text-dark">Follow us:</h3>
-                <div class="btn-wrapper profile">
-                    <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-default btn-round"
-                        data-toggle="tooltip" data-original-title="Follow us">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                        data-toggle="tooltip" data-original-title="Like us">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-default btn-round"
-                        data-toggle="tooltip" data-original-title="Follow us">
-                        <i class="fab fa-instagram"></i>
-                    </a>
 
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="nav">
+
+                                <li class="nav-item">
+                                    <a href="./article.html" class="nav-link ">
+                                        <h4>Article Main page</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./article-category.html" class="nav-link ">
+                                        <h4>Article Catogory page</h4>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./product-listing.html" class="nav-link ">
+                                        <h4>Article nested page</h4>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <img src="assets/images/spaceBig.png">
+                        </div>
+                    </div>
+
+                    <p class="font-2">Privacy Policy Terms of Service
+                        © Spacecious All Rights Reserved</p>
                 </div>
-            </div>
-        </div>
-        <p>Privacy Policy Terms of Service
-            © Spacecious All Rights Reserved</p>
-    </div>
-</footer>
+            </footer>
 
+            <!-- Scroll up -->
+            <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- Owl Carousel -->
-    <sript src="./assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js">
-        </script>
-        <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+            <!-- jQuery CDN - -->
+            <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous"></script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <!-- jQuery Custom Scroller CDN -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-        <!--   Core JS Files   -->
-        <script src="./assets/js/script.js" type="text/javascript"></script>
+            <!-- Owl Carousel -->
+            <sript src="./assets/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js">
+            </script>
+            <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
 
-        <script>
+            <!--   Core JS Files   -->
+            <script src="./assets/js/script.js" type="text/javascript"></script>
 
+            
+            <script>
                 $(window).scroll(function () {
                     $('.background1').bgscroll({ direction: 'top' });
                 })
