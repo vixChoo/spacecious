@@ -21225,9 +21225,20 @@ table.w-85 th {
     
 }
 
+#sidebar.small {
+    background-color: rgb(72, 77, 85);
+    
+  }
 #sidebar.small ul li a {
     font-size:  12px;
+    color: #ffffff;
 }
+
+#sidebar.small ul ul a {
+  color: #ffffff;;
+  background-color: transparent;
+}
+
 
 
 #sidebar ul li a:hover {
@@ -21276,11 +21287,6 @@ a[aria-expanded="true"]{
     color: #fff;
   }
   
-  #sidebar.small ul ul a {
-    color: #6927ff;
-    background-color: transparent;
-}
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
