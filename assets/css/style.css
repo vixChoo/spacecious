@@ -20001,9 +20001,6 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     display: none;
   }
 
-  #cate-sidebar{
-    display: block!important;
-  }
   #sideBar {
     display: none;
   
@@ -20065,9 +20062,6 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 @media (max-width: 768px) {
   #search {
     display: none;
-  }
-  #cate-sidebar {
-  display: block!important;
   }
 
   #sideBar {
@@ -20810,7 +20804,7 @@ table.w-85 th {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 50px 0;
     border-bottom: 1px solid #47748b;
 }
 
@@ -20923,9 +20917,6 @@ MEDIAQUERIES
     #content {
         width: 100%;
        
-    }
-    #cate-sidebar span {
-        display: none;
     }
 }
 
