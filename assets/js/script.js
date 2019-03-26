@@ -393,6 +393,78 @@ function hideDiv(hideDiv) {
 
 })(jQuery);
 
+// Type writter
+const Typewritter = function (txtElement,words,wait = 3000) {
+  this.txtElement = txtElement;
+  this.words = words;
+  this.txt = '';
+  this.wordIndex = 0;
+  this.wait = parseInt(wait,10);
+  this.type(); // type method define
+  this.isDeleting = false; 
+}
+//  Type Method
+Typewritter.prototype.type = function () {
+  // console.log("HELLO 1000 means 1 seconds")
+
+  // Get current index of the array 
+  const currentIndex = this.wordIndex % this.words.length
+  // get full text of the array 
+  const fulltxt = this.words[currentIndex]
+
+  // Check if deleting
+  if (this.isDeleting) {
+    // First time is false 
+    // Remove char 
+    this.txt = fulltxt.substring(0, this.txt.length - 1);
+
+  }  else {
+    // Add Char bcuz txt = ''
+    this.txt = fulltxt.substring(0, this.txt.length + 1);
+  }
+  // Insert txt into element 
+  this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`
+
+  // Initial Type Speed 
+  let typeSpeed = 300;
+
+  if (this.isDeleting) {
+    typeSpeed /= 2;
+  } 
+    
+  // if word is complete 
+  if (!this.isDeleting && this.txt === fulltxt) {
+    // Make it pause abit
+    typeSpeed = this.wait; // 3000
+    // Set delete is true
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    // move to next word
+    this.wordIndex++;
+    // Pause before start typing
+    typeSpeed = 300;
+  }
+
+    
+  setTimeout(() => this.type(),typeSpeed)
+
+  
+}
+
+// Init on DOM LOAD
+document.addEventListener('DOMContentLoaded',initType)
+
+// init type
+
+function initType() {
+  const txtElement = document.querySelector('.txt-type');
+  const words =JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+
+  new Typewritter(txtElement,words,wait)
+}
+  
 
 $('.owl-carousel-1').owlCarousel({
   loop: true,
@@ -507,5 +579,20 @@ $('.owl-carousel-3').owlCarousel({
     }
   }
 })
+
+
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    
+    });
+
 
        
