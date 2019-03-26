@@ -105,8 +105,8 @@
                                     <a href="./product-listing.html" class="dropdown-item">
                                         Champagne
                                     </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Dessert and Fortified Wine
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                             View All Wines 
                                     </a>
                                 </div>
 
@@ -135,8 +135,8 @@
                                     <a href="./product-listing.html" class="dropdown-item">
                                         Champagne
                                     </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Dessert and Fortified Wine
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                        View All Brands
                                     </a>
 
                                 </div>
@@ -163,9 +163,10 @@
                             <a href="./product-listing.html" class="dropdown-item">
                                 Champagne
                             </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Dessert and Fortified Wine
+                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                View All Beers
                             </a>
+
                         </div>
                     </li>
                     <li class="dropdown nav-item p-0">
@@ -244,9 +245,10 @@
                                     <a href="./product-listing.html" class="dropdown-item">
                                         Champagne
                                     </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Dessert and Fortified Wine
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                        View All Spirits
                                     </a>
+
 
                                 </div>
                             </div>
@@ -270,9 +272,10 @@
                             <a href="./product-listing.html" class="dropdown-item">
                                 Champagne
                             </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Dessert and Fortified Wine
+                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                View All Liquors
                             </a>
+
                         </div>
                     </li>
                     <li class="nav-item p-0 active">
@@ -307,15 +310,11 @@
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                 <i class="icons fas fa-map-marker-alt"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
+                            <div class="dropdown-menu dropdown-menu-right text-center">
                                 <form class="form">
                                     <label class="text-left bg-white" for="quantity">
                                         Enter Your Address
                                     </label>
-                                    <div class="form-group m-2 text-center">
-                                        <input type="text" value="" placeholder="Address" class="form-control" />
-                                    </div>
-
                                     <div class="form-group m-2 text-center">
                                         <select class="form-control">
                                             <option selected>Saved Address</option>
@@ -323,10 +322,14 @@
                                             <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama,
                                                 58200 Kuala Lumpur</option>
                                         </select>
-                                        <input onclick="window" class="btn btn-default m-2 font-2 text-uppercase strong" type=submit
-                                            value="Search Store">
                                     </div>
+                                    <div class="form-group m-2 text-center">
+                                        <input type="text" value="" placeholder="Street address, city, state" class="form-control rounded-sm" />
+                                    </div>
+                                    
+                                    <input onclick="window" class="btn btn-default m-2 font-2 text-uppercase strong" type=submit value="Search Store">
                                 </form>
+                                 
                             </div>
                         </li>
 
@@ -365,16 +368,19 @@
     <div class="wrapper">
         <nav id="sidebar" class="d-lg-none d-block small">
             <div class="sidebar-header d-flex justify-content-center">
-                <img src="./assets/images/spaceSmall.png" alt="">
+                <a href="./landing.html">
+                    <img src="./assets/images/spaceSmall.png" alt="">
+                </a>
             </div>
+                
     
             <ul class="list-unstyled components pt-0 pb-5">
-                <li class="bg-info pb-3">
+                <li class="bg-info pb-3 text-center">
                     <small class="font-2 pl-2 pr-2 text-white strong">We are delivering your drinks to :</small>
                     <div class="form-inline justify-content-center ">
                         <input type="text" value="" placeholder="Enter Your Address" class="form-control strong bg-white rounded-left mw-2 border-0"
                             style=" margin-right: -10px;" />
-                        <a href="#" class="btn btn-icon btn-light border-0 rounded-right" style="padding-top: 9px; " value="Search Store">
+                        <a href="#" class="btn btn-icon btn-success border-0 rounded-right" style="padding-top: 9px; " value="Search Store">
                               <i class="icons fas fa-search"></i>
                         </a>
                     </div>

@@ -533,29 +533,6 @@ $('.owl-carousel-4').owlCarousel({
   }
 })
 
-$('.owl-carousel-5').owlCarousel({
-  loop: false,
-  rewind: true,
-  margin: 20,
-  nav: false,
-  autoplay: false,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 3
-    },
-    600: {
-      items: 4
-    },
-
-    1000: {
-      items: 4
-    }
-  }
-})
-
-
 
 
 $('.owl-carousel-3').owlCarousel({
@@ -581,18 +558,30 @@ $('.owl-carousel-3').owlCarousel({
 })
 
 
-    $(document).ready(function () {
-      $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-      });
 
-      $('#sidebarCollapse').on('click', function () {
-        $('#sidebar, #content').toggleClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-    
-    });
+$('.owl-carousel-5').owlCarousel({
+  items: 4,
+  loop: false,
+  rewind: true,
+  autoWidth: true,
+  margin: 8,
+  nav: false
+ 
+});
+
+
+$(document).ready(function () {
+  $("#sidebar").mCustomScrollbar({
+    theme: "minimal"
+  });
+
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar, #content').toggleClass('active');
+    $('.collapse.in').toggleClass('in');
+    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+  });
+
+});
 
 
        
