@@ -2720,9 +2720,8 @@ fieldset:disabled a.btn {
 
 .btn-darker {
   color: #ffffff;
-  background-color: black;
-  border-color: black;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #000;
+  background: rgba(0, 0, 0, .2);
 }
 
 .btn-darker:hover {
@@ -6012,6 +6011,8 @@ button.close {
   text-align: center;
   cursor: pointer;
   opacity:1;
+  
+  
 }
 
 .carousel-control-prev:hover,
