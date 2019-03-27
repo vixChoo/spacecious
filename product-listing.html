@@ -484,7 +484,7 @@
     <!-- Navbar -->
 
     <!-- Sidebar Toggle  -->
-    <div id="content" class="d-lg-none d-block">
+    <div class="d-lg-none d-block">
         <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--3 ml--2">
             <div class="container-fluid p-0">
                 <a class="navbar-brand" href="./landing.html"><img src="assets/images/spaceBig.png"></a>
@@ -513,8 +513,68 @@
         </nav>
     </div>
     <!-- End Navbar -->
+
+    <!-- Dropdown cate search  -->
+    <div class="row mt-lg-lg pt-md pb-3 border-bottom justify-content-center d-lg-none d-block">
+
+            <a href="#" class="dropdown-toggle text-dark" data-toggle="dropdown">
+                Categories
+                <span style="font-size:13px;" class="pl-2"> <i class="fa fa-chevron-down"></i></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right mega-dropdown pl-3 pb-0">
+                <div class="dropdown-divider"></div>
+                <ul class="list-unstyled pl-3">
+                    <li data-reactid="338">
+                        <a class=""
+                            data-reactid="339">Beer</a></li>
+                        <div class="dropdown-divider"></div>
+                            <ul class="list-unstyled">
+                                <li><a href="./product-listing.html" class="text-info pl-2" 
+                                    >Pumpkin Beer</a>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li><a href="./product-listing.html" class="text-info pl-2"                               
+                                    >IPA</a>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li><a href="./product-listing.html" class="text-info pl-2"                                 
+                                    >Stout</a>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li><a href="./product-listing.html" class="text-info pl-2" 
+                                 
+                                    >Sour Ale</a>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li><a href="./product-listing.html" class="text-info pl-2"                                
+                                    >Cider</a>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+
+                                <li><a href="./product-listing.html" class="text-info pl-2" >View All Beer</a>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                <li>
+                                    <a href="./product-listing.html" class="text-info pl-2">
+                                        View All Beer Brands
+                                    </a>
+                                        <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a href="./product-listing.html" class="text-info pl-2">View All Beer Countries
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+
+                    </ul>
+                </ul>
+
+            </div>
+    </div>
+
+
     <!-- Location Search -->
-    <div class="background1 d-lg-flex d-lg-block d-none mt-lg-lg mt-sm " style=" background-image: url(https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
+    <div class="background1 d-lg-flex d-lg-block d-none" style="margin-top: 5rem; background-image: url(https://images.unsplash.com/photo-1545668986-aaa94a880948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
         <div class="animated fadeInUp" id="slogan">
             <p class="text-white shadow mb-0 animated fadeInUp">Shop Beer, Wine & Liquor </p>
             <p class="text-white shadow mb-0 animated fadeInUp">1-Hour Delivery | Free Pickup | Shipping</p>
@@ -534,7 +594,7 @@
     <!-- Product Listing -->
 
     <!-- Top Header -->
-    <div class="container-fluid mb-3 p-lg-3 bg-secondary mt-lg-0 mt-md">
+    <div class="container-fluid mb-3 p-lg-3 bg-secondary mt-lg-0">
         <div class="container row m-0 p-0">
             <div class="col-12 col-lg-6 m-2 ml-lg-5 p-0">
                 <h1 class="ml-2 mb-md-4 mb-3 font-2 text-dark ">Wine<span class="text-muted m-2 h4">(55446 results)</span>
@@ -610,7 +670,8 @@
             <div class="col-lg-2 border-right p-1" id="sideBar">
                 <div class="text-center">
                     <a href="javascript:void(0)" onclick="dropDown('cate-down','wine')">
-                        <h2 class="border-top m-2 p-2 font">Categories <span style="font-size:13px; "><i class="fa fa-chevron-up "
+                        <h2 class="border-top m-2 p-2 font">Categories <span style="font-size:13px; ">
+                            <i class="fa fa-chevron-up "
                                     id="cate-down"></i></span></h2>
                 </a>
             </div>
@@ -1540,7 +1601,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4 product-card border-right hover pb-3 pt-3 border-top">
+                    <div class="col-6 col-md-4 product-card border-right hover pb-3 pt-3">
                         <div class="h-100">
                             <a href="./product-profile.html">
                                 <span class="badge text-white">Empty</span>

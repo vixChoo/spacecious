@@ -11344,6 +11344,9 @@ a.text-darker:focus {
   background-color: transparent;
   border: 0;
 }
+.text-shadow-0{
+    text-shadow: none !important;
+}
 
 .visible {
   visibility: visible !important;
