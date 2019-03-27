@@ -6375,6 +6375,10 @@ button.bg-darker:focus {
   border-bottom: 0.2rem solid #d9d9d9 !important;
 }
 
+.border-lg-bottom{
+  border-bottom: 0.2rem solid #d9d9d9 !important;
+}
+
 .border-lg-top{
   border-top: 0.2rem solid #d9d9d9 !important;
 }
