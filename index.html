@@ -106,8 +106,8 @@
                                         <a href="./product-listing.html" class="dropdown-item">
                                             Champagne
                                         </a>
-                                        <a href="./product-listing.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
+                                        <a href="./product-listing.html" class="dropdown-item text-info">
+                                            View All Wines
                                         </a>
                                     </div>
 
@@ -136,8 +136,8 @@
                                         <a href="./product-listing.html" class="dropdown-item">
                                             Champagne
                                         </a>
-                                        <a href="./product-listing.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
+                                        <a href="./product-listing.html" class="dropdown-item text-info">
+                                            View All Brands
                                         </a>
 
                                     </div>
@@ -164,9 +164,10 @@
                                 <a href="./product-listing.html" class="dropdown-item">
                                     Champagne
                                 </a>
-                                <a href="./product-listing.html" class="dropdown-item">
-                                    Dessert and Fortified Wine
+                                <a href="./product-listing.html" class="dropdown-item text-info">
+                                    View All Beers
                                 </a>
+
                             </div>
                         </li>
                         <li class="dropdown nav-item p-0">
@@ -245,9 +246,10 @@
                                         <a href="./product-listing.html" class="dropdown-item">
                                             Champagne
                                         </a>
-                                        <a href="./product-listing.html" class="dropdown-item">
-                                            Dessert and Fortified Wine
+                                        <a href="./product-listing.html" class="dropdown-item text-info">
+                                            View All Spirits
                                         </a>
+
 
                                     </div>
                                 </div>
@@ -271,9 +273,10 @@
                                 <a href="./product-listing.html" class="dropdown-item">
                                     Champagne
                                 </a>
-                                <a href="./product-listing.html" class="dropdown-item">
-                                    Dessert and Fortified Wine
+                                <a href="./product-listing.html" class="dropdown-item text-info">
+                                    View All Liquors
                                 </a>
+
                             </div>
                         </li>
                         <li class="nav-item p-0 active">
@@ -308,15 +311,11 @@
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                 <i class="icons fas fa-map-marker-alt"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right col-sm-6 col-lg-3 text-center">
+                            <div class="dropdown-menu dropdown-menu-right text-center">
                                 <form class="form">
                                     <label class="text-left bg-white" for="quantity">
                                         Enter Your Address
                                     </label>
-                                    <div class="form-group m-2 text-center">
-                                        <input type="text" value="" placeholder="Address" class="form-control" />
-                                    </div>
-
                                     <div class="form-group m-2 text-center">
                                         <select class="form-control">
                                             <option selected>Saved Address</option>
@@ -324,10 +323,15 @@
                                             <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama,
                                                 58200 Kuala Lumpur</option>
                                         </select>
-                                        <input onclick="window" class="btn btn-default m-2 font-2 text-uppercase strong"
-                                            type=submit value="Search Store">
                                     </div>
+                                    <div class="form-group m-2 text-center">
+                                        <input type="text" value="" placeholder="Street address, city, state" class="form-control rounded-sm" />
+                                    </div>
+
+                                    <input onclick="window" class="btn btn-default m-2 font-2 text-uppercase strong"
+                                        type=submit value="Search Store">
                                 </form>
+
                             </div>
                         </li>
 
@@ -366,16 +370,19 @@
     <div class="wrapper">
         <nav id="sidebar" class="d-lg-none d-block small">
             <div class="sidebar-header d-flex justify-content-center">
-                <img src="./assets/images/spaceSmall.png" alt="">
+                <a href="./landing.html">
+                    <img src="./assets/images/spaceSmall.png" alt="">
+                </a>
             </div>
 
-            <ul class="list-unstyled components pt-0">
-                <li class="bg-info pb-3">
+
+            <ul class="list-unstyled components pt-0 pb-5">
+                <li class="bg-info pb-3 text-center">
                     <small class="font-2 pl-2 pr-2 text-white strong">We are delivering your drinks to :</small>
                     <div class="form-inline justify-content-center ">
                         <input type="text" value="" placeholder="Enter Your Address" class="form-control strong bg-white rounded-left mw-2 border-0"
                             style=" margin-right: -10px;" />
-                        <a href="#" class="btn btn-icon btn-light border-0 rounded-right" style="padding-top: 9px; "
+                        <a href="#" class="btn btn-icon btn-success border-0 rounded-right" style="padding-top: 9px; "
                             value="Search Store">
                             <i class="icons fas fa-search"></i>
                         </a>
@@ -538,491 +545,469 @@
             <img src="./assets/images/spaceBig.png" class="ml-auto" alt="">
         </div>
         <div class="row justify-content-around">
-            <div class="col-lg-3 text-center mb-2">
+            <div class="col-lg-3 text-center mb-lg-2 mb-5">
                 <img src="./assets/images/online-shop.png" width="90" height="90">
-                <h3 class="text-capitalize">Shop Online</h3>
+                <h3 class="text-capitalize mb-1">Shop Online</h3>
                 <p class="text-muted">Browse thousands and the best selection of beer, wine and liquor without leaving
                     your desk.</p>
             </div>
 
-            <div class="col-lg-3 text-center mb-2">
+            <div class="col-lg-3 text-center mb-lg-2 mb-5">
                 <img src="./assets/images/delivery.png">
-                <h3 class="text-capitalize">Deliver to your doorstep</h3>
+                <h3 class="text-capitalize mb-1">Deliver to your doorstep</h3>
                 <p class="text-muted">Schedule your delivery and take credit for bringing happy hour to the next level.</p>
 
 
             </div>
 
-            <div class="col-lg-3 text-center mb-2">
+            <div class="col-lg-3 text-center mb-lg-2 mb-5">
                 <img src="./assets/images/wine-glasses.png" width="90" height="90">
-                <h3 class="text-capitalize">Enjoy Life</h3>
+                <h3 class="text-capitalize mb-1">Enjoy Life</h3>
                 <p class="text-muted">Just sit back and relax,let us do the job for you . Do take pleasure seriously .
                     After all, life is too short.</p>
             </div>
         </div>
 
         <!-- Customer Review -->
-        <div class="row">
-
-            <hr class="ml-auto w-25" style="margin-top:4.5rem;">
-            <h2 class="pl-sm p-4 font-2 strong text-center mt-sm">Customer Reviews</h2>
-            <hr class="ml-auto w-25" style="margin-top:4.5rem;">
-        </div>
-        <div class="owl-carousel owl-carousel-1  owl-theme">
-            <!--  Carousel Item 1 -->
-            <div class="item p-2">
-                <div class="col-12">
-                    <div class="col-12 ">
-                        <img src="./assets/images/team-1-800x800.jpg" class="img-fluid rounded-circle" alt="">
-                    </div>
-                    <div class="col-12 text-center p-2">
-                        <h4 class="text-muted mb-0 strong">Tom</h4>
-                        <div class="row m-1 align-items-center justify-content-center">
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                        </div>
-                        <p>Fast, affordable, great selection. Love it, recommend this service to anyone who will
-                            listen! Totally awesome.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <!--  Carousel Item 2 -->
-            <div class="item p-2">
-                <div class="col-12">
-                    <div class="col-12 ">
-                        <img src="./assets/images/team-2-800x800.jpg" class="img-fluid rounded-circle" alt="">
-                    </div>
-                    <div class="col-12 text-center p-2">
-                        <h4 class="text-muted mb-0 strong">Julia</h4>
-                        <div class="row m-1 align-items-center justify-content-center">
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                        </div>
-                        <p>TOTALLY LIFESAVER! Thanks for backing this service with superb customer service! I’ll be a
-                            regular…you can count on it!</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="item p-2">
-                <div class="col-12">
-                    <div class="col-12 ">
-                        <img src="./assets/images/team-3-800x800.jpg" class="img-fluid rounded-circle" alt="">
-                    </div>
-                    <div class="col-12 text-center p-2">
-                        <h4 class="text-muted mb-0 strong">Julia</h4>
-                        <div class="row m-1 align-items-center justify-content-center">
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                        </div>
-                        <p>Spacecious is SO FANTASTIC! It has nice layouts and fancy recipes let go of 1hr speed
-                            delivery. I LOVE IT.</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="item p-2">
-                <div class="col-12">
-                    <div class="col-12 ">
-                        <img src="./assets/images/team-4-800x800.jpg" class="img-fluid rounded-circle" alt="">
-                    </div>
-                    <div class="col-12 text-center p-2">
-                        <h4 class="text-muted mb-0 strong">Julia</h4>
-                        <div class="row m-1 align-items-center justify-content-center">
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                            <i class="fas fa-star pt-2 ml-1 text-star"></i>
-                        </div>
-                        <p>I am forever grateful I discovered Spacecious as the best online wine ecommerce. Great
-                            selection, reasonable prices and always on time.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- End Carousel -->
-
-        <!-- category -->
-        <div class="row">
-            <hr class="ml-auto w-25" style="margin-top:4rem;">
-            <h2 class="p-3 font strong text-center mt-sm text-uppercase">Shop By Catogory</h2>
-            <hr class="ml-auto w-25" style="margin-top:4rem;">
-        </div>
-
-        <div class="row justify-content-around">
-            <div class="col-6 col-lg-3 p-0 ">
-                <div class="card shadow-none hover">
-                    <div class="h-100">
-                        <div class="col-12 pt-3">
-                            <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/cocktail.jpg"
-                                    alt="Card image cap">
-                                <h3 class="card-title border-bottom font-3 text-uppercase text-center">Liquor</h3>
-                            </a>
-                        </div>
-                        <div class="card-body land-card text-uppercase">
-                            <p class="card-text">Gin</p>
-                            <p class="card-text">vodka </p>
-                            <p class="card-text">rum</p>
-                            <p class="card-text">tequila</p>
-                            <p class="card-text">bourbon whiskey</p>
-                            <p class="card-text"><a href="./product-listing.html">Shop Liquor</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 p-0 ">
-                <div class="card shadow-none hover">
-                    <div class="h-100">
-                        <div class="col-12 pt-3">
-                            <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/date-dinner-eating-3044.jpg"
-                                    alt="Card image cap">
-                                <h3 class="card-title border-bottom font-3 text-uppercase text-center">Wine</h3>
-                            </a>
-                        </div>
-                        <div class="card-body land-card text-uppercase">
-                            <p class="card-text">Red wine</p>
-                            <p class="card-text">white wine </p>
-                            <p class="card-text">rose & blush wine</p>
-                            <p class="card-text">sake & plum wine</p>
-                            <p class="card-text">sparkling wine & champagne</p>
-                            <p class="card-text"><a href="./product-listing.html">Shop Wine</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 p-0 ">
-                <div class="card shadow-none hover">
-                    <div class="h-100">
-                        <div class="col-12 pt-3">
-                            <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/beer2.jpg"
-                                    alt="Card image cap">
-                                <h3 class="card-title text-center border-bottom font-3 text-uppercase">Beer</h3>
-                            </a>
-                        </div>
-                        <div class="card-body land-card text-uppercase">
-                            <p class="card-text">ALE</p>
-                            <p class="card-text">LAGER </p>
-                            <p class="card-text">IPA</p>
-                            <p class="card-text">CIDER</p>
-                            <p class="card-text">KEGS</p>
-                            <p class="card-text"><a href="./product-listing.html">Shop Beer</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-3 p-0 ">
-                <div class="card shadow-none hover">
-                    <div class="h-100">
-                        <div class="col-12 pt-3">
-                            <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/extrax.jpg"
-                                    alt="Card image cap">
-                                <h3 class="card-title border-bottom font-3 text-uppercase text-center">Extras</h3>
-                            </a>
-                        </div>
-                        <div class="card-body land-card text-uppercase pl-4 pr-4">
-                            <p class="card-text">Mixers</p>
-                            <p class="card-text">Bitters & Syrups</p>
-                            <p class="card-text">Ice & Party Supplies</p>
-                            <p class="card-text">Soda</p>
-                            <p class="card-text">Fruit & Garnishes</p>
-
-                            <p class="card-text"><a href="./product-listing.html">Shop Extras</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Product Carousel -->
 
         <div class="row justify-content-lg-start justify-content-center">
             <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4.5rem;">
-            <h2 class="pl-sm p-4 font strong text-center mt-sm">RECOMMENDED TOP SELLING PRODUCTS</h2>
+            <h2 class="pl-sm p-4 font-2 strong text-center mt-sm">Customer Reviews</h2>
             <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4.5rem;">
         </div>
-
         <div class="owl-carousel owl-carousel-1  owl-theme">
             <!--  Carousel Item 1 -->
-
-
-
             <div class="item p-2">
-                <span class="badge badge-warning">FREE DELIVERY</span>
+                <a href="./product-profile.html">
+                    <div class="col-12">
+                        <div class="col-12 ">
+                            <img src="./assets/images/team-1-800x800.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <div class="col-12 text-center p-2">
+                            <h4 class="text-muted mb-0 strong">Tom</h4>
+                            <div class="row m-1 align-items-center justify-content-center">
+                                <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                                <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                                <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                                <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                                <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                            </div>
+                </a>
+                <p>Fast, affordable, great selection. Love it, recommend this service to anyone who will listen!
+                    Totally awesome.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--  Carousel Item 2 -->
+    <div class="item p-2">
+        <a href="./product-profile.html">
+            <div class="col-12">
+                <div class="col-12 ">
+                    <img src="./assets/images/team-2-800x800.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="col-12 text-center p-2">
+                    <h4 class="text-muted mb-0 strong">Julia</h4>
+                    <div class="row m-1 align-items-center justify-content-center">
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                    </div>
+        </a>
+        <p>TOTALLY LIFESAVER! Thanks for backing this service with superb customer service! I’ll be a regular…you can
+            count on it!</p>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="item p-2">
+        <a href="./product-profile.html">
+            <div class="col-12">
+                <div class="col-12 ">
+                    <img src="./assets/images/team-3-800x800.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="col-12 text-center p-2">
+                    <h4 class="text-muted mb-0 strong">Julia</h4>
+                    <div class="row m-1 align-items-center justify-content-center">
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                    </div>
+        </a>
+        <p>Spacecious is SO FANTASTIC! It has nice layouts and fancy recipes let go of 1hr speed delivery. I LOVE IT.</p>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="item p-2">
+        <a href="./product-profile.html">
+            <div class="col-12">
+                <div class="col-12 ">
+                    <img src="./assets/images/team-4-800x800.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="col-12 text-center p-2">
+                    <h4 class="text-muted mb-0 strong">Julia</h4>
+                    <div class="row m-1 align-items-center justify-content-center">
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                        <i class="fas fa-star pt-2 ml-1 text-star"></i>
+                    </div>
+        </a>
+        <p>I am forever grateful I discovered Spacecious as the best online wine ecommerce. Great selection, reasonable
+            prices and always on time.</p>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- End Carousel -->
+
+    <!-- category -->
+    <div class="row justify-content-lg-start justify-content-center">
+        <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4rem;">
+        <h2 class="p-3 font strong text-center mt-sm text-uppercase">Shop By Catogory</h2>
+        <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4rem;">
+    </div>
+
+    <div class="row justify-content-around">
+        <div class="col-6 col-lg-3 p-0 ">
+            <div class="card shadow-none hover">
+                <div class="h-100">
+                    <div class="col-12 pt-3">
+                        <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/cocktail.jpg"
+                                alt="Card image cap">
+                            <h3 class="card-title border-bottom font-3 text-uppercase text-center">Liquor</h3>
+                        </a>
+                    </div>
+                    <div class="card-body land-card text-uppercase">
+                        <p class="card-text">Gin</p>
+                        <p class="card-text">vodka </p>
+                        <p class="card-text">rum</p>
+                        <p class="card-text">tequila</p>
+                        <p class="card-text">bourbon whiskey</p>
+                        <p class="card-text"><a href="./product-listing.html">Shop Liquor</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 p-0 ">
+            <div class="card shadow-none hover">
+                <div class="h-100">
+                    <div class="col-12 pt-3">
+                        <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/date-dinner-eating-3044.jpg"
+                                alt="Card image cap">
+                            <h3 class="card-title border-bottom font-3 text-uppercase text-center">Wine</h3>
+                        </a>
+                    </div>
+                    <div class="card-body land-card text-uppercase">
+                        <p class="card-text">Red wine</p>
+                        <p class="card-text">white wine </p>
+                        <p class="card-text">rose & blush wine</p>
+                        <p class="card-text">sake & plum wine</p>
+                        <p class="card-text">sparkling wine & champagne</p>
+                        <p class="card-text"><a href="./product-listing.html">Shop Wine</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 p-0 ">
+            <div class="card shadow-none hover">
+                <div class="h-100">
+                    <div class="col-12 pt-3">
+                        <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/beer2.jpg"
+                                alt="Card image cap">
+                            <h3 class="card-title text-center border-bottom font-3 text-uppercase">Beer</h3>
+                        </a>
+                    </div>
+                    <div class="card-body land-card text-uppercase">
+                        <p class="card-text">ALE</p>
+                        <p class="card-text">LAGER </p>
+                        <p class="card-text">IPA</p>
+                        <p class="card-text">CIDER</p>
+                        <p class="card-text">KEGS</p>
+                        <p class="card-text"><a href="./product-listing.html">Shop Beer</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 p-0 ">
+            <div class="card shadow-none hover">
+                <div class="h-100">
+                    <div class="col-12 pt-3">
+                        <a href="./product-listing.html"> <img class="card-img-top img-card" src="./assets/images/extrax.jpg"
+                                alt="Card image cap">
+                            <h3 class="card-title border-bottom font-3 text-uppercase text-center">Extras</h3>
+                        </a>
+                    </div>
+                    <div class="card-body land-card text-uppercase pl-4 pr-4">
+                        <p class="card-text">Mixers</p>
+                        <p class="card-text">Bitters & Syrups</p>
+                        <p class="card-text">Ice & Party Supplies</p>
+                        <p class="card-text">Soda</p>
+                        <p class="card-text">Fruit & Garnishes</p>
+
+                        <p class="card-text"><a href="./product-listing.html">Shop Extras</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Product Carousel -->
+
+    <div class="row justify-content-lg-start justify-content-center">
+        <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4.5rem;">
+        <h2 class="pl-sm p-4 font strong text-center mt-sm">RECOMMENDED TOP SELLING PRODUCTS</h2>
+        <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4.5rem;">
+    </div>
+
+    <div class="owl-carousel owl-carousel-3 owl-theme">
+        <!--  Carousel Item 1 -->
+        <div class="item p-2">
+            <a href="./product-profile.html">
+
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-            <!--  Carousel Item 2 -->
-
-            <div class="item p-2">
-                <span class="badge badge-primary">Deals</span>
+        <!--  Carousel Item 2 -->
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20"
                             alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-                <span class="badge badge-default">New</span>
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20"
                             alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
-                        <span class="badge badge-neutral text-white">Hot selling</span>
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
-                        <span class="badge badge-success">Best Seller</span>
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-                <span class="badge badge-danger">Hot selling</span>
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center ">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-1">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
+    </div>
 
 
-        <!-- End Carousel -->
-
-
-
-
-
-
-        <!-- Product Carousel -->
-
-        <div class="row">
-            <hr class="ml-auto w-25" style="margin-top:4rem;">
-            <h2 class="p-3 font strong text-center mt-sm">TRENDING PRODUCTS</h2>
-            <hr class="ml-auto w-25" style="margin-top:4rem;">
-        </div>
-
-        <div class="owl-carousel owl-carousel-1  owl-theme">
-            <!--  Carousel Item 1 -->
+    <!-- End Carousel -->
 
 
 
-            <div class="item p-2">
-                <span class="badge badge-warning">FREE DELIVERY</span>
+
+
+
+    <!-- Product Carousel -->
+
+    <div class="row justify-content-lg-start justify-content-center">
+        <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4rem;">
+        <h2 class="p-3 font strong text-center mt-sm">TRENDING PRODUCTS</h2>
+        <hr class="ml-auto w-25 d-lg-block d-none" style="margin-top:4rem;">
+    </div>
+
+    <div class="owl-carousel owl-carousel-3 owl-theme">
+        <!--  Carousel Item 1 -->
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-            <!--  Carousel Item 2 -->
-
-            <div class="item p-2">
-                <span class="badge badge-primary">Deals</span>
+        <!--  Carousel Item 2 -->
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="https://products3.imgix.drizly.com/ci-moet-chandon-ice-imperial-d7101e53d137d818.jpeg?auto=format%2Ccompress&fm=jpeg&q=20"
                             alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-                <span class="badge badge-default">New</span>
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="https://products0.imgix.drizly.com/ci-moet-chandon-imperial-brut-champagne-d902e4f978d18721.png?auto=format%2Ccompress&fm=jpeg&q=20"
                             alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
-                        <span class="badge badge-neutral text-white">Hot selling</span>
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
-                        <span class="badge badge-success">Best Seller</span>
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-2">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
 
-
-
-            <div class="item p-2">
-                <span class="badge badge-danger">Hot selling</span>
+        <div class="item p-2">
+            <a href="./product-profile.html">
                 <div class="row justify-content-center mb-2">
-                    <div class="col-8 col-md-8 p-0">
+                    <div class="col-8 p-0">
                         <img src="./assets/images/wine.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row justify-content-center ">
-                    <div class="col-lg-10 font text-center ">
-                        <h4 class="strong wine-tile font-2 text-center mb-1">Cloud Break Chardonnay</h4>
-                        <h4 class="strong text-default strong font-2">RM 208.00</h4>
-                        <a href="./product-profile.html" class="btn btn-default font-3">View More</a>
+                    <div class="col-lg-10 text-center p-1 ">
+                        <h4 class="text-wrap wine-title mb-3">Chateau d'Esclans Whispering Angel Rosé</h4>
+                        <h4 class="strong ml-1">RM 208.00 - RM 520.00</h4>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
+    </div>
 
 
-        <!-- End Carousel -->
+    <!-- End Carousel -->
     </div>
     </div>
 
@@ -1246,7 +1231,7 @@
     </div>
     <!--  End Modal -->
 
-    <footer class="footer mt-lg font">
+    <footer class="footer mt-sm font">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
@@ -1353,7 +1338,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./product-listing.html" class="nav-link ">
+                            <a href="./article-inner.html" class="nav-link ">
                                 <h4>Article nested page</h4>
                             </a>
                         </li>
@@ -1367,7 +1352,7 @@
                 </div>
             </div>
 
-            <p class="font-2">Privacy Policy Terms of Service
+            <p class="font-2 copyright">Privacy Policy Terms of Service
                 © Spacecious All Rights Reserved</p>
         </div>
     </footer>
