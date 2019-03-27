@@ -19904,10 +19904,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .wine-title {
    font-weight: 400;
    line-height: 1.2;
-   font-size: 1rem;
+   font-size: 1.1rem;
    padding-left: 5px;
-  letter-spacing: 1.5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
  
 }
 
@@ -20065,8 +20064,8 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
       white-space: nowrap;
       text-align: left;
       padding-left: 0.5rem;
-      font-size: 14px;
-      height: 38px;
+      font-size: 16px;
+      height: 40px;
    }
 
   .price {
