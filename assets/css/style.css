@@ -20728,8 +20728,9 @@ table.w-85 th {
     padding:0 1rem;
   }
   .txt-res{
-      font-size: 1.6875rem;
+    font-size: 1.5rem;
   }
+
 }
 
 #stat {
@@ -20749,6 +20750,9 @@ table.w-85 th {
   font-weight: 600;
 }
 
+.hover-card {
+  min-width:120px;
+}
 .hover-card:hover {
   border: 2.3px solid #ccc;
 }
