@@ -20730,7 +20730,9 @@ table.w-85 th {
   .txt-res{
     font-size: 1.5rem;
   }
-
+  .smaller{
+    font-size:10px;
+  }
 }
 
 #stat {
