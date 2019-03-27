@@ -2587,15 +2587,18 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
-  background-color: #233142;
-  background-image: -webkit-linear-gradient(to bottom left, #233142, #35477d, #233142);
-  background-image: -o-linear-gradient(to bottom left, #233142, #35477d, #233142);
-  background-image: -moz-linear-gradient(to bottom left, #233142, #35477d, #233142);
-  background-image: linear-gradient(to bottom left, #233142, #35477d, #233142);
+  background: #4f9da6;
+  background-image: -webkit-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-image: -o-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-image: -moz-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+  background-image: linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
   background-size: 210% 210%;
   background-position: top right;
+  background-color: #4f9da6 ;
+  transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
+  
  
 }
 
@@ -2607,16 +2610,7 @@ fieldset:disabled a.btn {
 .btn-dark:active:hover,
 .btn-dark.active:focus,
 .btn-dark.active:hover {
-  background: #4f9da6;
-  background-image: -webkit-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-image: -o-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-image: -moz-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-image: linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
-  background-size: 210% 210%;
-  background-position: top right;
-  background-color: #4f9da6 ;
-  transition: all 0.15s ease;
-  box-shadow: none;
+ background-color: #537791;
   color: #ffffff;
 }
 
@@ -6166,8 +6160,8 @@ background: linear-gradient(305deg, rgba(255,206,118,0.2974504249291785) 28%, rg
 .bg-gradient-info
 {
  background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    
 }
 
@@ -6204,7 +6198,16 @@ background: linear-gradient(to left, #dd1818, #ED213A); /* W3C, IE 10+/ Edge, Fi
 
 .bg-gradient-dark
 {
-    background: linear-gradient(87deg, #212529 0, #212229 100%) !important;
+    background: #4f9da6;
+    background-image: -webkit-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+    background-image: -o-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+    background-image: -moz-linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+    background-image: linear-gradient(to bottom left, #4f9da6, #35477d, #4f9da6);
+    background-size: 210% 210%;
+    background-position: top right;
+    background-color: #4f9da6 ;
+    box-shadow: none;
+    color: #ffffff;
 }
 
 .bg-gradient-default
@@ -16278,11 +16281,14 @@ textarea.form-control:active {
 }
 
 .nav-tabs.nav-tabs-neutral>.nav-item>.nav-link {
-  color: #ffffff;
+  color: #212529; 
+  border-color: rgb(82, 95, 127);
+ 
 }
 
 .nav-tabs.nav-tabs-neutral>.nav-item>.nav-link.active {
   border-color: rgba(255, 255, 255, 0.5);
+  background-color: #e9ecef;
   color: #ffffff;
 }
 
@@ -16293,8 +16299,9 @@ textarea.form-control:active {
 }
 
 .nav-tabs.nav-tabs-info>.nav-item>.nav-link.active {
-  border-color: #1d8cf8;
-  color: #1d8cf8;
+  border-color: #537791;
+  background-color: #537791; 
+  color: #ffffff;
 }
 
 .nav-tabs.nav-tabs-danger>.nav-item>.nav-link.active {
