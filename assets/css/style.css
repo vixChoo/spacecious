@@ -1643,6 +1643,18 @@ pre code {
   .table-responsive-md>.table-bordered {
     border: 0;
   }
+
+  .table.cate>thead>tr>th,
+  .table.cate>tbody>tr>th,
+  .table.cate>tfoot>tr>th,
+  .table.cate>thead>tr>td,
+  .table.cate>tbody>tr>td,
+  .table.cate>tfoot>tr>td {
+    border-color: rgba(255, 255, 255, 0.1);
+    padding: 0 25px;
+    vertical-align: middle;
+    margin-bottom: -5px!important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -14057,6 +14069,8 @@ hr {
   vertical-align: middle;
 }
 
+
+
 .table.table-shopping tbody tr:last-child td {
   border: none;
 }
@@ -14158,6 +14172,12 @@ hr {
   -ms-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
 }
+
+.form-check .form-check-sign.top-5::before,
+.form-check .form-check-sign.top-5::after {
+  top: 5px;
+}
+
 
 .form-check input[type="checkbox"]:checked+.form-check-sign::before,
 .form-check input[type="checkbox"]:checked+.form-check-sign::before {
@@ -19885,7 +19905,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
    font-weight: 400;
    line-height: 1.2;
    font-size: 1.4375rem;
-   margin-left: 5px;
+   padding-left: 5px;
  
 }
 
@@ -20042,7 +20062,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
       text-overflow: ellipsis;
       white-space: nowrap;
       text-align: left;
-      margin-left: 0.5rem;
+      padding-left: 0.5rem;
+      font-size: 18px;
+      height: 38px;
    }
 
   .price {
