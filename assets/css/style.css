@@ -20728,10 +20728,16 @@ table.w-85 th {
     padding:0 1rem;
   }
   .txt-res{
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
   .smaller{
     font-size:10px;
+  }
+  .costs {
+    font-size: smaller;
   }
 }
 
