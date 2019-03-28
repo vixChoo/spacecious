@@ -190,10 +190,21 @@
                                         </tr>
                                         <tr>
                                         <th>Invoice No:</th>
-                                           <td>
+                                        <td>
+                                                # 1252
                                                 <a href="./invoice.html" class="btn btn-primary strong" >
-                                                    <i class="fa fa-cog"></i>
-                                                    Generate
+                                                    <i class="fa fa-eye"></i>
+                                                    View
+                                                </a>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                        <th>Email</th>
+                                        <td>
+                                                <span class="badge badge-succes">Sent</span>
+                                                <a href="./email.html" class="btn btn-primary strong" >
+                                                    <i class="fa fa-eye"></i>
+                                                    View
                                                 </a>
                                            </td>
                                         </tr>
@@ -622,7 +633,15 @@
 
     <script type="text/javascript">
          $(document).ready(function () {
-              
+              $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar, #content').toggleClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
                 blackKit.initDatePicker();
             });
         $('.datetimepicker').datetimepicker({
