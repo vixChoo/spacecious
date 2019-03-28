@@ -514,7 +514,7 @@
 
 
     <!-- Content -->
-    <div class="container  mt-lg-lg mt-sm">
+    <div class="container mt-lg-lg mt-md">
       <p class="badge badge-warning float-right text-darker">DELIVERD WITHIN 60 MINS</p>
         <h1 class="p-4 mb-0 font bg-secondary">Cart</h1>
             <div class="row">
@@ -522,9 +522,10 @@
                 <div class="col-md-7 shadow p-0 ml-3 mr-3">
                    
                     <div class="form-group w-100 mb-0" >
-                            <select class="form-control strong border-0 bg-dark text-white rounded-sm">
+                            <select class="form-control strong border-0 bg-info text-white rounded-sm">
                                 <option>DELIVERY</option>
                                 <option selected>PICK UP</option>
+                                <option>GET IT LATER</option>
                             </select>
                         </div>
                  
@@ -558,12 +559,60 @@
                     </div>
                                    
                         <div class="form-group w-100 mb-0">
-                            <select class="form-control strong border-0 bg-dark text-white rounded-sm ">
+                            <select class="form-control strong border-0 bg-info text-white rounded-sm ">
                                 <option selected>DELIVERY</option>
                                 <option disabled>PICK UP (NOT AVAILABLE)</option>
+                                <option>GET IT LATER</option>
                             </select>
                         </div>
                         <p class="pr-3 pl-3 p-2 bg-secondary w-100 mt-0"> Today, 8am - 9am </p>
+                        
+                        
+                    <div class="row">
+                        <div class="col-4 col-md-3 p-3 d-flex align-items-center">
+                                <img src="./assets/images/wine.jpg" alt="">
+                        </div>
+                        
+                        <div id="row">
+                            <div class="col-md-6 p-2">
+                                <p> Espolòn Reposado </p>
+                                <h5> 750ml Bottle </h5>
+                                <a href="#" class="text-default">Remove</a>
+                            </div>
+                                
+                            <div class="col-md-4 p-2">
+                                <div class="form-group col-4" id="quantity">
+                                    <label for="quantity">
+                                        Quantity
+                                    </label>
+                                    <!-- Default Quantity value -->
+                                    <input type="number" class="form-control" value="1" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 col-md-2 p-2">
+                                <p class="text-right pr-1">RM 48.80</p>
+                        </div>
+                    </div>
+
+                        <div class="form-group w-100 mb-0">
+                            <select class="form-control strong border-0 bg-info text-white rounded-sm ">
+                                <option>DELIVERY</option>
+                                <option disabled>PICK UP (NOT AVAILABLE)</option>
+                                <option selected>GET IT LATER</option>
+                            </select>
+                        </div>
+                        <p class="pr-3 pl-3 p-2 bg-secondary w-100 mt-0"> 
+                            <select class="form-control strong border-0 rounded-sm ">
+                                <option selected>Today, 8am - 9am</option>
+                                <option>Today, 9am - 10am</option>
+                                <option>Today, 10am - 11am</option>
+                                <option>Today, 11am - 12pm</option>
+                                <option>Today, 1pm - 10pm</option>
+                            </select>
+                        </p>
+                        
                         
                     <div class="row">
                         <div class="col-4 col-md-3 p-3 d-flex align-items-center">
@@ -635,10 +684,12 @@
                                                  Have Promo Code ?
                                         </label>
                                     </div>
-
-                                    <div class="form-group mb-3 mw-3 d-none" id="hidePromo">
-                                        <input class="form-control" placeholder="Promo Code" type="text">
-                                    </div>
+                                    
+                                    <center>
+                                        <div class="form-group mb-3 mw-3 d-none" id="hidePromo">
+                                            <input class="form-control" placeholder="Promo Code" type="text">
+                                        </div>
+                                    </center>
                             </div>
                 
                         </div>
