@@ -19378,6 +19378,7 @@ table.w-85 th {
   }
   .bg-container{
     padding:0 1rem;
+    margin-top: 4rem!important;
   }
   .txt-res{
     font-size: 0.9rem;
@@ -19398,7 +19399,6 @@ table.w-85 th {
   padding-bottom: 50px;
   color: white!important;
   background-attachment: fixed;
-  margin-top: 50px;
 }
 
 #stat h2 , #stat p{
