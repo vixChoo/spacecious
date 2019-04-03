@@ -19219,6 +19219,12 @@ height
   font-size: 1.5rem;
 }
 
+.main-title{
+  font-size: 3rem!important;
+}
+.sub-text{
+  font-size: 2rem!important;
+}
 .background-static p{
   border-radius: 10px;
   font-size: 3rem;
@@ -19391,6 +19397,12 @@ table.w-85 th {
   }
   .costs {
     font-size: smaller;
+  }
+  .main-title{
+    font-size:6vw!important;
+  }
+  .sub-text{
+    font-size:4vw!important;
   }
 }
 
