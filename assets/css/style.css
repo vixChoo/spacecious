@@ -2543,7 +2543,7 @@ textarea.form-control {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-}
+
 
 .form-check.disabled .form-check-label,
 .form-check.disabled .form-check-label {
@@ -8811,7 +8811,7 @@ button.bg-darker:focus {
   .float-xl-left {
     float: left !important;
   }
-  .  {
+  .float-xl-right{
     float: right !important;
   }
   .float-xl-none {
@@ -13603,9 +13603,9 @@ img {
     font-size: 1.2495rem;
     background: none;
   }
-  .navbar .navbar-collapse .navbar-nav li {
-    /* padding: 0px; */
-  }
+  /* .navbar .navbar-collapse .navbar-nav li {
+    padding: 0px; 
+  } */
   .navbar .navbar-nav .btn {
     margin-left: -3px;
     display: flex;
@@ -18652,8 +18652,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     width:160px;
   }
   #card-row {
-    padding-left: 0.25rem;
-    padding-right: 1.2rem；
+    padding-left: 4rem;
   }
   .table-check{
      min-width:25px!important;
@@ -19660,7 +19659,8 @@ scrollup
     left: 16px;
     top: 13px;
     font-size: 19px;
-    opacity:.4 -webkit-transition:all .3s ease;
+    opacity:.4 ;
+    -webkit-transition:all .3s ease;
      -moz-transition: all .3s ease;
      -ms-transition: all .3s ease;
      -o-transition: all .3s ease;

@@ -210,9 +210,9 @@
                                         </td>
                                            
                                         <td>
-                                            <div class="row p-3">
-                                               <span class="badge badge-default">Default</span>
-                                                <a href="javascript:void(0)" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger m-2 p-2" onclick="return confirm('Are you sure you want to delete this item?');">
+                                            <div class="row p-3 align-items-center">
+                                               <span class="badge badge-default h-fit">Default</span>
+                                                <a href="javascript:void(0)" rel="tooltip" data-toggle="tooltip" title="Delete" class="btn btn-danger ml-2 p-2" onclick="return confirm('Are you sure you want to delete this item?');">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
                                             </div>
@@ -310,6 +310,48 @@
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" value="example@.com.my">
                                                 </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Password</th>
+                                            <td>
+                                                <div class="row p-3">
+                                                        <p class="text-muted strong w-50 ml-lg-4 ml-2 text-left">******34</p>
+                                                        <a href="javascript:void(0)" id="edit-pass" onclick="hideForm('edit-pass','password')"class="w-fit text-info strong">Change Password</a>
+                                                </div>
+                                                <form role="form" class="d-none" id="password">
+                                                        <div class="form-group m-3 col-lg-8 pl-0">
+                                                            <div class="input-group input-group-alternative">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text border-light">
+                                                                        <i class="fas fa-key"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <input class="form-control" placeholder="Old Password" type="password">
+                                                            </div>
+                                                        </div>
+                                                                <div class="form-group m-3 col-lg-8 pl-0">
+                                                                    <div class="input-group input-group-alternative">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text border-light">
+                                                                                <i class="fas fa-key"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input class="form-control" placeholder="New Password" type="password">
+                                                                    </div>
+                                                                </div>
+                                
+                                                        <div class="form-group m-3 col-lg-8 pl-0">
+                                                            <div class="input-group input-group-alternative">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text border-light">
+                                                                        <i class="fas fa-key"></i>
+                                                                    </span>
+                                                                </div>
+                                                                <input class="form-control" placeholder="Confirm Password" type="password">
+                                                            </div>
+                                                        </div>
+                                                      </form>
                                             </td>
                                         </tr>
                                         <tr>
@@ -450,7 +492,25 @@
              
         });
 
-
+        let text = ""
+        // seek and hide
+        function hideForm(hideBtn, hideDiv) {
+            const hiddenBtn = document.getElementById(hideBtn);
+            const hiddenDiv = document.getElementById(hideDiv);
+            
+            if (hiddenDiv.className.includes("d-none")) {
+                text = hiddenBtn.innerHTML
+                hiddenDiv.style.display = "block"
+                hiddenDiv.classList.remove("d-none")
+                hiddenDiv.classList.add("d-block")
+                hiddenBtn.innerHTML = "Save"
+        }   else {
+                hiddenDiv.style.display = "none"
+                hiddenDiv.classList.add("d-none")
+                hiddenDiv.classList.remove("d-block")
+                hiddenBtn.innerHTML = text
+            }
+        }
 
     </script>
 </body>
