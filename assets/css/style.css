@@ -18499,6 +18499,13 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   /* box-shadow: 2px 2px 6px rgba(0, 0, 0) ! */
 }
 
+.pale:hover {
+  transition: 0.2s ease-in-out;
+  transition: all .10s ease;
+  opacity: 0.8;
+}
+
+
 
 /* Advertisemtnt */
 .ads-box{
@@ -18596,7 +18603,13 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   max-height: 150px;
 
 }
+.lh-1{
+  line-height: 0.5rem;
+}
 
+.lh-2{
+  line-height: 1.13rem;
+}
   
 /*  article - category here */
 .img-top {
@@ -18777,9 +18790,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
     min-width:25px!important;
   }
 
-
- 
- 
+  .cate-text{
+    max-height: 200px;
+  }
 }
 
 @media (min-width: 765px) {
@@ -18870,7 +18883,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
  .land-card {
    display: none;
  }
-  
+  .cate-text{
+    max-height: 150px;
+  }
 
 }
 
@@ -19105,6 +19120,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .mh-4 {
   max-height: 400px!important;
 }
+.mh-45 {
+  max-height: 450px!important;
+}
 /*------------------------------------------------
 
 height 
@@ -19133,6 +19151,10 @@ height
 }
 
 .minh-2{
+  min-height: 250px;
+}
+
+.minh-3{
   min-height: 250px;
 }
 
