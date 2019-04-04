@@ -116,6 +116,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+.font-4 {
+ font-family: 'Open Sans', sans-serif;
+}
 
 h1,
 h2,
@@ -203,7 +206,7 @@ sup {
 }
 
 a {
-  color: #6927ff;
+  color: #74b9ff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -259,7 +262,7 @@ img {
 
 svg {
   overflow: hidden;
-  vertical-align: middle;
+  
 }
 
 table {
@@ -12513,8 +12516,7 @@ fieldset[disabled] .btn-neutral.active {
 
 .btn-darker {
   color: #ffffff;
-  background: #000;
-  background: rgba(0, 0, 0, .2);
+  background:#ced6e0;
 }
 
 .btn-darker:hover {
@@ -13313,6 +13315,7 @@ fieldset[disabled] .btn-link.active {
 @media screen and (max-width: 991px) {
   .footer {
     padding-left: 0px;
+    padding-top: 0px;
   }
   .footer .copyright {
     text-align: right;
@@ -18509,6 +18512,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   opacity: 0.8;
 }
 
+.info-center{
+  min-height: 85vh;
+}
 
 
 /* Advertisemtnt */
@@ -18744,6 +18750,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 
   .price {
     width: 100px!important;
+  }
+  .info-center{
+    min-height: 0px;
   }
 }
 /* End Article */
