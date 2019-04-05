@@ -1912,8 +1912,6 @@ pre code {
 }
 
 .form-control:focus {
-  color: rgba(0, 0, 0);
-  background-color: #ffffff;
   border-color: rgba(50, 151, 211, 0.25);
   outline: 0;
   box-shadow: none, none;
@@ -2094,7 +2092,6 @@ textarea.form-control {
 
 .form-control:focus {
   border-color:#5893d4;
-  background-color: transparent;
   box-shadow: none;
   font-weight: 600 !important;
   font-weight: bolder;
@@ -7648,6 +7645,11 @@ background: linear-gradient(to left, #dd1818, #ED213A); /* W3C, IE 10+/ Edge, Fi
     background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
 }
 
+.bg-gradient-darker
+{
+  background:#3c6382;
+}
+
 .bg-gradient-white
 {
     background: linear-gradient(87deg, #fff 0, white 100%) !important;
@@ -7853,6 +7855,18 @@ button.bg-darker:focus {
 
 .border-left {
   border-left: 0.0625rem solid #666b71 !important;
+}
+.border-l{
+  border-left: 0.5em solid;
+  border-right: none!important;
+  border-bottom: none!important;
+  border-top: none!important;
+}
+.border-t{
+  border-top: 0.0625rem solid;
+  border-right: none!important;
+  border-bottom: none!important;
+  border-left: none!important;
 }
 
 .border-0 {
@@ -18635,6 +18649,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .lh-2{
   line-height: 1.2rem;
 }
+span.item:empty:before {
+  content: "\200b"; 
+  /* unicode zero width space character */
+}
   
 /*  article - category here */
 .img-top {
@@ -18662,6 +18680,15 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   width: 55px!important;
 }
 
+.form-control.dark:focus {
+  color: #ffffff;
+  background-color: #0a3d62!important;
+  background-image: linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  background-image: -webkit-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  background-image: -o-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  background-image: -moz-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  border-color: #0a3d62!important;
+}
 
 @media only screen and (min-width: 481px){}
 .img-overlay {

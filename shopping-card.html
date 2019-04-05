@@ -522,13 +522,12 @@
                 <div class="col-md-7 shadow p-0 ml-3 mr-3">
                    
                     <div class="form-group w-100 mb-0" >
-                            <select class="form-control strong border-0 bg-info text-white rounded-sm">
+                            <select class="form-control strong rounded-sm border-l border-danger">
                                 <option>DELIVERY</option>
                                 <option selected>PICK UP</option>
                                 <option>GET IT LATER</option>
                             </select>
                         </div>
-                 
                         <p class="pr-3 pl-3 p-2 bg-secondary w-100">Open: 3PM | Closes: 12AM </p>
                     <div class="row">
                         <div class="col-4 col-md-3 p-3 d-flex align-items-center">
@@ -559,7 +558,7 @@
                     </div>
                                    
                         <div class="form-group w-100 mb-0">
-                            <select class="form-control strong border-0 bg-info text-white rounded-sm ">
+                            <select class="form-control strong rounded-sm border-l border-danger ">
                                 <option selected>DELIVERY</option>
                                 <option disabled>PICK UP (NOT AVAILABLE)</option>
                                 <option>GET IT LATER</option>
@@ -597,22 +596,21 @@
                     </div>
 
                         <div class="form-group w-100 mb-0">
-                            <select class="form-control strong border-0 bg-info text-white rounded-sm ">
+                            <select class="form-control strong rounded-sm border-l border-danger ">
                                 <option>DELIVERY</option>
                                 <option disabled>PICK UP (NOT AVAILABLE)</option>
                                 <option selected>GET IT LATER</option>
                             </select>
                         </div>
-                        <p class="pr-3 pl-3 p-2 bg-secondary w-100 mt-0"> 
-                            <select class="form-control strong border-0 rounded-sm ">
-                                <option selected>Today, 8am - 9am</option>
-                                <option>Today, 9am - 10am</option>
-                                <option>Today, 10am - 11am</option>
-                                <option>Today, 11am - 12pm</option>
-                                <option>Today, 1pm - 10pm</option>
-                            </select>
-                        </p>
-                        
+                        <div class="form-group w-100 mb-0">
+                        <select class="form-control strong border-l bg-white rounded-sm ">
+                            <option selected>Today, 8am - 9am</option>
+                            <option>Today, 9am - 10am</option>
+                            <option>Today, 10am - 11am</option>
+                            <option>Today, 11am - 12pm</option>
+                            <option>Today, 1pm - 10pm</option>
+                        </select>
+                        </div>
                         
                     <div class="row">
                         <div class="col-4 col-md-3 p-3 d-flex align-items-center">
@@ -655,7 +653,7 @@
                     </div>
                     <div class="dropdown-divider m-2"></div>
                         <div class="card-description mt-2">
-                            <table class="table">
+                            <table class="table table-borderless">
                                 <tbody>
                                     <tr>
                                         <td scope="row">Product Subtotal</td>
@@ -686,8 +684,10 @@
                                     </div>
                                     
                                     <center>
-                                        <div class="form-group mb-3 mw-3 d-none" id="hidePromo">
-                                            <input class="form-control" placeholder="Promo Code" type="text">
+                                        <div class="form-inline m-2 justify-content-center d-none" id="hidePromo">
+                                                <input class="form-control form-control strong rounded-sm" placeholder="Promo Code" type="text">
+                                                <input class="btn btn-darker text-uppercase font-4 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
+                                                value="Add">
                                         </div>
                                     </center>
                             </div>
