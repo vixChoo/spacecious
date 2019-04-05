@@ -11190,7 +11190,9 @@ button.bg-darker:focus {
     text-align: center !important;
   }
 }
-
+.text-space-sm{
+  letter-spacing: 0.3rem;
+}
 .text-space {
   letter-spacing: 0.5rem;
 }
@@ -18578,11 +18580,10 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: justify !important;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
+  line-height: 1.2;
  
 }
 .article-show:hover .overlay {
@@ -19190,7 +19191,7 @@ height
 }
 
 .minh-3{
-  min-height: 250px;
+  min-height: 350px;
 }
 
 .minw-1{
