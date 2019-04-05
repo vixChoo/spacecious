@@ -11192,7 +11192,7 @@ button.bg-darker:focus {
 }
 
 .text-space {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.5rem;
 }
 .text-lowercase {
   text-transform: lowercase !important;
@@ -18632,7 +18632,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 }
 
 .lh-2{
-  line-height: 1.13rem;
+  line-height: 1.2rem;
 }
   
 /*  article - category here */
@@ -18705,6 +18705,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .ads-box{
     height: 350px;
   }
+  .card-text{
+    font-size: 80%;
+  }
    
 }
 
@@ -18767,6 +18770,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   .info-center{
     min-height: 0px;
   }
+  
 }
 /* End Article */
 
@@ -19305,7 +19309,7 @@ height
 .img-block img{
   position: absolute;
   margin: auto; 
-  min-height: 90%;
+  min-height: 100%;
   min-width: 130%;
   /* For the following settings we set 100%, but it can be higher if needed 
   See the answer's update */
