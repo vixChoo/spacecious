@@ -7813,10 +7813,6 @@ button.bg-darker:focus {
   border-bottom: 0.2rem solid #d9d9d9 !important;
 }
 
-.border-lg-bottom{
-  border-bottom: 0.2rem solid #d9d9d9 !important;
-}
-
 .border-lg-top{
   border-top: 0.2rem solid #d9d9d9 !important;
 }
@@ -7868,7 +7864,9 @@ button.bg-darker:focus {
   border-bottom: none!important;
   border-left: none!important;
 }
-
+.border-1 {
+  border-width: 0.3rem!important;
+}
 .border-0 {
   border: 0 !important;
 }
@@ -7894,7 +7892,7 @@ button.bg-darker:focus {
 }
 
 .border-secondary {
-  border-color: #f4f5f7 !important;
+  border-color: #e9ecef !important;
 }
 
 .border-success {
@@ -8049,6 +8047,7 @@ button.bg-darker:focus {
   .d-sm-inline-flex {
     display: inline-flex !important;
   }
+  
 }
 
 @media (min-width: 768px) {
@@ -9512,6 +9511,10 @@ button.bg-darker:focus {
 
 .m-center {
   margin: 0 auto;
+}
+
+.pl-only{
+  padding: 0px 0px 0px 30px!important;
 }
 @media (min-width: 576px) {
   .m-sm-0 {
@@ -11157,6 +11160,10 @@ button.bg-darker:focus {
 .text-cross {
   text-decoration: line-through;
 }
+
+.text-line {
+  text-decoration: underline;
+}
 @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important;
@@ -11203,6 +11210,9 @@ button.bg-darker:focus {
   .text-xl-center {
     text-align: center !important;
   }
+}
+.text-space-xs{
+  letter-spacing: 0.1rem;
 }
 .text-space-sm{
   letter-spacing: 0.3rem;
@@ -18649,7 +18659,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .lh-2{
   line-height: 1.2rem;
 }
-span.item:empty:before {
+span:empty:before {
   content: "\200b"; 
   /* unicode zero width space character */
 }
@@ -18874,6 +18884,9 @@ span.item:empty:before {
   .cate-text{
     max-height: 300px;
   }
+  .w-lg-80 {
+    width: 80% !important;
+  }
 }
 
 
@@ -18949,7 +18962,10 @@ span.item:empty:before {
   .cate-text{
     max-height: 150px;
   }
-
+  .border-bottom-lg {
+    border-bottom: 0.0625rem solid!important;
+  }
+  
 }
 
 @media (max-width: 376px) {
@@ -19079,6 +19095,9 @@ span.item:empty:before {
  .img-card {
    width: 145px;
    height: 207px;
+ }
+ .cate-right{
+  margin-left: -57vw;
  }
 }
 
