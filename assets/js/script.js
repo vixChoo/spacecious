@@ -320,9 +320,16 @@ function hideForm(hideForm, hideCheck) {
 function disableForm(disBtn, disDiv) {
   let hiddenForm = document.getElementById(disDiv);
   let hiddenCheck = document.getElementById(disBtn);
-
+  
   if (hiddenCheck.checked) {
-    hiddenForm.classList.remove("disabled")
+    if (disDiv == "pickUp") {
+      hiddenForm.classList.remove("disabled")
+      hiddenForm = document.getElementById("pickUp2");
+      hiddenForm.classList.remove("disabled")
+    }
+    else{
+      hiddenForm.classList.remove("disabled")
+    }
   }
   else {
     hiddenForm.classList.add("disabled")

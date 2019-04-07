@@ -14839,7 +14839,7 @@ code {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #1d253b;
+  opacity: 0.4;
   color: #344675;
   cursor: not-allowed;
 }

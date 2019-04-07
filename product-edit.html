@@ -297,15 +297,15 @@
                                                         1L Bottle
                                                     </label>
                                                 </div>
-                                                
+                                                <small class="text-muted mb-0 font-4">Note : Only Admin can add unit</small>
                                                 <div class="form-group">
-                                                    <input class="form-control mb-lg-0 mb-3 mr-lg-3" type="text" placeholder="Add units ">
+                                                    <input class="form-control mb-lg-0 mb-3 mr-lg-3" type="text" placeholder="Add units" disabled>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input class="form-control mb-lg-0 mb-3 mr-lg-3" type="text" placeholder="Quantity">
+                                                    <input class="form-control mb-lg-0 mb-3 mr-lg-3" type="text" placeholder="Quantity" disabled>
                                                 </div>
                                                 <div class="form-group text-center">
-                                                    <button class="btn btn-default mt-3">Add</button>
+                                                    <button class="btn btn-default mt-3" disabled>Add</button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -327,202 +327,166 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        
-                                        
-                                        <tr>
-                                            <th>Price <p class="text-danger strong pr-4">(Per unit)</p></th>
-                                            <td>
-                                               
-                                                <h4 class="strong">Delivery</h4>
-                                                <ul>
-                                                   <li>
-                                                       <div class="form-group">
-                                                          <label for="quantity"> 350 ml Bottle</label>
-                                                          <input type="text" class="form-control" value="RM 100">
-                                                       </div>
-
-                                                    </li>
-                                                    
-                                                    <li>
-                                                        <div class="form-group">
-                                                            <label for="quantity">750 ml Bottle</label>
-                                                            <input type="text" class="form-control" value="RM 200">
-                                                        </div>
-                                                    </li>
-                                                    
-                                                    <li>
-                                                        <div class="form-group">
-                                                            <label for="quantity">1L Bottle</label>
-                                                            <input type="text" class="form-control" value="RM 300">
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
-                                                    
-                                                <h4 class="strong">Pick Up</h4>
-                                                <ul>
-                                                   <li>
-
-                                                       <div class="form-group">
-                                                           <label for="quantity">350 ml Bottle</label>
-                                                           <input type="text" class="form-control" value="RM 50">
-                                                           
-                                                        </li>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="quantity">750 ml Bottle</label>
-                                                        <input type="text" class="form-control" value="RM 150">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="quantity">1L Bottle</label>
-                                                        <input type="text" class="form-control" value="RM 250">
-
-                                                    </ul>
-                                                    </div>
-                                            </td>
-                                        </tr>
-                            
                                         <tr class="pl-4">
-                                            <th>Deliver Options</th>
-                                            <td>
-                                                <div class="row p-3">
-                                                    <div class="col-6 border-right">
-                                                        <div class="form-check mt-3 mb-3">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox" checked>
-                                                                <span class="form-check-sign"></span>
-                                                                Delivery
-                                                            </label>
-                                                        </div>
-                                                        <ul>
-                                                            <li>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        Delivery via HonestBee
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        Delivery via Self Delivery
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        Delivery via GrabFood
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="form-check mt-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        Delivery via Food Panda
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
+                                                <th>Deliver Options</th>
+                                                <td>
+                                                    <div class="form-check mt-0 mb-3">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" id="nowBtn" onclick="disableForm('nowBtn', 'getNow') " checked>
+                                                            <span class="form-check-sign"></span>
+                                                            Get It Now  (Within 60 minutes delivery)
+                                                        </label>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="form-check mt-3 mb-3">
-                                                            <label class="form-check-label">
-                                                                <input class="form-check-input" type="checkbox" id="checkBtn" onclick="disableForm('checkBtn', 'pickUp') "
-                                                                    checked>
-                                                                <span class="form-check-sign"></span>
-                                                                Pick Up In Store
-                                                            </label>
-                                                        </div>
+                                                    
+                                                    <div class="row pl-4 mb-3">
+                                                            <h4 class="text-default mr-2">Delivery Fees :</h4>
+                                                            <a href="javascript:void(0)" class="pale border-l p-2" data-container="body" data-original-title="Delivery Fees"
+                                                                data-toggle="popover" data-placement="top" data-content="Spacecious integrated third party delivery platform to ensure within 1 hr speed delivery">
+                                                                RM 15 - RM 20 per package
+                                                            </a>
+                                                   </div>
+                                                   <hr class="w-75">
+                                                    <div class="form-check mt-3 mb-3">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" id="pickBtn" onclick="disableForm('pickBtn', 'pickUp') " checked>
+                                                            <span class="form-check-sign"></span>
+                                                            Pick Up In Store
+                                                        </label>
                                                     </div>
-                                                </div>
-                                                
-
-                                                <div class="p-3 mb-0 form-group">
-                                                    <label for="quantity">Add new delivery method</label>
-                                                    <input type="text" class="form-control" value="Delivery via ">
-                                                </div>
-                                                <div class="form-group text-center">
-                                                    <button class="btn btn-default mb-3">Add</button>
-                                                </div>
-
-                                                
-                                               
-                                            </td>
+                                                    <hr class="w-75">
+                                                    <div class="form-check mt-3">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox" id="shipBtn" onclick="disableForm('shipBtn', 'shipping') " checked>
+                                                                <span class="form-check-sign"></span>
+                                                                Shipping ( 2 - 5 Day Shipping )
+                                                            </label> 
+                                                    </div>
+                                                </td>
                                         </tr>
+                                        
                                         <tr>
-                                            <th>Delivery Fee </th>
-                                            <td> 
-                                                <p class="p-2 strong font-1">Selected Tags</p>
-
-                                                <div class="row ml-lg-sm p-3">
-                                                    <div class="alert alert-dark mr-2 p-2 pl-3">
-                                                        <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert" aria-label="Close">
-                                                            <i class="fas fa-times"></i>
-                                                        </button>
-                                                        <b class="pr-4 text-uppercase "> RM 15 for single 375 ml bottle </b>
-                                                    </div>
-                                                    <div class="alert alert-primary mr-2 p-2 pl-3">
-                                                        <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert" aria-label="Close">
-                                                            <i class="fas fa-times"></i>
-                                                        </button>
-                                                        <b class="pr-4 text-uppercase "> RM 25 for 750 ml bottle </b>
-                                                    </div>
-                                                    <div class="alert alert-darker mr-2 p-2 pl-3">
-                                                        <button type="button" aria-hidden="true" class="close pl-3" data-dismiss="alert" aria-label="Close">
-                                                            <i class="fas fa-times"></i>
-                                                        </button>
-                                                        <b class="pr-4 text-uppercase "> Free for 1L bottle </b>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Unit"></label>
-                                                    <select class="form-control">
-                                                        <option>All</option>
-                                                        <option>375 ml Bottle</option>
-                                                        <option>750 ml Bottle</option>
-                                                        <option>1L Bottle</option>
-                                                        <option selected>Mix</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-check mt-3 mb-3 pl-3">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" checked>
-                                                        <span class="form-check-sign"></span>
-                                                        375 ml Bottle
-                                                    </label>
-                                                </div>
-                                                <div class="form-check mt-3 mb-3 pl-3">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" checked>
-                                                        <span class="form-check-sign"></span>
-                                                        750ml Bottle
-                                                    </label>
-                                                </div>
-                                                <div class="form-check mt-3 mb-3 pl-3">
-                                                    <label class="form-check-label">
-                                                        <input class="form-check-input" type="checkbox" checked>
-                                                        <span class="form-check-sign"></span>
-                                                        1L Bottle
-                                                    </label>
-                                                </div>
-                                                <div class="p-3 form-group">
-                                                    <label for="quantity">Add new delivery method</label>
-                                                    <input type="text" class="form-control" placeholder="RM 30 for 2 bottles  etc">
-                                                </div>
-                                                <div class="form-group text-center">
-                                                    <button class="btn btn-default mb-3 mt-3">Add</button>
-                                                </div>
+                                                <th>Price <p class="text-danger strong">(Per unit)</p>
+                                                </th>
+                                                <td >
+                                                    <h4 class="strong">Get It Now</h4>
+                                                    <ul id="getNow">
+                                                        <div class="form-group">
+                                                                <label for="quantity"> Minimum Deliver Fee :</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                        </div>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity"> 350 ml Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                            
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">750 ml Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">1L Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                
+                                                    <h4 class="strong">Shipping</h4>
+                                                    <ul id="shipping">
+                                                        <div class="form-group">
+                                                                <label for="quantity"> Minimum Shipping Fee :</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                        </div>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">350 ml Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">750 ml Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">1L Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+        
+                                                    <h4 class="strong">Pick Up</h4>
+                                                    <ul id="pickUp">
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">350 ml Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">750 ml Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-group">
+                                                                <label for="quantity">1L Bottle</label>
+                                                                <input type="text" class="form-control" value="RM 100">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                             </td>
                                         </tr>
+                                        
+                                        <tr>
+                                                <th>Delivery Fee</th>
+                                                <td>
+                                                    <small class="text-muted mb-0 font-4">Note : By default all delivery fees are RM 0</small>
+                                                    <div class="form-group">
+                                                        <label for="Unit"></label>
+                                                        <select class="form-control">
+                                                            <option>Shipping</option>
+                                                            <option>Get It Now</option>
+                                                            <option disabled>Pick Up at store</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-check mt-3 mb-3">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                            <span class="form-check-sign"></span>
+                                                            375 ml Bottle
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-3 mb-3">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                            <span class="form-check-sign"></span>
+                                                            750ml Bottle
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-3 mb-3">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" checked>
+                                                            <span class="form-check-sign"></span>
+                                                            1L Bottle
+                                                        </label>
+                                                    </div>
+                                                    <div class="p-3 form-group">
+                                                        <label for="shipping"> Fees</label>
+                                                        <input type="text" class="form-control" placeholder="Shipping Fees" value="RM 15">
+                                                    </div>
+                                                    <div class="form-group text-center">
+                                                        <button class="btn btn-default mb-3 mt-3">Add</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         <tr id="pickUp">
                                             <th>Pick Up Address</th>
                                             <td>
@@ -587,7 +551,7 @@
                                         </tr>
                             
                             
-                                        <tr>
+                                        <tr class="disabled">
                                             <th>Promotions:</th>
                                             <td>
                                                     <table class="table">
@@ -601,7 +565,7 @@
                                                         <tbody>
                                                             <tr class="border-lg-tb">
                                                                 <td>
-                                                                    Buy 3 Free 1 Bottle
+                                                                    Less 50 %
                                                                 </td>
                                                                 <td>
                                                                 <div class="form-check mt-3 mb-3">
@@ -627,98 +591,28 @@
                                                                 </div>
                                                                 </td>
                                                                 <td>
-                                                                    <div class="row align-items-center justify-content-center">
-
-                                                                        <div class="form-check">
-                                                                            <label>
-                                                                                <input class="form-check-input" type="checkbox" checked>
-                                                                                <span class="form-check-sign"></span>
-                                                                            </label>
+                                                                    <div class="datepicker-container">
+                                                                    <!-- input with datetimepicker -->
+                                                                        <div class="form-group ">
+                                                                            <label class="label-control">Started From</label>
+                                                                            <input type="text" id="datepicker" class="form-control datepicker" value="10/05/2016" data-datepicker-color="primary">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label class="label-control">Untill</label>
+                                                                            <input type="text" id="datepicker" class="form-control datepicker" value="10/05/2016" data-datepicker-color="primary">
                                                                         </div>
                                                                     </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr class="border-lg-tb">
-                                                                <td>
-                                                                    Buy 3 Free Delivery
-                                                                </td>
-                                                                <td>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        375 ml Bottle
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        750ml Bottle
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        1L Bottle
-                                                                    </label>
-                                                                </div>
-                                                                </td>
-                                                                <td>
-                                                                    <div class="row align-items-center justify-content-center">
 
-                                                                        <div class="form-check">
-                                                                            <label>
-                                                                                <input class="form-check-input" type="checkbox" checked>
-                                                                                <span class="form-check-sign"></span>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                    
-                                                            <tr class="border-lg-tb">
-                                                                <td>
-                                                                    Mix 3 Bottles RM 200 Only
-                                                                </td>
-                                                                <td>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        375 ml Bottle
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox" checked>
-                                                                        <span class="form-check-sign"></span>
-                                                                        750ml Bottle
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check mt-3 mb-3">
-                                                                    <label class="form-check-label">
-                                                                        <input class="form-check-input" type="checkbox">
-                                                                        <span class="form-check-sign"></span>
-                                                                        1L Bottle
-                                                                    </label>
-                                                                </div>
-                                                                </td>
-                                                                <td>
                                                                     <div class="row align-items-center justify-content-center">
-
-                                                                        <div class="form-check">
-                                                                            <label>
-                                                                                <input class="form-check-input" type="checkbox" checked>
-                                                                                <span class="form-check-sign"></span>
-                                                                            </label>
+                                                                            <div class="form-check">
+                                                                                <label>
+                                                                                    <input class="form-check-input" type="checkbox" checked>
+                                                                                    <span class="form-check-sign"></span>
+                                                                                </label>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
                                                                 </td>
                                                             </tr>
-                                                    
-                                                            
                                                         </tbody>
                                                     </table>
 
@@ -752,7 +646,14 @@
                                                             <label class="form-check-label">
                                                                 <input class="form-check-input" type="checkbox" checked>
                                                                 <span class="form-check-sign"></span>
-                                                                Delivery
+                                                                Shipping
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mt-3 mb-3">
+                                                            <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox" checked>
+                                                                <span class="form-check-sign"></span>
+                                                                Get It Now
                                                             </label>
                                                         </div>
                                                         <div class="form-check mt-3 mb-3">
@@ -764,16 +665,26 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                    <div class="p-3 form-group">
-                                                        <label for="quantity">Add new Promotion</label>
-                                                        <input type="text" class="form-control" placeholder="blank it if you do not need to add">
-                                                    </div>
                                                 <div class="p-3 form-group">
-                                                    <label for="quantity">Conditions</label>
-                                                    <input type="text" class="form-control" placeholder="Minimum 3 bottles . etc">
-                                                </div>
-                                                <div class="form-group text-center">
-                                                    <button class="btn btn-default mb-3 mt-3">Add</button>
+                                                        <label for="quantity">Add new Promotion</label>
+                                                        <input type="text" class="form-control" placeholder="RM 200 above Free delivery etc">
+                                                    </div>
+                                                    <div class="p-3 form-group">
+                                                        <label for="quantity">Conditions</label>
+                                                        <input type="text" class="form-control" placeholder="Minimum RM200 / 3 bottles . etc">
+                                                    </div>
+                                                <div class="datepicker-container">
+                                                        <!-- input with datetimepicker -->
+                                                        <div class="form-inline">
+                                                            <div class="form-group mr-lg-2 ">
+                                                                <label class="label-control mr-lg-2">Start From</label>
+                                                                <input type="text" id="datepicker" class="form-control datepicker" value="10/05/2016" data-datepicker-color="primary">
+                                                            </div>
+                                                            <div class="form-group ml-lg-2">
+                                                                <label class="label-control mr-lg-2">Untill</label>
+                                                                <input type="text" id="datepicker" class="form-control datepicker" value="10/05/2016" data-datepicker-color="primary">
+                                                            </div>
+                                                        </div>
                                                 </div>
                                                
                                             </td>
