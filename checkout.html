@@ -621,15 +621,7 @@
                     </div>
 
                     <!-- Address -->
-                  <div class="form-group">
-                    <label for="unit">
-                        Saved Address
-                    </label>
-                        <select class="form-control">
-                        <option selected>None</option>
-                        <option>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</option>
-                        </select>
-                    </div>
+                  
 
                     <h4>Saved Address </h4>
                     <table class="table">
@@ -649,6 +641,50 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="form-check mb-2">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" id="schedule" onclick="hideForm('time' ,'schedule') ">
+                                <span class="form-check-sign"></span>
+                               Schedule A Delivery Time?
+                            </label>
+                    </div>
+                        <div class="d-none mb-2" id="time">
+                            <div class="form-group">
+                                    <label for="unit">
+                                        Schedule Time
+                                    </label>
+                                <select class="form-control">
+                                <option selected>Today,9am - 10am</option>
+                                <option>Today,10am - 11am</option>
+                                </select>
+                            </div>
+                            <div class="row pr-3 pl-3">
+                            <div class="form-check mb-2 mr-2 ml-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Silver and White Wines (Morton Williams) 
+                                        <span class="strong font-4 small text-default border-bottom ml-2">GET IT NOW</span>
+                                    </label>
+                            </div>
+                            <div class="form-check mb-2 mr-2 ml-2">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">
+                                        <span class="form-check-sign"></span>
+                                        Youwholesome Market
+                                        <span class="strong font-4 small text-default border-bottom ml-2">GET IT NOW</span>
+                                    </label>
+                            </div>
+                            <div class="form-check mb-2 mr-2 ml-2">
+                                    <label class="form-check-label disabled" >
+                                        <input class="form-check-input" type="checkbox" disabled>
+                                        <span class="form-check-sign"></span>
+                                        East Houston Wine & Liquor
+                                        <span class="strong font-4 small text-default border-bottom ml-2">Shipping</span>
+                                    </label>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="form-check mb-2">
                         <label class="form-check-label">
@@ -657,7 +693,7 @@
                            Add New Address
                         </label>
                     </div>
-
+                   
                     
                     <!-- Add New Address Form -->
                       <div class="text-center d-none" id="hideAdre">
@@ -695,17 +731,11 @@
                         <h4 class="p-2 m-2">Subtotal (3 items) : RM 48.90</h4>
                     </div>
                 </div>
-
-
-               
-
             </div>
-
+        </div>
                 <div class="text-center m-3 mt-4">
                     <a href="./card-payment.html" class="btn btn-primary font-2 strong text-uppercase">Proceed to payment</a>
                 </div>
-            
-    </div>
         <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
                 <!-- End Content -->
                             
