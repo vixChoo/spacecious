@@ -359,6 +359,8 @@ function hideDiv(hideDiv) {
 
 }
 
+
+
 // Background scroll
 (function ($) {
   $.fn.bgscroll = function (options) {

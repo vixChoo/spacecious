@@ -520,7 +520,7 @@
                 Categories
                 <span style="font-size:13px; margin-top: 0.6rem;" class="pl-2"> <i class="fa fa-chevron-down"></i></span>
             </a>
-            <div class="dropdown-menu mega-dropdown pl-4 pb-0 cate-left" style=" max-height:350px;overflow-x: hidden; overflow-y: auto;min-width:100vw;margin-left: -5vw;">
+            <div class="dropdown-menu mega-dropdown pl-4 pb-0 cate-left" style=" max-height:350px;overflow-x: hidden; overflow-y: auto;min-width:100vw;">
                 <div class="dropdown-divider"></div>
                 <ul class="list-unstyled">
                     <a href="./product-listing.html" class="text-dark font-3">
@@ -757,16 +757,89 @@
              </div>
         </center>
         <center>
-            <a href="#" class="dropdown-toggle text-dark text-uppercase font-3" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle text-dark text-uppercase font-3" data-toggle="dropdown" >
                 Address
                 <span style="font-size:13px; margin-top: 0.6rem;" class="pl-2"> <i class="fa fa-chevron-down"></i></span>
             </a>
-            <div class="dropdown-menu mega-dropdown pl-3 pr-3 pb-0 cate-right" style=" max-height:350px;overflow-x: hidden; overflow-y: auto;min-width: 100vw;margin-left: -50vw;">
-                    <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
-                <center>
-                    <input class="btn btn-darker text-uppercase font-4 mt-3 mb-3 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
-                    value="Save">
-                </center>
+            <div class="dropdown-menu mega-dropdown pl-3 pr-3 pb-0 cate-right" style=" max-height:350px;overflow-x: hidden; overflow-y: auto;min-width: 100vw;">
+                <div id="address" class="d-none"> 
+                        <label for="unit">Add New Address</label>
+                        <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
+                    <center>
+                        <input class="btn btn-darker text-uppercase font-4 mt-3 mb-3 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
+                        value="Save">
+                    </center>
+                    <div class="dropdown-divider"></div>
+                    </div>
+                <ul class="list-unstyled">
+                     <li>
+
+                         <div class="container-fluid">
+                            <div class="row align-items-center p-2">
+                             <small class="font-4 pl-0 mb-0">Addresses</small>
+                             <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small" id="add-address"> Add New Address</a>
+                            </div>
+                         </div>
+                         <div class="container-fluid">
+                             <div class="row border-l border-danger align-items-center p-2 border-1 pale pointer ">
+                                 <h5 class="ml-2 font-4 mb-0 mw-2">
+                                     Badger Pond Wilton, CA 95693
+                                    </h5>
+                                     <a href="./buyers.html" class="ml-auto font-4 mb-0 small"> EDIT</a>
+                            </div>
+                            <div class="dropdown-divider m-0"></div>
+                             <div class="row align-items-center p-2 pale pointer">
+                                 <h5 class="ml-2 font-4 mb-0 mw-2">
+                                     Stanton Street 
+                                     New York, NY 10002
+                                    </h5>
+                                     <a href="./buyers.html" class="ml-auto font-4 mb-0 small"> EDIT</a>
+                            </div>
+                            <div class="dropdown-divider m-0"></div>
+                            <div class=" text-center">
+                                <a href="./buyers.html" class="font-4 mb-0 ml-3 small"> View All Addresses</a>
+                             </div>
+                        </div>
+                    </li>
+                    <li>
+                            <div class="container-fluid">
+                                    <div class="row border-l border-default align-items-center p-2 border-1 pale pointer ">
+                                     <h5 class="font-4 pl-0 mb-0">All Stores
+                                         <br>
+                                         Stanton Street 
+                                         New York, NY 10002
+                                     </h5>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <div class="row align-items-center p-2 pale pointer">
+                                            <h5 class="ml-2 font-4 mb-0 w-100">
+                                                    Case Liquors
+                                            </h5>
+                                            <div class="row align-items-center ml-1 w-100">
+                                                <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.2</h5>
+                                                <h5 class="text-danger m-1 font-4"> Good </h5>
+                                            </div>
+                                            <div class="row align-items-center ml-1 mt--2">
+                                              <h5 class="m-2 font-4"> 3,122 products | RM100 Minimum</h5>
+                                            </div>
+                                    </div>
+                                    <div class="dropdown-divider m-0"></div>
+                                    <div class="row align-items-center p-2 pale pointer">
+                                            <h5 class="ml-2 font-4 mb-0 w-100">
+                                                    King Keg
+                                            </h5>
+                                            <div class="row align-items-center ml-1 w-100">
+                                                <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
+                                                <h5 class="text-danger m-1 font-4"> Excellent </h5>
+                                            </div>
+                                            <div class="row align-items-center ml-1 mt--2">
+                                              <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
+                                            </div>
+                                    </div>
+                            </div>
+                    </li>
+                </ul>
+
             </div>
         </center>
                 
@@ -2374,6 +2447,27 @@
 
             }
         }
+
+        const addAddress = document.getElementById("add-address")
+        const hiddenDiv = document.getElementById("address");
+
+        addAddress.onclick = function (event) {
+        event.preventDefault();
+
+        if (hiddenDiv.className.includes("d-none")) {
+            hiddenDiv.style.display = "block"
+            hiddenDiv.classList.remove("d-none")
+            hiddenDiv.classList.add("d-block")
+            addAddress.innerHTML = "Back"
+            }
+        else if (hiddenDiv.className.includes("d-block")) {
+                hiddenDiv.style.display = "none"
+                hiddenDiv.classList.remove("d-block")
+                hiddenDiv.classList.add("d-none")
+                addAddress.innerHTML = "Add New Address"
+                
+        }
+    }
 
     </script>
 </body>

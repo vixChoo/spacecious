@@ -18704,6 +18704,9 @@ span:empty:before {
   font-size: 19px;
   }
 
+.pointer{
+  cursor: pointer;
+}
 @media only screen and (min-width: 481px){}
 .img-overlay {
     min-height: 140px;
@@ -18828,6 +18831,13 @@ span:empty:before {
   }
 
 
+@media (min-width: 450px) {
+  .cate-right{
+    margin-left: -65vw;
+    min-width: 103vw;
+    }
+}
+
 @media (max-width: 768px) {
   #search {
     display: none;
@@ -18867,6 +18877,15 @@ span:empty:before {
     min-width:25px!important;
   }
 
+  .cate-right{
+    margin-left: -69vw;
+   }
+   .cate-left{
+    margin-left: -16vw;
+    width: 103vw!important;
+   }
+  
+
   
 }
 
@@ -18891,6 +18910,15 @@ span:empty:before {
   .w-lg-80 {
     width: 80% !important;
   }
+
+  .cate-right{
+    margin-left: -67vw;
+   }
+   .cate-left{
+    margin-left: -16vw;
+    width: 103vw!important;
+   }
+  
 }
 
 
@@ -18972,9 +19000,16 @@ span:empty:before {
   .costs {
     font-size: 14px;
   }
+  .cate-right{
+    margin-left: -63vw;
+   }
+   .cate-left{
+    margin-left: -7vw;
+    width: 103vw!important;
+   }
   
 }
-
+/* Iphone 6/7/8 */
 @media (max-width: 376px) {
   .article-show {
     width: 360px;
@@ -19029,6 +19064,13 @@ span:empty:before {
    height: 235px;
  }
 
+ .cate-right{
+  margin-left: -63vw;
+ }
+ .cate-left{
+  margin-left: -7vw;
+  width: 103vw!important;
+ }
 }
     
 /*  search bar */
@@ -19103,8 +19145,13 @@ span:empty:before {
    width: 145px;
    height: 207px;
  }
+
  .cate-right{
-  margin-left: -57vw;
+  margin-left: -60vw;
+ }
+ .cate-left{
+  margin-left: -1vw;
+  width: 102vw!important;
  }
  .costs {
   font-size: 13px!important;
