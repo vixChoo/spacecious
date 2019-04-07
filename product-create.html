@@ -601,7 +601,7 @@
                                         
                                         <div class="row pl-4 mb-3">
                                                 <h4 class="text-default mr-2">Delivery Fees :</h4>
-                                                <a href="javascript:void(0)" class="pale border-l p-2" data-container="body" data-original-title="Delivery Fees"
+                                                <a href="javascript:void(0)" class="pale border-l p-2 border-1" data-container="body" data-original-title="Delivery Fees"
                                                     data-toggle="popover" data-placement="top" data-content="Spacecious integrated third party delivery platform to ensure within 1 hr speed delivery">
                                                     RM 15 - RM 20 per package
                                                 </a>
@@ -631,7 +631,7 @@
                                             <h4 class="strong">Get It Now</h4>
                                             <ul id="getNow" class="disabled">
                                                 <div class="form-group">
-                                                        <label for="quantity"> Minimum Deliver Fee :</label>
+                                                        <label for="quantity"> Minimum Spending:</label>
                                                         <input type="text" class="form-control" value="RM 0">
                                                 </div>
                                                 <li>
@@ -658,7 +658,7 @@
                                             <h4 class="strong">Shipping</h4>
                                             <ul id="shipping" class="disabled">
                                                 <div class="form-group">
-                                                        <label for="quantity"> Minimum Shipping Fee :</label>
+                                                        <label for="quantity"> Minimum Spending:</label>
                                                         <input type="text" class="form-control" value="RM 0">
                                                 </div>
                                                 <li>
@@ -704,7 +704,7 @@
                                             </ul>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="d-none">
                                     <th>Delivery Fee</th>
                                     <td>
                                         <small class="text-muted mb-0 font-4">Note : By default all delivery fees are RM 0</small>
@@ -749,10 +749,11 @@
                                 <tr id="pickUp2" class="disabled">
                                     <th>Pick Up Address</th>
                                     <td>
+                                        
+                                        <p class="strong">Area</p>
                                         <div class="form-group">
                                             <select class="form-control">
-                                                <option selected>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama,
-                                                    58200 Kuala Lumpur</option>
+                                                <option selected>Petaling Jaya</option>
                                                 <option>PJ</option>
                                                 <option>Others</option>
                                             </select>
@@ -765,6 +766,11 @@
                                                         <p> 12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala
                                                             Lumpur 
                                                         </p>
+                                                        <p class="font-4 small">Operation hour:</p>
+                                                        <a href="./seller-profile.html" class="pl-2 font-4">MON-FRI : <span class="strong small">10AM - 10PM</span></a>
+                                                        <br>
+                                                        <a href="./seller-profile.html" class="pl-2 font-4">Rest : <span class="strong small">None</span></a>
+                                                        
                                                     </td>
                                                     <td>
                                                         <div class="form-check mr-3">
@@ -779,7 +785,16 @@
                                                 <tr class="border-lg-tb">
                                                     <td scope="row" class="text-justify">
                                                         <p> Kuchai Lama, 58200 Kuala
-                                                            Lumpur </p>
+                                                            Lumpur 
+                                                        </p>
+                                                        <p class="font-4 small">Operation hour:</p>
+                                                        <a href="./seller-profile.html" class="pl-2 font-4">MON-WED : <span class="strong small">12PM - 12AM</span></a>
+                                                        <br>
+                                                        <a href="./seller-profile.html" class="pl-2 font-4">THU : <span class="strong small">3PM - 6PM</span></a>
+                                                        <br>
+                                                        <a href="./seller-profile.html" class="pl-2 font-4">SAT-SUN : <span class="strong small">1PM - 6PM</span></a>
+                                                        <br>
+                                                        <a href="./seller-profile.html" class="pl-2 font-4">Rest : <span class="strong small">FRI</span></a>
                                                     </td>
                                                     <td>
                                                         <div class="form-check mr-3">
@@ -795,23 +810,150 @@
                                 
                                         <div class="form-check mt-3 mb-3">
                                             <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox">
+                                                <input class="form-check-input" type="checkbox" id="add-new" onclick="hideForm('address','add-new')">
                                                 <span class="form-check-sign"></span>
                                                 Add New Address to your saved address?
                                             </label>
                                         </div>
+                                        <div class="d-none" id="address">
                                         <div class="p-3 form-group">
                                             <label for="quantity">Add new Address</label>
-                                            <input type="text" class="form-control" placeholder="blank it if you do not need to add">
+                                            <input type="text" class="form-control mb-2" placeholder="Street address, city, state">
+                                            <input type="text" class="form-control mw-2" placeholder="Zip Code">
                                         </div>
+                                        <p class="font-4 small">Operation hour:</p>
+                                        <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Monday</td> 
+                                                        <td>
+                                                                <div class="datepicker-container">
+                                                                        <!-- input with datetimepicker -->
+                                                                    <div class="form-inline">
+                                                                        <div class="form-group mr-lg-2 ">
+                                                                            <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                        </div>
+                                                                        <div class="form-group ml-lg-2">
+                                                                            <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tuesday</td> 
+                                                        <td>
+                                                            <div class="datepicker-container">
+                                                                <!-- input with datetimepicker -->
+                                                                <div class="form-inline">
+                                                                    <div class="form-group mr-lg-2 ">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                    </div>
+                                                                    <div class="form-group ml-lg-2">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Wednesday</td> 
+                                                        <td>
+                                                            <div class="datepicker-container">
+                                                                <!-- input with datetimepicker -->
+                                                                <div class="form-inline">
+                                                                    <div class="form-group mr-lg-2 ">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                    </div>
+                                                                    <div class="form-group ml-lg-2">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Thursday</td> 
+                                                        <td>
+                                                            <div class="datepicker-container">
+                                                                <!-- input with datetimepicker -->
+                                                                <div class="form-inline">
+                                                                    <div class="form-group mr-lg-2 ">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                    </div>
+                                                                    <div class="form-group ml-lg-2">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Friday</td> 
+                                                        <td>
+                                                            <div class="datepicker-container">
+                                                                <!-- input with datetimepicker -->
+                                                                <div class="form-inline">
+                                                                    <div class="form-group mr-lg-2 ">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                    </div>
+                                                                    <div class="form-group ml-lg-2">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Saturday</td> 
+                                                        <td>
+                                                            <div class="datepicker-container">
+                                                                <!-- input with datetimepicker -->
+                                                                <div class="form-inline">
+                                                                    <div class="form-group mr-lg-2 ">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                    </div>
+                                                                    <div class="form-group ml-lg-2">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sunday</td> 
+                                                        <td>
+                                                            <div class="datepicker-container">
+                                                                <!-- input with datetimepicker -->
+                                                                <div class="form-inline">
+                                                                    <div class="form-group mr-lg-2 ">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="From" data-datepicker-color="primary">
+                                                                    </div>
+                                                                    <div class="form-group ml-lg-2">
+                                                                        <input type="text" id="datepicker" class="form-control datepicker mw-1" placeholder="Until" data-datepicker-color="primary">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+    
+                                                    </tr>
+                                                </tbody>
+                                        </table>
                                         <div class="form-group text-center">
                                             <button class="btn btn-default mb-3 mt-3">Add</button>
+                                        </div>
                                         </div>
                                     </td>
                                 </tr>
                                 
                                 
-                                <tr class="disabled">
+                                <tr class="d-none">
                                     <th>
                                         <button type="button" class="btn btn-primary strong btn-simple" data-container="body" data-original-title="Promotion"
                                             data-toggle="popover" data-placement="top" data-content="Deals can entice more customers for you!">
@@ -889,7 +1031,7 @@
                                                         <input type="text" id="datepicker" class="form-control datepicker" value="10/05/2016" data-datepicker-color="primary">
                                                     </div>
                                                  </div>
-                                            </div>
+                                        </div>
                                         
                                         <div class="form-group text-center">
                                             <button class="btn btn-default mb-3 mt-3">Add</button>
@@ -949,20 +1091,7 @@
             });
             blackKit.initDatePicker();
         });
-        $('.datetimepicker').datetimepicker({
-            icons: {
-                time: "fas fa-clock",
-                date: "fa fa-calendar",
-                up: "fa fa-chevron-up",
-                down: "fa fa-chevron-down",
-                previous: 'fa fa-chevron-left',
-                next: 'fa fa-chevron-right',
-                today: 'fa fa-screenshot',
-                clear: 'fa fa-trash',
-                close: 'fa fa-remove'
-            }
-        });
-
+        
 
                 // example scroll
                 const example = document.getElementById("exp")
