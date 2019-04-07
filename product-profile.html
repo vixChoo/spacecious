@@ -888,7 +888,7 @@
                         <div class="col-lg-7 col-8 pt-lg-md mt-auto mb-auto h-fit pl-lg-3 pl-0">
                             <h1 class="ml-2 p-lg-2 p-0 txt-res mb-2 text-wrap mb-lg-2 mb-3">Chateau d'Esclans Whispering Angel Rosé</h1>
                             <div class="row mt--5 ml-lg-2 ml-1 mb-lg-1 mb-3" >
-                                <a href="javascript:void(0)" onclick="scrollToReview()" class="pl-0 btn btn-link btn-warning text-star font-2" >
+                                <a href="javascript:void(0)" onclick="scrollToReview()" class="pl-0 btn btn-link btn-warning text-star font-4" >
                                     <i class="fas fa-star ml-1 pt-2"></i>
                                     <i class="fas fa-star ml-1 pt-2"></i>
                                     <i class="fas fa-star ml-1 pt-2"></i>
@@ -1951,6 +1951,27 @@
                 }, 1000);
             }
         }
+
+        const addAddress = document.getElementById("add-address")
+        const hideAddress = document.getElementById("address");
+
+        addAddress.onclick = function (event) {
+        event.preventDefault();
+
+        if (hideAddress.className.includes("d-none")) {
+            hideAddress.style.display = "block"
+            hideAddress.classList.remove("d-none")
+            hideAddress.classList.add("d-block")
+            addAddress.innerHTML = "Back"
+            }
+        else if (hideAddress.className.includes("d-block")) {
+                hideAddress.style.display = "none"
+                hideAddress.classList.remove("d-block")
+                hideAddress.classList.add("d-none")
+                addAddress.innerHTML = "Add New Address"
+                
+        }
+    }
 
     </script>
 
