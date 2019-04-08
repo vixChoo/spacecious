@@ -13303,9 +13303,7 @@ fieldset[disabled] .btn-link.active {
 ----------------------------------------------------- */
 .footer {
   padding: 50px 0;
-  background-color: #ced6e0; 
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
-  background-blend-mode: soft-light,screen;
+  background-color: #f2f1f5;
 }
 
 .footer [class*="container-"] {
@@ -13328,7 +13326,6 @@ fieldset[disabled] .btn-link.active {
   color: black;
   padding: 10px 0;
   font-size: 0.75rem;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -13354,7 +13351,7 @@ fieldset[disabled] .btn-link.active {
 @media screen and (max-width: 991px) {
   .footer {
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 15px;
   }
   .footer .copyright {
     text-align: right;
@@ -13378,9 +13375,7 @@ fieldset[disabled] .btn-link.active {
 }
 
 @media screen and (max-width: 576px) {
-  .footer {
-    text-align: center;
-  }
+  
   .footer .copyright {
     text-align: center;
   }
