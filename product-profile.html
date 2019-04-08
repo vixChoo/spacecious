@@ -310,7 +310,7 @@
                                         <i class="icons fas fa-map-marker-alt"></i>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" style=" max-height:450px;overflow-x: hidden; overflow-y: auto;">
-                                            <div id="address" class="d-none text-center pl-2 pr-2"> 
+                                            <div id="bigaddress" class="d-none text-center pl-2 pr-2"> 
                                                     <label for="unit" class="font-4">Enter Address</label>
                                                     <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
                                                 <center>
@@ -325,7 +325,7 @@
                                                         <div class="container-fluid">
                                                         <div class="row align-items-center p-2">
                                                             <small class="font-4 pl-0 mb-0">Addresses</small>
-                                                            <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small text-info" id="add-address"> Add New Address</a>
+                                                            <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small text-info" id="bigadd-address" onclick="addresses('bigadd-address','bigaddress')" > Add New Address</a>
                                                         </div>
                                                         </div>
                                                         <div class="container-fluid">
@@ -840,8 +840,8 @@
                     <span style="font-size:13px; margin-top: 0.6rem;" class="pl-2"> <i class="fa fa-chevron-down"></i></span>
                 </a>
                 <div class="dropdown-menu mega-dropdown pl-3 pr-3 pb-0 cate-right" style=" max-height:350px;overflow-x: hidden; overflow-y: auto;min-width: 100vw;">
-                    <div id="address" class="d-none"> 
-                            <label for="unit">Add New Address</label>
+                    <div id="address" class="d-none text-center"> 
+                            <label for="unit" class="font-4 small">Add New Address</label>
                             <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
                         <center>
                             <input class="btn btn-darker text-uppercase font-4 mt-3 mb-3 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
@@ -855,7 +855,7 @@
                              <div class="container-fluid">
                                 <div class="row align-items-center p-2">
                                  <small class="font-4 pl-0 mb-0">Addresses</small>
-                                 <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small" id="add-address"> Add New Address</a>
+                                 <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small" id="add-address" onclick="addresses('add-address','address')" > Add New Address</a>
                                 </div>
                              </div>
                              <div class="container-fluid">
@@ -1974,30 +1974,6 @@
     <!--   Core JS Files   -->
     <script src="./assets/js/script.js" type="text/javascript"></script>
 </div>
-
-    <script>
-     
-    const addAddress = document.getElementById("add-address")
-    const hideAddress = document.getElementById("address");
-
-    addAddress.onclick = function (event) {
-    event.preventDefault();
-
-    if (hideAddress.className.includes("d-none")) {
-        hideAddress.style.display = "block"
-        hideAddress.classList.remove("d-none")
-        hideAddress.classList.add("d-block")
-        addAddress.innerHTML = "Back"
-        }
-    else if (hideAddress.className.includes("d-block")) {
-            hideAddress.style.display = "none"
-            hideAddress.classList.remove("d-block")
-            hideAddress.classList.add("d-none")
-            addAddress.innerHTML = "Add New Address"
-            
-    }
-}
-</script>
     <script>
         
         // review scroll
@@ -2032,12 +2008,11 @@
             }
         }
 
-        const addAddress = document.getElementById("add-address")
-        const hideAddress = document.getElementById("address");
-
-        addAddress.onclick = function (event) {
-        event.preventDefault();
-
+        
+        function addresses(addBtn,addDiv) {
+            const addAddress = document.getElementById(addBtn)
+            const hideAddress = document.getElementById(addDiv);
+            
         if (hideAddress.className.includes("d-none")) {
             hideAddress.style.display = "block"
             hideAddress.classList.remove("d-none")
