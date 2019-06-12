@@ -9226,6 +9226,8 @@ button.bg-darker:focus {
   margin-top: -0.5rem !important;
 }
 
+
+
 .mt--3{
   margin-top: -1rem !important;
 }
@@ -19301,6 +19303,9 @@ height
 .minh-3{
   min-height: 350px;
 }
+.miw-95{
+  min-width: 95px;
+}
 .minw-s{
   min-width: 100px;
 }
@@ -19837,7 +19842,6 @@ scrollup
 }
 
 
-
 #search-bar{
   border-radius:30px 0 0 30px;
 }
@@ -19849,7 +19853,7 @@ scrollup
 
 /*  
   * Rating styles
-  */
+*/
 .rating {
   width: 226px;
   margin: 0 auto 1em;
@@ -19885,3 +19889,19 @@ scrollup
 .rating2 a {
   float:none
 }
+/* 
+Listing sub-link 
+ */
+ .sub-link{
+  margin-top: -0.2rem!important;
+  color: #44386e!important;
+  cursor: pointer;
+ }
+
+.sub-link:focus,
+.sub-link:active,
+.sub-link.active,
+.sub-link:active:focus,
+.sub-link.active:focus {
+  color: #17a2b8!important;
+ }
