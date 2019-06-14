@@ -211,6 +211,7 @@
                                     <th class="border-0 minw-s">Cost (RM)</th>
                                     <th class="border-0 minw-1">Customer</th>
                                     <th class="border-0 minw-s">Date Added</th>
+                                    <th class="border-0 minw-s">Branch</th>
                                     <th class="border-0 minw-s">Status</th>
                                     <th class="border-0 minw-s">Actions</th>
                                 </tr>
@@ -230,6 +231,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25"><p>27-08-2018 01:22:12</p></td>
+                                    <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-success m-2">Delivered </span><p>30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -259,6 +261,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                    <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-success m-2">Delivered </span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -288,6 +291,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                    <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><p class="badge badge-danger m-2">Refunded </span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -317,6 +321,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><p class="badge badge-primary m-2">Shipping</span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -346,6 +351,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><p class="badge badge-primary m-2">Shipping</span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -375,6 +381,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Bangsar Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-dark m-2">Processing</span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -404,6 +411,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-dark m-2">Processing</span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -433,6 +441,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-info m-2"> Pick Up</span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -462,6 +471,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-success m-2">Delivered </span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -491,6 +501,7 @@
                                     <td>RM 80.00</td>
                                      <td>Michael K. Ledford </td>
                                     <td class="w-25" ><p>27-08-2018 01:22:12</p></td>
+                                     <td>Kuchai Branch</td>
                                     <td class="w-25 p-2"><span class="badge badge-warning m-2"> Pending </span><p> 30-08-2018 01:22:12</p></td>
                                     <td class="text-left w-100">
                                         <div class="row">
@@ -566,13 +577,8 @@
             "columnDefs": [
                 { "orderable": false, "targets": 0 },
                 { "orderable": false, "targets": 1 },
-                { "orderable": false, "targets": 7 }
-            ],
-            "createdRow": function( row, data, dataIndex ) {
-                if ( data[2] < 50 ) {
-                $('td',row).eq(2).addClass( 'text-danger strong' );
-                }
-            } 
+                { "orderable": false, "targets": 8 }
+            ]
             });
         blackKit.initDatePicker();
         

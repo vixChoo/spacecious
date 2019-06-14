@@ -316,7 +316,7 @@ function hideForm(hideForm, hideCheck) {
   
 }
 // Diasbled
-
+// TO handle form that are already disabled
 function disableForm(disBtn, disDiv) {
   let hiddenForm = document.getElementById(disDiv);
   let hiddenCheck = document.getElementById(disBtn);
@@ -336,7 +336,18 @@ function disableForm(disBtn, disDiv) {
   }
 }
    
+// TO handle form that are not disabled yet, once checked then disable
+function disableDiv(disBtn, disDiv) {
+  let hiddenForm = document.getElementById(disDiv);
+  let hiddenCheck = document.getElementById(disBtn);
   
+  if (hiddenCheck.checked) {
+    hiddenForm.classList.add("disabled")
+  }
+  else {
+    hiddenForm.classList.remove("disabled")
+  }
+}
 
 // hidden
 
