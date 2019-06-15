@@ -123,7 +123,7 @@ body {
 .font-5 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
-
+btn
 h1,
 h2,
 h3,
@@ -18650,6 +18650,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   max-height: 150px;
 
 }
+.white-normal{
+  white-space: normal!important;
+}
 .lh-1{
   line-height: 0.5rem;
 }
@@ -19009,6 +19012,9 @@ span:empty:before {
  .wine{
    max-width: 150px;
  } 
+ .small-xs{
+   font-size:80%;
+ }
 }
 /* Iphone 6/7/8 */
 @media (max-width: 376px) {
@@ -19230,7 +19236,23 @@ span:empty:before {
   flex-direction: column;
   flex-wrap: wrap;
 } */
-
+@media (max-width: 576px) {
+  .m-xs-0 {
+    margin: 0 !important;
+  }
+  .m-xs-1 {
+    margin: 0.25rem !important;
+  }
+  .m-xs-2 {
+    margin: 0.5rem !important;
+  }
+  .mt-xs-2 {
+    margin-top: 0.5rem !important;
+  }
+  .p-xs-0 {
+    padding: 0 !important;
+  }
+}
 .mw-0 {
   max-width: 80px !important;
 }
@@ -19250,6 +19272,9 @@ span:empty:before {
 
 .mh-1 {
   max-height: 100px!important;
+}
+.mh-15{
+  max-height: 150px!important;
 }
 .mh-2 {
   max-height: 200px!important;
@@ -19496,9 +19521,6 @@ height
   }
     
 }
-    
-
-
 
 
 #slogan {
