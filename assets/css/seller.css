@@ -764,7 +764,7 @@ MEDIAQUERIES
   background-color: rgba(255, 255, 255);
   padding: 11px 23px;
   line-height: 1.5;
-  border: 1px solid #191f31;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom:0;
 }
 

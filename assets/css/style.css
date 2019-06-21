@@ -4113,7 +4113,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #ffffff;
-  background-color: #e14eca;
+  background-color: #171941;
 }
 
 .nav-fill .nav-item {
@@ -19874,7 +19874,7 @@ scrollup
 
 
 /*  
-  * Rating styles
+  * Rating styles review
 */
 .rating {
   width: 226px;
