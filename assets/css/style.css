@@ -12546,16 +12546,16 @@ fieldset[disabled] .btn-neutral.active {
 }
 .btn-secondary{
   color: #ffffff;
-  background:#ced6e0;
-}
-.btn-secondary:hover{
-  color: #ffffff;
-  background-color: #95afc0!important;
+  background-color: #95afc0;
   background-image: linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
   background-image: -webkit-linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
   background-image: -o-linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
   background-image: -moz-linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
-  border-color: #95afc0!important;
+  border-color: #95afc0;
+}
+.btn-secondary:hover{
+  color: #ffffff!important;
+  background:#ced6e0!important;
 }
 
 .btn-darker {
