@@ -56,7 +56,17 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #78e08f !important;
+  background: #00f2c3;
+  background-color: #01a3a4;
+  background-image: linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -webkit-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -o-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-image: -moz-linear-gradient(to bottom left, #33d9b2, #01a3a4, #33d9b2) !important;
+  background-size: 210% 210%; 
+  background-position: top right;
+  transition: all 0.15s ease;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 a.bg-success:hover,

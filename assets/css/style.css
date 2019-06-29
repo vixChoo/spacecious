@@ -210,7 +210,7 @@ sup {
 }
 
 a {
-  color: #2d98da;
+  color: #5e72e4;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -5034,7 +5034,7 @@ input[type="button"].btn-block {
 }
 
 .badge-danger {
-  color: #ffffff;
+  color: #ffffff!important;
   background-color: #cf3030;
 }
 
@@ -6901,7 +6901,7 @@ button.close {
 }
 
 .modal .modal-header .close {
-  color: #fd5d93;
+  color: #000;
   text-shadow: none;
 }
 
@@ -6936,8 +6936,17 @@ button.close {
 
 
 .modal.modal-black .modal-content {
-  background: #69779b;
-  color: rgba(255, 255, 255, 0.8);
+  background: #efeff6;
+  color: black!important;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Close Button */
+.modal.modal-black .modal-content .close{
+  color: black!important;
+}
+/* Social media Button */
+.modal.modal-black .modal-content .btn-icon{
+  border-radius: 1px !important;
 }
 
 .modal.modal-black .modal-content .modal-header .modal-title,
@@ -6956,7 +6965,7 @@ button.close {
 .modal.modal-black h5,
 .modal.modal-black h6,
 .modal.modal-black p {
-  color: #ffffff;
+  color: #000000;
 }
 
 .modal-search .modal-dialog {
@@ -7689,7 +7698,9 @@ button.bg-secondary:focus {
 }
 
 .bg-success {
-  background-color: #10ac84 !important;
+  background-color: #01a3a4!important;
+  color: #ffffff;
+  box-shadow: none;
 }
 
 a.bg-success:hover,
@@ -7870,10 +7881,13 @@ button.bg-darker:focus {
 .border-1 {
   border-width: 0.3rem!important;
 }
+.border-2{
+  border: solid 2px #222!important;
+}
+
 .border-0 {
   border: 0 !important;
 }
-
 .border-top-0 {
   border-top: 0 !important;
 }
@@ -9516,6 +9530,11 @@ button.bg-darker:focus {
 
 .m-center {
   margin: 0 auto;
+}
+
+.mlr-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .pl-only{
@@ -11488,22 +11507,8 @@ a.text-darker:focus {
  button
 ----------------------------------------------------- */
 .btn-primary {
-  background: #5893d4;
-  background-image: -webkit-linear-gradient(to bottom left, #5893d4, #69779b, #5893d4);
-  background-image: -o-linear-gradient(to bottom left, #5893d4, #69779b, #5893d4);
-  background-image: -moz-linear-gradient(to bottom left, #5893d4, #69779b, #5893d4);
-  background-image: linear-gradient(to bottom left, #5893d4, #69779b, #5893d4);
-  background-size: 210% 210%;
-  background-position: top right;
-  background-color: #5893d4;
-  transition: all 0.15s ease;
-  box-shadow: none;
   color: #ffffff;
-}
-
-.btn-primary.animation-on-hover:hover {
-  background-position: bottom left;
-  transition: 0.3s ease-in-out;
+  background:#3c6382;
 }
 
 .btn-primary:hover,
@@ -11514,13 +11519,13 @@ a.text-darker:focus {
 .btn-primary:active:hover,
 .btn-primary.active:focus,
 .btn-primary.active:hover {
-  background-color: #ba54f5 !important;
-  background-image: linear-gradient(to bottom left, #5893d4, #ba54f5, #5893d4) !important;
-  background-image: -webkit-linear-gradient(to bottom left, #5893d4, #ba54f5, #5893d4) !important;
-  background-image: -o-linear-gradient(to bottom left, #5893d4, #ba54f5, #5893d4) !important;
-  background-image: -moz-linear-gradient(to bottom left, #5893d4, #ba54f5, #5893d4) !important;
   color: #ffffff;
-  box-shadow: none;
+  background-color: #0a3d62!important;
+  background-image: linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  background-image: -webkit-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  background-image: -o-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  background-image: -moz-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
+  border-color: #0a3d62!important;
 }
 
 .btn-primary:active {
@@ -11932,8 +11937,8 @@ fieldset[disabled] .btn-info.active {
 }
 
 .btn-light {
-  background: #fff6be;
-  color: #000000 !important;
+  background: #efeff6!important;
+  color: #6c757d!important;
   
 }
 
@@ -11945,12 +11950,12 @@ fieldset[disabled] .btn-info.active {
 .btn-light:active:hover,
 .btn-light.active:focus,
 .btn-light.active:hover {
-  transition: 0.3s ease-in-out;
-  transition: all .15s ease;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0) !important;
-  background-position: right center; /* change the direction of the change here */
-  background: #fff6be !important;
-
+  background-color: #95afc0;
+  background-image: linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
+  background-image: -webkit-linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
+  background-image: -o-linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
+  background-image: -moz-linear-gradient(to bottom left, #95afc0, #95afc0, #95afc0);
+  box-shadow: none;
 }
 
 
@@ -12615,6 +12620,8 @@ fieldset[disabled] .btn-neutral.active {
   background-image: none !important;
   box-shadow: none;
 }
+
+
 .btn-link {
   font-weight: 400;
   color: #e14eca;
@@ -15206,7 +15213,7 @@ textarea.form-control:active {
   min-width: 100px;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  background-color: #1f2251;
+  background-color: #3c6382;
 }
 
 .nav-pills .nav-item .nav-link:hover {
@@ -15216,9 +15223,8 @@ textarea.form-control:active {
 .nav-pills .nav-item .nav-link.active,
 .nav-pills .nav-item .nav-link.active:focus,
 .nav-pills .nav-item .nav-link.active:hover {
-  background-color: #9A9A9A;
-  color: #ffffff;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  background-color: #f4f5f7;
+  color: #000000;
 }
 
 .nav-pills .nav-item .nav-link.disabled,
@@ -18825,8 +18831,6 @@ span:empty:before {
 }
 
 
-
-
 #quantity{
     max-width: 100px;
   }
@@ -18886,8 +18890,10 @@ span:empty:before {
     width: 103vw!important;
    }
   
-
-  
+/* center image in age gate */
+  .center-img{
+    margin:50%;
+  }
 }
 
 @media (min-width: 765px) {
@@ -18920,7 +18926,12 @@ span:empty:before {
     margin-left: -16vw;
     width: 103vw!important;
    }
-  
+  .center-img{
+    margin:20%;
+  }
+  .minw-3{
+    min-width: 300px!important;
+  }
 }
 
 
@@ -19337,12 +19348,9 @@ height
 .minw-1{
   min-width: 150px;
 }
-
 .minw-2{
   min-width: 250px;
 }
-
-
 
  .background1{
   width: 100vw;
@@ -19927,3 +19935,4 @@ Listing sub-link
 .sub-link.active:focus {
   color: #17a2b8!important;
  }
+ 
