@@ -601,13 +601,13 @@
             <div class="container">
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-4 text-center">
-                       <a href="javascript:void(0)" onclick="scrollToView('value')"><h1 class="text-uppercase strong font-3">Values</h1></a>
+                       <a href="javascript:void(0)" onclick="scrollToView('value')"><h1 class="text-uppercase strong pale font-3">Values</h1></a>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <a href="javascript:void(0)" onclick="scrollToView('leader')"><h1 class="text-uppercase strong font-3">LEADERSHIP</h1></a>
+                        <a href="javascript:void(0)" onclick="scrollToView('leader')"><h1 class="text-uppercase strong pale font-3">LEADERSHIP</h1></a>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <a href="javascript:void(0)" onclick="scrollToView('career')"><h1 class="text-uppercase strong font-3">CAREERS</h1></a>
+                        <a href="javascript:void(0)" onclick="scrollToView('career')"><h1 class="text-uppercase strong pale font-3">CAREERS</h1></a>
                     </div>
                 </div>
                 <h2 class="text-dark text-center font-3">
@@ -1111,17 +1111,6 @@
                     
             }
         }
-        function scrollToView(div) {
-                let Div = document.getElementById(div);
-
-                if ($(Div).length != 0) {
-
-                    $("html, body").animate({
-                        scrollTop: $(Div).offset().top - 100
-                    }, 1000);
-                }
-            }
-               
 
     </script>
 

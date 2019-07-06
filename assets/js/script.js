@@ -530,3 +530,22 @@ $(document).ready(function () {
 
 });
 
+// Redirect scirpt 
+function redirect(link) {
+  event.preventDefault();
+  window.location.href=link;
+}
+
+// scroll to view function
+
+function scrollToView(div) {
+  let Div = document.getElementById(div);
+
+  if ($(Div).length != 0) {
+
+      $("html, body").animate({
+          scrollTop: $(Div).offset().top - 100
+      }, 1000);
+  }
+}
+ 
