@@ -2854,7 +2854,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .navbar .navbar-nav>a.btn.btn-link:active {
   background-color: transparent !important;
   background-image: none !important;
-  color: #ffffff !important;
+  opacity: 0.5;
   text-decoration: none;
   box-shadow: none;
   background-position: bottom left;
@@ -4965,7 +4965,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
-
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .badge:empty {
@@ -7935,7 +7935,7 @@ button.bg-darker:focus {
 }
 
 .border-success {
-  border-color: #00f2c3 !important;
+  border-color: #10ac84 !important;
 }
 
 .border-info {
@@ -13413,7 +13413,9 @@ fieldset[disabled] .btn-link.active {
     padding-left: 0;
   }
 }
-
+.footer ul li h4{
+  font-size:80%;
+}
 /* ---------------------------------------------------
   images
 ----------------------------------------------------- */
@@ -13779,10 +13781,6 @@ img {
   .navbar .navbar-brand {
     margin-left: 20px;
     position: relative;
-  }
-  .navbar-nav .nav-link i.fa,
-  .navbar-nav .nav-link i.tim-icons {
-    opacity: .5;
   }
   @keyframes topbar-x {
     0% {
@@ -17495,8 +17493,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .bootstrap-datetimepicker-widget a[data-action] {
   padding: 0;
   border-width: 0;
-  color: #fff;
-  background-color: transparent;
+  /* color: #fff; */
+  /* background-color: transparent; */
 }
 
 .bootstrap-datetimepicker-widget a[data-action="togglePicker"],
@@ -18676,6 +18674,9 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
 .white-normal{
   white-space: normal!important;
 }
+.lh-0{
+  line-height: 0.5!important;
+}
 .lh-1{
   line-height: 0.5rem;
 }
@@ -18684,7 +18685,7 @@ input.datetimepicker[data-color="yellow"]+.bootstrap-datetimepicker-widget.dropd
   line-height: 1.2rem;
 }
 span:empty:before {
-  content: "\200b"; 
+  /* content: "\200b";  */
   /* unicode zero width space character */
 }
   
@@ -18730,6 +18731,15 @@ span:empty:before {
 
 .pointer{
   cursor: pointer;
+}
+
+/* display 1 button */
+.btn .display-1{
+  font-size: 1.4rem!important;
+}
+/* age-gate center img */
+.center-img{
+  margin-top:15%;
 }
 @media only screen and (min-width: 481px){}
 .img-overlay {
@@ -18906,11 +18916,6 @@ span:empty:before {
     margin-left: -16vw;
     width: 103vw!important;
    }
-  
-/* center image in age gate */
-  .center-img{
-    margin:50%;
-  }
 }
 
 @media (min-width: 765px) {
@@ -18943,9 +18948,6 @@ span:empty:before {
     margin-left: -16vw;
     width: 103vw!important;
    }
-  .center-img{
-    margin:20%;
-  }
   .minw-3{
     min-width: 300px!important;
   }
@@ -19043,6 +19045,11 @@ span:empty:before {
  .small-xs{
    font-size:80%;
  }
+ /* center image in age gate */
+ .center-img{
+  margin:25%;
+  margin-top: 50%;
+}
 }
 /* Iphone 6/7/8 */
 @media (max-width: 376px) {
@@ -19407,6 +19414,7 @@ height
   color: #FFF;
 }
 
+
 .background3{
   width: 100vw;
   height: 70vh;
@@ -19549,12 +19557,12 @@ height
 
 
 #slogan {
-  padding: 10px;
+  /* padding: 10px; */
   text-shadow: 0 0 10px black;
   border-radius: 10px;
   z-index:2;
   /*background-color: rgba(255,255,255,0.2); */
-  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 table.w-85 th {
       width: 82%;

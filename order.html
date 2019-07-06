@@ -626,7 +626,7 @@
 
         <div class="card">
             <div class="card-header bg-info pb-0">
-                <p class="badge text-white text-space-sm badge-success float-right m-1">DELIVERED WITHIN 60 MINS</p>
+                <p class="badge text-white text-space-sm badge-success float-right m-1">DELIVERED WITHIN 30 MINS</p>
                 <h2 class="p-lg-3 mb-0 pt-4 pb-3 font-4 text-white text-lg-left text-center">Order Details</h2>
             </div>
             <h3 class="card-header">Delivered In :</h3>
@@ -1110,11 +1110,11 @@
 
 
         var today = new Date();
-        var hh = today.getHours() + 1; // count down 1 hr
+        var hh = today.getHours(); // count down 1 hr
         var dd = today.getDate();
         var mm = today.getMonth() + 1; //January is 0!
         var yy = today.getFullYear();
-        var min = today.getMinutes();
+        var min = today.getMinutes() + 30;
         var ss = today.getSeconds();
         // // Set the date we're counting down to
         var countDownDate = new Date(mm + " " + dd + "," + yy + " " + hh + ":" + min + ":" + ss).getTime();
@@ -1124,8 +1124,6 @@
 
             // // Get todays date and time
             var now = new Date().getTime();
-
-
 
             // Find the distance between now and the count down date
             var distance = countDownDate - now;
@@ -1137,7 +1135,7 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="demo"
-            document.getElementById("countDown").innerHTML = minutes + "m " + seconds + "s " + " , " + dd + " / " + mm + " / " + yy + " , " + hh + ":" + min;;
+            document.getElementById("countDown").innerHTML = minutes + "m " + seconds + "s " + " <br> " + dd + " / " + mm + " / " + yy + " , " + hh + ":" + min;;
 
             // If the count down is over, write some text
             if (distance < 0) {

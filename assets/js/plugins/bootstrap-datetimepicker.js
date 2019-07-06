@@ -196,6 +196,7 @@
           .append($('<tr>')
             .append($('<th>').addClass('prev').attr('data-action', 'previous')
               .append($('<span>').addClass(options.icons.previous))
+              
             )
             .append($('<th>').addClass('picker-switch').attr('data-action', 'pickerSwitch').attr('colspan', (options.calendarWeeks ? '6' : '5')))
             .append($('<th>').addClass('next').attr('data-action', 'next')
@@ -242,7 +243,7 @@
               href: '#',
               tabindex: '-1',
               'title': options.tooltips.incrementHour
-            }).addClass('btn btn-primary animation-on-hover').attr('data-action', 'incrementHours').append($('<span>').addClass(options.icons.up))));
+            }).addClass('btn btn-simple animation-on-hover').attr('data-action', 'incrementHours').append($('<span>').addClass(options.icons.up))));
           middleRow.append($('<td>')
             .append($('<span>').addClass('timepicker-hour').attr({
               'data-time-component': 'hours',
@@ -253,7 +254,7 @@
               href: '#',
               tabindex: '-1',
               'title': options.tooltips.decrementHour
-            }).addClass('btn btn-primary animation-on-hover').attr('data-action', 'decrementHours').append($('<span>').addClass(options.icons.down))));
+            }).addClass('btn btn-simple animation-on-hover').attr('data-action', 'decrementHours').append($('<span>').addClass(options.icons.down))));
         }
         if (isEnabled('m')) {
           if (isEnabled('h')) {
@@ -266,7 +267,7 @@
                 href: '#',
                 tabindex: '-1',
                 'title': options.tooltips.incrementMinute
-              }).addClass('btn btn-primary animation-on-hover').attr('data-action', 'incrementMinutes')
+              }).addClass('btn btn-simple animation-on-hover').attr('data-action', 'incrementMinutes')
               .append($('<span>').addClass(options.icons.up))));
           middleRow.append($('<td>')
             .append($('<span>').addClass('timepicker-minute').attr({
@@ -278,7 +279,7 @@
                 href: '#',
                 tabindex: '-1',
                 'title': options.tooltips.decrementMinute
-              }).addClass('btn btn-primary animation-on-hover').attr('data-action', 'decrementMinutes')
+              }).addClass('btn btn-simple animation-on-hover').attr('data-action', 'decrementMinutes')
               .append($('<span>').addClass(options.icons.down))));
         }
         if (isEnabled('s')) {
@@ -311,7 +312,7 @@
         if (!use24Hours) {
           topRow.append($('<td>').addClass('separator'));
           middleRow.append($('<td>')
-            .append($('<button>').addClass('btn btn-primary btn-simple btn-round').attr({
+            .append($('<button>').addClass('btn btn-simple btn-simple btn-round').attr({
               'data-action': 'togglePeriod',
               tabindex: '-1',
               'title': options.tooltips.togglePeriod

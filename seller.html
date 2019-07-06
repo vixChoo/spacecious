@@ -12,22 +12,23 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <!-- Calender -->
-    <link href='./fullcalendar-4.0.1/packages/core/main.css' rel='stylesheet' />
-    <link href='./fullcalendar-4.0.1/packages/daygrid/main.css' rel='stylesheet' />
-    <script src='./fullcalendar-4.0.1/packages/core/main.js'></script>
-    <script src='./fullcalendar-4.0.1/packages/interaction/main.js'></script>
-    <script src='./fullcalendar-4.0.1/packages/daygrid/main.js'></script>
-    <link href='./fullcalendar-4.0.1/packages/timegrid/main.css' rel='stylesheet' />
-    <link href='./fullcalendar-4.0.1/packages/list/main.css' rel='stylesheet' />
-    <script src='./fullcalendar-4.0.1/packages/timegrid/main.js'></script>
-    <script src='./fullcalendar-4.0.1/packages/list/main.js'></script>
+  
 
 
 
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/seller.css">
+      <!-- Calender -->
+      <link href='./fullcalendar-4.0.1/packages/core/main.css' rel='stylesheet' />
+      <link href='./fullcalendar-4.0.1/packages/daygrid/main.css' rel='stylesheet' />
+      <script src='./fullcalendar-4.0.1/packages/core/main.js'></script>
+      <script src='./fullcalendar-4.0.1/packages/interaction/main.js'></script>
+      <script src='./fullcalendar-4.0.1/packages/daygrid/main.js'></script>
+      <link href='./fullcalendar-4.0.1/packages/timegrid/main.css' rel='stylesheet' />
+      <link href='./fullcalendar-4.0.1/packages/list/main.css' rel='stylesheet' />
+      <script src='./fullcalendar-4.0.1/packages/timegrid/main.js'></script>
+      <script src='./fullcalendar-4.0.1/packages/list/main.js'></script>
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
@@ -36,6 +37,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
@@ -202,10 +204,10 @@
                     <button type="button" id="sidebarCollapse" class="btn btn-primary">
                         <i class="fas fa-align-left"></i>
                     </button>
-                    <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                    <button class="btn btn-secondary d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
+                        <img src="https://img.icons8.com/ios-glyphs/19/ffffff/menu.png">
                     </button>
 
 
@@ -255,13 +257,16 @@
                         <div class="card-body p-4">
                             <div class="row justify-content-around">
                                 <div class="col-7">
-                                    <h4 class="card-title font-2">Total Revenue</h4>
-                                    <h3 class="font-2">RM 10800</h3>
+                                    <h4 class="card-title ">Total Revenue</h4>
+                                    <h3 class="">RM 10800</h3>
                                     <h4 class="text-success strong">+ 1.86%</h4>
                                 </div>
 
-                                <div class="col-5 col-">
-                                    <img src="./assets/images/coin.png" class="img-fluid text-success border-success" alt="">
+                                <div class="col-5 text-lg-center text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="img-fluid" x="0px" y="0px"
+                                        width="64" height="64"
+                                        viewBox="0 0 172 172"
+                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#34495e"><path d="M86,6.88c-43.62608,0 -79.12,35.49392 -79.12,79.12c0,43.62608 35.49392,79.12 79.12,79.12c43.62608,0 79.12,-35.49392 79.12,-79.12c0,-43.62608 -35.49392,-79.12 -79.12,-79.12zM89.44,127.968v9.632h-6.88v-9.632c-9.288,-1.032 -23.908,-4.128 -24.596,-27.176h7.224c-0.688,21.672 20.296,21.672 20.984,21.672c20.296,0 20.984,-13.76 20.984,-16.856c0,-24.424 -47.128,-7.224 -47.128,-39.56c0,-6.536 3.268,-20.984 22.532,-22.016v-9.632h7.052v9.632c16.512,0.688 23.392,14.792 22.704,24.424h-7.224c-0.344,-5.848 -2.408,-18.92 -18.92,-18.92c-16.168,0 -19.264,9.288 -19.264,17.2c0,23.736 47.128,7.912 47.128,38.872c0,3.44 -1.548,20.64 -24.596,22.36z"></path></g></g></svg>
                                 </div>
                             </div>
                             <small></small>
@@ -276,13 +281,16 @@
                         <div class="card-body p-4">
                             <div class="row justify-content-around">
                                 <div class="col-lg-7 col-6">
-                                    <h4 class="card-title font-2">Total Orders</h3>
-                                    <h3 class="font-2">363</h3>
+                                    <h4 class="card-title ">Total Orders</h3>
+                                    <h3 class="">363</h3>
                                     <h4 class="text-success strong">+ 1.95%</h4>
                                 </div>
 
-                                <div class="col-5">
-                                    <img src="./assets/images/shopping-cart.png" class="img-fluid" alt="">
+                                <div class="col-5 text-lg-center text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="img-fluid"
+                                        width="64" height="64"
+                                        viewBox="0 0 172 172"
+                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#34495e"><path d="M31.63411,14.30534l-24.43945,0.12598l0.06999,14.33333l14.83724,-0.06999l23.61361,56.64746l-8.5804,13.73145c-2.86667,4.58667 -3.01493,10.38036 -0.39193,15.10319c2.623,4.72283 7.59991,7.65657 13.00358,7.65657h86.41992v-14.33333h-86.41992l-0.46191,-0.83985l8.42643,-13.49349h53.52604c5.21017,0 10.005,-2.83296 12.52767,-7.37663l25.8252,-46.47135c1.23983,-2.22167 1.20601,-4.93167 -0.08399,-7.12467c-1.29,-2.18583 -3.64985,-3.52734 -6.18685,-3.52734h-105.69434zM43.58789,43h87.55371l-19.9043,35.83333h-52.71419zM50.16667,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM121.83333,129c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333z"></path></g></g></svg>
                                 </div>
                             </div>
                         </div>
@@ -294,13 +302,13 @@
                         <div class="card-body p-4">
                             <div class="row justify-content-around">
                                 <div class="col-lg-7 col-6">
-                                    <h4 class="card-title font-2">Total Customers</h3>
-                                    <h3 class="font-2">123</h3>
+                                    <h4 class="card-title ">Total Customers</h3>
+                                    <h3 class="">123</h3>
                                     <h4 class="text-danger strong">- 0.95%</h4>
                                 </div>
 
-                                <div class="col-5">
-                                    <img src="./assets/images/team.png" class="img-fluid" alt="">
+                                <div class="col-5 text-lg-center text-right">
+                                    <img src="./assets/images/team2.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
@@ -312,15 +320,19 @@
                         <div class="card-body p-4">
                             <div class="row justify-content-around">
                                 <div class="col-lg-7 col-6">
-                                    <h4 class="card-title font-2">Total Reviews</h3>
-                                    <h3 class="text-star strong font-2">4.2 </h3>
+                                    <h4 class="card-title ">Total Reviews</h3>
+                                    <h3 class="text-star strong ">4.2 </h3>
                                     <h4 class="strong text-dark">143 Reviews</h4>
                                    
                                     
                                 </div>
 
-                                <div class="col-5">
-                                    <img src="./assets/images/star.png" class="img-fluid" alt="">
+                                <div class="col-5 text-lg-center text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        class="img-fluid"
+                                        width="64" height="64"
+                                        viewBox="0 0 172 172"
+                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#34495e"><g id="surface1"><path d="M136.55188,162.45938c-0.63156,0 -1.27656,-0.17469 -1.8275,-0.5375l-48.72438,-30.58375l-48.72437,30.58375c-1.1825,0.7525 -2.71438,0.69875 -3.84313,-0.12094c-1.14219,-0.81969 -1.66625,-2.2575 -1.31687,-3.62812l14.02875,-55.77906l-44.14219,-36.88594c-1.075,-0.90031 -1.49156,-2.365 -1.06156,-3.70875c0.43,-1.33031 1.63937,-2.27094 3.03687,-2.365l57.39156,-3.89688l21.43281,-53.37375c0.52406,-1.30344 1.80062,-2.16344 3.19812,-2.16344c1.3975,0 2.67406,0.86 3.19813,2.16344l21.43281,53.37375l57.39156,3.89688c1.3975,0.09406 2.60688,1.03469 3.03688,2.365c0.43,1.34375 0.01344,2.795 -1.06156,3.70875l-44.14219,36.88594l14.02875,55.77906c0.34937,1.37062 -0.17469,2.795 -1.31688,3.62812c-0.59125,0.43 -1.30344,0.65844 -2.01562,0.65844z"></path></g></g></g></svg>
                                 </div>
                             </div>
                         </div>
@@ -331,25 +343,25 @@
             <div class="col-12 mt-lg ml-auto mr-auto">
                 <!-- Tabs -->
                 <div class="card">
-                    <div class="font-2">
+                    <div class="">
                         <ul class="nav nav-tabs" role="tablist" style="margin-top:-30px; font-size:12px;">
                             <li class="nav-item">
-                                <a class="nav-link active font-3 text-uppercase " data-toggle="tab" href="#recent-orders"
+                                <a class="nav-link active text-uppercase font-6 strong" data-toggle="tab" href="#recent-orders"
                                     role="tablist">
                                     Recent Orders
                                 </a>
                             </li>
-                            <li class="nav-item font-3 text-uppercase">
+                            <li class="nav-item text-uppercase font-6"strong>
                                 <a class="nav-link" data-toggle="tab" href="#best" role="tablist" id="review">
                                     Best sellers
                                 </a>
                             </li>
-                            <li class="nav-item font-3 text-uppercase">
+                            <li class="nav-item text-uppercase font-6"strong>
                                 <a class="nav-link" data-toggle="tab" href="#less" role="tablist" id="review">
                                     Less sellers
                                 </a>
                             </li>
-                            <li class="nav-item font-3 text-uppercase">
+                            <li class="nav-item text-uppercase font-6"strong>
                                 <a class="nav-link" data-toggle="tab" href="#reviews" role="tablist" id="review">
                                     Most reviews
                                 </a>
