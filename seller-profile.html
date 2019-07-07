@@ -684,7 +684,6 @@
                                             <th>Date Joined Us</th>
                                             <td>24/02/2018</td>
                                         </tr>
-                                       
                                     </tbody>
                                 </table>
                             </div>
@@ -1080,7 +1079,7 @@
                                                 <td> <p class="text-muted text-uppercase"> Monday </p></td> 
                                                 <td>
                                                 <div id="monDiv">
-                                                    <div class="form-inline p-3">   
+                                                    <!-- <div class="form-inline p-3">   
                                                             <label class="mr-2">From</label> 
                                                             <input type="text" class="form-control p-2 mb-0 bg-white mw-1" value="10" placeholder="10">
                                                             <input type="text" class="form-control p-2 mw-1 bg-white" value="" placeholder="00">
@@ -1097,6 +1096,18 @@
                                                                     <option>AM</option>
                                                                     <option selected>PM</option>
                                                             </select>
+                                                    </div> -->
+                                                    <div class="datepicker-container border-0">
+                                                        <!-- input with datetimepicker -->
+                                                        <div class="form-inline">
+                                                            <div class="form-group mr-lg-2 ">
+                                                                <label class="label-control mr-lg-2">Start From</label>
+                                                                <input type="text" id="datepicker" class="form-control datepicker" data-datepicker-color="primary" >
+                                                            </div>
+                                                            <div class="form-group ml-lg-2">
+                                                                <label class="label-control mr-lg-2">Untill</label>
+                                                                <input type="text" id="datepicker" class="form-control datepicker" data-datepicker-color="primary">
+                                                            </div>
                                                     </div>
                                                 </div>
                                                 </td>
@@ -1298,22 +1309,17 @@
                 });
                 blackKit.initDatePicker();
             });
-            
-        $('.datetimepicker').datetimepicker({
-            icons: {
-                time: "fas fa-clock",
-                date: "fa fa-calendar",
-                up: "fa fa-chevron-up",
-                down: "fa fa-chevron-down",
-                previous: 'fa fa-chevron-left',
-                next: 'fa fa-chevron-right',
-                today: 'fa fa-screenshot',
-                clear: 'fa fa-trash',
-                close: 'fa fa-remove'
-            }
+            $('.datepicker').datetimepicker({
+                format: 'hh:mm A',
+                icons: {
+                    time: "fas fa-clock",
+                    up: "fa fa-chevron-up",
+                    down: "fa fa-chevron-down",
+                    previous: 'fas fa-chevron-left',
+                    next: 'fas fa-chevron-right',
+                    }
+            });
              
-        });
-
         let text = ""
         // seek and hide
         function hiddenDiv(hideBtn, hideDiv) {

@@ -7806,7 +7806,7 @@ button.bg-white:focus {
 }
 
 .bg-neutral {
-  background-color: #ffffff !important;
+  background-color: rgb(251, 252, 253) !important;
 }
 
 a.bg-neutral:hover,
@@ -7900,6 +7900,11 @@ button.bg-darker:focus {
   border-top: none!important;
   border-left: none!important;
 }
+
+.border-sm{
+  border-width: 1.5px;
+}
+
 .border-1 {
   border-width: 0.3rem!important;
 }
@@ -17573,7 +17578,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .bootstrap-datetimepicker-widget .picker-switch {
   text-align: center;
   border-radius: 3px;
-  color: #e14eca;
+  /* color: #e14eca; */
 }
 
 .bootstrap-datetimepicker-widget .picker-switch::after {
@@ -17600,6 +17605,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 100%;
   margin: 0;
   text-align: center;
+  border:0!important;
 }
 
 .bootstrap-datetimepicker-widget table td>div,
@@ -18737,6 +18743,14 @@ span:empty:before {
 .btn .display-1{
   font-size: 1.4rem!important;
 }
+/* age-gate center img */
+.center-img{
+  margin-top:15%;
+}
+
+.w-1{
+  width:30px;
+}
 @media only screen and (min-width: 481px){}
 .img-overlay {
     min-height: 140px;
@@ -19041,6 +19055,10 @@ span:empty:before {
  .small-xs{
    font-size:80%;
  }
+ /* center image in age gate */
+  .center-img{
+    margin-top: 50%;
+  }
 }
 /* Iphone 6/7/8 */
 @media (max-width: 376px) {
@@ -19330,7 +19348,6 @@ height
   max-height: 350px!important;
  }
 }
-
 
 .w-fit{
   width: intrinsic;           /* Safari/WebKit uses a non-standard name */
@@ -19951,4 +19968,6 @@ Listing sub-link
 .sub-link.active:focus {
   color: #17a2b8!important;
  }
- 
+ .bootstrap-datetimepicker-widget table {
+  border:0!important;
+}
