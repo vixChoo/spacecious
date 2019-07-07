@@ -18737,10 +18737,6 @@ span:empty:before {
 .btn .display-1{
   font-size: 1.4rem!important;
 }
-/* age-gate center img */
-.center-img{
-  margin-top:15%;
-}
 @media only screen and (min-width: 481px){}
 .img-overlay {
     min-height: 140px;
@@ -19045,10 +19041,6 @@ span:empty:before {
  .small-xs{
    font-size:80%;
  }
- /* center image in age gate */
-  .center-img{
-    margin-top: 50%;
-  }
 }
 /* Iphone 6/7/8 */
 @media (max-width: 376px) {
