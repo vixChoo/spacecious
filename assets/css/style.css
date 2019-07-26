@@ -12487,8 +12487,6 @@ fieldset[disabled] .btn-neutral.active {
   transition: all 0.15s ease;
   box-shadow: none;
   color: #ffffff;
-  
- 
 }
 
 .btn-dark:hover,
@@ -12537,9 +12535,9 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .btn-white:hover {
-  color: #212529;
-  background-color: #ececec;
-  border-color: #e6e6e6;
+  color: #212529!important;
+  background-color: none!important;
+  border-color: #ffffff!important;
 }
 
 .btn-white:focus,
@@ -12566,6 +12564,26 @@ fieldset[disabled] .btn-neutral.active {
 .btn-white:not(:disabled):not(.disabled).active:focus,
 .show>.btn-white.dropdown-toggle:focus {
   box-shadow: none, 0 0 0 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.btn-white.btn-simple{
+  color: white!important;
+  border-color: white!important;
+  background: transparent;
+  border-color: #ffffff;
+  border-width: 2px;
+}
+
+.btn-white.btn-simple:hover,
+.btn-white.btn-simple:focus,
+.btn-white.btn-simple:active,
+.btn-white.btn-simple:not(:disabled):not(.disabled):active {
+  color: #000000!important;
+  border-color: white;
+  background-color: white !important;
+  background-image: none !important;
+  box-shadow: none;
 }
 
 .btn-neutral {
@@ -18760,6 +18778,17 @@ span:empty:before {
   background-image: -moz-linear-gradient(to bottom left, #0a3d62, #0a3d62, #0a3d62);
   border-color: #0a3d62!important;
 }
+/* White form control */
+.form-control.white::placeholder {
+  color: #ffffff;
+}
+.form-control.white:focus{
+  color: #000000;
+}
+.form-control.white{
+  color: #ffffff;
+  height: 42px;
+}
 
 .costs {
   font-size: 19px;
@@ -18777,7 +18806,6 @@ span:empty:before {
 .center-img{
   margin-top:15%;
 }
-
 .w-1{
   width:30px;
 }
