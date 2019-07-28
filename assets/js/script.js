@@ -1,4 +1,9 @@
 
+  //  Landing Page Define variables 
+  const sideControl = document.getElementById("openNav");
+  const closeControl = document.getElementById("closeNav");
+  const landAddress = document.getElementsByClassName("land-address");
+  
 var transparent = true;
 var big_image;
 
@@ -109,7 +114,33 @@ $(document).ready(function() {
   $('.carousel').carousel({
     interval: false
   });
+// Landing Page
+
+$(document).ready(function() {
+    if (window.innerWidth<=765) {
+        for(let i=0;i<landAddress.length;i++){
+            landAddress[i].style.minWidth = window.innerWidth - 90 + "px";
+        }
+    }
 });
+   
+});
+
+
+function openNav() {
+  document.getElementById("sideNav").style.width = "100%";
+  sideControl.style.display = "none";
+  closeControl.classList.remove("d-none");
+  closeControl.classList.add("d-block");
+
+}
+
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0%";
+  sideControl.style.display = "block";
+  closeControl.classList.add("d-none");
+  closeControl.classList.remove("d-block");
+}
 
 // Methods
 

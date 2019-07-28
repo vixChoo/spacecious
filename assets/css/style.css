@@ -19638,7 +19638,7 @@ height
   font-size: 1.5rem;
 }
 /* Customize for landing backgroud2 */
-#land-address{
+.land-address{
   min-width: 600px;
   margin-right: -10px;
   font-size: 16px;
@@ -19648,6 +19648,9 @@ height
   padding-top: 10px;
   padding-bottom: 10px;
   background: #EF3327!important;
+  z-index: 99;
+}
+.nav.btn-sotipsy{
   z-index: 99;
 }
 
@@ -19790,8 +19793,8 @@ height
    margin: 0px;
   }
   /* Land address*/
-  #land-address{
-    max-width: 768px;
+  .land-address{
+    max-width: 768px!important;
     margin-right: 8px;
   }
 
@@ -19801,7 +19804,6 @@ height
     padding-right: 15px;
 
   }
-
 }
 
 
@@ -20097,6 +20099,51 @@ MEDIAQUERIES
     }
 }
 
+
+/*------------------------------------------------
+
+Landing Side Bar style 
+
+-------------------------------------------------*/
+
+.nav-side {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 6%;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 1060!important;
+}
+
+.nav-side-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 17px;
+  z-index: 1060!important;
+}
+
+.nav-side a {
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-side a:hover, .nav-side a:focus {
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-side a {
+    font-size: 16px;
+  }
+}
 
 /*------------------------------------------------
 
