@@ -246,6 +246,7 @@
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                     <i class="fas fa-map-marker-alt"></i>
                             </a>
+                            <!-- Need amend address dropdown -->
                             <div class="dropdown-menu dropdown-menu-right" style=" max-height:450px;overflow-x: hidden; overflow-y: auto;">
                                     <div id="address" class="d-none text-center pl-2 pr-2"> 
                                             <label for="unit" class="font-4">Enter Address</label>
@@ -255,10 +256,9 @@
                                             value="Save">
                                         </center>
                                         <div class="dropdown-divider"></div>
-                                        </div>
+                                    </div>
                                     <ul class="list-unstyled">
                                             <li>
-                    
                                                 <div class="container-fluid">
                                                 <div class="row align-items-center p-2">
                                                     <small class="font-4 pl-0 mb-0">Addresses</small>
@@ -339,7 +339,6 @@
                                                 </div>
                                         </li>
                                     </ul>
-                    
                             </div>
                         </li>
 
@@ -505,7 +504,7 @@
                 </ul>
             </div>
     </div>
-    <div class="d-md-none d-block">
+    <div class="d-lg-none d-block">
       <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--1 ml--2">
         <div class="container-fluid p-0">
             <button type="button" id="openNav" onclick="openNav()" class="mr-auto btn btn-neutral btn-simple p-2 m-0">
@@ -514,7 +513,7 @@
             <button type="button" id="closeNav" onclick="closeNav()" class="mr-auto d-none btn btn-neutral btn-simple p-2 m-0">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times text-dark"></i></a>
             </button>
-              <a class="navbar-brand mlr-auto" href="./landing.html"><img src="assets/images/logo-sm.png" style="height: 35px;"></a>
+              <a class="navbar-brand m-center" href="./landing.html"><img src="assets/images/logo-sm.png" style="height: 35px;"></a>
               <a href="#" class="dropdown-toggle p-2 btn-neutral btn-simple" data-toggle="dropdown" style="height: 44px;">
                       <img src="https://img.icons8.com/ios-glyphs/20/000000/search.png">
               </a>
@@ -567,7 +566,9 @@
                             </button>
                         </div>
                     </form>
-                       
+                    <center>
+                            <small class="smaller">By using this website, you confirm that you are over 21 years old & non-muslim and agree with the <a href="./terms.html" class="text-secondary"  style="font-size:70%!important;">terms and conditions</a> </small>
+                    </center>
             </div>
         </div>
                 
@@ -690,8 +691,6 @@
                     </div>
                 </div>
             </div>
-  
-
             <!-- End Carousel -->
                     
             <!-- category -->
@@ -905,8 +904,6 @@
                 </div>
 
             </div>
-     
-     
             <!-- End Carousel -->
                     
 
@@ -1221,6 +1218,13 @@
                                                 <input class="form-control" placeholder="Password" type="password">
                                             </div>
                                         </div>
+                                        <div class="form-check mt-3">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" required type="checkbox">
+                                                    <span class="form-check-sign"></span>
+                                                    I am above 21 and non-muslim
+                                                </label>
+                                        </div>
 
                                         <div class="form-check mb-2">
                                             <label class="form-check-label">
@@ -1456,8 +1460,8 @@
             hideAddress.classList.remove("d-block")
             hideAddress.classList.add("d-none")
             addAddress.innerHTML = "Add New Address"
+            }
             
-        }
         }
         document.getElementById("btn-pop-up").click();
 </script>

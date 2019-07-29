@@ -114,15 +114,6 @@ $(document).ready(function() {
   $('.carousel').carousel({
     interval: false
   });
-// Landing Page
-
-$(document).ready(function() {
-    if (window.innerWidth<=765) {
-        for(let i=0;i<landAddress.length;i++){
-            landAddress[i].style.minWidth = window.innerWidth - 90 + "px";
-        }
-    }
-});
    
 });
 
