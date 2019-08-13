@@ -545,8 +545,8 @@
         <div class="row m-0 justify-content-center">
             <!-- Pick up -->
             <div class="col-lg-5 rounded m-2 mb-3 h-fit bg-white border border-2 card shadow-sm rounded-sm">
-                <h2 class="p-3 text-center mb-2">Pick up at store</h2>
-                <div class="dropdown-divider mb-3"></div>
+                <h2 class="p-3 text-center mb-0">Pick up at store</h2>
+                <hr class="mlr-auto w-20 mt--1 border-danger">
                     <a href="javascript:void()" onclick="dropDown('1-store','1-div')">
                                 <h3 class="font-6"> Delancey Wine
                                <span class="pl-2" style="font-size:13px; margin-top: 0.3rem; ">
@@ -559,7 +559,7 @@
                     <h4 class="font-3 h5 text-uppercase text-danger mb-2 mt-2">Location </h4>
                         <p>Delancey Wine</p>
                         <p>12A, Jalan Kuchai Maju 9, Kuchai Entrepreneurs Park, Kuchai Lama, 58200 Kuala Lumpur</p>
-                        <hr class="mw-s border-danger mb-0 mt-2">
+                    <hr class="mw-s border-danger mb-0 mt-2">
                     <h4 class="font-3 h5 text-uppercase text-danger mb-2 mt-2">Business Hours </h4>
                     <p>3PM - 11:59PM</p>
                     <hr class="mw-s border-danger mb-0 mt-2">
@@ -590,7 +590,14 @@
                                 </div>
                             </div>
                     </div>
-
+                    <h4 class="font-3 h5 text-uppercase text-danger mt-2 mb-0">Special Request</h4>
+                    <hr class="mw-s border-danger mb-2">
+                    <div class="form-group mt-2 mb-1">
+                        <textarea type="text" name="phone" autocomplete="text" placeholder="Enter message" value=""
+                            required="" maxlength="250" class="form-control"></textarea>
+                    </div>
+                    <small class="text-muted">Max 250 words</small>
+                    <!-- End -->
                     <div class="dropdown-divider mb-3"></div>
                     <a href="javascript:void()" onclick="dropDown('2-store','2-div')">
                         <h3 class="font-6"> Wine Bar 
@@ -645,7 +652,7 @@
                                 </h4>
                         </div>
                         <div class="row pl-3 pr-3 pb-lg-2 pt-2">
-                                <h4 class="mb-0">Total <strong>(Incl. Service Tax)</strong> </h4> 
+                                <h4 class="mb-0">Total <strong class="h5 strong">(Incl. Service Tax)</strong> </h4> 
                                 <h4 class="font-3 h5 text-uppercase strong ml-auto">
                                         MYR 3333.33
                                 </h4>

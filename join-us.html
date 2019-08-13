@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Spacecious</title>
+    <title>Sotipsy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
     <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
@@ -25,462 +25,530 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+     <!--     Fonts and icons     -->
+     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Dosis:800&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+         crossorigin="anonymous">
+     <a href="https://icons8.com/icon/47739/cute-outline"></a>
 </head>
 <body class="font-4">
-        <header>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-white d-lg-block d-none">
-                <div class="container-fluid pl-3 pr-3">
-                    <div class="navbar-translate">
-                        <a class="navbar-brand" href="./landing.html"><img src="assets/images/spaceBig.png"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-bar bar1"></span>
-                            <span class="navbar-toggler-bar bar2"></span>
-                            <span class="navbar-toggler-bar bar3"></span>
-                        </button>
+     
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-red d-lg-block d-none">
+        <div class="container-fluid pl-3 pr-3 text-white">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="./landing.html"><img src="./assets/images/sotipsy.png" style="width: 130px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="top-navbar">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="./landing.html">
+                                <img src="./assets/images/sotipsy.png">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close text-right">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
+                                aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="top-navbar">
-                        <div class="navbar-collapse-header">
+                </div>
+                <ul class="navbar-nav text-capitalize">
+                    <li class="dropdown nav-item p-0">
+                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
+                            wine
+                        </a>
+                        <div class="dropdown-menu ">
                             <div class="row">
-                                <div class="col-6 collapse-brand">
-                                    <a href="./landing.html">
-                                        <img src="assets/images/spaceBig.png">
+                                <div class="col-3">
+                                    <p class="dropdown-header">Wine Types</p>
+                                    <div class="dropdown-divider"></div>
+                                </div>
+
+                                <div class="col-3">
+                                    <p class="dropdown-header">Top Brand</p>
+                                    <div class="dropdown-divider"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3 wrap-column">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                                View All Wines 
                                     </a>
                                 </div>
-                                <div class="col-6 collapse-close text-right">
-                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
-                                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+
+                                <div class="col-3">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Dessert and Fortified Wine
+                                    </a>
+
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                        View All Brands
+                                    </a>
+
                                 </div>
                             </div>
+
                         </div>
-                        <ul class="navbar-nav text-capitalize">
-                            <li class="dropdown nav-item p-0">
-                                <a href="./product-listing.html" class="dropdown-toggle nav-link font-2 text-uppercase">
-                                    wine
-                                </a>
-                                <div class="dropdown-menu ">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Wine Types</p>
-                                            <div class="dropdown-divider"></div>
-                                        </div>
-        
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Top Brand</p>
-                                            <div class="dropdown-divider"></div>
-        
-                                        </div>
-        
-                                    </div>
-        
-                                    <div class="row">
-                                        <div class="col-3 wrap-column">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-        
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                                        View All Wines 
-                                            </a>
-                                        </div>
-        
-                                        <div class="col-3">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-        
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                                View All Brands
-                                            </a>
-        
-                                        </div>
-                                    </div>
-        
-                                </div>
-                            </li>
-        
-                            <!-- Catogory -->
-        
-                            <li class="dropdown nav-item p-0">
-                                <a href="./product-listing.html" class="dropdown-toggle nav-link font-2 text-uppercase">
-                                    beer
-                                </a>
-                                <div class="dropdown-menu">
-                                    <p class="dropdown-header">Wine Types</p>
-                                    <div class="dropdown-divider"></div>
-                                    <a href="#" class="dropdown-item">
-                                        White Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Rosé Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Champagne
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item text-info">
-                                        View All Beers
-                                    </a>
-        
-                                </div>
-                            </li>
-                            <li class="dropdown nav-item p-0">
-                                <a href="./product-listing.html" class="dropdown-toggle nav-link font-2 text-uppercase">
-                                    spirits
-                                </a>
-                                <div class="dropdown-menu">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Wine Types</p>
-                                            <div class="dropdown-divider"></div>
-                                        </div>
-        
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Top Brand</p>
-                                            <div class="dropdown-divider"></div>
-        
-                                        </div>
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Varietals</p>
-                                            <div class="dropdown-divider"></div>
-        
-                                        </div>
-                                    </div>
-        
-                                    <div class="row">
-                                        <div class="col-3 wrap-column">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-                                        </div>
-        
-                                        <div class="col-3">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-        
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                                View All Spirits
-                                            </a>
-        
-        
-                                        </div>
-                                    </div>
-        
-                                </div>
-                            </li>
-        
-                            <li class="dropdown nav-item p-0">
-                                <a href="./product-listing.html" class="dropdown-toggle nav-link font-2 text-uppercase">
-                                    Liquor
-                                </a>
-                                <div class="dropdown-menu">
-                                    <p class="dropdown-header">Wine Types</p>
-                                    <div class="dropdown-divider"></div>
-                                    <a href="#" class="dropdown-item">
-                                        White Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Rosé Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Champagne
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item text-info">
-                                        View All Liquors
-                                    </a>
-        
-                                </div>
-                            </li>
-                            <li class="nav-item p-0 active">
-                                <a class="nav-link text-uppercase font-2 " href="./article.html">
-                                    Deals
-                                </a>
-                            </li>
-                            <li class="nav-item p-0 active">
-                                <a class="nav-link text-uppercase font-2 " href="./article.html">
-                                    Explore
-                                </a>
-                            </li>
-                            <li class="nav-item p-0 active">
-                                <a class="nav-link text-uppercase font-2 " href="./corporate.html">
-                                    corporate
-                                </a>
-                            </li>
-                        </ul>
-                            <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
-                                <div class="input-group mb-0">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text text-darker" id="search-bar"><i class="icons fas fa-search"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Seach Me" id="search-bar-form">
-                                </div>
-                            </ul>
-        
-        
-                            <!-- Newly Amended Retailer sign in button -->
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a href="./sign-in.html" class="nav-link text-white btn btn-success strong font-5">
-                                        Retailer Sign in
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-            </nav>
-        </header>
-        
-            <!-- Sidebar  -->
-            <div class="wrapper">
-                <nav id="sidebar" class="d-lg-none d-block small">
-                    <div class="sidebar-header d-flex justify-content-center">
-                        <a href="./landing.html">
-                            <img src="./assets/images/spaceSmall.png" alt="">
+                    </li>
+
+                    <!-- Category -->
+                    <li class="dropdown nav-item p-0">
+                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
+                            beer
                         </a>
-                    </div>
-                        
-            
-                    <ul class="list-unstyled components pt-0 pb-5">
-                        <li class="bg-info pb-3 text-center">
-                            <small class="font-2 pl-2 pr-2 text-white strong">We are delivering your drinks to :</small>
-                            <div class="form-inline justify-content-center ">
-                                <input type="text" value="" placeholder="Enter Your Address" class="form-control strong bg-white rounded-left mw-2 border-0"
-                                    style=" margin-right: -10px;" />
-                                <a href="#" class="btn btn-icon btn-success border-0 rounded-right" style="padding-top: 9px;" value="Search Store">
-                                        <i class="icons fas fa-search"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
-                                <i class="fas fa-user"></i>
-                                    Sign In
+                        <div class="dropdown-menu">
+                            <p class="dropdown-header">Wine Types</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                White Wine
                             </a>
-                        </li>
-                        <li class="border-bottom">
-                            <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
-                                <i class="fas fa-user-plus"></i>
-                                    Sign Up
+                            <a href="./product-listing.html" class="dropdown-item">
+                                Rosé Wine
                             </a>
-                        </li>
-        
-                        <li class="border-bottom">
-                            <a href="">
-                                <i class="fas fa-user"></i>
-                                Hi , Sean
+                            <a href="./product-listing.html" class="dropdown-item">
+                                Champagne
                             </a>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="./purchased.html">My Orders,Reorder</a>
-                                </li>
-                                <li>
-                                    <a href="./buyers.html">My Account</a>
-                                </li>
-                                <li>
-                                    <a href="#">Sign Out</a>
-                                </li>
-                            </ul>
-                        </li>
-        
-                        <li>
-                            <a href="./product-listing.html">
-                                <i class="fas fa-wine-glass-alt mr-1"></i>
-                                Wine
+                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                View All Beers
                             </a>
-                        </li>
-        
-                        <li>
-                            <a href="./product-listing.html">
-                                <i class="fas fa-glass-whiskey"></i>
-                                Beer
+
+                        </div>
+                    </li>
+
+                    <li class="dropdown nav-item p-0">
+                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
+                            Liquor
+                        </a>
+                        <div class="dropdown-menu">
+                            <p class="dropdown-header">Wine Types</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                White Wine
                             </a>
-                        </li>
-            
-                        <li>
-                            <a href="./product-listing.html">
-                                <i class="fas fa-cocktail"></i>
-                                Liquor
+                            <a href="./product-listing.html" class="dropdown-item">
+                                Rosé Wine
                             </a>
-                        </li>
-        
-                        <li>
-                            <a href="./product-listing.html">
-                                <i class="fas fa-lemon"></i>
-                                Extras
+                            <a href="./product-listing.html" class="dropdown-item">
+                                Champagne
                             </a>
-                        </li>
-        
-                        <li>
-                            <a href="./product-listing.html">
-                                <i class="fas fa-tags"></i>
-                                Deals
+                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                View All Liquors
                             </a>
-                        </li>
-                        <li>
-                            <a href="./article.html">
-                                <i class="fas fa-glass-cheers"></i>
-                                Explore
+
+                        </div>
+                    </li>
+                    <li class="dropdown nav-item p-0">
+                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
+                            Extras
+                        </a>
+                        <div class="dropdown-menu">
+                            <p class="dropdown-header">Wine Types</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                White Wine
                             </a>
-                        </li>
-        
-                        <li>
-                            <a href="./corporate.html">
-                                <i class="fas fa-user-plus"></i>
-                                Corporate
+                            <a href="./product-listing.html" class="dropdown-item">
+                                Rosé Wine
                             </a>
-                        </li>
-                        <li class="border-bottom">
-                            <a href="./gift.html">
-                                <i class="fas fa-gift"></i>
-                                Gift
+                            <a href="./product-listing.html" class="dropdown-item">
+                                Champagne
                             </a>
-                        </li>
-        
-                        <li>
-                            <a href="./join-us.html">
-                                <i class="fas fa-user-plus"></i>
-                                    Become a retailer
+                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                View All Liquors
                             </a>
-                        </li>
-                        <li>
-                            <a href="./sign-in.html">
-                                <i class="fas fa-user"></i>
-                                Retailer Login
-                            </a>
-                        </li>
-            
+
+                        </div>
+                    </li>
+                    <li class="nav-item p-0 active">
+                        <a class="nav-link small text-uppercase" href="./article.html">
+                            Explore
+                        </a>
+                    </li>
+                    <li class="nav-item p-0 active">
+                        <a class="nav-link small text-uppercase" href="./corporate.html">
+                            corporate
+                        </a>
+                    </li>
+                </ul>
+                    <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
+                            <form action="#" class="nav-form">
+                                    <div class="nav-group">      
+                                            <input type="text" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label><h5 class="font-3 h5 text-uppercase"><span class="fa fa-search"></span></h5></label>
+                                    </div>
+                            </form>
                     </ul>
-                </nav>
-            </div>
-            
-            <!-- Sidebar Toggle  -->
-            <div class="d-lg-none d-block">
-                <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--3 ml--2">
-                    <div class="container-fluid p-0">
-                        <a class="navbar-brand" href="./landing.html"><img src="assets/images/spaceBig.png"></a>
-                        <button type="button" id="sidebarCollapse" class="ml-auto btn btn-neutral btn-simple p-2 m-0">
-                            <i class="fas fa-align-justify"></i>
-                        </button>
-                        <a href="#" class="dropdown-toggle p-2 btn-neutral btn-simple" data-toggle="dropdown">
-                            <i class="icons fas fa-search"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right mega-dropdown text-center mt--1 pb-0">
-                            <div class="input-group input-group-alternative mb-0">
-                                <div class="input-group-prepend bg-light">
-                                    <span class="input-group-text border-0">
-                                        <i class="icons fas fa-search"></i>
-                                    </span>
-                                </div>
-                                <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Seach Beer , Wine & Liquor">
-                            </div>
-                        </div>
-                            <a href="./shopping-card.html" class="btn-neutral btn-simple p-2">
-                                <i class="icons fas fa-shopping-cart" style="margin-left: -2px;"></i>
+
+
+                    <!-- Location Search / Map -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="fas fa-map-marker-alt"></i>
                             </a>
-                            
-                        
-                    </div>
-                </nav>
+                            <!-- Need amend address dropdown -->
+                            <div class="dropdown-menu dropdown-menu-right" style=" max-height:450px;overflow-x: hidden; overflow-y: auto;">
+                                    <div id="address" class="d-none text-center pl-2 pr-2"> 
+                                            <label for="unit" class="font-4">Enter Address</label>
+                                            <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
+                                        <center>
+                                            <input class="btn btn-darker text-uppercase font-4 mt-3 mb-3 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
+                                            value="Save">
+                                        </center>
+                                        <div class="dropdown-divider"></div>
+                                    </div>
+                                    <ul class="list-unstyled">
+                                            <li>
+                                                <div class="container-fluid">
+                                                <div class="row align-items-center p-2">
+                                                    <small class="font-4 pl-0 mb-0">Addresses</small>
+                                                    <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small text-info" id="add-address"> Add New Address</a>
+                                                </div>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div class="row border-l border-danger align-items-center p-2 border-1 pale pointer ">
+                                                        <small class="font-4">Delivery to</small>
+                                                        <br>
+                                                        <h5 class="ml-2 font-4 mb-0 mw-3">
+                                                            Badger Pond Wilton, CA 95693
+                                                    </h5>
+                                                            <a href="./buyers.html" class="ml-auto font-4 mb-0 small text-info"> EDIT</a>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                    <div class="row align-items-center p-2 pale pointer">
+                                                        <h5 class="ml-2 font-4 mb-0 mw-3">
+                                                            Stanton Street 
+                                                            New York, NY 10002
+                                                        </h5>
+                                                            <a href="./buyers.html" class="ml-auto font-4 mb-0 small text-info"> EDIT</a>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <div class=" text-center">
+                                                    <a href="./buyers.html" class="font-4 mb-0 ml-3 small text-info"> View All Addresses</a>
+                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                                <div class="container-fluid">
+                                                        <div class="row border-l border-default align-items-center p-2 border-1 pale pointer ">
+                                                            <h5 class="font-4 pl-0 mb-0">All Stores
+                                                                <br>
+                                                                Stanton Street 
+                                                                New York, NY 10002
+                                                            </h5>
+                                                        </div>
+                                                        <div class="dropdown-divider m-0"></div>
+                                                        <div class="row align-items-center p-2 pale pointer">
+                                                                <h5 class="ml-2 font-4 mb-0 w-100">
+                                                                        Case Liquors
+                                                                </h5>
+                                                                <div class="row align-items-center ml-1 w-100">
+                                                                    <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.2</h5>
+                                                                    <h5 class="text-danger m-1 font-4"> Good </h5>
+                                                                </div>
+                                                                <div class="row align-items-center ml-1 mt--2">
+                                                                    <h5 class="m-2 font-4"> 3,122 products | RM100 Minimum</h5>
+                                                                </div>
+                                                        </div>
+                                                        <div class="dropdown-divider m-0"></div>
+                                                        <div class="row align-items-center p-2 pale pointer">
+                                                                <h5 class="ml-2 font-4 mb-0 w-100">
+                                                                        King Keg
+                                                                </h5>
+                                                                <div class="row align-items-center ml-1 w-100">
+                                                                <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
+                                                                    <h5 class="text-danger m-1 font-4"> Excellent </h5>
+                                                                </div>
+                                                                <div class="row align-items-center ml-1 mt--2">
+                                                                    <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
+                                                                </div>
+                                                        </div>
+                                                        <div class="dropdown-divider m-0"></div>
+                                                        <div class="row align-items-center p-2 pale pointer">
+                                                                <h5 class="ml-2 font-4 mb-0 w-100">
+                                                                        King Keg
+                                                                </h5>
+                                                                <div class="row align-items-center ml-1 w-100">
+                                                                <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
+                                                                    <h5 class="text-danger m-1 font-4"> Excellent </h5>
+                                                                </div>
+                                                                <div class="row align-items-center ml-1 mt--2">
+                                                                    <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </li>
+
+                        <li class="dropdown nav-item">
+                            <a class="nav-link" href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                                    <i class="fas fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right text-center">
+                                <p class="dropdown-header">Hi, Sean </p>
+                                <div class="dropdown-divider"></div>
+                                <a href="./purchased.html" class="dropdown-item">
+                                    My Past Orders
+                                </a>
+                                <a href="./buyers.html" class="dropdown-item">
+                                    My Account
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Sign Out
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./shopping-card.html" class="nav-link" >
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./sign-in.html" class="nav-link btn btn-link border-bottom border-white rounded-sm strong border-2">
+                                Retailer Sign in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- End Navbar -->
+    </nav>
+</header>
+        
+         
+<!-- Sidebar  -->
+    <div id="sideNav" class="nav-side font-8">
+        <div class="nav-side-content">
+            <ul class="list-unstyled components pt-0 pb-5">
+                <li class="bg-light pb-2 pt-2 text-center">
+                    <h4 class=" pl-2 pr-2 ">We are delivering your drinks to :</h4>
+                    <form action="">
+                        <div class="form-inline m-2 justify-content-center">
+                            <div class="input-group input-group-alternative mb-0">
+                                    <div class="input-group-prepend bg-white" style="margin-right: -1px;">
+                                        <span class="input-group-text border-0 text-shadow-0 text-danger p-0 pl-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                width="24" height="24"
+                                                viewBox="0 0 172 172"
+                                                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ef3327"><path d="M86,14.40332c-27.63467,0 -50.11068,22.49001 -50.11068,50.12467c0,32.12817 42.76138,84.31774 44.58171,86.5179l5.52897,6.70475l5.52897,-6.70475c1.82033,-2.20733 44.58171,-54.38974 44.58171,-86.5179c-0.00001,-27.64183 -22.47601,-50.12467 -50.11068,-50.12467zM86,28.73665c19.72983,0 35.77735,16.06151 35.77735,35.79134c-0.00001,19.38583 -22.31835,52.72707 -35.77735,70.3929c-13.459,-17.6515 -35.77734,-50.97841 -35.77734,-70.3929c0,-19.72983 16.04751,-35.79134 35.77734,-35.79134zM86,46.58333c-9.89717,0 -17.91667,8.0195 -17.91667,17.91667c0,9.89717 8.0195,17.91667 17.91667,17.91667c9.89717,0 17.91667,-8.0195 17.91667,-17.91667c0,-9.89717 -8.0195,-17.91667 -17.91667,-17.91667z"></path></g></g></svg>
+                                        </span>
+                                    </div>
+                                <input type="text" value="" placeholder="Enter Your Delivery Address" class="land-address p form-control strong bg-white rounded-sm border-0 font-8 p-3" />
+                        </div>
+                            <button class="nav btn btn-sotipsy text-uppercase font-8 strong rounded mb-1" style="padding: 6px 8px 6px 8px;margin-left: -42px;">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                        <i class="fas fa-user"></i>
+                            Sign In
+                    </a>
+                </li>
+                <li class="border-bottom border-secondary">
+                    <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                        <i class="fas fa-user-plus"></i>
+                            Sign Up
+                    </a>
+                </li>
+    
+                <li class="border-bottom border-secondary">
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        Hi , Sean
+                    </a>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./purchased.html">My Orders,Reorder</a>
+                        </li>
+                        <li>
+                            <a href="./buyers.html">My Account</a>
+                        </li>
+                        <li>
+                            <a href="./product-listing.html">Sign Out</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <a href="./product-listing.html">
+                        <i class="fas fa-wine-glass-alt mr-1"></i>
+                        Wine
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="./product-listing.html">
+                        <i class="fas fa-glass-whiskey"></i>
+                        Beer
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="./product-listing.html">
+                        <i class="fas fa-cocktail"></i>
+                        Liquor
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="./product-listing.html">
+                        <i class="fas fa-lemon"></i>
+                        Extras
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="./product-listing.html">
+                        <i class="fas fa-tags"></i>
+                        Deals
+                    </a>
+                </li>
+                <li>
+                    <a href="./article.html">
+                        <i class="fas fa-glass-cheers"></i>
+                        Explore
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="./corporate.html">
+                        <i class="fas fa-user-plus"></i>
+                        Corporate
+                    </a>
+                </li>
+                <li class="border-bottom border-secondary">
+                    <a href="./gift.html">
+                        <i class="fas fa-gift"></i>
+                        Gift
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="./join-us.html">
+                        <i class="fas fa-user-plus"></i>
+                            Become a retailer
+                    </a>
+                </li>
+                <li>
+                    <a href="./sign-in.html">
+                        <i class="fas fa-user"></i>
+                        Retailer Login
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+</div>
+<div class="d-lg-none d-block">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--1 ml--2">
+    <div class="container-fluid p-0">
+        <button type="button" id="openNav" onclick="openNav()" class="mr-auto btn btn-neutral btn-simple p-2 m-0">
+            <img src="https://img.icons8.com/ios-glyphs/20/000000/menu.png">
+        </button>
+        <button type="button" id="closeNav" onclick="closeNav()" class="mr-auto d-none btn btn-neutral btn-simple p-2 m-0">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times text-dark"></i></a>
+        </button>
+          <a class="navbar-brand m-center" href="./landing.html"><img src="assets/images/logo-sm.png" style="height: 35px;"></a>
+          <a href="#" class="dropdown-toggle p-2 btn-neutral btn-simple" data-toggle="dropdown" style="height: 44px;">
+                  <img src="https://img.icons8.com/ios-glyphs/20/000000/search.png">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right mega-dropdown text-center mt--1 pt-0">
+              <div class="input-group input-group-alternative mb-0">
+                  <div class="input-group-prepend bg-light">
+                      <span class="input-group-text border-0">
+                          <i class="icons fas fa-search"></i>
+                      </span>
+                  </div>
+                  <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Search Beer , Wine & Liquor">
+              </div>
+          </div>
+              <a href="./shopping-card.html" class=" btn btn-neutral btn-simple p-2">
+                  <img src="https://img.icons8.com/material-outlined/20/000000/shopping-cart.png">
+              </a>
+            
+        
+    </div>
+  </nav>
+</div>
+<!-- End Navbar -->
 
     <div class="bg-container">
         <div class="row">
-            <div class="alert alert-success mr-lg-2 p-2 pl-3 w-100 text-center">
-                <a href="#">
-                    <b class="font-3 text-uppercase display-4 text-white"> Contact Us </b>
+            <div class="alert alert-neutral mr-lg-2 p-2 pl-3 w-100 text-center">
+                <a href="./contact-us.html">
+                    <b class="font-3 text-uppercase display-4 text-danger"> Contact Us </b>
                 </a>
             </div>
         </div>
 
 
-            <div class="row justify-content-around  mt-lg-lg mt-sm-lg p-lg-5 p-3">
+            <div class="row justify-content-around mt-lg-md mt-sm p-lg-5 p-3">
         
                 <div class="col-lg-5 col-12 pl-5 pr-5">
                     <h1 class="strong" style=" font-family: 'Open Sans', sans-serif;">Join Us And Sell Your
@@ -495,10 +563,10 @@
                 <div class="col-lg-5 col-md-10 col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h2 class="pl-3 pr-3 text-capitalize text-default font-4">Tell us about yourself and we’ll kick things off.</h2>
+                            <h3 class="pl-3 pr-3 text-capitalize text-default font-7">Tell us about yourself and we’ll kick things off.</h3>
                         </div>
                         <hr class="w-75 ml-auto mr-auto mt--2">
-                        <div class="card-body pt-0 pl-lg-5 pr-lg-5 pb-lg-5">
+                        <div class="card-body pt-0 pl-lg-5 pr-lg-5 pb-lg-5 font-5">
                             <form class="form">
                                 <!-- First Name -->
                                 <div class="form-group">
@@ -566,7 +634,7 @@
                                 </div>
                             </form>
                         </div>
-                        <a href="./seller.html" class="btn btn-default w-100 mt-3 strong font-3">Join Us</a>
+                        <a href="./seller.html" class="btn btn-sotipsy w-100 mt-3 strong font-5">Join Us</a>
                     </div>
                 </div>
             </div>
@@ -577,7 +645,7 @@
                 <h3 class="text-capitalize mb-lg-2 mb-0 mt-2">Reach New Customers</h3>
                 <p class="text-default">
                     Expand your reach and gain new customers. You can expect that over 50% of purchases you get through
-                    Spacecious will be from
+                    Sotipsy will be from
                     new customers to your liquor store.
                 </p>
             </div>
@@ -585,7 +653,7 @@
             <div class="col-lg-3 text-center mb-3">
                 <img src="./assets/images/thinking.png" width="50" height="50">
                 <h3 class="text-capitalize mb-lg-2 mb-0 mt-2">Sell Smarter</h3>
-                <p class="text-default">Spacecious enables you to make smarter decisions on inventory and pricing with its data
+                <p class="text-default">Sotipsy enables you to make smarter decisions on inventory and pricing with its data
                     insights tool. We’ll show you
                     marketwide trends and give you tips on what customers want.</p>
         
@@ -669,8 +737,8 @@
                                     <div class="pl-lg-4 pl-2">
                                         <h3 class="strong mb-2 mt-1 ml-lg-0 ml-2 text-info ">Bring Your Business Online</h3>
                                         <p class="text-darker text-justify">
-                                            Spacecious works with over 100 point of sale systems. Connect your inventory to start selling right away.
-                                            We provide real time inventory updates via your POS system, Daily Settlements, and access to a dedicated Spacecious Account
+                                            Sotipsy works with over 100 point of sale systems. Connect your inventory to start selling right away.
+                                            We provide real time inventory updates via your POS system, Daily Settlements, and access to a dedicated Sotipsy Account
                                             Manager to ensure the success of your store.
         
                                         </p>
@@ -701,15 +769,15 @@
                                             </div>
                                         </div>
                                         <div class="pl-lg-4 pl-2 ">
-                                            <h3 class="strong mb-2 mt-1 ml-lg-0 ml-2 text-danger">Spacecious Shoppers Find You</h3>
+                                            <h3 class="strong mb-2 mt-1 ml-lg-0 ml-2 text-danger">Sotipsy Shoppers Find You</h3>
                                             <p class="text-darker text-justify">
-                                                Customers that might not have previously shopped your shelves will find you when shopping the Spacecious app.
+                                                Customers that might not have previously shopped your shelves will find you when shopping the Sotipsy app.
                                                 <br>
                                                 <br class="d-lg-block d-none">
                                                 <span>
 
                                                 </span> 
-                                                Spacecious helps
+                                                Sotipsy helps
                                                 you acquire and retain new customers and drive incremental sales.
                                             </p>
                                         </div>
@@ -760,7 +828,7 @@
                                     <div class="pl-lg-4 pl-2">
                                         <h3 class="strong mb-2 mt-1 ml-lg-0 ml-2 text-star">Custom Delivery Options</h3>
                                         <p class="text-darker text-justify">
-                                            At Spacecious, you can choose the delivery days, hours and fulfillment type that works best for your store. 
+                                            At Sotipsy, you can choose the delivery days, hours and fulfillment type that works best for your store. 
                                             *3rd party delivery available to stores in certain geographies.
 
                                         </p>
@@ -795,7 +863,7 @@
                     <div class="col-md-4">
                         <div class="stat-items">
                            <h2><span class="counter-value text-center" data-count="50">10</span><span> % </span></h2>
-                           <p class="strong h3">of Spacecious customers are new to your liquor store</p>
+                           <p class="strong h3">of Sotipsy customers are new to your liquor store</p>
                         </div>
                     </div>
 
@@ -803,7 +871,7 @@
                     <div class="col-md-4">
                         <div class="stat-items">
                            <h2><span class="counter-value text-center" data-count="70">20</span><span> % </span></h2>
-                           <p class="strong h3">of Spacecious customers are new to your liquor store</p>
+                           <p class="strong h3">of Sotipsy customers are new to your liquor store</p>
                         </div>
                     </div>
                 </div>
@@ -818,7 +886,7 @@
                 <div class="col-lg-6 col-12">
                     <div class="card shadow-none p-3 text-right">
                         <blockquote class="blockquote mb-0">
-                            <p class="text-justify mb-3">Our business has grown by 30% in the past year since joining Spacecious, and that growth has come not just from orders we receive through its platform, but also through our in-store business, expanding our reach from a few blocks to a five mile radius.</p>
+                            <p class="text-justify mb-3">Our business has grown by 30% in the past year since joining Sotipsy, and that growth has come not just from orders we receive through its platform, but also through our in-store business, expanding our reach from a few blocks to a five mile radius.</p>
                                <p class="text-left strong">Joaan</p>
                                <p  class="text-left">Manager, C Chateau Wine bar</p>
                         </blockquote>
@@ -840,7 +908,7 @@
                     </div>
                     <div class="card-body d-none" id="legal">
                         <p class="text-default">
-                            Our lawyer doesn’t mess around. She wouldn’t let us do it if it wasn’t. In every state Spacecious operates in, we
+                            Our lawyer doesn’t mess around. She wouldn’t let us do it if it wasn’t. In every state Sotipsy operates in, we
                             thoroughly go through the proper legal process. We’ve done it so many times, it feels like we’ve all earned law degrees
                             by now.
                         </p>
@@ -888,7 +956,7 @@
                 </div>
                 <div class="card-body d-none" id="delivery">
                     <p class="text-default">
-                        Stores and their staff are responsible for packing and delivering all orders received through Spacecious. For more
+                        Stores and their staff are responsible for packing and delivering all orders received through Sotipsy. For more
                         information on external delivery solutions in your area, contact us.
                     </p>
                 </div>
@@ -914,7 +982,7 @@
             <div class="card shadow-sm bg-light">
                 <div class="card-header pb-2">
                     <a href="javascript:void(0)" onclick="hideDiv('area')" class="strong text-dark text-capitalize" title="Click Me">
-                        Can I be the exclusive Spacecious store for my area?
+                        Can I be the exclusive Sotipsy store for my area?
                     </a>
                 </div>
                 <div class="card-body d-none" id="area">
@@ -1157,7 +1225,7 @@
                                         <div class="row justify-content-center">
                                             <button type="button" class="btn btn-primary my-4">Sign up</button>
                                             <small class="text-darker m-4">By creating an account, I agree to
-                                                Spacecious's
+                                                Sotipsy's
                                                 Terms and Conditions.</small>
                                         </div>
                                     </form>
@@ -1183,11 +1251,11 @@
                             data-original-title="Follow us">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
+                        <a target="_blank" href="https://www.facebook.com/Sotipsy/" class="btn btn-icon btn-neutral btn-round"
                          data-original-title="Like us">
                             <i class="fab fa-facebook-square"></i>
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
+                        <a target="_blank" href="https://www.instagram.com/Sotipsy/" class="btn btn-icon btn-neutral btn-round"
                          data-original-title="Follow us">
                             <i class="fab fa-instagram"></i>
                         </a>
@@ -1250,7 +1318,7 @@
             <p class="font-4 copyright">
                <a href="./policy.html"  class="strong">Privacy Policy </a>  | 
                <a href="./terms.html" class="strong"> Terms of Service </a>
-                © Spacecious All Rights Reserved</p>
+                © Sotipsy All Rights Reserved</p>
         </div>
     </footer>
     <div>

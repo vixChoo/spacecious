@@ -9,7 +9,6 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
     <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
 
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
@@ -36,7 +35,7 @@
     crossorigin="anonymous">
     <a href="https://icons8.com/icon/47739/cute-outline"></a>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key="></script>
-<!-- Google Map -->
+    <!-- Google Map -->
     <script type="text/javascript">
         function initMap(){
             directionsService = new google.maps.DirectionsService();
@@ -116,7 +115,6 @@
 </head>
 
 <body class="bg-secondary" onload="initMap()">
-
     <header>
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg fixed-top navbar-white d-lg-block d-none">
@@ -628,9 +626,7 @@
             </div>
     </div>
 
-
     <div class="col-md-9 mb-sm m-center">
-
         <div class="card shadow-none font-5">
             <div class="card-header pb-0 text-center">
                 <p class="text-capitalize">Thank you for ordering with us!</p>
@@ -688,7 +684,7 @@
                                                 <h4 class="font-3 h5 text-uppercase mt-1">
                                                     Estimate delivery time :
                                                 </h4>
-                                                </th>
+                                        </th>
                                         <td class="border-0">Today , 8AM - 9AM </td>
                                     </tr>
                                     <tr>
@@ -740,15 +736,18 @@
 
         <!-- Order info -->
         <div class="card shadow-none font-5 mb-2">
-        <div class="card-header bg-info">
-            <h3 class="font-5 text-white text-lg-left text-center">Order Summary</h3>
-        </div>
-        <div class="p-3">
+            <div class="card-header bg-info">
                 <div class="row pl-3 pr-3 pb-lg-2">
-                        <p class="mb-0">C Chateau Cafe & Wine Bar</p>
-                    <small class="card-text ml-auto">Delivery</small>
+                    <h3 class="font-5 text-white text-lg-left text-center">Order Summary</h3>
+                    <h5 class="text-white ml-auto">2 WEEKS AGO, 23/07/2019 10:56</h5>
                 </div>
-        </div>
+            </div>
+            <div class="p-3">
+                    <div class="row pl-3 pr-3 pb-lg-2">
+                            <p class="mb-0">C Chateau Cafe & Wine Bar</p>
+                        <small class="card-text ml-auto">Delivery</small>
+                    </div>
+            </div>
             <hr class="w-100 mt--2 mb-0">
             <div class="card-body">
                 <div class="row pb-3">
@@ -787,6 +786,9 @@
                                                 <h4 class="font-3 h5 text-uppercase">
                                                     <strong>1 x</strong>  Barossa Valley Best Vintage Red Blend
                                                 </h4>
+                                                <h5 class="h5 text-uppercase">
+                                                   750ml
+                                                </h5>
                                         </th>
                                         <td class="minw-0 text-right p-0">
                                                 <h4 class="font-3 h5 text-uppercase">
@@ -838,13 +840,7 @@
         <div class="card shadow-none font-5">
         <div class="p-3">
                 <div class="row pl-3 pr-3 pb-lg-2">
-                        <p class="mb-0">Subtotal</p>
-                        <h4 class="font-3 h5 text-uppercase ml-auto">
-                                MYR 555.80
-                        </h4>
-                </div>
-                <div class="row pl-3 pr-3 pb-lg-2">
-                        <p class="mb-0">Total <strong>(Incl. Service Tax)</strong> </p> 
+                        <p class="ml-2 mb-0">Total</p> 
                         <h4 class="font-3 h5 text-uppercase strong ml-auto">
                                 MYR 3333.33
                         </h4>

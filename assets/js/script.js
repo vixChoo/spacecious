@@ -1,8 +1,4 @@
 
-  //  Landing Page Define variables 
-  const sideControl = document.getElementById("openNav");
-  const closeControl = document.getElementById("closeNav");
-  const landAddress = document.getElementsByClassName("land-address");
   
 var transparent = true;
 var big_image;
