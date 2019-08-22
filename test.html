@@ -28,75 +28,355 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+</head>
 <body>
 
-        <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Clients</a>
-                  <a href="#">Contact</a>
-                </div>
-              </div>
-              
-              <h2>Fullscreen Overlay Nav Example</h2>
-              <p>Click on the element below to open the fullscreen overlay navigation menu.</p>
-              <p>In this example, the navigation menu will slide in, from left to right:</p>
-              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-              <style>
-                    .overlay {
-                      height: 100%;
-                      width: 0;
-                      position: fixed;
-                      z-index: 1;
-                      top: 0;
-                      left: 0;
-                      background-color: rgb(0,0,0);
-                      background-color: rgba(0,0,0, 0.9);
-                      overflow-x: hidden;
-                      transition: 0.5s;
-                    }
-                    
-                    .overlay-content {
-                      position: relative;
-                      top: 25%;
-                      width: 100%;
-                      text-align: center;
-                      margin-top: 30px;
-                    }
-                    
-                    .overlay a {
-                      padding: 8px;
-                      text-decoration: none;
-                      font-size: 36px;
-                      color: #818181;
-                      display: block;
-                      transition: 0.3s;
-                    }
-                    
-                    .overlay a:hover, .overlay a:focus {
-                      color: #f1f1f1;
-                    }
-                    
-                    .overlay .closebtn {
-                      position: absolute;
-                      top: 20px;
-                      right: 45px;
-                      font-size: 60px;
-                    }
-                    
-                    @media screen and (max-height: 450px) {
-                      .overlay a {font-size: 20px}
-                      .overlay .closebtn {
-                      font-size: 40px;
-                      top: 15px;
-                      right: 35px;
-                      }
-                    }
-                    </style>
-
+        <nav class="navbar navbar-expand-lg fixed-top navbar-red mb-5">
+                <div class="container-fluid pl-3 pr-3 text-white">
+                    <div class="navbar-translate">
+                        <a class="navbar-brand" href="./landing.html"><img src="./assets/images/sotipsy.png" style="width: 130px;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="top-navbar">
+                        <div class="navbar-collapse-header">
+                            <div class="row">
+                                <div class="col-6 collapse-brand">
+                                    <a href="./landing.html">
+                                        <img src="./assets/images/sotipsy.png">
+                                    </a>
+                                </div>
+                                <div class="col-6 collapse-close text-right">
+                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
+                                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav text-capitalize">
+                            <li class="dropdown nav-item p-0">
+                                <a href="#" class="dropdown-toggle nav-link small text-uppercase">
+                                    wine
+                                </a>
+                                <div class="dropdown-menu dropdown-mega">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <p class="dropdown-header">Wine Types</p>
+                                            <div class="dropdown-divider"></div>
+                                        </div>
+        
+                                        <div class="col-3">
+                                            <p class="dropdown-header">Top Brand</p>
+                                            <div class="dropdown-divider"></div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-3 wrap-column">
+                                            <a href="#" class="dropdown-item">
+                                                White Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Rosé Wine
+                                            </a>
+        
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Dessert and Fortified Wine
+                                            </a>
+                                            <a href="#" class="dropdown-item">
+                                                White Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Rosé Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Champagne
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                                        View All Wines 
+                                            </a>
+                                        </div>
+        
+                                        <div class="col-3">
+                                            <a href="#" class="dropdown-item">
+                                                White Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Rosé Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Champagne
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Dessert and Fortified Wine
+                                            </a>
+        
+                                        </div>
+                                        <div class="col-3">
+                                            <a href="#" class="dropdown-item">
+                                                White Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Rosé Wine
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item">
+                                                Champagne
+                                            </a>
+                                            <a href="./product-listing.html" class="dropdown-item text-info">
+                                                View All Brands
+                                            </a>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </li>
+        
+                            <!-- Category -->
+                            <li class="dropdown nav-item p-0">
+                                <a href="#" class="dropdown-toggle nav-link small text-uppercase">
+                                    beer
+                                </a>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-header">Wine Types</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                        View All Beers
+                                    </a>
+        
+                                </div>
+                            </li>
+        
+                            <li class="dropdown nav-item p-0">
+                                <a href="#" class="dropdown-toggle nav-link small text-uppercase">
+                                    Liquor
+                                </a>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-header">Wine Types</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                        View All Liquors
+                                    </a>
+        
+                                </div>
+                            </li>
+                            <li class="dropdown nav-item p-0">
+                                <a href="#" class="dropdown-toggle nav-link small text-uppercase">
+                                    Extras
+                                </a>
+                                <div class="dropdown-menu">
+                                    <p class="dropdown-header">Wine Types</p>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">
+                                        White Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Rosé Wine
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item">
+                                        Champagne
+                                    </a>
+                                    <a href="./product-listing.html" class="dropdown-item text-info">
+                                        View All Liquors
+                                    </a>
+        
+                                </div>
+                            </li>
+                            <li class="nav-item p-0 active">
+                                <a class="nav-link small text-uppercase" href="./article.html">
+                                    Explore
+                                </a>
+                            </li>
+                            <li class="nav-item p-0 active">
+                                <a class="nav-link small text-uppercase" href="./corporate.html">
+                                    corporate
+                                </a>
+                            </li>
+                        </ul>
+                            <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
+                                    <form action="#" class="nav-form">
+                                            <div class="nav-group">      
+                                                    <input type="text" required>
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label><h5 class="font-3 h5 text-uppercase"><span class="fa fa-search"></span></h5></label>
+                                            </div>
+                                    </form>
+                            </ul>
+        
+        
+                            <!-- Location Search / Map -->
+                            <ul class="navbar-nav ml-auto">
+                                <li class="dropdown nav-it#="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                    </a>
+                                    <!-- Need amend address dropdown -->
+                                    <div class="dropdown-menu dropdown-megadropdown-menu-right" style=" max-height:450px;overflow-x: hidden; overflow-y: auto;">
+                                            <div id="address" class="d-none text-center pl-2 pr-2"> 
+                                                    <label for="unit" class="font-4">Enter Address</label>
+                                                    <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
+                                                <center>
+                                                    <input class="btn btn-darker text-uppercase font-4 mt-3 mb-3 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
+                                                    value="Save">
+                                                </center>
+                                                <div class="dropdown-divider"></div>
+                                            </div>
+                                            <ul class="list-unstyled">
+                                                    <li>
+                                                        <div class="container-fluid">
+                                                        <div class="row align-items-center p-2">
+                                                            <small class="font-4 pl-0 mb-0">Addresses</small>
+                                                            <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small text-info" id="add-address"> Add New Address</a>
+                                                        </div>
+                                                        </div>
+                                                        <div class="container-fluid">
+                                                            <div class="row border-l border-danger align-items-center p-2 border-1 pale pointer ">
+                                                                <small class="font-4">Delivery to</small>
+                                                                <br>
+                                                                <h5 class="ml-2 font-4 mb-0 mw-3">
+                                                                    Badger Pond Wilton, CA 95693
+                                                            </h5>
+                                                                    <a href="./buyers.html" class="ml-auto font-4 mb-0 small text-info"> EDIT</a>
+                                                        </div>
+                                                        <div class="dropdown-divider m-0"></div>
+                                                            <div class="row align-items-center p-2 pale pointer">
+                                                                <h5 class="ml-2 font-4 mb-0 mw-3">
+                                                                    Stanton Street 
+                                                                    New York, NY 10002
+                                                                </h5>
+                                                                    <a href="./buyers.html" class="ml-auto font-4 mb-0 small text-info"> EDIT</a>
+                                                        </div>
+                                                        <div class="dropdown-divider m-0"></div>
+                                                        <div class=" text-center">
+                                                            <a href="./buyers.html" class="font-4 mb-0 ml-3 small text-info"> View All Addresses</a>
+                                                            </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                        <div class="container-fluid">
+                                                                <div class="row border-l border-default align-items-center p-2 border-1 pale pointer ">
+                                                                    <h5 class="font-4 pl-0 mb-0">All Stores
+                                                                        <br>
+                                                                        Stanton Street 
+                                                                        New York, NY 10002
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="dropdown-divider m-0"></div>
+                                                                <div class="row align-items-center p-2 pale pointer">
+                                                                        <h5 class="ml-2 font-4 mb-0 w-100">
+                                                                                Case Liquors
+                                                                        </h5>
+                                                                        <div class="row align-items-center ml-1 w-100">
+                                                                            <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.2</h5>
+                                                                            <h5 class="text-danger m-1 font-4"> Good </h5>
+                                                                        </div>
+                                                                        <div class="row align-items-center ml-1 mt--2">
+                                                                            <h5 class="m-2 font-4"> 3,122 products | RM100 Minimum</h5>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="dropdown-divider m-0"></div>
+                                                                <div class="row align-items-center p-2 pale pointer">
+                                                                        <h5 class="ml-2 font-4 mb-0 w-100">
+                                                                                King Keg
+                                                                        </h5>
+                                                                        <div class="row align-items-center ml-1 w-100">
+                                                                        <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
+                                                                            <h5 class="text-danger m-1 font-4"> Excellent </h5>
+                                                                        </div>
+                                                                        <div class="row align-items-center ml-1 mt--2">
+                                                                            <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="dropdown-divider m-0"></div>
+                                                                <div class="row align-items-center p-2 pale pointer">
+                                                                        <h5 class="ml-2 font-4 mb-0 w-100">
+                                                                                King Keg
+                                                                        </h5>
+                                                                        <div class="row align-items-center ml-1 w-100">
+                                                                        <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
+                                                                            <h5 class="text-danger m-1 font-4"> Excellent </h5>
+                                                                        </div>
+                                                                        <div class="row align-items-center ml-1 mt--2">
+                                                                            <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                </li>
+        
+                                <li class="dropdown nav-item">
+                                    <a class="nav-link" href="#sign-in" data-toggle="modal" data-target="#sign-in">
+                                            <i class="fas fa-user"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-megadropdown-menu-right text-center">
+                                        <p class="dropdown-header">Hi, Sean </p>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="./purchased.html" class="dropdown-item">
+                                            My Past Orders
+                                        </a>
+                                        <a href="./buyers.html" class="dropdown-item">
+                                            My Account
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            Sign Out
+                                        </a>
+        
+                                    </div>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="./shopping-card.html" class="nav-link" >
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./sign-in.html" class="nav-link btn btn-link border-bottom border-white rounded-sm strong border-2">
+                                        Retailer Sign in
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+<div class="datepicker-container border-0">
+    <!-- input with datetimepicker -->
+    <div class="form-inline">
+        <div class="form-group mr-lg-2 ">
+            <label class="label-control mr-lg-2">Start From</label>
+            <input type="text" id="datepicker" class="form-control datepicker" data-datepicker-color="primary" >
+        </div>
+        <div class="form-group ml-lg-2">
+            <label class="label-control mr-lg-2">Untill</label>
+            <input type="text" id="datepicker" class="form-control datepicker" data-datepicker-color="primary">
+        </div>
+</div>
     <div class="container-fluid">
         <!-- Content -->
             <div class="card bg-primary">
@@ -104,7 +384,7 @@
                     <h3>bg-primary</h3>
                 </div>
             </div>
-            <div class="card bg-danger">
+            <div class="card bg-danger" style="background-color:#fa6446;">
                 <div class="card-header">
                     <h3>bg-danger</h3>
                 </div>

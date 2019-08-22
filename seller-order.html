@@ -573,13 +573,12 @@
             $('a[aria-expanded=true]').attr('aria-expanded', 'false');
         });
         $('#order-table').dataTable( {
-            "order": [[ 2, "asc" ]],
+            "order": [[ 1, "asc" ]],
             "columnDefs": [
                 { "orderable": false, "targets": 0 },
-                { "orderable": false, "targets": 1 },
                 { "orderable": false, "targets": 8 }
             ]
-            });
+        });
         blackKit.initDatePicker();
         
         });

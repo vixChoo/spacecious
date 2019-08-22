@@ -388,6 +388,26 @@ function hideDiv(hideDiv) {
 
 }
 
+function hideBtnDiv(hideDiv,hideBtn) {
+  
+  let hiddenDiv = document.getElementById(hideDiv);
+  let hiddenBtn = document.getElementById(hideBtn);
+
+  if (hiddenDiv.className.includes("d-none")) {
+    hiddenDiv.style.display = "block"
+    hiddenDiv.classList.remove("d-none")
+    hiddenDiv.classList.add("d-block")
+    hiddenBtn.classList.add("d-none")
+  }
+  else{
+    hiddenDiv.classList.add("d-none")
+    hiddenDiv.classList.remove("d-block")
+    hiddenDiv.style.display = "none"
+    hiddenBtn.classList.remove("d-none")
+  }
+
+}
+
 
 
 // Background scroll
