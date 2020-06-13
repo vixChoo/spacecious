@@ -36,850 +36,1850 @@
             crossorigin="anonymous">
         <a href="https://icons8.com/icon/47739/cute-outline"></a>
 
+        <style type="text/css">
+          *,
+          *::before,
+          *::after {
+          box-sizing: border-box;
+          }
+          body {
+            margin: 0;
+            padding: 0;
+          }
+      
+          table,
+          td,
+          tr {
+            vertical-align: top;
+            border-collapse: collapse;
+          }
+      
+          * {
+            line-height: inherit;
+          }
+      
+          a[x-apple-data-detectors=true] {
+            color: inherit !important;
+            text-decoration: none !important;
+          }
+          /* hr{
+            box-sizing: content-box;
+            height: 0;
+            overflow: visible;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0,0,0,.1);
+          } */
+          
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px
+          }
+      
+          .col-12,.col-lg-6{
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px
+          }
+      
+          .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%
+          }
+          .order-12 {
+            order: 12
+          }
+      
+        @media (min-width:992px) {
+          .col-lg-6 {
+            flex: 0 0 50%;
+            max-width: 50%
+          }
+          .order-lg-1 {
+            order: 1
+          }
+          .order-lg-12 {
+            order: 12
+          }
+        }
+          .m-0 {
+          margin: 0!important
+          }
+      
+          .mt-0,
+          .my-0 {
+            margin-top: 0!important
+          }
+      
+          .mr-0,
+          .mx-0 {
+            margin-right: 0!important
+          }
+      
+          .mb-0,
+          .my-0 {
+            margin-bottom: 0!important
+          }
+      
+          .ml-0,
+          .mx-0 {
+            margin-left: 0!important
+          }
+      
+          .m-1 {
+            margin: .25rem!important
+          }
+      
+          .mt-1,
+          .my-1 {
+            margin-top: .25rem!important
+          }
+      
+          .mr-1,
+          .mx-1 {
+            margin-right: .25rem!important
+          }
+      
+          .mb-1,
+          .my-1 {
+            margin-bottom: .25rem!important
+          }
+      
+          .ml-1,
+          .mx-1 {
+            margin-left: .25rem!important
+          }
+      
+          .m-2 {
+            margin: .5rem!important
+          }
+      
+          .mt-2 {
+            margin-top: .5rem!important
+          }
+      
+          .mr-2,
+          .mx-2 {
+            margin-right: .5rem!important
+          }
+      
+          .mb-2,
+          .my-2 {
+            margin-bottom: .5rem!important
+          }
+      
+          .ml-2,
+          .mx-2 {
+            margin-left: .5rem!important
+          }
+      
+          .m-3 {
+            margin: 1rem!important
+          }
+      
+          .mt-3,
+          .my-3 {
+            margin-top: 1rem!important
+          }
+      
+          .mr-3,
+          .mx-3 {
+            margin-right: 1rem!important
+          }
+      
+          .mb-3,
+          .my-3 {
+            margin-bottom: 1rem!important
+          }
+      
+          .ml-3,
+          .mx-3 {
+            margin-left: 1rem!important
+          }
+      
+          .m-4 {
+            margin: 1.5rem!important
+          }
+      
+          .mt-4,
+          .my-4 {
+            margin-top: 1.5rem!important
+          }
+      
+          .mr-4,
+          .mx-4 {
+            margin-right: 1.5rem!important
+          }
+      
+          .mb-4,
+          .my-4 {
+            margin-bottom: 1.5rem!important
+          }
+      
+          .ml-4,
+          .mx-4 {
+            margin-left: 1.5rem!important
+          }
+      
+          .m-5 {
+            margin: 3rem!important
+          }
+      
+          .mt-5,
+          .my-5 {
+            margin-top: 3rem!important
+          }
+      
+          .mr-5,
+          .mx-5 {
+            margin-right: 3rem!important
+          }
+      
+          .mb-5,
+          .my-5 {
+            margin-bottom: 3rem!important
+          }
+      
+          .ml-5,
+          .mx-5 {
+            margin-left: 3rem!important
+          }
+      
+          .m-sm {
+            margin: 2rem!important
+          }
+      
+          .mt-sm,
+          .my-sm {
+            margin-top: 2rem!important
+          }
+      
+          .mr-sm,
+          .mx-sm {
+            margin-right: 2rem!important
+          }
+      
+          .mb-sm,
+          .my-sm {
+            margin-bottom: 2rem!important
+          }
+      
+          .ml-sm,
+          .mx-sm {
+            margin-left: 2rem!important
+          }
+      
+          .m-md {
+            margin: 4rem!important
+          }
+      
+          .mt-md,
+          .my-md {
+            margin-top: 4rem!important
+          }
+      
+          .mr-md,
+          .mx-md {
+            margin-right: 4rem!important
+          }
+      
+          .mb-md,
+          .my-md {
+            margin-bottom: 4rem!important
+          }
+      
+          .ml-md,
+          .mx-md {
+            margin-left: 4rem!important
+          }
+      
+          .m-lg {
+            margin: 6rem!important
+          }
+      
+          .mt-lg,
+          .my-lg {
+            margin-top: 6rem!important
+          }
+      
+          .mr-lg,
+          .mx-lg {
+            margin-right: 6rem!important
+          }
+      
+          .mb-lg,
+          .my-lg {
+            margin-bottom: 6rem!important
+          }
+      
+          .ml-lg,
+          .mx-lg {
+            margin-left: 6rem!important
+          }
+      
+          .m-xl {
+            margin: 8rem!important
+          }
+      
+          .mt-xl,
+          .my-xl {
+            margin-top: 8rem!important
+          }
+      
+          .mr-xl,
+          .mx-xl {
+            margin-right: 8rem!important
+          }
+      
+          .mb-xl,
+          .my-xl {
+            margin-bottom: 8rem!important
+          }
+      
+          .ml-xl,
+          .mx-xl {
+            margin-left: 8rem!important
+          }
+      
+          .mt--1 {
+            margin-top: -.25rem!important
+          }
+      
+          .mt--2 {
+            margin-top: -.5rem!important
+          }
+      
+          .mt--3 {
+            margin-top: -1rem!important
+          }
+      
+          .mt--4 {
+            margin-top: -1.5rem!important
+          }
+      
+          .mt--5 {
+            margin-top: -2rem!important
+          }
+      
+          .mt--6 {
+            margin-top: -2.5rem!important
+          }
+      
+          .mt--100 {
+            margin-top: -100px!important
+          }
+      
+          .p-0 {
+            padding: 0!important
+          }
+      
+          .pt-0,
+          .py-0 {
+            padding-top: 0!important
+          }
+      
+          .pr-0,
+          .px-0 {
+            padding-right: 0!important
+          }
+      
+          .pb-0,
+          .py-0 {
+            padding-bottom: 0!important
+          }
+      
+          .pl-0,
+          .px-0 {
+            padding-left: 0!important
+          }
+      
+          .p-1 {
+            padding: .25rem!important
+          }
+      
+          .pt-1,
+          .py-1 {
+            padding-top: .25rem!important
+          }
+      
+          .pr-1,
+          .px-1 {
+            padding-right: .25rem!important
+          }
+      
+          .pb-1,
+          .py-1 {
+            padding-bottom: .25rem!important
+          }
+      
+          .pl-1,
+          .px-1 {
+            padding-left: .25rem!important
+          }
+      
+          .p-2 {
+            padding: .5rem!important
+          }
+      
+          .pt-2,
+          .py-2 {
+            padding-top: .5rem!important
+          }
+      
+          .pr-2,
+          .px-2 {
+            padding-right: .5rem!important
+          }
+      
+          .pb-2,
+          .py-2 {
+            padding-bottom: .5rem!important
+          }
+      
+          .pl-2,
+          .px-2 {
+            padding-left: .5rem!important
+          }
+      
+          .p-3 {
+            padding: 1rem!important
+          }
+      
+          .pt-3,
+          .py-3 {
+            padding-top: 1rem!important
+          }
+      
+          .pr-3,
+          .px-3 {
+            padding-right: 1rem!important
+          }
+      
+          .pb-3,
+          .py-3 {
+            padding-bottom: 1rem!important
+          }
+      
+          .pl-3,
+          .px-3 {
+            padding-left: 1rem!important
+          }
+      
+          .p-4 {
+            padding: 1.5rem!important
+          }
+      
+          .pt-4,
+          .py-4 {
+            padding-top: 1.5rem!important
+          }
+      
+          .pr-4,
+          .px-4 {
+            padding-right: 1.5rem!important
+          }
+      
+          .pb-4,
+          .py-4 {
+            padding-bottom: 1.5rem!important
+          }
+      
+          .pl-4,
+          .px-4 {
+            padding-left: 1.5rem!important
+          }
+      
+          .p-5 {
+            padding: 3rem!important
+          }
+      
+          .pt-5,
+          .py-5 {
+            padding-top: 3rem!important
+          }
+      
+          .pr-5,
+          .px-5 {
+            padding-right: 3rem!important
+          }
+      
+          .pb-5,
+          .py-5 {
+            padding-bottom: 3rem!important
+          }
+      
+          .pl-5,
+          .px-5 {
+            padding-left: 3rem!important
+          }
+      
+          .p-sm {
+            padding: 2rem!important
+          }
+      
+          .pt-sm,
+          .py-sm {
+            padding-top: 2rem!important
+          }
+      
+          .pr-sm,
+          .px-sm {
+            padding-right: 2rem!important
+          }
+      
+          .pb-sm,
+          .py-sm {
+            padding-bottom: 2rem!important
+          }
+      
+          .pl-sm,
+          .px-sm {
+            padding-left: 2rem!important
+          }
+      
+          .p-md {
+            padding: 4rem!important
+          }
+      
+          .pt-md,
+          .py-md {
+            padding-top: 4rem!important
+          }
+      
+          .pr-md,
+          .px-md {
+            padding-right: 4rem!important
+          }
+      
+          .pb-md,
+          .py-md {
+            padding-bottom: 4rem!important
+          }
+      
+          .pl-md,
+          .px-md {
+            padding-left: 4rem!important
+          }
+      
+          .p-lg {
+            padding: 6rem!important
+          }
+      
+          .pt-lg,
+          .py-lg {
+            padding-top: 6rem!important
+          }
+      
+      @media (min-width:576px) {
+          .m-sm-0 {
+              margin: 0!important
+          }
+          .mt-sm-0,
+          .my-sm-0 {
+              margin-top: 0!important
+          }
+          .mr-sm-0,
+          .mx-sm-0 {
+              margin-right: 0!important
+          }
+          .mb-sm-0,
+          .my-sm-0 {
+              margin-bottom: 0!important
+          }
+          .ml-sm-0,
+          .mx-sm-0 {
+              margin-left: 0!important
+          }
+          .m-sm-1 {
+              margin: .25rem!important
+          }
+          .mt-sm-1,
+          .my-sm-1 {
+              margin-top: .25rem!important
+          }
+          .mr-sm-1,
+          .mx-sm-1 {
+              margin-right: .25rem!important
+          }
+          .mb-sm-1,
+          .my-sm-1 {
+              margin-bottom: .25rem!important
+          }
+          .ml-sm-1,
+          .mx-sm-1 {
+              margin-left: .25rem!important
+          }
+          .m-sm-2 {
+              margin: .5rem!important
+          }
+          .mt-sm-2,
+          .my-sm-2 {
+              margin-top: .5rem!important
+          }
+          .mr-sm-2,
+          .mx-sm-2 {
+              margin-right: .5rem!important
+          }
+          .mb-sm-2,
+          .my-sm-2 {
+              margin-bottom: .5rem!important
+          }
+          .ml-sm-2,
+          .mx-sm-2 {
+              margin-left: .5rem!important
+          }
+          .m-sm-3 {
+              margin: 1rem!important
+          }
+          .mt-sm-3,
+          .my-sm-3 {
+              margin-top: 1rem!important
+          }
+          .mr-sm-3,
+          .mx-sm-3 {
+              margin-right: 1rem!important
+          }
+          .mb-sm-3,
+          .my-sm-3 {
+              margin-bottom: 1rem!important
+          }
+          .ml-sm-3,
+          .mx-sm-3 {
+              margin-left: 1rem!important
+          }
+          .m-sm-4 {
+              margin: 1.5rem!important
+          }
+          .mt-sm-4,
+          .my-sm-4 {
+              margin-top: 1.5rem!important
+          }
+          .mr-sm-4,
+          .mx-sm-4 {
+              margin-right: 1.5rem!important
+          }
+          .mb-sm-4,
+          .my-sm-4 {
+              margin-bottom: 1.5rem!important
+          }
+          .ml-sm-4,
+          .mx-sm-4 {
+              margin-left: 1.5rem!important
+          }
+          .m-sm-5 {
+              margin: 3rem!important
+          }
+          .mt-sm-5,
+          .my-sm-5 {
+              margin-top: 3rem!important
+          }
+          .mr-sm-5,
+          .mx-sm-5 {
+              margin-right: 3rem!important
+          }
+          .mb-sm-5,
+          .my-sm-5 {
+              margin-bottom: 3rem!important
+          }
+          .ml-sm-5,
+          .mx-sm-5 {
+              margin-left: 3rem!important
+          }
+          .m-sm-sm {
+              margin: 2rem!important
+          }
+          .mt-sm-sm,
+          .my-sm-sm {
+              margin-top: 2rem!important
+          }
+          .mr-sm-sm,
+          .mx-sm-sm {
+              margin-right: 2rem!important
+          }
+          .mb-sm-sm,
+          .my-sm-sm {
+              margin-bottom: 2rem!important
+          }
+          .ml-sm-sm,
+          .mx-sm-sm {
+              margin-left: 2rem!important
+          }
+          .m-sm-md {
+              margin: 4rem!important
+          }
+          .mt-sm-md,
+          .my-sm-md {
+              margin-top: 4rem!important
+          }
+          .mr-sm-md,
+          .mx-sm-md {
+              margin-right: 4rem!important
+          }
+          .mb-sm-md,
+          .my-sm-md {
+              margin-bottom: 4rem!important
+          }
+          .ml-sm-md,
+          .mx-sm-md {
+              margin-left: 4rem!important
+          }
+          .m-sm-lg {
+              margin: 6rem!important
+          }
+          .mt-sm-lg,
+          .my-sm-lg {
+              margin-top: 6rem!important
+          }
+          .mr-sm-lg,
+          .mx-sm-lg {
+              margin-right: 6rem!important
+          }
+          .mb-sm-lg,
+          .my-sm-lg {
+              margin-bottom: 6rem!important
+          }
+          .ml-sm-lg,
+          .mx-sm-lg {
+              margin-left: 6rem!important
+          }
+          .m-sm-xl {
+              margin: 8rem!important
+          }
+          .mt-sm-xl,
+          .my-sm-xl {
+              margin-top: 8rem!important
+          }
+          .mr-sm-xl,
+          .mx-sm-xl {
+              margin-right: 8rem!important
+          }
+          .mb-sm-xl,
+          .my-sm-xl {
+              margin-bottom: 8rem!important
+          }
+          .ml-sm-xl,
+          .mx-sm-xl {
+              margin-left: 8rem!important
+          }
+          .p-sm-0 {
+              padding: 0!important
+          }
+          .pt-sm-0,
+          .py-sm-0 {
+              padding-top: 0!important
+          }
+          .pr-sm-0,
+          .px-sm-0 {
+              padding-right: 0!important
+          }
+          .pb-sm-0,
+          .py-sm-0 {
+              padding-bottom: 0!important
+          }
+          .pl-sm-0,
+          .px-sm-0 {
+              padding-left: 0!important
+          }
+          .p-sm-1 {
+              padding: .25rem!important
+          }
+          .pt-sm-1,
+          .py-sm-1 {
+              padding-top: .25rem!important
+          }
+          .pr-sm-1,
+          .px-sm-1 {
+              padding-right: .25rem!important
+          }
+          .pb-sm-1,
+          .py-sm-1 {
+              padding-bottom: .25rem!important
+          }
+          .pl-sm-1,
+          .px-sm-1 {
+              padding-left: .25rem!important
+          }
+          .p-sm-2 {
+              padding: .5rem!important
+          }
+          .pt-sm-2,
+          .py-sm-2 {
+              padding-top: .5rem!important
+          }
+          .pr-sm-2,
+          .px-sm-2 {
+              padding-right: .5rem!important
+          }
+          .pb-sm-2,
+          .py-sm-2 {
+              padding-bottom: .5rem!important
+          }
+          .pl-sm-2,
+          .px-sm-2 {
+              padding-left: .5rem!important
+          }
+          .p-sm-3 {
+              padding: 1rem!important
+          }
+          .pt-sm-3,
+          .py-sm-3 {
+              padding-top: 1rem!important
+          }
+          .pr-sm-3,
+          .px-sm-3 {
+              padding-right: 1rem!important
+          }
+          .pb-sm-3,
+          .py-sm-3 {
+              padding-bottom: 1rem!important
+          }
+          .pl-sm-3,
+          .px-sm-3 {
+              padding-left: 1rem!important
+          }
+          .p-sm-4 {
+              padding: 1.5rem!important
+          }
+          .pt-sm-4,
+          .py-sm-4 {
+              padding-top: 1.5rem!important
+          }
+          .pr-sm-4,
+          .px-sm-4 {
+              padding-right: 1.5rem!important
+          }
+          .pb-sm-4,
+          .py-sm-4 {
+              padding-bottom: 1.5rem!important
+          }
+          .pl-sm-4,
+          .px-sm-4 {
+              padding-left: 1.5rem!important
+          }
+          .p-sm-5 {
+              padding: 3rem!important
+          }
+          .pt-sm-5,
+          .py-sm-5 {
+              padding-top: 3rem!important
+          }
+          .pr-sm-5,
+          .px-sm-5 {
+              padding-right: 3rem!important
+          }
+          .pb-sm-5,
+          .py-sm-5 {
+              padding-bottom: 3rem!important
+          }
+          .pl-sm-5,
+          .px-sm-5 {
+              padding-left: 3rem!important
+          }
+          .p-sm-sm {
+              padding: 2rem!important
+          }
+          .pt-sm-sm,
+          .py-sm-sm {
+              padding-top: 2rem!important
+          }
+          .pr-sm-sm,
+          .px-sm-sm {
+              padding-right: 2rem!important
+          }
+          .pb-sm-sm,
+          .py-sm-sm {
+              padding-bottom: 2rem!important
+          }
+          .pl-sm-sm,
+          .px-sm-sm {
+              padding-left: 2rem!important
+          }
+          .p-sm-md {
+              padding: 4rem!important
+          }
+          .pt-sm-md,
+          .py-sm-md {
+              padding-top: 4rem!important
+          }
+          .pr-sm-md,
+          .px-sm-md {
+              padding-right: 4rem!important
+          }
+          .pb-sm-md,
+          .py-sm-md {
+              padding-bottom: 4rem!important
+          }
+          .pl-sm-md,
+          .px-sm-md {
+              padding-left: 4rem!important
+          }
+          .p-sm-lg {
+              padding: 6rem!important
+          }
+          .pt-sm-lg,
+          .py-sm-lg {
+              padding-top: 6rem!important
+          }
+          .pr-sm-lg,
+          .px-sm-lg {
+              padding-right: 6rem!important
+          }
+          .pb-sm-lg,
+          .py-sm-lg {
+              padding-bottom: 6rem!important
+          }
+          .pl-sm-lg,
+          .px-sm-lg {
+              padding-left: 6rem!important
+          }
+          .p-sm-xl {
+              padding: 8rem!important
+          }
+          .pt-sm-xl,
+          .py-sm-xl {
+              padding-top: 8rem!important
+          }
+          .pr-sm-xl,
+          .px-sm-xl {
+              padding-right: 8rem!important
+          }
+          .pb-sm-xl,
+          .py-sm-xl {
+              padding-bottom: 8rem!important
+          }
+          .pl-sm-xl,
+          .px-sm-xl {
+              padding-left: 8rem!important
+          }
+          .m-sm-auto {
+              margin: auto!important
+          }
+          .mt-sm-auto,
+          .my-sm-auto {
+              margin-top: auto!important
+          }
+          .mr-sm-auto,
+          .mx-sm-auto {
+              margin-right: auto!important
+          }
+          .mb-sm-auto,
+          .my-sm-auto {
+              margin-bottom: auto!important
+          }
+          .ml-sm-auto,
+          .mx-sm-auto {
+              margin-left: auto!important
+          }
+      }
+      
+      @media (min-width:768px) {
+          .m-md-0 {
+              margin: 0!important
+          }
+          .mt-md-0,
+          .my-md-0 {
+              margin-top: 0!important
+          }
+          .mr-md-0,
+          .mx-md-0 {
+              margin-right: 0!important
+          }
+          .mb-md-0,
+          .my-md-0 {
+              margin-bottom: 0!important
+          }
+          .ml-md-0,
+          .mx-md-0 {
+              margin-left: 0!important
+          }
+          .m-md-1 {
+              margin: .25rem!important
+          }
+          .mt-md-1,
+          .my-md-1 {
+              margin-top: .25rem!important
+          }
+          .mr-md-1,
+          .mx-md-1 {
+              margin-right: .25rem!important
+          }
+          .mb-md-1,
+          .my-md-1 {
+              margin-bottom: .25rem!important
+          }
+          .ml-md-1,
+          .mx-md-1 {
+              margin-left: .25rem!important
+          }
+          .m-md-2 {
+              margin: .5rem!important
+          }
+          .mt-md-2,
+          .my-md-2 {
+              margin-top: .5rem!important
+          }
+          .mr-md-2,
+          .mx-md-2 {
+              margin-right: .5rem!important
+          }
+          .mb-md-2,
+          .my-md-2 {
+              margin-bottom: .5rem!important
+          }
+          .ml-md-2,
+          .mx-md-2 {
+              margin-left: .5rem!important
+          }
+          .m-md-3 {
+              margin: 1rem!important
+          }
+          .mt-md-3,
+          .my-md-3 {
+              margin-top: 1rem!important
+          }
+          .mr-md-3,
+          .mx-md-3 {
+              margin-right: 1rem!important
+          }
+          .mb-md-3,
+          .my-md-3 {
+              margin-bottom: 1rem!important
+          }
+          .ml-md-3,
+          .mx-md-3 {
+              margin-left: 1rem!important
+          }
+          .m-md-4 {
+              margin: 1.5rem!important
+          }
+          .mt-md-4,
+          .my-md-4 {
+              margin-top: 1.5rem!important
+          }
+          .mr-md-4,
+          .mx-md-4 {
+              margin-right: 1.5rem!important
+          }
+          .mb-md-4,
+          .my-md-4 {
+              margin-bottom: 1.5rem!important
+          }
+          .ml-md-4,
+          .mx-md-4 {
+              margin-left: 1.5rem!important
+          }
+          .m-md-5 {
+              margin: 3rem!important
+          }
+          .mt-md-5,
+          .my-md-5 {
+              margin-top: 3rem!important
+          }
+          .mr-md-5,
+          .mx-md-5 {
+              margin-right: 3rem!important
+          }
+          .mb-md-5,
+          .my-md-5 {
+              margin-bottom: 3rem!important
+          }
+          .ml-md-5,
+          .mx-md-5 {
+              margin-left: 3rem!important
+          }
+          .m-md-sm {
+              margin: 2rem!important
+          }
+          .mt-md-sm,
+          .my-md-sm {
+              margin-top: 2rem!important
+          }
+          .mr-md-sm,
+          .mx-md-sm {
+              margin-right: 2rem!important
+          }
+          .mb-md-sm,
+          .my-md-sm {
+              margin-bottom: 2rem!important
+          }
+          .ml-md-sm,
+          .mx-md-sm {
+              margin-left: 2rem!important
+          }
+          .m-md-md {
+              margin: 4rem!important
+          }
+          .mt-md-md,
+          .my-md-md {
+              margin-top: 4rem!important
+          }
+          .mr-md-md,
+          .mx-md-md {
+              margin-right: 4rem!important
+          }
+          .mb-md-md,
+          .my-md-md {
+              margin-bottom: 4rem!important
+          }
+          .ml-md-md,
+          .mx-md-md {
+              margin-left: 4rem!important
+          }
+          .m-md-lg {
+              margin: 6rem!important
+          }
+          .mt-md-lg,
+          .my-md-lg {
+              margin-top: 6rem!important
+          }
+          .mr-md-lg,
+          .mx-md-lg {
+              margin-right: 6rem!important
+          }
+          .mb-md-lg,
+          .my-md-lg {
+              margin-bottom: 6rem!important
+          }
+          .ml-md-lg,
+          .mx-md-lg {
+              margin-left: 6rem!important
+          }
+          .m-md-xl {
+              margin: 8rem!important
+          }
+          .mt-md-xl,
+          .my-md-xl {
+              margin-top: 8rem!important
+          }
+          .mr-md-xl,
+          .mx-md-xl {
+              margin-right: 8rem!important
+          }
+          .mb-md-xl,
+          .my-md-xl {
+              margin-bottom: 8rem!important
+          }
+          .ml-md-xl,
+          .mx-md-xl {
+              margin-left: 8rem!important
+          }
+          .p-md-0 {
+              padding: 0!important
+          }
+          .pt-md-0,
+          .py-md-0 {
+              padding-top: 0!important
+          }
+          .pr-md-0,
+          .px-md-0 {
+              padding-right: 0!important
+          }
+          .pb-md-0,
+          .py-md-0 {
+              padding-bottom: 0!important
+          }
+          .pl-md-0,
+          .px-md-0 {
+              padding-left: 0!important
+          }
+          .p-md-1 {
+              padding: .25rem!important
+          }
+          .pt-md-1,
+          .py-md-1 {
+              padding-top: .25rem!important
+          }
+          .pr-md-1,
+          .px-md-1 {
+              padding-right: .25rem!important
+          }
+          .pb-md-1,
+          .py-md-1 {
+              padding-bottom: .25rem!important
+          }
+          .pl-md-1,
+          .px-md-1 {
+              padding-left: .25rem!important
+          }
+          .p-md-2 {
+              padding: .5rem!important
+          }
+          .pt-md-2,
+          .py-md-2 {
+              padding-top: .5rem!important
+          }
+          .pr-md-2,
+          .px-md-2 {
+              padding-right: .5rem!important
+          }
+          .pb-md-2,
+          .py-md-2 {
+              padding-bottom: .5rem!important
+          }
+          .pl-md-2,
+          .px-md-2 {
+              padding-left: .5rem!important
+          }
+          .p-md-3 {
+              padding: 1rem!important
+          }
+          .pt-md-3,
+          .py-md-3 {
+              padding-top: 1rem!important
+          }
+          .pr-md-3,
+          .px-md-3 {
+              padding-right: 1rem!important
+          }
+          .pb-md-3,
+          .py-md-3 {
+              padding-bottom: 1rem!important
+          }
+          .pl-md-3,
+          .px-md-3 {
+              padding-left: 1rem!important
+          }
+          .p-md-4 {
+              padding: 1.5rem!important
+          }
+          .pt-md-4,
+          .py-md-4 {
+              padding-top: 1.5rem!important
+          }
+          .pr-md-4,
+          .px-md-4 {
+              padding-right: 1.5rem!important
+          }
+          .pb-md-4,
+          .py-md-4 {
+              padding-bottom: 1.5rem!important
+          }
+          .pl-md-4,
+          .px-md-4 {
+              padding-left: 1.5rem!important
+          }
+          .p-md-5 {
+              padding: 3rem!important
+          }
+          .pt-md-5,
+          .py-md-5 {
+              padding-top: 3rem!important
+          }
+          .pr-md-5,
+          .px-md-5 {
+              padding-right: 3rem!important
+          }
+          .pb-md-5,
+          .py-md-5 {
+              padding-bottom: 3rem!important
+          }
+          .pl-md-5,
+          .px-md-5 {
+              padding-left: 3rem!important
+          }
+          .p-md-sm {
+              padding: 2rem!important
+          }
+          .pt-md-sm,
+          .py-md-sm {
+              padding-top: 2rem!important
+          }
+          .pr-md-sm,
+          .px-md-sm {
+              padding-right: 2rem!important
+          }
+          .pb-md-sm,
+          .py-md-sm {
+              padding-bottom: 2rem!important
+          }
+          .pl-md-sm,
+          .px-md-sm {
+              padding-left: 2rem!important
+          }
+          .p-md-md {
+              padding: 4rem!important
+          }
+          .pt-md-md,
+          .py-md-md {
+              padding-top: 4rem!important
+          }
+          .pr-md-md,
+          .px-md-md {
+              padding-right: 4rem!important
+          }
+          .pb-md-md,
+          .py-md-md {
+              padding-bottom: 4rem!important
+          }
+          .pl-md-md,
+          .px-md-md {
+              padding-left: 4rem!important
+          }
+          .p-md-lg {
+              padding: 6rem!important
+          }
+          .pt-md-lg,
+          .py-md-lg {
+              padding-top: 6rem!important
+          }
+          .pr-md-lg,
+          .px-md-lg {
+              padding-right: 6rem!important
+          }
+          .pb-md-lg,
+          .py-md-lg {
+              padding-bottom: 6rem!important
+          }
+          .pl-md-lg,
+          .px-md-lg {
+              padding-left: 6rem!important
+          }
+          .p-md-xl {
+              padding: 8rem!important
+          }
+          .pt-md-xl,
+          .py-md-xl {
+              padding-top: 8rem!important
+          }
+          .pr-md-xl,
+          .px-md-xl {
+              padding-right: 8rem!important
+          }
+          .pb-md-xl,
+          .py-md-xl {
+              padding-bottom: 8rem!important
+          }
+          .pl-md-xl,
+          .px-md-xl {
+              padding-left: 8rem!important
+          }
+          .m-md-auto {
+              margin: auto!important
+          }
+          .mt-md-auto,
+          .my-md-auto {
+              margin-top: auto!important
+          }
+          .mr-md-auto,
+          .mx-md-auto {
+              margin-right: auto!important
+          }
+          .mb-md-auto,
+          .my-md-auto {
+              margin-bottom: auto!important
+          }
+          .ml-md-auto,
+          .mx-md-auto {
+              margin-left: auto!important
+          }
+      }
+      
+      @media (min-width:992px) {
+          .m-lg-0 {
+              margin: 0!important
+          }
+          .mt-lg-0,
+          .my-lg-0 {
+              margin-top: 0!important
+          }
+          .mr-lg-0,
+          .mx-lg-0 {
+              margin-right: 0!important
+          }
+          .mb-lg-0,
+          .my-lg-0 {
+              margin-bottom: 0!important
+          }
+          .ml-lg-0,
+          .mx-lg-0 {
+              margin-left: 0!important
+          }
+          .m-lg-1 {
+              margin: .25rem!important
+          }
+          .mt-lg-1,
+          .my-lg-1 {
+              margin-top: .25rem!important
+          }
+          .mr-lg-1,
+          .mx-lg-1 {
+              margin-right: .25rem!important
+          }
+          .mb-lg-1,
+          .my-lg-1 {
+              margin-bottom: .25rem!important
+          }
+          .ml-lg-1,
+          .mx-lg-1 {
+              margin-left: .25rem!important
+          }
+          .m-lg-2 {
+              margin: .5rem!important
+          }
+          .mt-lg-2,
+          .my-lg-2 {
+              margin-top: .5rem!important
+          }
+          .mr-lg-2,
+          .mx-lg-2 {
+              margin-right: .5rem!important
+          }
+          .mb-lg-2,
+          .my-lg-2 {
+              margin-bottom: .5rem!important
+          }
+          .ml-lg-2,
+          .mx-lg-2 {
+              margin-left: .5rem!important
+          }
+          .m-lg-3 {
+              margin: 1rem!important
+          }
+          .mt-lg-3,
+          .my-lg-3 {
+              margin-top: 1rem!important
+          }
+          .mr-lg-3,
+          .mx-lg-3 {
+              margin-right: 1rem!important
+          }
+          .mb-lg-3,
+          .my-lg-3 {
+              margin-bottom: 1rem!important
+          }
+          .ml-lg-3,
+          .mx-lg-3 {
+              margin-left: 1rem!important
+          }
+          .m-lg-4 {
+              margin: 1.5rem!important
+          }
+          .mt-lg-4,
+          .my-lg-4 {
+              margin-top: 1.5rem!important
+          }
+          .mr-lg-4,
+          .mx-lg-4 {
+              margin-right: 1.5rem!important
+          }
+          .mb-lg-4,
+          .my-lg-4 {
+              margin-bottom: 1.5rem!important
+          }
+          .ml-lg-4,
+          .mx-lg-4 {
+              margin-left: 1.5rem!important
+          }
+          .m-lg-5 {
+              margin: 3rem!important
+          }
+          .mt-lg-5,
+          .my-lg-5 {
+              margin-top: 3rem!important
+          }
+          .mr-lg-5,
+          .mx-lg-5 {
+              margin-right: 3rem!important
+          }
+          .mb-lg-5,
+          .my-lg-5 {
+              margin-bottom: 3rem!important
+          }
+          .ml-lg-5,
+          .mx-lg-5 {
+              margin-left: 3rem!important
+          }
+          .m-lg-sm {
+              margin: 2rem!important
+          }
+          .mt-lg-sm,
+          .my-lg-sm {
+              margin-top: 2rem!important
+          }
+          .mr-lg-sm,
+          .mx-lg-sm {
+              margin-right: 2rem!important
+          }
+          .mb-lg-sm,
+          .my-lg-sm {
+              margin-bottom: 2rem!important
+          }
+          .ml-lg-sm,
+          .mx-lg-sm {
+              margin-left: 2rem!important
+          }
+          .m-lg-md {
+              margin: 4rem!important
+          }
+          .mt-lg-md,
+          .my-lg-md {
+              margin-top: 4rem!important
+          }
+          .mr-lg-md,
+          .mx-lg-md {
+              margin-right: 4rem!important
+          }
+          .mb-lg-md,
+          .my-lg-md {
+              margin-bottom: 4rem!important
+          }
+          .ml-lg-md,
+          .mx-lg-md {
+              margin-left: 4rem!important
+          }
+          .m-lg-lg {
+              margin: 6rem!important
+          }
+          .mt-lg-lg,
+          .my-lg-lg {
+              margin-top: 6rem!important
+          }
+          .mr-lg-lg,
+          .mx-lg-lg {
+              margin-right: 6rem!important
+          }
+          .mb-lg-lg,
+          .my-lg-lg {
+              margin-bottom: 6rem!important
+          }
+          .ml-lg-lg,
+          .mx-lg-lg {
+              margin-left: 6rem!important
+          }
+          .m-lg-xl {
+              margin: 8rem!important
+          }
+          .mt-lg-xl,
+          .my-lg-xl {
+              margin-top: 8rem!important
+          }
+          .mr-lg-xl,
+          .mx-lg-xl {
+              margin-right: 8rem!important
+          }
+          .mb-lg-xl,
+          .my-lg-xl {
+              margin-bottom: 8rem!important
+          }
+          .ml-lg-xl,
+          .mx-lg-xl {
+              margin-left: 8rem!important
+          }
+          .p-lg-0 {
+              padding: 0!important
+          }
+          .pt-lg-0,
+          .py-lg-0 {
+              padding-top: 0!important
+          }
+          .pr-lg-0,
+          .px-lg-0 {
+              padding-right: 0!important
+          }
+          .pb-lg-0,
+          .py-lg-0 {
+              padding-bottom: 0!important
+          }
+          .pl-lg-0,
+          .px-lg-0 {
+              padding-left: 0!important
+          }
+          .p-lg-1 {
+              padding: .25rem!important
+          }
+          .pt-lg-1,
+          .py-lg-1 {
+              padding-top: .25rem!important
+          }
+          .pr-lg-1,
+          .px-lg-1 {
+              padding-right: .25rem!important
+          }
+          .pb-lg-1,
+          .py-lg-1 {
+              padding-bottom: .25rem!important
+          }
+          .pl-lg-1,
+          .px-lg-1 {
+              padding-left: .25rem!important
+          }
+          .p-lg-2 {
+              padding: .5rem!important
+          }
+          .pt-lg-2,
+          .py-lg-2 {
+              padding-top: .5rem!important
+          }
+          .pr-lg-2,
+          .px-lg-2 {
+              padding-right: .5rem!important
+          }
+          .pb-lg-2,
+          .py-lg-2 {
+              padding-bottom: .5rem!important
+          }
+          .pl-lg-2,
+          .px-lg-2 {
+              padding-left: .5rem!important
+          }
+          .p-lg-3 {
+              padding: 1rem!important
+          }
+          .pt-lg-3,
+          .py-lg-3 {
+              padding-top: 1rem!important
+          }
+          .pr-lg-3,
+          .px-lg-3 {
+              padding-right: 1rem!important
+          }
+          .pb-lg-3,
+          .py-lg-3 {
+              padding-bottom: 1rem!important
+          }
+          .pl-lg-3,
+          .px-lg-3 {
+              padding-left: 1rem!important
+          }
+          .p-lg-4 {
+              padding: 1.5rem!important
+          }
+          .pt-lg-4,
+          .py-lg-4 {
+              padding-top: 1.5rem!important
+          }
+          .pr-lg-4,
+          .px-lg-4 {
+              padding-right: 1.5rem!important
+          }
+          .pb-lg-4,
+          .py-lg-4 {
+              padding-bottom: 1.5rem!important
+          }
+          .pl-lg-4,
+          .px-lg-4 {
+              padding-left: 1.5rem!important
+          }
+          .p-lg-5 {
+              padding: 3rem!important
+          }
+          .pt-lg-5,
+          .py-lg-5 {
+              padding-top: 3rem!important
+          }
+          .pr-lg-5,
+          .px-lg-5 {
+              padding-right: 3rem!important
+          }
+          .pb-lg-5,
+          .py-lg-5 {
+              padding-bottom: 3rem!important
+          }
+          .pl-lg-5,
+          .px-lg-5 {
+              padding-left: 3rem!important
+          }
+          .p-lg-sm {
+              padding: 2rem!important
+          }
+          .pt-lg-sm,
+          .py-lg-sm {
+              padding-top: 2rem!important
+          }
+          .pr-lg-sm,
+          .px-lg-sm {
+              padding-right: 2rem!important
+          }
+          .pb-lg-sm,
+          .py-lg-sm {
+              padding-bottom: 2rem!important
+          }
+          .pl-lg-sm,
+          .px-lg-sm {
+              padding-left: 2rem!important
+          }
+          .p-lg-md {
+              padding: 4rem!important
+          }
+          .pt-lg-md,
+          .py-lg-md {
+              padding-top: 4rem!important
+          }
+          .pr-lg-md,
+          .px-lg-md {
+              padding-right: 4rem!important
+          }
+          .pb-lg-md,
+          .py-lg-md {
+              padding-bottom: 4rem!important
+          }
+          .pl-lg-md,
+          .px-lg-md {
+              padding-left: 4rem!important
+          }
+          .p-lg-lg {
+              padding: 6rem!important
+          }
+          .pt-lg-lg,
+          .py-lg-lg {
+              padding-top: 6rem!important
+          }
+          .pr-lg-lg,
+          .px-lg-lg {
+              padding-right: 6rem!important
+          }
+          .pb-lg-lg,
+          .py-lg-lg {
+              padding-bottom: 6rem!important
+          }
+          .pl-lg-lg,
+          .px-lg-lg {
+              padding-left: 6rem!important
+          }
+          .p-lg-xl {
+              padding: 8rem!important
+          }
+          .pt-lg-xl,
+          .py-lg-xl {
+              padding-top: 8rem!important
+          }
+          .pr-lg-xl,
+          .px-lg-xl {
+              padding-right: 8rem!important
+          }
+          .pb-lg-xl,
+          .py-lg-xl {
+              padding-bottom: 8rem!important
+          }
+          .pl-lg-xl,
+          .px-lg-xl {
+              padding-left: 8rem!important
+          }
+          .m-lg-auto {
+              margin: auto!important
+          }
+          .mt-lg-auto,
+          .my-lg-auto {
+              margin-top: auto!important
+          }
+          .mr-lg-auto,
+          .mx-lg-auto {
+              margin-right: auto!important
+          }
+          .mb-lg-auto,
+          .my-lg-auto {
+              margin-bottom: auto!important
+          }
+          .ml-lg-auto,
+          .mx-lg-auto {
+              margin-left: auto!important
+          }
+      }
+      
+      </style>
+        
+      <style id="media-query" type="text/css">
+          @media (max-width: 640px) {
+      
+            .block-grid,
+            .col {
+              min-width: 320px !important;
+              max-width: 100% !important;
+              display: block !important;
+            }
+      
+            .block-grid {
+              width: 100% !important;
+            }
+      
+            .col {
+              width: 100% !important;
+            }
+      
+            .col>div {
+              margin: 0 auto;
+            }
+      
+            img.fullwidth,
+            img.fullwidthOnMobile {
+              max-width: 100% !important;
+            }
+      
+            .no-stack .col {
+              min-width: 0 !important;
+              display: table-cell !important;
+            }
+            
+            .no-stack.two-up .col {
+              width: 50% !important;
+            }
+      
+            .no-stack .col.num4 {
+              width: 33% !important;
+            }
+      
+            .no-stack .col.num8 {
+              width: 66% !important;
+            }
+      
+            .no-stack .col.num4 {
+              width: 33% !important;
+            }
+      
+            .no-stack .col.num3 {
+              width: 25% !important;
+            }
+      
+            .no-stack .col.num6 {
+              width: 50% !important;
+            }
+      
+            .no-stack .col.num9 {
+              width: 75% !important;
+            }
+      
+            .video-block {
+              max-width: none !important;
+            }
+      
+            .mobile_hide {
+              min-height: 0px;
+              max-height: 0px;
+              max-width: 0px;
+              display: none;
+              overflow: hidden;
+              font-size: 0px;
+            }
+      
+            .desktop_hide {
+              display: block !important;
+              max-height: none !important;
+            }
+          }
+          @media (max-width: 567px) {
+              .two-up{
+                margin-left: 0.8rem!important
+              }
+          }
+      </style>
 </head>
 
 <body>
-<header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-red d-lg-block d-none">
-        <div class="container-fluid pl-3 pr-3 text-white">
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="./landing.html"><img src="./assets/images/resize-sotipsy.png" style="width: 100px;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar bar1"></span>
-                    <span class="navbar-toggler-bar bar2"></span>
-                    <span class="navbar-toggler-bar bar3"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="top-navbar">
-                <div class="navbar-collapse-header">
-                    <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a href="./landing.html">
-                                <img src="./assets/images/sotipsy.png">
-                            </a>
-                        </div>
-                        <div class="col-6 collapse-close text-right">
-                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
-                                aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <ul class="navbar-nav text-capitalize">
-                    <li class="dropdown nav-item p-0">
-                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
-                            wine
-                        </a>
-                        <div class="dropdown-menu mega-dropdown font-8">
-                            <div class="row">
-                                <div class="col-3">
-                                    <p class="dropdown-header">Wine Types</p>
-                                    <div class="dropdown-divider"></div>
-                                </div>
 
-                                <div class="col-3">
-                                    <p class="dropdown-header">Top Brand</p>
-                                    <div class="dropdown-divider"></div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-                                <div class="col-3 wrap-column">
-                                    <a href="#" class="dropdown-item">
-                                        White Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Rosé Wine
-                                    </a>
-
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Dessert and Fortified Wine
-                                    </a>
-                                    <a href="#" class="dropdown-item">
-                                        White Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Rosé Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Champagne
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item text-info">
-                                                View All Wines 
-                                    </a>
-                                </div>
-
-                                <div class="col-3">
-                                    <a href="#" class="dropdown-item">
-                                        White Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Rosé Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Champagne
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Dessert and Fortified Wine
-                                    </a>
-
-                                </div>
-                                <div class="col-3">
-                                    <a href="#" class="dropdown-item">
-                                        White Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Rosé Wine
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item">
-                                        Champagne
-                                    </a>
-                                    <a href="./product-listing.html" class="dropdown-item text-info">
-                                        View All Brands
-                                    </a>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <!-- Category -->
-                    <li class="dropdown nav-item p-0">
-                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
-                            beer
-                        </a>
-                        <div class="dropdown-menu">
-                            <p class="dropdown-header">Wine Types</p>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                White Wine
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Rosé Wine
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Champagne
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                View All Beers
-                            </a>
-
-                        </div>
-                    </li>
-
-                    <li class="dropdown nav-item p-0">
-                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
-                            Liquor
-                        </a>
-                        <div class="dropdown-menu">
-                            <p class="dropdown-header">Wine Types</p>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                White Wine
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Rosé Wine
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Champagne
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                View All Liquors
-                            </a>
-
-                        </div>
-                    </li>
-                    <li class="dropdown nav-item p-0">
-                        <a href="./product-listing.html" class="dropdown-toggle nav-link small text-uppercase">
-                            Extras
-                        </a>
-                        <div class="dropdown-menu">
-                            <p class="dropdown-header">Wine Types</p>
-                            <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">
-                                White Wine
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Rosé Wine
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item">
-                                Champagne
-                            </a>
-                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                View All Liquors
-                            </a>
-
-                        </div>
-                    </li>
-                    <li class="nav-item p-0 active">
-                        <a class="nav-link small text-uppercase" href="./article.html">
-                            Explore
-                        </a>
-                    </li>
-                    <li class="nav-item p-0 active">
-                        <a class="nav-link small text-uppercase" href="./corporate.html">
-                            corporate
-                        </a>
-                    </li>
-                </ul>
-                    <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
-                            <form action="#" class="nav-form">
-                                    <div class="nav-group">      
-                                            <input type="text" required>
-                                            <span class="highlight"></span>
-                                            <span class="bar"></span>
-                                            <label><h5 class="font-3 h5 text-uppercase"><span class="fa fa-search"></span></h5></label>
-                                    </div>
-                            </form>
-                    </ul>
-
-
-                    <!-- Location Search / Map -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="dropdown nav-item">
-                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                    <i class="fas fa-map-marker-alt"></i>
-                            </a>
-                            <!-- Need amend address dropdown -->
-                            <div class="dropdown-menu dropdown-menu-right" style=" max-height:450px;overflow-x: hidden; overflow-y: auto; width:400px;">
-                                    <div id="address" class="d-none text-center pl-2 pr-2"> 
-                                            <label for="unit" class="font-4">Enter Address</label>
-                                            <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Street address, city, state">
-                                        <center>
-                                            <input class="btn btn-darker text-uppercase font-4 mt-3 mb-3 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
-                                            value="Save">
-                                        </center>
-                                        <div class="dropdown-divider"></div>
-                                    </div>
-                                    <ul class="list-unstyled">
-                                            <li>
-                                                <div class="container-fluid">
-                                                <div class="row align-items-center p-2">
-                                                    <small class="font-4 pl-0 mb-0">Addresses</small>
-                                                    <a href="javascript:void(0)" class="ml-auto font-4 mb-0 small text-info" id="add-address"> Add New Address</a>
-                                                </div>
-                                                </div>
-                                                <div class="container-fluid">
-                                                    <div class="row border-l border-danger align-items-center p-2 border-1 pale pointer ">
-                                                        <small class="font-4">Delivery to</small>
-                                                        <br>
-                                                        <h5 class="ml-2 font-4 mb-0 mw-3">
-                                                            Badger Pond Wilton, CA 95693
-                                                    </h5>
-                                                            <a href="./buyers.html" class="ml-auto font-4 mb-0 small text-info"> EDIT</a>
-                                                </div>
-                                                <div class="dropdown-divider m-0"></div>
-                                                    <div class="row align-items-center p-2 pale pointer">
-                                                        <h5 class="ml-2 font-4 mb-0 mw-3">
-                                                            Stanton Street 
-                                                            New York, NY 10002
-                                                        </h5>
-                                                            <a href="./buyers.html" class="ml-auto font-4 mb-0 small text-info"> EDIT</a>
-                                                </div>
-                                                <div class="dropdown-divider m-0"></div>
-                                                <div class=" text-center">
-                                                    <a href="./buyers.html" class="font-4 mb-0 ml-3 small text-info"> View All Addresses</a>
-                                                    </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                                <div class="container-fluid">
-                                                        <div class="row border-l border-default align-items-center p-2 border-1 pale pointer ">
-                                                            <h5 class="font-4 pl-0 mb-0">All Stores
-                                                                <br>
-                                                                Stanton Street 
-                                                                New York, NY 10002
-                                                            </h5>
-                                                        </div>
-                                                        <div class="dropdown-divider m-0"></div>
-                                                        <div class="row align-items-center p-2 pale pointer">
-                                                                <h5 class="ml-2 font-4 mb-0 w-100">
-                                                                        Case Liquors
-                                                                </h5>
-                                                                <div class="row align-items-center ml-1 w-100">
-                                                                    <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.2</h5>
-                                                                    <h5 class="text-danger m-1 font-4"> Good </h5>
-                                                                </div>
-                                                                <div class="row align-items-center ml-1 mt--2">
-                                                                    <h5 class="m-2 font-4"> 3,122 products | RM100 Minimum</h5>
-                                                                </div>
-                                                        </div>
-                                                        <div class="dropdown-divider m-0"></div>
-                                                        <div class="row align-items-center p-2 pale pointer">
-                                                                <h5 class="ml-2 font-4 mb-0 w-100">
-                                                                        King Keg
-                                                                </h5>
-                                                                <div class="row align-items-center ml-1 w-100">
-                                                                <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
-                                                                    <h5 class="text-danger m-1 font-4"> Excellent </h5>
-                                                                </div>
-                                                                <div class="row align-items-center ml-1 mt--2">
-                                                                    <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
-                                                                </div>
-                                                        </div>
-                                                        <div class="dropdown-divider m-0"></div>
-                                                        <div class="row align-items-center p-2 pale pointer">
-                                                                <h5 class="ml-2 font-4 mb-0 w-100">
-                                                                        King Keg
-                                                                </h5>
-                                                                <div class="row align-items-center ml-1 w-100">
-                                                                <h5 class="m-1 p-1 badge badge-warning text-white font-4"> 4.9</h5>
-                                                                    <h5 class="text-danger m-1 font-4"> Excellent </h5>
-                                                                </div>
-                                                                <div class="row align-items-center ml-1 mt--2">
-                                                                    <h5 class="m-2 font-4"> 3,862 products | No Minimum</h5>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </li>
-                                    </ul>
-                            </div>
-                        </li>
-
-                        <li class="dropdown nav-item">
-                            <a class="nav-link" href="#sign-in" data-toggle="modal" data-target="#sign-in">
-                                    <i class="fas fa-user"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-megadropdown-menu-right text-center">
-                                <p class="dropdown-header">Hi, Sean </p>
-                                <div class="dropdown-divider"></div>
-                                <a href="./purchased.html" class="dropdown-item">
-                                    My Past Orders
-                                </a>
-                                <a href="./buyers.html" class="dropdown-item">
-                                    My Account
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    Sign Out
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="./shopping-card.html" class="nav-link" >
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./sign-in.html" class="nav-link btn btn-link border-bottom border-white rounded-sm strong border-2">
-                                Retailer Sign in
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    </nav>
-</header>
-
-<!-- Sidebar  -->
-    <div id="sideNav" class="nav-side font-8">
-            <div class="nav-side-content">
-                <ul class="list-unstyled components pt-0 pb-5">
-                    <li class="bg-light pb-2 pt-2 text-center">
-                        <h4 class=" pl-2 pr-2 ">We are delivering your drinks to :</h4>
-                        <form action="">
-                            <div class="form-inline m-2 justify-content-center">
-                                <div class="input-group input-group-alternative mb-0">
-                                        <div class="input-group-prepend bg-white" style="margin-right: -1px;">
-                                            <span class="input-group-text border-0 text-shadow-0 text-danger p-0 pl-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                    width="24" height="24"
-                                                    viewBox="0 0 172 172"
-                                                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ef3327"><path d="M86,14.40332c-27.63467,0 -50.11068,22.49001 -50.11068,50.12467c0,32.12817 42.76138,84.31774 44.58171,86.5179l5.52897,6.70475l5.52897,-6.70475c1.82033,-2.20733 44.58171,-54.38974 44.58171,-86.5179c-0.00001,-27.64183 -22.47601,-50.12467 -50.11068,-50.12467zM86,28.73665c19.72983,0 35.77735,16.06151 35.77735,35.79134c-0.00001,19.38583 -22.31835,52.72707 -35.77735,70.3929c-13.459,-17.6515 -35.77734,-50.97841 -35.77734,-70.3929c0,-19.72983 16.04751,-35.79134 35.77734,-35.79134zM86,46.58333c-9.89717,0 -17.91667,8.0195 -17.91667,17.91667c0,9.89717 8.0195,17.91667 17.91667,17.91667c9.89717,0 17.91667,-8.0195 17.91667,-17.91667c0,-9.89717 -8.0195,-17.91667 -17.91667,-17.91667z"></path></g></g></svg>
-                                            </span>
-                                        </div>
-                                    <input type="text" value="" placeholder="Enter Your Delivery Address" class="land-address p form-control strong bg-white rounded-sm border-0 font-8 p-3" />
-                            </div>
-                                <button class="nav btn btn-sotipsy text-uppercase font-8 strong rounded mb-1" style="padding: 6px 8px 6px 8px;margin-left: -42px;">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </li>
-                    <li>
-                        <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
-                            <i class="fas fa-user"></i>
-                                Sign In
-                        </a>
-                    </li>
-                    <li class="border-bottom border-secondary">
-                        <a href="#sign-in" data-toggle="modal" data-target="#sign-in">
-                            <i class="fas fa-user-plus"></i>
-                                Sign Up
-                        </a>
-                    </li>
-        
-                    <li class="border-bottom border-secondary">
-                        <a href="">
-                            <i class="fas fa-user"></i>
-                            Hi , Sean
-                        </a>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="./purchased.html">My Orders,Reorder</a>
-                            </li>
-                            <li>
-                                <a href="./buyers.html">My Account</a>
-                            </li>
-                            <li>
-                                <a href="./product-listing.html">Sign Out</a>
-                            </li>
-                        </ul>
-                    </li>
-        
-                    <li>
-                        <a href="./product-listing.html">
-                            <i class="fas fa-wine-glass-alt mr-1"></i>
-                            Wine
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="./product-listing.html">
-                            <i class="fas fa-glass-whiskey"></i>
-                            Beer
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="./product-listing.html">
-                            <i class="fas fa-cocktail"></i>
-                            Liquor
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="./product-listing.html">
-                            <i class="fas fa-lemon"></i>
-                            Extras
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="./product-listing.html">
-                            <i class="fas fa-tags"></i>
-                            Deals
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./article.html">
-                            <i class="fas fa-glass-cheers"></i>
-                            Explore
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="./corporate.html">
-                            <i class="fas fa-user-plus"></i>
-                            Corporate
-                        </a>
-                    </li>
-                    <li class="border-bottom border-secondary">
-                        <a href="./gift.html">
-                            <i class="fas fa-gift"></i>
-                            Gift
-                        </a>
-                    </li>
-        
-                    <li>
-                        <a href="./join-us.html">
-                            <i class="fas fa-user-plus"></i>
-                                Become a retailer
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./sign-in.html">
-                            <i class="fas fa-user"></i>
-                            Retailer Login
-                        </a>
-                    </li>
-        
-                </ul>
-            </div>
+  <div class="row">
+    <div class="col-lg-6" style="background: blueviolet">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat odit obcaecati suscipit dolorem ut tempora officiis eaque, autem beatae fugit nulla ullam mollitia sequi harum animi! Accusamus, voluptates maxime!</p>
     </div>
-    <div class="d-lg-none d-block">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--1 ml--2">
-        <div class="container-fluid p-0">
-            <button type="button" id="openNav" onclick="openNav()" class="mr-auto btn btn-neutral btn-simple p-2 m-0">
-                <img src="https://img.icons8.com/ios-glyphs/20/000000/menu.png">
-            </button>
-            <button type="button" id="closeNav" onclick="closeNav()" class="mr-auto d-none btn btn-neutral btn-simple p-2 m-0">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times text-dark"></i></a>
-            </button>
-              <a class="navbar-brand m-center" href="./landing.html"><img src="assets/images/logo-sm.png" style="height: 35px;"></a>
-              <a href="#" class="dropdown-toggle p-2 btn-neutral btn-simple" data-toggle="dropdown" style="height: 44px;">
-                      <img src="https://img.icons8.com/ios-glyphs/20/000000/search.png">
-              </a>
-              <div class="dropdown-menu dropdown-megadropdown-menu-right mega-dropdown text-center mt--1 pt-0">
-                  <div class="input-group input-group-alternative mb-0">
-                      <div class="input-group-prepend bg-light">
-                          <span class="input-group-text border-0">
-                              <i class="icons fas fa-search"></i>
-                          </span>
-                      </div>
-                      <input type="text" class="form-control border-0 pl-3 bg-light" placeholder="Search Beer , Wine & Liquor">
-                  </div>
-              </div>
-                  <a href="./shopping-card.html" class=" btn btn-neutral btn-simple p-2">
-                      <img src="https://img.icons8.com/material-outlined/20/000000/shopping-cart.png">
-                  </a>
-                
-            
-        </div>
-      </nav>
+
+    <div class="col-lg-6" style="background: blue">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat odit obcaecati suscipit dolorem ut tempora officiis eaque, autem beatae fugit nulla ullam mollitia sequi harum animi! Accusamus, voluptates maxime!</p>
     </div>
-    <!-- End Navbar -->
-
-
-
-    <!-- Form Modal -->
-    <div class="modal fade modal-black" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-hidden="true">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <div class="text-muted text-center ml-auto mr-auto">
-                        <h3 class="mb-0">Sign in with</h3>
-                    </div>
-                </div>
-
-
-
-                <div class="modal-body">
-                    <div class="btn-wrapper text-center mb-3">
-                        <a href="#" class="btn btn-neutral btn-icon m-2">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="btn btn-neutral btn-icon m-2">
-                            <i class="fab fa-google"></i>
-                        </a>
-                    </div>
-                    <div class="card shadow border-0">
-                        <!-- Card header -->
-                        <div class="card-header bg-white">
-                            <div class="nav-wrapper">
-                                <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link mb-0 active show" id="tabs-icons-text-1-tab"
-                                            data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1"
-                                            aria-selected="true">Sign In</a>
-                                    </li>
-                                    <li class="nav-item m-2">
-                                        <a class="nav-link mb-0" id="tabs-icons-text-2-tab" data-toggle="tab"
-                                            href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2"
-                                            aria-selected="false">Sign Up</a>
-                                    </li>
-                                </ul>
-                                <div id="error"></div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="card-body pt-0">
-                            <div class="tab-content" id="sign-in">
-                                <div class="tab-pane fade active show" id="tabs-icons-text-1" role="tabpanel"
-                                    aria-labelledby="tabs-icons-text-1-tab">
-                                    <div class="text-center text-muted mb-3">
-                                        <small>Or sign in with credentials</small>
-                                    </div>
-                                    <!-- sign in -->
-                                    <form role="form">
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Email" type="email">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-key"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Password" type="password">
-                                            </div>
-                                        </div>
-                                        <div class="form-check mt-3">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" checked>
-                                                <span class="form-check-sign"></span>
-                                                Remember me!
-                                            </label>
-                                        </div>
-
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary my-4">Sign in</button>
-                                        </div>
-                                    </form>
-                                </div>
-
-
-
-                                <!-- sign up -->
-                                <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-                                    <div class="text-center text-muted mb-3">
-                                        <small>Please fill up the credentials</small>
-                                    </div>
-                                    <form role="form">
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-user"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="First Name" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-user"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Last Name" type="text">
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-envelope"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Email" type="email">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <div class="input-group input-group-alternative">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text">
-                                                        <i class="fas fa-key"></i>
-                                                    </span>
-                                                </div>
-                                                <input class="form-control" placeholder="Password" type="password">
-                                            </div>
-                                        </div>
-                                        <div class="form-check mt-3">
-                                                <label class="form-check-label">
-                                                    <input class="form-check-input" required type="checkbox">
-                                                    <span class="form-check-sign"></span>
-                                                    I am above 21 and non-muslim
-                                                </label>
-                                        </div>
-
-                                        <div class="form-check mb-2">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" id="hideCheck" onclick="hideForm('hiddenForm','hideCheck')">
-                                                <span class="form-check-sign"></span>
-                                                Ordering for a business? Be the office hero.
-                                            </label>
-                                        </div>
-
-                                        <!-- hidden form  -->
-                                        <div id="hiddenForm">
-                                            <div class="form-group mb-3">
-                                                <div class="input-group input-group-alternative">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text">
-                                                            <i class="fas fa-user"></i>
-                                                        </span>
-                                                    </div>
-                                                    <input class="form-control" placeholder="Company Name" type="text">
-                                                </div>
-                                            </div>
-
-                                            <div class="custom-group">
-                                                <label for="unit">
-                                                    Job Title
-                                                </label>
-                                                <select class="form-control">
-                                                        <option>Select Job Title</option>
-                                                        <option>Department Head/Team Manager</option>
-                                                        <option>Event Planner</option>
-                                                        <option>Executive Assistant</option>
-                                                        <option>Executive/CEO</option>
-                                                        <option>Facilities/Operations Manager</option>
-                                                        <option>Office Manager</option>
-                                                    </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="unit">
-                                                    Industry Type
-                                                </label>
-                                                <select class="form-control">
-                                                    <option>Select Industry Type</option>
-                                                    <option>Advertising/Media</option>
-                                                    <option>Architectural/Construction</option>
-                                                    <option>Education</option>
-                                                    <option>Financial</option>
-                                                    <option>Hospitality/F&amp;B</option>
-                                                    <option>Medical</option>
-                                                    <option>PR/Events</option>
-                                                    <option>Real Estate</option>
-                                                    <option>Retail</option>
-                                                    <option>Sales</option>
-                                                    <option>Technology</option>
-                                                    <option>Travel</option>
-                                                    <option>Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="unit">
-                                                    Order Frequency
-                                                </label>
-                                                <select class="form-control">
-                                                    <option>Select Order Frequency</option>
-                                                    <option>Every day</option>
-                                                    <option>Multiple times per week</option>
-                                                    <option>Once per week</option>
-                                                    <option>Once or twice per month</option>
-                                                    <option>Less than once per month</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row justify-content-center">
-                                            <button type="button" class="btn btn-primary my-4">Sign up</button>
-                                            <small class="text-darker m-4">By creating an account, I agree to
-                                                Spacecious's
-                                                Terms and Conditions.</small>
-                                        </div>
-                                    </form>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  End Modal -->
-
-    <footer class="footer mt-sm font-4">
-        <div class="container-fluid pl-lg-5 pr-lg-3 pl-3">
-            <div class="row">
-                <div class="col-md-3 text-center mb-4">
-                    <h4 class="font-3 h5 text-uppercase">Follow Us</h4>
-                    <div class="btn-wrapper profile">
-                        <a target="_blank" href="https://twitter.com/" class="btn btn-icon btn-neutral btn-round" data-toggle="tooltip"
-                            data-original-title="Follow us">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
-                            data-toggle="tooltip" data-original-title="Like us">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/spacecious/" class="btn btn-icon btn-neutral btn-round"
-                            data-toggle="tooltip" data-original-title="Follow us">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                  
-                </div>
-                <div class="col-md-2 mb-lg-0 mb-3 col-6">
-                    <h5 class="font-3 h5 text-uppercase">Company</h5>
-                    <ul class="nav pt-0">
-                        <li>
-                            <a href="./contact-us.html">
-                                <h4>Contact Us</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./about-us.html">
-                                <h4>About Us</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./terms.html#return">
-                                <h4>Return & Refund</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./faq.html">
-                                <h4>FAQ</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <h4 class="text-muted font-6">03 2116 9792</h4>
-                            <h4 class="text-muted font-6">support@spacecious</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-lg-0 mb-3 col-6">
-                    <ul class="nav pt-0">
-                        <h4 class="font-3 h5 text-uppercase">Partner with us</h4>
-                        <li>
-                            <a href="./join-us.html">
-                                <h4>Retailers</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./corporate.html">
-                                <h4>Corporate</h4>
-                            </a>
-                        </li>
-                        <li>
-                                <a href="./gift.html">
-                                    <h4>Gift</h4>
-                                </a>
-                        </li>
-                        <li >
-                            <a href="./affiliate.html">
-                                <h4>Become a affliate</h4>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-lg-0 mb-3">
-                        <h4 class="font-3 h5 text-uppercase">Payment Options</h4>
-                        <div class="row pl-3 pr-3">
-                            <span></span><img src="./assets/images/visa.png" width="30px" height="20px" class="mr-2" alt=""></span>
-                            <span></span><img src="./assets/images/master.png" width="30px" height="20px" class="mr-2" alt=""></span>
-                        </div>
-                </div>
-                <div class="col mb-lg-0 mb-3">
-                        <h4 class="font-3 h5 text-uppercase">Weekly Email</h4>
-                        <div class="form-inline justify-content-lg-start justify-content-center">
-                                <input type="text" value="" placeholder="Email Address" class="form-control strong bg-white rounded-sm border-0"
-                                style=" margin-right: -10px; min-width: 200px;" />
-                                <button class="btn btn-sotipsy text-uppercase font-4 rounded-sm" style="padding-top: 9px;padding-bottom:11px;" type=submit
-                                value="Join">Join</button>
-                        </div>
-                </div>
-            </div>
-
-            <p class="font-4 copyright">
-               <a href="./terms.html"  class="strong btn-link">Privacy Policy </a>  | 
-               <a href="./terms.html" class="strong btn-link"> Terms of Service </a>
-               <br class="d-lg-none">
-                © Spacecious All Rights Reserved</p>
-        </div>
-    </footer>
-    <div>
+  </div>
         <!-- Scroll up -->
         <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
     

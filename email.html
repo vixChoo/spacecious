@@ -69,7 +69,7 @@
 			margin-left: -15px
 		}
 
-		.col-12,.col-lg-6{
+		.col-12,.col-md-6,.col-lg-6{
 			position: relative;
 			width: 100%;
 			min-height: 1px;
@@ -84,6 +84,112 @@
 		.order-12 {
 			order: 12
 		}
+
+        @media (min-width:768px) {
+        .col-md {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%
+        }
+        .col-md-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none
+        }
+        .col-md-1 {
+            flex: 0 0 8.333333%;
+            max-width: 8.333333%
+        }
+        .col-md-2 {
+            flex: 0 0 16.666667%;
+            max-width: 16.666667%
+        }
+        .col-md-3 {
+            flex: 0 0 25%;
+            max-width: 25%
+        }
+        .col-md-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%
+        }
+        .col-md-5 {
+            flex: 0 0 41.666667%;
+            max-width: 41.666667%
+        }
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%
+        }
+        .col-md-7 {
+            flex: 0 0 58.333333%;
+            max-width: 58.333333%
+        }
+        .col-md-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%
+        }
+        .col-md-9 {
+            flex: 0 0 75%;
+            max-width: 75%
+        }
+        .col-md-10 {
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%
+        }
+        .col-md-11 {
+            flex: 0 0 91.666667%;
+            max-width: 91.666667%
+        }
+        .col-md-12 {
+            flex: 0 0 100%;
+            max-width: 100%
+        }
+        .order-md-first {
+            order: -1
+        }
+        .order-md-last {
+            order: 13
+        }
+        .order-md-0 {
+            order: 0
+        }
+        .order-md-1 {
+            order: 1
+        }
+        .order-md-2 {
+            order: 2
+        }
+        .order-md-3 {
+            order: 3
+        }
+        .order-md-4 {
+            order: 4
+        }
+        .order-md-5 {
+            order: 5
+        }
+        .order-md-6 {
+            order: 6
+        }
+        .order-md-7 {
+            order: 7
+        }
+        .order-md-8 {
+            order: 8
+        }
+        .order-md-9 {
+            order: 9
+        }
+        .order-md-10 {
+            order: 10
+        }
+        .order-md-11 {
+            order: 11
+        }
+        .order-md-12 {
+            order: 12
+        }
+    }
 
 	@media (min-width:992px) {
 		.col-lg-6 {
@@ -149,8 +255,7 @@
 			margin: .5rem!important
 		}
 
-		.mt-2,
-		.my-2 {
+		.mt-2 {
 			margin-top: .5rem!important
 		}
 
@@ -2127,7 +2232,7 @@
 
 <div class="block-grid" style="Margin: 0 auto; min-width: 320px; max-width: 620px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; background-color: transparent;">
 	<div class="row">
-		<div class="col-lg-6 col-12 ml-lg-0 ml-3 order-lg-1 order-12">
+		<div class="col-md-6 col-12 ml-md-0 ml-3 order-lg-1 order-12">
 				<div style="color:#555555;font-family:'Lato', Tahoma, Verdana, Segoe, sans-serif;line-height:120%;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
 						<div style="font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 12px; line-height: 14px; color: #555555;">
 							<p style="font-size: 14px; line-height: 20px; margin: 0;"><span style="font-size: 17px; color: #ff0000; mso-ansi-font-size: 18px;">Booking Details</span></p>
@@ -2181,7 +2286,7 @@
 						</div>
 		</div>
 		<!-- Receipt -->
-		<div class="col-lg-6 col-13 ml-lg-0 ml-3 order-lg-12 order-12 mt-3 mt-lg-0">
+		<div class="col-md-6 col-12 ml-md-0 ml-3 order-md-12 order-12 mt-3 mt-md-0">
 				<div style="border:1px solid #E8E8E8;border-bottom:none;color:#555555;font-family:'Lato', Tahoma, Verdana, Segoe, sans-serif;line-height:120%;padding-top:10px;padding-right:10px;padding-bottom:10px;padding-left:10px;">
 						<div style="font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; font-size: 12px; line-height: 14px; color: #555555;">
 						<p style="font-size: 12px; line-height: 20px; margin: 0;"><span style="font-size: 17px; color: #ff0000; mso-ansi-font-size: 18px;">Receipt Summary</span></p>

@@ -1,145 +1,77 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Spacecious</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/spaceSmall.png">
-    <link rel="icon" type="image/png" href="./assets/images/spaceSmall.png">
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-   <!-- Our DataTable CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
-    
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/seller.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-    <!--     Fonts and icons     -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-</head>
+        <head>
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Sotipsy</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/logo-sm-1.png">
+                <link rel="icon" type="image/png"  href="./assets/images/logo-sm-1.png">
+            
+                
+                    <!-- Bootstrap -->
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                        crossorigin="anonymous">
+                    
+                    <!-- Owl Carousel -->
+                    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+                    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+                    
+                    
+                    <!-- Core Css Files -->
+                    <link href="./assets/css/style.css" rel="stylesheet" />
+            
+                    <!-- Scrollbar Custom CSS -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+                    
+                    <!--     Fonts and icons     -->
+                    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Dosis:800&display=swap" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+                        crossorigin="anonymous">
+                    <a href="https://icons8.com/icon/47739/cute-outline"></a>
+            <style>
+            .vertical {
+            -ms-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+            -ms-transform-origin: left top 0;
+            -moz-transform-origin: left top 0;
+            -webkit-transform-origin: left top 0;
+            transform-origin: left top 0;
+            
+            color: #E23737;
+            text-transform: uppercase;
+            text-transform: 1px 1px 0px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, .3);
+            -webkit-border-radius: 35px;
+            -moz-border-radius: 35px;
+            border-radius: 3px!important;
+            height: 40px;
+            width: 75px;
+            padding: 10px;
+            /* box-shadow: 2px -2px 0px rgba(0, 0, 0, 0.1); */
+            }
+            hr{
+			box-sizing: content-box;
+			height: 0;
+			overflow: visible;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			border: 0;
+			border-top: 1px solid rgba(0,0,0,.1);
+		}
+            </style>
+        </head>
 <body>
 
-        <nav class="navbar navbar-expand-lg fixed-top navbar-red mb-5">
-                <div class="container-fluid pl-3 pr-3 text-white">
-                    <div class="navbar-translate">
-                        <a class="navbar-brand" href="./landing.html"><img src="./assets/images/sotipsy.png" style="width: 130px;"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navbar"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-bar bar1"></span>
-                            <span class="navbar-toggler-bar bar2"></span>
-                            <span class="navbar-toggler-bar bar3"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="top-navbar">
-                        <div class="navbar-collapse-header">
-                            <div class="row">
-                                <div class="col-6 collapse-brand">
-                                    <a href="./landing.html">
-                                        <img src="./assets/images/sotipsy.png">
-                                    </a>
-                                </div>
-                                <div class="col-6 collapse-close text-right">
-                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-navbar"
-                                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle top-navbar">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" nav-item">
-                               <a href="#" class="dropdown-toggle nav-link small text-uppercase">
-                                    wine
-                                </a>
-                                <div class="dropdown-mega d-block">
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Wine Types</p>
-                                            <div class="dropdown-divider"></div>
-                                        </div>
-        
-                                        <div class="col-3">
-                                            <p class="dropdown-header">Top Brand</p>
-                                            <div class="dropdown-divider"></div>
-        
-                                        </div>
-        
-                                    </div>
-        
-                                    <div class="row">
-                                        <div class="col-3 wrap-column">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-        
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                                        View All Wines 
-                                            </a>
-                                        </div>
-        
-                                        <div class="col-3">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Dessert and Fortified Wine
-                                            </a>
-        
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="#" class="dropdown-item">
-                                                White Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Rosé Wine
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item">
-                                                Champagne
-                                            </a>
-                                            <a href="./product-listing.html" class="dropdown-item text-info">
-                                                View All Brands
-                                            </a>
-        
-                                        </div>
-                                    </div>
-        
-                                </div>
-                        </div>
-                        </div>
-                    </div>
-            </nav>
 <div class="datepicker-container border-0">
     <!-- input with datetimepicker -->
     <div class="form-inline">
@@ -153,6 +85,13 @@
         </div>
 </div>
     <div class="container-fluid">
+        <!-- Content -->
+            <div class="card bg-primary">
+                <div class="card-header">
+                    <h3>hr</h3>
+                    <hr class="m-0 mt-2" style="width:50px;border-color: #ff0000;">
+                </div>
+            </div>
         <!-- Content -->
             <div class="card bg-primary">
                 <div class="card-header">
@@ -598,7 +537,9 @@
                     <span class="p-2 border border-darker">border-darker</span>
                 </div>
             </div>
-            <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+            <div class="vertical">Top</div>
+            <a href="#" class="scrollup" style="display: inline;"><div class="vertical">TOP<img src="./assets/images/arrow-left.png"></div></a>
+            
         <!-- End Content -->
 </div>
 

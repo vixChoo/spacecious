@@ -231,10 +231,12 @@
                     <ul class="navbar-nav col-sm-6 col-lg-3 ml-auto" id="search">
                             <form action="#" class="nav-form">
                                     <div class="nav-group">      
-                                            <input type="text" required>
+                                            <input type="text" style="background: url(./assets/images/search-white.svg) no-repeat;
+                                            background-size: 15px;
+                                            background-position: right;" required>
                                             <span class="highlight"></span>
                                             <span class="bar"></span>
-                                            <label><h5 class="font-3 h5 text-uppercase"><span class="fa fa-search"></span></h5></label>
+                                            
                                     </div>
                             </form>
                     </ul>
@@ -368,7 +370,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./sign-in.html" class="nav-link btn btn-link border-bottom border-white rounded-sm strong border-2">
+                            <a href="./sign-in.html" class="nav-link btn btn-link border-bottom border-white rounded-sm strong border-2 mt--2">
                                 Retailer Sign in
                             </a>
                         </li>
@@ -508,14 +510,14 @@
       <nav class="navbar navbar-expand-lg fixed-top navbar-white pb-0 mt--1 ml--2">
         <div class="container-fluid p-0">
             <button type="button" id="openNav" onclick="openNav()" class="mr-auto btn btn-neutral btn-simple p-2 m-0">
-                <img src="https://img.icons8.com/ios-glyphs/20/000000/menu.png">
+                <img src="./assets/images/menu.svg" width="20">
             </button>
             <button type="button" id="closeNav" onclick="closeNav()" class="mr-auto d-none btn btn-neutral btn-simple p-2 m-0">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times text-dark"></i></a>
             </button>
               <a class="navbar-brand m-center" href="./landing.html"><img src="assets/images/logo-sm.png" style="height: 35px;"></a>
               <a href="#" class="dropdown-toggle p-2 btn-neutral btn-simple" data-toggle="dropdown" style="height: 44px;">
-                      <img src="https://img.icons8.com/ios-glyphs/20/000000/search.png">
+                      <img src="./assets/images/magnifying-glass.svg" width="20">
               </a>
               <div class="dropdown-menu dropdown-megadropdown-menu-right mega-dropdown text-center mt--1 pt-0">
                   <div class="input-group input-group-alternative mb-0">
@@ -528,7 +530,7 @@
                   </div>
               </div>
                   <a href="./shopping-card.html" class=" btn btn-neutral btn-simple p-2">
-                      <img src="https://img.icons8.com/material-outlined/20/000000/shopping-cart.png">
+                      <img src="./assets/images/shopping-cart.svg" width="23">
                   </a>
                 
             
@@ -540,38 +542,37 @@
 
     <!-- Landing Page -->
         <!-- Location Search -->
-        <div class="background2 mt-sm" style="background-image: url('./assets/images/landing-3.jpg'); height:100vh;">
-            <div class="animated fadeInUp" id="slogan">
-                        <p class="text-white mb-2 animated fadeInUp main-title font-8 text-center">Let the Drinks Come to You </p>
-                        <p class="text-white mb-0 animated fadeInUp text-center sub-text font-8">Beer, Wine, & Spirits Delivered in Under 30 Minutes.</p>
-                    <form action="">
-                        <div class="form-inline m-2 justify-content-center">
+        <div class="background2 mt-lg-sm" style="background-image: url('./assets/images/landing-3.jpg'); height:100vh;">
+            <div class="animated fadeInUp ml-3" id="slogan">
+                    <p class="text-white mb-2 animated fadeInUp main-title font-8 text-center">Let the Drinks Come to You </p>
+                    <p class="text-white mb-0 animated fadeInUp text-center sub-text font-8">Beer, Wine, & Spirits Delivered in Under 30 Minutes.</p>
+                    <form class="addressSearchForm">
+                    <div class="form-inline m-2 justify-content-center">
                             <div class="input-group input-group-alternative mb-0">
                                     <div class="input-group-prepend bg-white" style="margin-right: -1px;">
-                                        <span class="input-group-text border-0 text-shadow-0 text-danger p-0 pl-2">
+                                        <span class="input-group-text border-0 text-shadow-0 text-danger p-0 pl-2 getLatLng">
                                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                                 width="24" height="24"
                                                 viewBox="0 0 172 172"
                                                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ef3327"><path d="M86,14.40332c-27.63467,0 -50.11068,22.49001 -50.11068,50.12467c0,32.12817 42.76138,84.31774 44.58171,86.5179l5.52897,6.70475l5.52897,-6.70475c1.82033,-2.20733 44.58171,-54.38974 44.58171,-86.5179c-0.00001,-27.64183 -22.47601,-50.12467 -50.11068,-50.12467zM86,28.73665c19.72983,0 35.77735,16.06151 35.77735,35.79134c-0.00001,19.38583 -22.31835,52.72707 -35.77735,70.3929c-13.459,-17.6515 -35.77734,-50.97841 -35.77734,-70.3929c0,-19.72983 16.04751,-35.79134 35.77734,-35.79134zM86,46.58333c-9.89717,0 -17.91667,8.0195 -17.91667,17.91667c0,9.89717 8.0195,17.91667 17.91667,17.91667c9.89717,0 17.91667,-8.0195 17.91667,-17.91667c0,-9.89717 -8.0195,-17.91667 -17.91667,-17.91667z"></path></g></g></svg>
                                         </span>
                                     </div>
-                                 <input type="text" value="" placeholder="Enter Your Delivery Address" class="land-address form-control strong bg-white rounded-sm border-0 font-8 p-4" />
+                                 <input type="text" placeholder="Enter Your Delivery Address" class="land-address form-control strong bg-white rounded-sm border-0 font-8 p-4 address-input" name="address" value="" />
                         </div>
                             <!-- Display while big screen -->
                             <input class="bg btn btn-sotipsy text-uppercase font-8 strong rounded d-md-block d-none" type="submit" value="Search Store">
 
                             <!-- Display while small screen -->
-                            <button class="bg btn btn-sotipsy text-uppercase font-8 strong rounded d-md-none d-block">
+                            <button class="bg btn btn-sotipsy text-uppercase font-8 strong rounded d-md-none d-block" type="submit">
                                 <i class="fas fa-arrow-right"></i>
                             </button>
                         </div>
                     </form>
-                    <center>
-                            <small class="smaller">By using this website, you confirm that you are over 21 years old & non-muslim and agree with the <a href="./terms.html" class="text-secondary"  style="font-size:70%!important;">terms and conditions</a> </small>
-                    </center>
+                <center>
+                  <small class="smaller d-block">By using this website, you confirm that you are over 21 years old & non-muslim and agree with the <a href="./terms.html" class="text-secondary"  style="font-size:70%!important;">terms and conditions</a> </small>
+                </center>
             </div>
-        </div>
-                
+        </div>        
                         
         <!-- End Location Search -->
         <div class="container mt-md-sm mt-3">
@@ -1363,7 +1364,7 @@
                         </li>
                         <li>
                             <h4 class="text-muted font-6">03 2116 9792</h4>
-                            <h4 class="text-muted font-6">support@spacecious</h4>
+                            <h4 class="font-6"><a class="text-danger" href="mailto:support@sotipsy.com?Subject=Enquiry" target="_top">support@sotipsy.com</a></h4>
                         </li>
                     </ul>
                 </div>
@@ -1395,8 +1396,9 @@
                 <div class="col-md-2 mb-lg-0 mb-3">
                         <h4 class="font-3 h5 text-uppercase">Payment Options</h4>
                         <div class="row pl-3 pr-3">
-                            <span></span><img src="./assets/images/visa.png" width="30px" height="20px" class="mr-2" alt=""></span>
+                            <span></span><img src="./assets/images/visa.svg" width="30px" height="20px" class="mr-2" alt=""></span>
                             <span></span><img src="./assets/images/master.png" width="30px" height="20px" class="mr-2" alt=""></span>
+                            <span></span><img src="./assets/images/fpx.png" width="40px" height="15px" style="margin-top: 2px;" class="mr-2" alt=""></span>
                         </div>
                 </div>
                 <div class="col mb-lg-0 mb-3">
@@ -1411,15 +1413,17 @@
             </div>
 
             <p class="font-4 copyright">
-               <a href="./terms.html"  class="strong btn-link">Privacy Policy </a>  | 
+               <a href="./terms.html#policy"  class="strong btn-link">Privacy Policy </a>  | 
                <a href="./terms.html" class="strong btn-link"> Terms of Service </a>
                <br class="d-lg-none">
-                © Spacecious All Rights Reserved</p>
+               &copy; Spacecious All Rights Reserved</p> 
+            </p>
         </div>
     </footer>
     <div>
         <!-- Scroll up -->
-        <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="scrollup" style="display
+        : inline;"><div class="vertical font-5">TOP<img src="./assets/images/arrow-left.png"></div></a>
     
         <!-- jQuery CDN - -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -1465,6 +1469,18 @@
             
         }
         document.getElementById("btn-pop-up").click();
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.querySelector(".navbar-red").style.boxShadow =  "2px 2px 6px rgba(0, 0, 0, .4)"
+
+    } else {
+        document.querySelector(".navbar-red").style.boxShadow = "none";
+    }
+    }
 </script>
 
 </body>
